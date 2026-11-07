@@ -41,6 +41,7 @@
 
 - 07/11 · Vídeos v3 (transição, efeitos, sem chiado, voz Pro com emoção): ok, mas "tá muito devagar" → **ritmo 1,5x** (ela decidiu, mesmo acima da regra de 3,0 palavras/s). "Não quero nada esquisito. Você sempre tem que melhorar."
 - Cota do Gemini: "sem problemas".
+- 07/11 · Vídeos 1,5x: ✅ "gostei, mas sempre precisa melhorar". Aprovou pelo chat todos os vídeos e posts de sáb e dom.
 
 ## Gosto: aprovado / negado (com o porquê)
 | Data | Ideia/roteiro | Decisão | Categoria | Porquê |
