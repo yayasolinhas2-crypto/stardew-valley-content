@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<style>
+@font-face{font-family:Pix;src:url(../../assets/fonts/pixelify-sans-latin-700-normal.woff2)}
+@font-face{font-family:Pix;src:url(../../assets/fonts/nunito-latin-900-normal.woff2);unicode-range:U+30-39,U+BA}
+@font-face{font-family:Nun;font-weight:800;src:url(../../assets/fonts/nunito-latin-800-normal.woff2)}
+@font-face{font-family:Nun;font-weight:900;src:url(../../assets/fonts/nunito-latin-900-normal.woff2)}
+:root{--ink:#3b1d07;--wood:#5b2a0c;--orange:#c96a1b;--paper:#fbe0a8;--paper2:#f4c97c;--red:#b8300f;--gold:#ffd84a}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#111}
+.slide{width:1080px;height:1920px;position:relative;overflow:hidden;font-family:Nun;font-weight:800;color:var(--ink);
+  background:linear-gradient(#141640 0%,#26297a 45%,#4b4fb0 75%,#7a7fd6 100%)}
+/* estrelas em pixel */
+.stars i{position:absolute;width:8px;height:8px;background:#fff8d0;box-shadow:0 0 0 0 #fff}
+.stars i.b{width:12px;height:12px;background:#ffe98a}
+/* morros em pixel no rodapé (decoração, fora da área segura) */
+.hills{position:absolute;left:0;right:0;bottom:0;height:300px;
+  background:
+   linear-gradient(#3f8a2e,#2f6b22) 0 60px/100% 100% no-repeat;
+  clip-path:polygon(0 30%,8% 30%,8% 22%,18% 22%,18% 14%,30% 14%,30% 22%,42% 22%,42% 30%,55% 30%,55% 18%,66% 18%,66% 10%,78% 10%,78% 18%,88% 18%,88% 26%,100% 26%,100% 100%,0 100%)}
+.hills2{position:absolute;left:0;right:0;bottom:0;height:160px;background:#5fb33a;
+  clip-path:polygon(0 20%,12% 20%,12% 10%,26% 10%,26% 0,40% 0,40% 12%,58% 12%,58% 4%,74% 4%,74% 16%,90% 16%,90% 8%,100% 8%,100% 100%,0 100%)}
+/* painel no estilo menu do jogo */
+.card{position:absolute;left:78px;width:864px;top:290px;height:1160px;padding:48px 50px 60px;
+  background:linear-gradient(var(--paper),var(--paper2));
+  box-shadow:0 0 0 8px var(--wood),0 0 0 18px var(--orange),0 0 0 26px var(--wood),14px 22px 0 26px rgba(0,0,0,.35)}
+.badge{display:inline-block;font-family:Pix;font-size:54px;color:var(--gold);background:var(--wood);padding:10px 26px 14px;
+  box-shadow:0 0 0 6px var(--orange);text-shadow:4px 4px 0 #000}
+.name{font-family:Pix;font-size:80px;line-height:1;margin:28px 0 8px;color:var(--wood);text-shadow:4px 4px 0 rgba(201,106,27,.45)}
+.where{font-size:36px;color:#7a4515;margin-bottom:12px}
+.icons{display:flex;align-items:flex-end;justify-content:center;gap:40px;margin:18px 0 18px}
+.icons img{image-rendering:pixelated;display:block}
+.step{font-size:41px;line-height:1.2;margin:14px 0}
+.step b{color:var(--red);font-weight:900}
+.result{margin-top:22px;background:var(--wood);color:#fff3cf;font-size:41px;line-height:1.2;padding:20px 28px;box-shadow:0 0 0 6px var(--orange)}
+.result b{color:var(--gold)}
+.bridge{position:absolute;left:78px;width:864px;top:1482px;text-align:center;font-family:Pix;font-size:40px;white-space:nowrap;color:#fff;text-shadow:4px 4px 0 #000}
+.src{position:absolute;right:50px;bottom:18px;font-size:24px;color:#8a5a2b}
+.keys{display:flex;gap:14px;justify-content:center;margin:10px 0}
+.keys span{font-family:Pix;font-size:60px;width:80px;height:100px;display:flex;align-items:center;justify-content:center;background:#fff;color:var(--ink);box-shadow:0 0 0 6px var(--ink)}
+.keys span.sp{background:none;box-shadow:none;width:30px}
+.shells{display:flex;gap:18px;justify-content:center;margin:6px 0 4px}
+.shells span{font-family:Pix;font-size:58px;width:104px;height:104px;display:flex;align-items:center;justify-content:center;background:#ffd1dc;color:var(--ink);box-shadow:0 0 0 6px var(--wood);border-radius:60px 60px 10px 10px}
+.arrow{font-family:Pix;font-size:40px;align-self:center;color:var(--wood)}
+/* capa */
+.cover .card{top:290px;text-align:center}
+.cover h1{font-family:Pix;font-size:128px;line-height:.95;color:var(--wood);text-shadow:6px 6px 0 rgba(201,106,27,.5)}
+.cover h1 em{font-style:normal;color:var(--red)}
+.cover .sub{font-size:52px;margin-top:22px}
+.cover .tag{display:inline-block;margin-top:34px;font-family:Pix;font-size:62px;color:var(--gold);background:var(--red);padding:12px 30px 16px;box-shadow:0 0 0 7px var(--wood);text-shadow:4px 4px 0 #000;transform:rotate(-3deg)}
+.qbox{width:150px;height:150px;background:var(--gold);box-shadow:0 0 0 8px var(--wood),inset -12px -12px 0 #d9a520;font-family:Pix;font-size:110px;color:var(--wood);display:flex;align-items:center;justify-content:center}
+.big{font-family:Pix;font-size:84px;line-height:1.05;color:var(--wood);text-align:center}
+.cta{margin-top:26px;text-align:center;background:var(--red);color:#fff;font-size:52px;line-height:1.2;padding:28px;box-shadow:0 0 0 7px var(--wood)}
+.cta b{font-family:Pix;font-size:84px;color:var(--gold);display:block;text-shadow:5px 5px 0 #000;margin:6px 0}
+</style></head><body>
+
+<!-- 1 CAPA -->
+<section class="slide cover" id="s1"><div class="stars"></div><div class="hills"></div><div class="hills2"></div>
+ <div class="card">
+  <span class="badge">STARDEW VALLEY</span>
+  <h1 style="margin-top:44px">5 SEGREDOS<br><em>ESCONDIDOS</em></h1>
+  <div class="sub">que quase ninguém acha no jogo</div>
+  <div class="icons" style="margin:48px 0 10px;gap:46px">
+   <div class="qbox">?</div>
+   <img src="../../assets/icons/Junimo_Plush.png" style="width:288px">
+   <div class="qbox">?</div>
+  </div>
+  <span class="tag">e o nº 1 é bizarro</span>
+ </div>
+ <div class="bridge">arrasta e salva pra testar →</div>
+</section>
+
+<!-- 2 SEGREDO 5 -->
+<section class="slide" id="s2"><div class="stars"></div><div class="hills"></div><div class="hills2"></div>
+ <div class="card">
+  <span class="badge">SEGREDO Nº 5</span>
+  <div class="name">O piano do Elliott</div>
+  <div class="where">Cabana do Elliott, na praia</div>
+  <div class="icons"><img src="../../assets/icons/Elliott.png" style="width:192px"></div>
+  <div class="step">Enquanto ele <b>escreve na mesa</b>, toque no piano (teclas 1 a 4, da esquerda pra direita):</div>
+  <div class="keys"><span>2</span><span>4</span><span>3</span><span>2</span><span class="sp"></span><span>3</span><span>4</span><span>2</span><span>1</span></div>
+  <div class="result">É o começo da música do jogo. Ele <b>vira e solta um coração</b>.</div>
+  <div class="src">fonte: wiki oficial · Segredos</div>
+ </div>
+ <div class="bridge">fofo, né? o próximo é bem mais difícil…</div>
+</section>
+
+<!-- 3 SEGREDO 4 -->
+<section class="slide" id="s3"><div class="stars"></div><div class="hills"></div><div class="hills2"></div>
+ <div class="card">
+  <span class="badge">SEGREDO Nº 4</span>
+  <div class="name">Pelúcia Junimo</div>
+  <div class="where">Vila Pelicanos, canto noroeste</div>
+  <div class="icons"><img src="../../assets/icons/Junimo_Plush.png" style="width:240px"></div>
+  <div class="step">No <b>dia 28</b> de qualquer estação, <b>às 12:00 em ponto</b>, sacuda o arbusto do canto noroeste da vila.</div>
+  <div class="result">Cai uma <b>Pelúcia Junimo</b>: um móvel único que não se compra em loja.</div>
+  <div class="src">fonte: wiki oficial · Segredos</div>
+ </div>
+ <div class="bridge">mas o nº 3 te dá um item raríssimo…</div>
+</section>
+
+<!-- 4 SEGREDO 3 + CTA DO MEIO -->
+<section class="slide" id="s4"><div class="stars"></div><div class="hills"></div><div class="hills2"></div>
+ <div class="card">
+  <span class="badge">SEGREDO Nº 3</span>
+  <div class="name">A estátua que tem fome</div>
+  <div class="where">Bosque Secreto: Velho Mestre Cannoli</div>
+  <div class="icons">
+   <img src="../../assets/icons/Rare_Seed.png" style="width:144px"><span class="arrow">→</span>
+   <img src="../../assets/icons/Sweet_Gem_Berry.png" style="width:144px"><span class="arrow">→</span>
+   <img src="../../assets/icons/Stardrop.png" style="width:192px">
+  </div>
+  <div class="step">Plante uma <b>Semente Rara</b> (do Carrinho de Viagem) e entregue a <b>Cereja de Joia Doce</b> pra estátua.</div>
+  <div class="result">Ela abre a boca e te dá uma <b>Fruta-estrela</b>, que aumenta sua energia máxima. Só uma vez!</div>
+  <div class="src">fonte: wiki oficial · Velho Mestre Cannoli</div>
+ </div>
+ <div class="bridge">comenta SEGREDO pra ter parte 2</div>
+</section>
+
+<!-- 5 SEGREDO 2 -->
+<section class="slide" id="s5"><div class="stars"></div><div class="hills"></div><div class="hills2"></div>
+ <div class="card">
+  <span class="badge">SEGREDO Nº 2</span>
+  <div class="name">O barco da sereia</div>
+  <div class="where">Mercado Noturno · 15 a 17 de inverno</div>
+  <div class="icons"><img src="../../assets/icons/Pearl.png" style="width:144px"></div>
+  <div class="step">Entre no <b>Barco Sereia</b> e assista o show. Depois toque as conchas nesta ordem (contando da esquerda):</div>
+  <div class="shells"><span>1</span><span>5</span><span>4</span><span>2</span><span>3</span></div>
+  <div class="result">Você ganha uma <b>Pérola</b>. Vale uma por save.</div>
+  <div class="src">fonte: wiki oficial · Mercado Noturno</div>
+ </div>
+ <div class="bridge">e o nº 1… é o mais bizarro do jogo</div>
+</section>
+
+<!-- 6 SEGREDO 1 -->
+<section class="slide" id="s6"><div class="stars"></div><div class="hills"></div><div class="hills2"></div>
+ <div class="card">
+  <span class="badge">SEGREDO Nº 1</span>
+  <div class="name">O porão do Lewis</div>
+  <div class="where">Mansão do Prefeito, no quarto dele</div>
+  <div class="icons">
+   <img src="../../assets/icons/Lewis.png" style="width:192px">
+   <img src="../../assets/icons/Staircase.png" style="width:144px">
+   <img src="../../assets/icons/Springobjects789.png" style="width:144px">
+  </div>
+  <div class="step">Coloque uma <b>Escadaria</b> no chão do quarto do Lewis. Ela leva a um <b>porão secreto com um labirinto</b>.</div>
+  <div class="result">No fim estão os <b>Calções Roxos da Sorte</b>. Pegou? Eles ganham vida, te perseguem e <b>não morrem</b>.</div>
+  <div class="src">fonte: wiki oficial · Segredos</div>
+ </div>
+ <div class="bridge">qual desses você já sabia?</div>
+</section>
+
+<!-- 7 FINAL -->
+<section class="slide" id="s7"><div class="stars"></div><div class="hills"></div><div class="hills2"></div>
+ <div class="card" style="text-align:center">
+  <span class="badge">E AGORA?</span>
+  <div class="big" style="margin-top:46px">Qual desses 5<br>você já sabia?</div>
+  <div class="icons" style="gap:30px">
+   <img src="../../assets/icons/Junimo_Plush.png" style="width:192px">
+   <img src="../../assets/icons/Stardrop.png" style="width:144px">
+   <img src="../../assets/icons/Pearl.png" style="width:144px">
+   <img src="../../assets/icons/Springobjects789.png" style="width:144px">
+  </div>
+  <div class="cta">Comenta<b>SEGREDO</b>e me segue pra ver a parte 2</div>
+  <div class="step" style="margin-top:34px;text-align:center">Manda pro amigo que joga Stardew e <b>nunca achou o porão do Lewis</b></div>
+ </div>
+ <div class="bridge">salva pra testar no seu save</div>
+</section>
+
+<script>
+// estrelas determinísticas (mesma posição sempre)
+let seed=7;const r=()=>(seed=(seed*9301+49297)%233280)/233280;
+document.querySelectorAll('.stars').forEach(s=>{for(let i=0;i<46;i++){const e=document.createElement('i');
+ if(r()<.25)e.className='b';e.style.left=Math.floor(r()*135)*8+'px';e.style.top=Math.floor(r()*200)*8+'px';s.appendChild(e)}});
+</script>
+</body></html>
