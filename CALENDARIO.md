@@ -6,6 +6,6 @@ Nunca 2 posts da mesma categoria seguidos.
 | Data | Horário | Post | Status |
 |------|---------|------|--------|
 | sáb 07/11 | 17:00 | 001 · 5 segredos escondidos | aprovado |
-| sáb 07/11 | 20:30 | 003 · Barril ou Jarra? | aguardando aprovação |
-| dom 08/11 | 09:00 | 002 · 6 presentes que todo morador ama | aguardando aprovação |
+| sáb 07/11 | 20:30 | 002 · 6 presentes que todo morador ama | aguardando aprovação |
+| dom 08/11 | 09:00 | 003 · Barril ou Jarra? | aguardando aprovação |
 | dom 08/11 | 13:00 | 004 · 5 peixes lendários | aguardando aprovação |
