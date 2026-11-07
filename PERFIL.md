@@ -20,7 +20,7 @@
 - Imagens: **ícones originais do jogo, tirados da wiki** ("tá perfeito"). Visual tem que ser **muito fiel ao jogo**, com identidade própria nos detalhes.
 - Cenas e capas no estilo das geradas por IA: **o Claude monta e manda pronto**.
 - Formato: **carrossel de fotos no TikTok** (sem gravação de tela por enquanto).
-- Ritmo: **3 a 4 posts por dia**.
+- Ritmo: **3 a 4 posts por dia**. Achou 2 por dia "pouco". Plano: 3 no 1º dia (sáb), 4 por dia a partir de domingo; reavaliar com números depois de 7 a 14 dias.
 - **Repetir dica pode** (públicos diferentes). Muda o gancho e o visual; o conteúdo pode voltar. A regra dos 14 dias fica só para o gancho/capa.
 - Foco forte em **segredos e coisas escondidas** do jogo.
 - **Personagem próprio / bonequinho: não por enquanto** (07/11). Foco em dicas, coisas escondidas e **Recados Secretos** — "tem muita coisa pra explorar antes".
@@ -30,6 +30,7 @@
 ## Gosto: aprovado / negado (com o porquê)
 | Data | Ideia/roteiro | Decisão | Categoria | Porquê |
 |------|---------------|---------|-----------|--------|
+| 07/11 | 002, 003, 004 | ✅ aprovados ("tá muito bom", "gostei bastante") | guias / dinheiro | **O título da capa tem que ser gancho, como "Você tá usando o barril errado?"**. Pede melhoria constante |
 | 07/11 | 001 · 5 segredos escondidos | ✅ aprovado | segredos / contagem | "tá bem bonito". Pediu revisão de erros de escrita e coisa fora do quadro |
 
 ## Temas usados (não repetir por 14 dias)
