@@ -2,254 +2,303 @@
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Nunito:wght@600;800;900&display=swap">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 <style>
-/* Layout: uma coluna de "quadros de madeira" como os menus do jogo; abas no topo; ficha do post abre em tela cheia. */
+/* Layout: celular primeiro. Abas fixas no topo em 1 linha; cada post abre numa página própria (#post-x), fotos em #fotos-x. Visual dos menus de madeira do jogo. */
 :root{
-  --bg:#efe2c4; --paper:#fbefd2; --paper2:#f6e2b4; --wood:#6b3613; --wood2:#a35a1f; --ink:#3b1d07; --muted:#85603c;
-  --gold:#f2c230; --ok:#2f7d32; --okbg:#d9eccb; --warn:#a76a00; --warnbg:#fbe6b0; --bad:#b3261e; --badbg:#f6d3cc; --info:#2c5d8f; --infobg:#d5e4f2;
-  --line:rgba(107,54,19,.22); --shadow:rgba(59,29,7,.25);
-  --pix:"Jersey 10","Nunito",system-ui,sans-serif; --body:"Nunito",system-ui,sans-serif;
+  --bg:#efe2c4; --paper:#fbefd2; --paper2:#f6e2b4; --wood:#6b3613; --wood2:#a35a1f; --ink:#3b1d07; --muted:#7d5a37;
+  --gold:#f2c230; --ok:#2f7d32; --okbg:#d9eccb; --warn:#9a5f00; --warnbg:#fbe6b0; --bad:#b3261e; --badbg:#f6d3cc; --info:#2c5d8f; --infobg:#d5e4f2;
+  --line:rgba(107,54,19,.25); --shadow:rgba(59,29,7,.25); --onwood:#fbefd2;
+  --pix:"Jersey 10","Nunito",system-ui,sans-serif; --body:"Nunito",system-ui,-apple-system,sans-serif;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --bg:#1f1710; --paper:#2d2117; --paper2:#261c13; --wood:#c98a4b; --wood2:#e0a35c; --ink:#f3e3c4; --muted:#bfa27e;
-  --gold:#f2c230; --ok:#8fd18a; --okbg:#203a1f; --warn:#f0c060; --warnbg:#3d2f10; --bad:#ff9b8f; --badbg:#47201b; --info:#9cc5ef; --infobg:#1b2c3e;
-  --line:rgba(224,163,92,.22); --shadow:rgba(0,0,0,.5); color-scheme:dark}}
+  --bg:#1c140e; --paper:#2b2016; --paper2:#241a12; --wood:#d39556; --wood2:#e8ad66; --ink:#f3e3c4; --muted:#c2a581;
+  --gold:#f2c230; --ok:#8fd18a; --okbg:#1f3a1e; --warn:#f0c060; --warnbg:#3d2f10; --bad:#ff9b8f; --badbg:#47201b; --info:#9cc5ef; --infobg:#1b2c3e;
+  --line:rgba(232,173,102,.25); --shadow:rgba(0,0,0,.5); --onwood:#1c140e; color-scheme:dark}}
 :root[data-theme="dark"]{
-  --bg:#1f1710; --paper:#2d2117; --paper2:#261c13; --wood:#c98a4b; --wood2:#e0a35c; --ink:#f3e3c4; --muted:#bfa27e;
-  --gold:#f2c230; --ok:#8fd18a; --okbg:#203a1f; --warn:#f0c060; --warnbg:#3d2f10; --bad:#ff9b8f; --badbg:#47201b; --info:#9cc5ef; --infobg:#1b2c3e;
-  --line:rgba(224,163,92,.22); --shadow:rgba(0,0,0,.5); color-scheme:dark}
-body{background:var(--bg);color:var(--ink);font-family:var(--body);font-weight:600;font-size:15px;line-height:1.45}
-.wrap{max-width:860px;margin:0 auto;padding-block:16px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
-h1,h2,h3{font-family:var(--pix);font-weight:400;letter-spacing:.02em;margin:0;text-wrap:balance}
-h1{font-size:44px;line-height:1;color:var(--wood)}
-h2{font-size:30px;color:var(--wood)}
-h3{font-size:26px;line-height:1.05}
-header.top{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:14px}
-.sub{color:var(--muted);font-size:14px}
-nav.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 18px}
-nav.tabs a{font-family:var(--pix);font-size:24px;text-decoration:none;color:var(--ink);padding:4px 14px 6px;background:var(--paper);border:3px solid var(--wood);box-shadow:3px 3px 0 var(--shadow)}
-nav.tabs a[aria-current="page"]{background:var(--wood);color:var(--paper)}
-nav.tabs .n{font-family:var(--body);font-weight:900;font-size:13px;margin-left:6px;background:var(--gold);color:#3b1d07;padding:1px 7px;vertical-align:3px}
-.frame{background:linear-gradient(var(--paper),var(--paper2));border:4px solid var(--wood);box-shadow:0 0 0 3px var(--wood2) inset,4px 5px 0 var(--shadow);padding:16px}
-.stack{display:grid;gap:14px}
-.note{padding:12px 14px;border:3px dashed var(--line);color:var(--muted)}
-/* cartão de post */
-.post{display:grid;grid-template-columns:96px 1fr;gap:14px;align-items:start}
-.post img.thumb{width:96px;aspect-ratio:9/16;object-fit:cover;border:3px solid var(--wood);background:var(--paper2);image-rendering:auto;cursor:pointer}
-.post .meta{min-width:0;display:grid;gap:6px}
+  --bg:#1c140e; --paper:#2b2016; --paper2:#241a12; --wood:#d39556; --wood2:#e8ad66; --ink:#f3e3c4; --muted:#c2a581;
+  --gold:#f2c230; --ok:#8fd18a; --okbg:#1f3a1e; --warn:#f0c060; --warnbg:#3d2f10; --bad:#ff9b8f; --badbg:#47201b; --info:#9cc5ef; --infobg:#1b2c3e;
+  --line:rgba(232,173,102,.25); --shadow:rgba(0,0,0,.5); --onwood:#1c140e; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-weight:600;font-size:16px;line-height:1.45;-webkit-text-size-adjust:100%}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.wrap{max-width:720px;margin:0 auto;padding-block:0 56px;padding-left:max(14px,env(safe-area-inset-left,0px));padding-right:max(14px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--pix);font-weight:400;letter-spacing:.02em;margin:0;text-wrap:balance;line-height:1.02}
+h2{font-size:30px;color:var(--wood)} h3{font-size:26px}
+p{margin:0}
+/* topo fixo */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:10px 10px;display:grid;gap:8px}
+.brand{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.brand h1{font-size:30px;color:var(--wood)}
+.brand small{font-size:13px;color:var(--muted);white-space:nowrap}
+nav.tabs{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+nav.tabs a{font-family:var(--pix);font-size:22px;text-align:center;text-decoration:none;color:var(--ink);padding:3px 2px 5px;background:var(--paper);border:3px solid var(--wood);position:relative}
+nav.tabs a[aria-current="page"]{background:var(--wood);color:var(--onwood)}
+nav.tabs .n{position:absolute;top:-9px;right:-6px;font-family:var(--body);font-weight:900;font-size:12px;background:var(--gold);color:#3b1d07;min-width:20px;padding:1px 5px;border:2px solid #3b1d07}
+.view{display:grid;gap:14px;padding-top:6px}
+.frame{background:linear-gradient(var(--paper),var(--paper2));border:4px solid var(--wood);box-shadow:4px 5px 0 var(--shadow);padding:16px;display:grid;gap:12px;min-width:0}
+.hl{border-color:var(--gold);box-shadow:0 0 0 3px var(--wood),4px 5px 0 var(--shadow)}
+.muted{color:var(--muted);font-size:14px}
+.lbl{font-size:12px;font-weight:900;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
 .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
-.pill{font-size:12px;font-weight:900;letter-spacing:.04em;text-transform:uppercase;padding:2px 8px;border:2px solid currentColor}
+.pill{font-size:12px;font-weight:900;letter-spacing:.05em;text-transform:uppercase;padding:2px 8px;border:2px solid currentColor;white-space:nowrap}
 .s-aguardando{color:var(--warn);background:var(--warnbg)} .s-aprovado{color:var(--ok);background:var(--okbg)}
 .s-negado{color:var(--bad);background:var(--badbg)} .s-publicado{color:var(--info);background:var(--infobg)}
+.s-atrasado{color:var(--bad);background:var(--badbg)}
 .tag{font-size:12px;color:var(--muted);border:2px solid var(--line);padding:1px 7px}
-.when{font-family:var(--pix);font-size:22px;color:var(--wood2);font-variant-numeric:tabular-nums}
-button{font:inherit;font-weight:900;cursor:pointer;border:3px solid var(--wood);background:var(--paper);color:var(--ink);padding:8px 14px;box-shadow:3px 3px 0 var(--shadow)}
-button:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--shadow)}
-button:focus-visible,a:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
-button.ok{background:var(--ok);border-color:var(--ok);color:#fff} button.bad{background:var(--paper);color:var(--bad);border-color:var(--bad)}
-button.ghost{box-shadow:none;border-width:2px;padding:5px 10px;font-size:13px}
-button[disabled]{opacity:.5;cursor:default}
-/* semana */
-.week{display:grid;gap:12px}
-.day h3{font-size:24px;margin-bottom:6px}
-.slot{display:grid;grid-template-columns:62px 1fr;gap:10px;align-items:center;padding:8px 0;border-top:2px dashed var(--line)}
-.slot:first-of-type{border-top:0}
+.when{font-family:var(--pix);font-size:26px;color:var(--wood2);font-variant-numeric:tabular-nums}
+/* botões */
+button,.btn{font:inherit;font-weight:900;font-size:16px;cursor:pointer;border:3px solid var(--wood);background:var(--paper);color:var(--ink);padding:11px 14px;box-shadow:3px 3px 0 var(--shadow);text-align:center;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:48px;-webkit-tap-highlight-color:transparent}
+button:active,.btn:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--shadow)}
+button:focus-visible,a:focus-visible,textarea:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.primary{background:var(--wood);color:var(--onwood)}
+.ok{background:var(--ok);border-color:var(--ok);color:#fff}
+.bad{color:var(--bad);border-color:var(--bad)}
+.small{min-height:38px;padding:6px 10px;font-size:14px;box-shadow:none;border-width:2px}
+.done{background:var(--okbg);color:var(--ok);border-color:var(--ok)}
+button[disabled]{opacity:.55;cursor:default}
+.wide{width:100%}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+/* passo a passo */
+ol.steps{list-style:none;margin:0;padding:0;display:grid;gap:12px;counter-reset:s}
+ol.steps>li{counter-increment:s;display:grid;grid-template-columns:34px 1fr;gap:10px;align-items:start}
+ol.steps>li::before{content:counter(s);font-family:var(--pix);font-size:24px;line-height:30px;text-align:center;background:var(--wood);color:var(--onwood);height:34px}
+ol.steps>li>div{display:grid;gap:8px;min-width:0}
+.txt{background:var(--paper);border:2px dashed var(--line);padding:10px 12px;white-space:pre-wrap;font-size:14px;overflow-wrap:anywhere;max-height:9.5em;overflow:auto}
+/* miniaturas e fotos */
+.strip{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
+.strip img{width:100%;aspect-ratio:9/16;object-fit:cover;border:2px solid var(--wood);display:block;background:var(--paper2)}
+.card{display:grid;grid-template-columns:84px 1fr;gap:12px;align-items:start}
+.card img{width:84px;aspect-ratio:9/16;object-fit:cover;border:3px solid var(--wood);display:block;background:var(--paper2)}
+.card .meta{min-width:0;display:grid;gap:6px}
+.gal{display:grid;gap:18px}
+.gal figure{margin:0;display:grid;gap:8px}
+.gal img{width:100%;max-width:480px;justify-self:center;aspect-ratio:9/16;border:3px solid var(--wood);display:block;background:var(--paper2);-webkit-touch-callout:default;user-select:auto}
+.gal figcaption{display:flex;justify-content:space-between;align-items:center;max-width:480px;width:100%;justify-self:center}
+.thumbs{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.thumbs img{width:100%;aspect-ratio:9/16;object-fit:cover;border:2px solid var(--wood);display:block}
+/* lista de horários */
+.slot{display:grid;grid-template-columns:58px 1fr;gap:10px;align-items:center;padding:10px 0;border-top:2px dashed var(--line)}
+.slot:first-of-type{border-top:0;padding-top:0}
 .slot .t{font-family:var(--pix);font-size:24px;color:var(--wood2);font-variant-numeric:tabular-nums}
 .slot .vago{color:var(--muted);font-style:italic}
-.slot .p{min-width:0;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
-.slot button.link{border:0;box-shadow:none;background:none;padding:0;text-align:left;font-weight:800;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
-.now{border:3px solid var(--gold);padding:14px;background:var(--paper)}
-.now .when{font-size:30px}
-/* ficha */
-dialog{border:0;padding:0;max-width:min(900px,100vw);width:100%;max-height:100%;background:transparent;color:var(--ink)}
-dialog::backdrop{background:rgba(20,10,0,.6)}
-.sheet{background:var(--bg);border:4px solid var(--wood);margin:max(8px,env(safe-area-inset-top,0px)) 8px;padding:16px;display:grid;gap:14px}
-.sheet header{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
-.slides{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px}
-.slides figure.sl{flex:none;margin:0;width:min(62vw,280px);scroll-snap-align:start;display:grid;gap:6px}
-.slides img{width:100%;aspect-ratio:9/16;border:3px solid var(--wood);background:var(--paper2);-webkit-touch-callout:default}
-.slides figcaption{display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted)}
-.dlbar{display:grid;gap:6px;margin-top:6px}.dlbar>.ok{justify-self:start}
-.copybox{background:var(--paper);border:3px solid var(--line);padding:10px 12px;white-space:pre-wrap;font-size:14px;overflow-wrap:anywhere}
-.lbl{font-size:12px;font-weight:900;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:4px}
+.slot a{color:var(--ink);text-decoration:none;display:grid;gap:4px;min-width:0}
+.slot a b{font-weight:800;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.back{justify-self:start}
 .reasons{display:flex;gap:6px;flex-wrap:wrap}
-.reasons label{font-size:13px;border:2px solid var(--line);padding:4px 8px;cursor:pointer;background:var(--paper)}
-.reasons input{accent-color:var(--bad)}
-textarea{font:inherit;width:100%;min-height:70px;border:3px solid var(--line);background:var(--paper);color:var(--ink);padding:8px;box-sizing:border-box}
-.actions{display:flex;gap:10px;flex-wrap:wrap}
+.reasons label{font-size:14px;border:2px solid var(--line);padding:6px 9px;cursor:pointer;background:var(--paper);display:flex;gap:6px;align-items:center}
+.reasons input{accent-color:var(--bad);width:18px;height:18px}
+textarea{font:inherit;font-size:16px;width:100%;min-height:80px;border:3px solid var(--line);background:var(--paper);color:var(--ink);padding:8px}
 ul.src{margin:0;padding-left:18px;font-size:13px;overflow-wrap:anywhere} ul.src a{color:var(--info)}
-.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(16px + env(safe-area-inset-bottom,0px));background:var(--wood);color:var(--paper);padding:10px 16px;font-weight:900;border:3px solid var(--gold)}
-@media (max-width:460px){h1{font-size:36px}.post{grid-template-columns:76px 1fr}.post img.thumb{width:76px}}
+.empty{text-align:center;padding:26px 16px}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:20;background:var(--wood);color:var(--onwood);padding:10px 16px;font-weight:900;border:3px solid var(--gold);max-width:calc(100% - 32px);text-align:center}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 
 <div class="wrap">
   <header class="top">
-    <div><h1>Painel do Vale</h1><div class="sub">Posts de Stardew pro TikTok · você aprova, o Claude produz</div></div>
-    <div class="sub" id="sync">Conectando…</div>
+    <div class="brand"><h1>Painel do Vale</h1><small id="sync">@segredosdovalley</small></div>
+    <nav class="tabs" aria-label="Seções">
+      <a href="#postar" data-v="postar">Postar</a>
+      <a href="#aprovar" data-v="aprovar">Aprovar<span class="n" id="n-aprovar" hidden></span></a>
+      <a href="#semana" data-v="semana">Semana</a>
+      <a href="#todos" data-v="todos">Todos</a>
+    </nav>
   </header>
-  <nav class="tabs" aria-label="Seções">
-    <a href="#aprovar" data-v="aprovar">Aprovar<span class="n" id="n-aprovar" hidden></span></a>
-    <a href="#hoje" data-v="hoje">Postar hoje</a>
-    <a href="#semana" data-v="semana">Semana</a>
-    <a href="#todos" data-v="todos">Todos</a>
-  </nav>
-  <main id="view"><div class="frame note">Carregando os posts…</div></main>
+  <main class="view" id="view"><div class="frame empty muted">Carregando os posts…</div></main>
 </div>
-
-<dialog id="ficha" aria-label="Ficha do post"><div class="sheet" id="sheet"></div></dialog>
 <div class="toast" id="toast" hidden></div>
 
 <script>
 const $=s=>document.querySelector(s);
-const STATUS={aguardando:"Aguardando você",aprovado:"Aprovado",negado:"Negado",publicado:"Publicado"};
-const MOTIVOS=["nichado demais","bobo","confuso","já existe","nada a ver comigo","erro no texto","visual feio","gancho fraco"];
+const STATUS={aguardando:"Aguardando você",aprovado:"Aprovado",negado:"Negado",publicado:"Postado"};
+const MOTIVOS=["gancho fraco","erro no texto","visual feio","confuso","bobo","nichado demais","já existe","nada a ver comigo"];
 const DIAS=["dom","seg","ter","qua","qui","sex","sáb"];
-let posts=[], db=null, writable=true, loaded=false, dl=null, baixando=false;
-async function baixar(p,i){
-  const r=await fetch(p.slides[i]);if(!r.ok)throw {code:"fetch"};
-  const blob=await r.blob();
-  return dl.save({filename:`segredosdovalley-${p.num}-${String(i+1).padStart(2,"0")}.png`,data:blob});
-}
+let posts=[],db=null,dl=null,writable=true,loaded=false,busy=false,negando=null,voltarLista="postar",voltarFotos="";
 
-const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const pill=s=>`<span class="pill s-${esc(s)}">${esc(STATUS[s]||s)}</span>`;
-const dt=p=>new Date(`${p.data}T${p.hora||"00:00"}:00-03:00`);
-const fmtDia=d=>{const x=new Date(d+"T12:00:00-03:00");return `${DIAS[x.getUTCDay()]} ${d.slice(8,10)}/${d.slice(5,7)}`};
-const hojeBR=()=>new Date(Date.now()-3*3600e3).toISOString().slice(0,10);
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const when=p=>new Date(`${p.data}T${p.hora||"00:00"}:00-03:00`).getTime();
+const dia=d=>{const x=new Date(d+"T12:00:00-03:00");return `${DIAS[x.getUTCDay()]} ${d.slice(8,10)}/${d.slice(5,7)}`};
+const hoje=()=>new Date(Date.now()-3*36e5).toISOString().slice(0,10);
+const quando=p=>p.data?`${dia(p.data)} · ${esc(p.hora||"")}`:"sem horário";
+const atrasado=p=>p.status==="aprovado"&&when(p)<Date.now()-15*6e4;
+const pill=p=>atrasado(p)?`<span class="pill s-atrasado">Atrasado</span>`:`<span class="pill s-${esc(p.status)}">${esc(STATUS[p.status]||p.status)}</span>`;
+const byTime=(a,b)=>when(a)-when(b);
+const get=id=>posts.find(p=>p.id===id);
 function toast(m){const t=$("#toast");t.textContent=m;t.hidden=false;clearTimeout(toast.h);toast.h=setTimeout(()=>t.hidden=true,2600)}
 
-function card(p){
-  const th=p.slides&&p.slides[0]?`<img class="thumb" src="${esc(p.slides[0])}" alt="Capa do post ${esc(p.num)}" data-open="${esc(p.id)}">`:"";
-  return `<article class="frame post">${th}<div class="meta">
-    <div class="row">${pill(p.status)}<span class="tag">#${esc(p.num)}</span><span class="tag">${esc(p.pilar||"")}</span></div>
-    <h3>${esc(p.titulo)}</h3>
-    <div class="row"><span class="when">${p.data?fmtDia(p.data)+" · "+esc(p.hora||""):"sem horário"}</span></div>
-    ${p.status==="negado"&&p.motivo?`<div class="sub">Motivo: ${esc(p.motivo)}</div>`:""}
-    <div class="row"><button data-open="${esc(p.id)}">Abrir ficha</button>
-    ${p.status==="aguardando"?`<button class="ok" data-aprovar="${esc(p.id)}" ${writable?"":"disabled"}>Aprovar</button>`:""}</div>
-  </div></article>`;
+/* ---------- copiar (sempre dentro do toque) ---------- */
+function copiar(texto,btn){
+  const ok=()=>{if(btn){btn.classList.add("done");btn.dataset.orig??=btn.textContent;btn.textContent="Copiado ✓"}toast("Copiado! Agora é só colar no TikTok")};
+  const plano=()=>{const ta=document.createElement("textarea");ta.value=texto;ta.setAttribute("readonly","");ta.style.cssText="position:fixed;top:0;left:0;opacity:0;font-size:16px";document.body.appendChild(ta);ta.select();ta.setSelectionRange(0,texto.length);
+    let r=false;try{r=document.execCommand("copy")}catch{}ta.remove();r?ok():toast("Não deu pra copiar sozinho: segure o dedo no texto e copie")};
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(texto).then(ok,plano)}else plano();
+}
+
+/* ---------- downloads ---------- */
+const nomeFoto=(p,i)=>`segredosdovalley-${p.num}-${String(i+1).padStart(2,"0")}.png`;
+async function blobDe(u){const r=await fetch(u);if(!r.ok)throw{code:"fetch"};return r.blob()}
+async function baixarZip(p,btn){
+  if(busy)return;busy=true;const orig=btn.textContent;
+  try{
+    if(!window.JSZip)throw{code:"nozip"};
+    const z=new JSZip();
+    for(let i=0;i<p.slides.length;i++){btn.textContent=`Preparando ${i+1}/${p.slides.length}…`;z.file(nomeFoto(p,i),await blobDe(p.slides[i]))}
+    btn.textContent="Salvando…";
+    const blob=await z.generateAsync({type:"blob",compression:"STORE"});
+    await dl.save({filename:`segredosdovalley-${p.num}-fotos.zip`,data:blob});
+    btn.textContent="Fotos salvas ✓";btn.classList.add("done");
+    toast("Salvo! No iPhone: Arquivos → toque no .zip → abra a pasta → Selecionar → Compartilhar → Salvar imagens");
+  }catch(e){btn.textContent=orig;toast(e&&e.code==="declined"?"Download cancelado":e&&e.code==="nozip"?"Não carregou o compactador. Use 'Ver fotos pra salvar'.":"Não deu pra baixar. Tente 'Ver fotos pra salvar'.")}
+  busy=false;
+}
+async function baixarUma(p,i,btn){
+  if(busy)return;busy=true;
+  try{await dl.save({filename:nomeFoto(p,i),data:await blobDe(p.slides[i])});btn.textContent="Salva ✓";btn.classList.add("done")}
+  catch(e){toast(e&&e.code==="declined"?"Download cancelado":"Não deu pra baixar essa foto")}
+  busy=false;
+}
+
+/* ---------- gravar decisão ---------- */
+async function salvar(id,patch,msg){
+  if(!db||!writable)return;
+  try{await db.collection("posts").doc(id).update({...patch,decididoEm:new Date().toISOString()});toast(msg)}
+  catch(e){if(e&&e.code==="invalid_argument"){writable=false;render();toast("Você está em modo leitura.")}else toast("Não salvou. Confira a internet e tente de novo.")}
+}
+
+/* ---------- pedaços de tela ---------- */
+const strip=p=>`<a href="#fotos-${esc(p.id)}" class="strip" aria-label="Ver as fotos">${(p.slides||[]).map((u,i)=>`<img src="${esc(u)}" alt="Foto ${i+1}" loading="lazy">`).join("")}</a>`;
+function passos(p){
+  return `<ol class="steps">
+    <li><div><b>Salve as ${p.slides.length} fotos</b>
+      <div class="grid2">${dl?`<button class="primary" data-zip="${esc(p.id)}">Baixar todas</button>`:""}<a class="btn" href="#fotos-${esc(p.id)}">Ver fotos pra salvar</a></div>
+      <p class="muted">${dl?"“Baixar todas” salva um .zip. ":""}No iPhone, o mais rápido é “Ver fotos pra salvar”: segure o dedo em cada foto e toque em <b>Adicionar às Fotos</b>.</p></div></li>
+    <li><div><b>Copie a legenda</b><button class="wide primary" data-copy="legenda" data-id="${esc(p.id)}">Copiar legenda</button><div class="txt">${esc(p.legenda)}</div></div></li>
+    <li><div><b>Poste no TikTok</b><p class="muted">Toque em <b>+</b> → <b>Fotos</b> → escolha as ${p.slides.length} na ordem (01 a ${String(p.slides.length).padStart(2,"0")}) → música em alta → cole a legenda → Publicar.</p></div></li>
+    <li><div><b>Comente e fixe</b><button class="wide primary" data-copy="fixado" data-id="${esc(p.id)}">Copiar comentário</button><div class="txt">${esc(p.fixado)}</div><p class="muted">Cole como comentário no seu post, segure o dedo nele e toque em <b>Fixar</b>.</p></div></li>
+    <li><div><b>Pronto?</b>${p.status==="publicado"?`<span class="pill s-publicado">Postado</span>`:`<button class="wide ok" data-pub="${esc(p.id)}" ${writable?"":"disabled"}>Já postei ✓</button>`}</div></li>
+  </ol>`;
+}
+function slot(p){return `<div class="slot"><span class="t">${esc(p.hora)}</span><a href="#post-${esc(p.id)}"><span class="row">${pill(p)}</span><b>#${esc(p.num)} · ${esc(p.titulo)}</b></a></div>`}
+function cartaoAprovar(p){
+  const neg=negando===p.id;
+  return `<article class="frame"><div class="card"><a href="#post-${esc(p.id)}"><img src="${esc(p.slides[0])}" alt="Capa do post ${esc(p.num)}"></a>
+    <div class="meta"><div class="row">${pill(p)}<span class="tag">#${esc(p.num)}</span></div><h3>${esc(p.titulo)}</h3><span class="when">${quando(p)}</span></div></div>
+    ${strip(p)}
+    ${neg?formNegar(p):`<div class="grid2"><button class="ok" data-aprovar="${esc(p.id)}" ${writable?"":"disabled"}>Aprovar</button><button class="bad" data-negar-abrir="${esc(p.id)}" ${writable?"":"disabled"}>Negar</button></div>
+    <a class="btn small" href="#post-${esc(p.id)}">Ver post completo</a>`}
+  </article>`;
+}
+function formNegar(p){
+  return `<div style="display:grid;gap:8px"><span class="lbl">Por que não? (marque um ou escreva)</span>
+    <div class="reasons">${MOTIVOS.map((m,i)=>`<label><input type="checkbox" id="m-${esc(p.id)}-${i}" value="${esc(m)}">${esc(m)}</label>`).join("")}</div>
+    <textarea id="txt-${esc(p.id)}" placeholder="O que eu mudo? (opcional)"></textarea>
+    <div class="grid2"><button class="bad" data-negar="${esc(p.id)}">Confirmar recusa</button><button data-negar-cancelar="1">Cancelar</button></div></div>`;
+}
+
+/* ---------- telas ---------- */
+function telaPostar(){
+  const fila=posts.filter(p=>p.status==="aprovado").sort(byTime);
+  const prox=fila[0];
+  const h=hoje();
+  const doDia=posts.filter(p=>p.data===h).sort(byTime);
+  const amanha=new Date(new Date(h+"T12:00:00-03:00").getTime()+864e5).toISOString().slice(0,10);
+  const doAmanha=posts.filter(p=>p.data===amanha).sort(byTime);
+  return `${prox?`<section class="frame hl"><div class="row" style="justify-content:space-between"><span class="lbl">Próximo a postar</span>${pill(prox)}</div>
+      <div><span class="when">${quando(prox)}</span><h2 style="margin-top:4px">${esc(prox.titulo)}</h2></div>${strip(prox)}${passos(prox)}</section>`
+    :`<section class="frame empty"><h2>Fila vazia</h2><p class="muted">Nenhum post aprovado esperando. Veja a aba Aprovar.</p></section>`}
+    <section class="frame"><h3>Hoje · ${dia(h)}</h3>${doDia.length?doDia.map(slot).join(""):`<p class="muted">Nada marcado pra hoje.</p>`}</section>
+    ${doAmanha.length?`<section class="frame"><h3>Amanhã · ${dia(amanha)}</h3>${doAmanha.map(slot).join("")}</section>`:""}`;
+}
+function telaAprovar(){
+  const pend=posts.filter(p=>p.status==="aguardando").sort(byTime);
+  const neg=posts.filter(p=>p.status==="negado");
+  return pend.length?pend.map(cartaoAprovar).join("")+(neg.length?`<p class="muted">${neg.length} negado(s) esperando o Claude refazer.</p>`:"")
+    :`<section class="frame empty"><h2>Nada esperando você</h2><p class="muted">Quando o Claude terminar um lote novo, os posts aparecem aqui${neg.length?`. ${neg.length} negado(s) estão sendo refeitos`:""}.</p></section>`;
+}
+function telaSemana(){
+  const h=hoje();let out="";
+  for(let i=0;i<7;i++){
+    const d=new Date(new Date(h+"T12:00:00-03:00").getTime()+i*864e5).toISOString().slice(0,10);
+    const wd=new Date(d+"T12:00:00-03:00").getUTCDay(),fds=wd===0||wd===6;
+    const base=fds?["09:00","13:00","17:00","20:30"]:["06:00","12:00","17:00","19:30"];
+    const doDia=posts.filter(p=>p.data===d);
+    const horas=[...new Set([...base,...doDia.map(p=>p.hora)])].sort();
+    out+=`<section class="frame"><h3>${dia(d)}${i===0?" · hoje":""}</h3>${horas.map(t=>{const ps=doDia.filter(p=>p.hora===t);
+      return ps.length?ps.map(slot).join(""):`<div class="slot"><span class="t">${t}</span><span class="vago">vago</span></div>`}).join("")}</section>`;
+  }
+  return out;
+}
+function telaTodos(){
+  const ord=[...posts].sort(byTime);
+  return ord.length?`<section class="frame">${ord.map(p=>`<div class="slot"><span class="t">${esc(p.num)}</span><a href="#post-${esc(p.id)}"><span class="row">${pill(p)}<span class="muted">${quando(p)}</span></span><b>${esc(p.titulo)}</b></a></div>`).join("")}</section>`
+    :`<section class="frame empty muted">Ainda não há posts.</section>`;
+}
+function telaPost(p){
+  if(!p)return `<section class="frame empty"><h2>Post não encontrado</h2><a class="btn" href="#postar">Voltar</a></section>`;
+  const neg=negando===p.id;
+  return `<a class="btn small back" href="#${esc(voltarLista)}">← Voltar</a>
+  <section class="frame"><div class="row">${pill(p)}<span class="tag">#${esc(p.num)}</span><span class="tag">${esc(p.pilar||"")}</span></div>
+    <h2>${esc(p.titulo)}</h2><span class="when">${quando(p)}</span>
+    ${p.status==="negado"&&p.motivo?`<p class="muted"><b>Motivo da recusa:</b> ${esc(p.motivo)}</p>`:""}
+    <a href="#fotos-${esc(p.id)}" class="thumbs">${p.slides.map((u,i)=>`<img src="${esc(u)}" alt="Foto ${i+1}" loading="lazy">`).join("")}</a>
+    ${p.gancho?`<div><span class="lbl">Gancho da capa</span><p>${esc(p.gancho)}</p></div>`:""}
+  </section>
+  ${p.status==="aguardando"||p.status==="negado"?`<section class="frame"><h3>Sua decisão</h3>${neg?formNegar(p):`<div class="grid2"><button class="ok" data-aprovar="${esc(p.id)}" ${writable?"":"disabled"}>Aprovar</button>${p.status!=="negado"?`<button class="bad" data-negar-abrir="${esc(p.id)}" ${writable?"":"disabled"}>Negar</button>`:""}</div>`}</section>`:""}
+  <section class="frame"><h3>Postar</h3>${passos(p)}</section>
+  ${p.fontes&&p.fontes.length?`<section class="frame"><span class="lbl">Fontes conferidas</span><ul class="src">${p.fontes.map(f=>`<li><a href="${esc(f)}" target="_blank" rel="noopener">${esc(f.replace(/^https?:\/\//,""))}</a></li>`).join("")}</ul></section>`:""}
+  ${p.status!=="aguardando"&&writable?`<button class="small" data-volta="${esc(p.id)}">Voltar pra “aguardando”</button>`:""}`;
+}
+function telaFotos(p){
+  if(!p)return telaPost(p);
+  return `<a class="btn small back" href="#${esc(voltarFotos||voltarLista)}">← Voltar</a>
+  <section class="frame"><h2>Fotos · #${esc(p.num)}</h2>
+    <p><b>iPhone:</b> segure o dedo em cada foto e toque em <b>Adicionar às Fotos</b>. Salve na ordem, da 1 à ${p.slides.length}.</p>
+    ${dl?`<button class="primary wide" data-zip="${esc(p.id)}">Baixar todas de uma vez (.zip)</button>`:""}</section>
+  <div class="gal">${p.slides.map((u,i)=>`<figure><img src="${esc(u)}" alt="Foto ${i+1} de ${p.slides.length}"><figcaption><b>${i+1} de ${p.slides.length}</b>${dl?`<button class="small" data-uma="${esc(p.id)}" data-i="${i}">Baixar esta</button>`:""}</figcaption></figure>`).join("")}</div>`;
 }
 
 function render(){
-  const v=(location.hash||"#aprovar").slice(1);
+  const h=(location.hash||"#postar").slice(1);
+  const [v,...rest]=h.split("-");const id=rest.join("-");
   document.querySelectorAll("nav.tabs a").forEach(a=>{if(a.dataset.v===v)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current")});
-  const pend=posts.filter(p=>p.status==="aguardando");
-  const n=$("#n-aprovar");n.hidden=!pend.length;n.textContent=pend.length;
+  const pend=posts.filter(p=>p.status==="aguardando").length;const n=$("#n-aprovar");n.hidden=!pend;n.textContent=pend;
+  if(!loaded)return;
   const el=$("#view");
-  if(!loaded){return}
-  const ord=[...posts].sort((a,b)=>dt(a)-dt(b));
-  if(v==="aprovar"){
-    el.innerHTML=pend.length?`<div class="stack">${pend.sort((a,b)=>dt(a)-dt(b)).map(card).join("")}</div>`
-      :`<div class="frame"><h2>Nada esperando por você</h2><p class="sub">Quando o Claude terminar um lote novo, os posts aparecem aqui com os botões Aprovar e Negar.</p></div>`;
-  } else if(v==="hoje"){
-    const h=hojeBR(), agora=Date.now();
-    const doDia=ord.filter(p=>p.data===h);
-    const prox=ord.find(p=>p.status==="aprovado"&&dt(p).getTime()>=agora-90*60e3);
-    el.innerHTML=`<div class="stack">
-      ${prox?`<section class="now"><div class="lbl">Próximo a postar</div><div class="when">${fmtDia(prox.data)} · ${esc(prox.hora)}</div><h3>${esc(prox.titulo)}</h3>
-        <div class="row" style="margin-top:8px"><button data-open="${esc(prox.id)}">Ver fotos e legenda</button><button class="ghost" data-pub="${esc(prox.id)}" ${writable?"":"disabled"}>Já postei</button></div></section>`
-        :`<div class="frame note">Nenhum post aprovado na fila. Veja a aba Aprovar.</div>`}
-      <section class="frame"><h2>Hoje · ${fmtDia(h)}</h2>${doDia.length?doDia.map(slotRow).join(""):`<p class="sub">Nenhum post marcado pra hoje.</p>`}</section></div>`;
-  } else if(v==="semana"){
-    const h=hojeBR(), dias=[];
-    for(let i=0;i<7;i++){const d=new Date(new Date(h+"T12:00:00-03:00").getTime()+i*864e5);dias.push(d.toISOString().slice(0,10))}
-    el.innerHTML=`<div class="week">${dias.map(d=>{
-      const wd=new Date(d+"T12:00:00-03:00").getUTCDay(), fds=wd===0||wd===6;
-      const horas=fds?["09:00","13:00","17:00","20:30"]:["06:00","12:00","17:00","19:30"];
-      const doDia=ord.filter(p=>p.data===d);
-      const extras=doDia.filter(p=>!horas.includes(p.hora)).map(p=>p.hora);
-      const todas=[...new Set([...horas,...extras])].sort();
-      return `<section class="frame day"><h3>${fmtDia(d)}${d===h?" · hoje":""}</h3>${todas.map(t=>{
-        const ps=doDia.filter(p=>p.hora===t);
-        return ps.length?ps.map(slotRow).join(""):`<div class="slot"><span class="t">${t}</span><span class="vago">vago</span></div>`}).join("")}</section>`}).join("")}</div>`;
-  } else {
-    el.innerHTML=ord.length?`<div class="stack">${ord.map(card).join("")}</div>`:`<div class="frame note">Ainda não há posts.</div>`;
-  }
-}
-function slotRow(p){return `<div class="slot"><span class="t">${esc(p.hora)}</span><span class="p">${pill(p.status)}<button class="link" data-open="${esc(p.id)}">#${esc(p.num)} · ${esc(p.titulo)}</button></span></div>`}
-
-function openFicha(id){
-  const p=posts.find(x=>x.id===id);if(!p)return;
-  const s=$("#sheet");
-  s.innerHTML=`<header><div><div class="row">${pill(p.status)}<span class="tag">#${esc(p.num)}</span><span class="tag">${esc(p.pilar||"")}</span><span class="tag">${esc(p.categoria||"")}</span></div>
-      <h2 style="margin-top:6px">${esc(p.titulo)}</h2><div class="when">${p.data?fmtDia(p.data)+" · "+esc(p.hora||""):""}</div></div>
-      <button class="ghost" id="fechar" aria-label="Fechar ficha">Fechar</button></header>
-    <div><div class="lbl">Fotos na ordem (arraste pro lado)</div>
-      <div class="slides">${(p.slides||[]).map((u,i)=>`<figure class="sl"><img src="${esc(u)}" alt="Foto ${i+1}" loading="lazy">
-        <figcaption><span>${i+1} de ${p.slides.length}</span>${dl?`<button class="ghost" data-dl="${esc(p.id)}" data-i="${i}">Baixar</button>`:""}</figcaption></figure>`).join("")}</div>
-      <div class="dlbar">${dl?`<button class="ok" data-dlall="${esc(p.id)}">Baixar as ${(p.slides||[]).length} fotos</button><span class="sub" id="dlstatus"></span>`:""}
-        <p class="sub" style="margin:6px 0 0">No iPhone pelo Safari: segure o dedo em cada foto e toque em <b>Adicionar às Fotos</b>. Elas vão direto pro rolo da câmera.</p></div></div>
-    ${p.gancho?`<div><div class="lbl">Gancho da capa</div><div class="copybox">${esc(p.gancho)}</div></div>`:""}
-    <div><div class="lbl">Legenda <button class="ghost" data-copy="legenda">Copiar</button></div><div class="copybox" id="c-legenda">${esc(p.legenda)}</div></div>
-    <div><div class="lbl">Comentário pra fixar <button class="ghost" data-copy="fixado">Copiar</button></div><div class="copybox" id="c-fixado">${esc(p.fixado)}</div></div>
-    ${p.fontes&&p.fontes.length?`<div><div class="lbl">Fontes conferidas</div><ul class="src">${p.fontes.map(f=>`<li><a href="${esc(f)}" target="_blank" rel="noopener">${esc(f.replace(/^https?:\/\//,""))}</a></li>`).join("")}</ul></div>`:""}
-    ${p.status==="negado"&&p.motivo?`<div class="copybox">Motivo da recusa: ${esc(p.motivo)}</div>`:""}
-    <div class="frame" style="display:grid;gap:10px">
-      ${writable?`<div class="actions">
-        ${p.status!=="aprovado"&&p.status!=="publicado"?`<button class="ok" data-aprovar="${esc(p.id)}">Aprovar</button>`:""}
-        ${p.status!=="publicado"?`<button class="bad" id="abrirNegar">Negar com motivo</button>`:""}
-        ${p.status==="aprovado"?`<button data-pub="${esc(p.id)}">Já postei</button>`:""}
-        ${p.status!=="aguardando"?`<button class="ghost" data-volta="${esc(p.id)}">Voltar pra aguardando</button>`:""}</div>
-      <div id="negarBox" hidden style="display:grid;gap:8px">
-        <div class="lbl">Por que não?</div>
-        <div class="reasons">${MOTIVOS.map((m,i)=>`<label><input type="checkbox" id="m${i}" value="${esc(m)}"> ${esc(m)}</label>`).join("")}</div>
-        <textarea id="motivoTxt" placeholder="Conta com suas palavras o que mudar (opcional)"></textarea>
-        <div class="actions"><button class="bad" data-negar="${esc(p.id)}">Confirmar recusa</button></div></div>`
-      :`<div class="sub">Você está vendo em modo leitura.</div>`}
-    </div>`;
-  const d=$("#ficha"); if(!d.open)d.showModal();
+  el.innerHTML=v==="aprovar"?telaAprovar():v==="semana"?telaSemana():v==="todos"?telaTodos():v==="post"?telaPost(get(id)):v==="fotos"?telaFotos(get(id)):telaPostar();
 }
 
-async function salvar(id,patch,msg){
-  if(!db)return;
-  try{await db.collection("posts").doc(id).update({...patch,decididoEm:new Date().toISOString()});toast(msg)}
-  catch(e){if(e&&e.code==="invalid_argument"){writable=false;render();toast("Você não tem permissão pra mudar os posts.")}else toast("Não salvou. Tente de novo em instantes.")}
-}
-
-document.addEventListener("click",async e=>{
-  const t=e.target.closest("button,img");if(!t)return;
-  if(t.dataset.open){openFicha(t.dataset.open)}
-  else if(t.id==="fechar"){$("#ficha").close()}
-  else if(t.dataset.aprovar){await salvar(t.dataset.aprovar,{status:"aprovado",motivo:""},"Aprovado ✓");$("#ficha").open&&openFicha(t.dataset.aprovar)}
-  else if(t.dataset.pub){await salvar(t.dataset.pub,{status:"publicado"},"Marcado como postado");$("#ficha").open&&openFicha(t.dataset.pub)}
-  else if(t.dataset.volta){await salvar(t.dataset.volta,{status:"aguardando"},"Voltou pra aguardando");$("#ficha").open&&openFicha(t.dataset.volta)}
-  else if(t.id==="abrirNegar"){const b=$("#negarBox");b.hidden=!b.hidden}
-  else if(t.dataset.negar){
-    const ms=[...document.querySelectorAll(".reasons input:checked")].map(i=>i.value);const tx=$("#motivoTxt").value.trim();
-    if(!ms.length&&!tx){toast("Marque um motivo ou escreva o que mudar.");return}
-    await salvar(t.dataset.negar,{status:"negado",motivo:[...ms,tx].filter(Boolean).join(" · ")},"Recusado. O Claude vai refazer.");$("#ficha").close()}
-  else if(t.dataset.dl&&!baixando){
-    const p=posts.find(x=>x.id===t.dataset.dl);baixando=true;
-    try{await baixar(p,+t.dataset.i);toast("Foto "+(+t.dataset.i+1)+" salva")}catch(e){toast(e&&e.code==="declined"?"Download cancelado":"Não deu pra baixar essa foto")}
-    baixando=false}
-  else if(t.dataset.dlall&&!baixando){
-    const p=posts.find(x=>x.id===t.dataset.dlall);baixando=true;const st=$("#dlstatus");let ok=0,espera=0;
-    for(let i=0;i<p.slides.length;i++){
-      st.textContent=`Foto ${i+1} de ${p.slides.length}…`;
-      try{await baixar(p,i);ok++}
-      catch(e){if(e&&e.code==="rate_limited"&&espera++<5){await new Promise(r=>setTimeout(r,1500));i--;continue}
-        if(e&&e.code==="declined"){st.textContent=`Parou na foto ${i+1}. ${ok} salvas.`;break}
-        st.textContent=`Não deu pra baixar a foto ${i+1}.`;break}}
-    if(ok===p.slides.length)st.textContent=`Pronto: as ${ok} fotos foram salvas.`;
-    baixando=false}
-  else if(t.dataset.copy){
-    const txt=$("#c-"+t.dataset.copy).textContent;
-    try{await navigator.clipboard.writeText(txt);toast("Copiado")}
-    catch{const r=document.createRange();r.selectNodeContents($("#c-"+t.dataset.copy));const s=getSelection();s.removeAllRanges();s.addRange(r);toast("Texto selecionado: copie pelo menu")}}
+document.addEventListener("click",e=>{
+  const t=e.target.closest("button");if(!t)return;
+  const d=t.dataset;
+  if(d.copy){const p=get(d.id);copiar(d.copy==="legenda"?p.legenda:p.fixado,t)}
+  else if(d.zip){baixarZip(get(d.zip),t)}
+  else if(d.uma){baixarUma(get(d.uma),+d.i,t)}
+  else if(d.aprovar){negando=null;salvar(d.aprovar,{status:"aprovado",motivo:""},"Aprovado ✓")}
+  else if(d.negarAbrir){negando=d.negarAbrir;render()}
+  else if(d.negarCancelar){negando=null;render()}
+  else if(d.negar){
+    const id=d.negar;const ms=[...document.querySelectorAll(`input[id^="m-${CSS.escape(id)}-"]:checked`)].map(i=>i.value);const tx=($("#txt-"+CSS.escape(id))||{}).value?.trim()||"";
+    if(!ms.length&&!tx){toast("Marque um motivo ou escreva o que mudar");return}
+    negando=null;salvar(id,{status:"negado",motivo:[...ms,tx].filter(Boolean).join(" · ")},"Recusado. O Claude vai refazer.")}
+  else if(d.pub){salvar(d.pub,{status:"publicado"},"Marcado como postado 🎉")}
+  else if(d.volta){salvar(d.volta,{status:"aguardando"},"Voltou pra aguardando")}
 });
-$("#ficha").addEventListener("click",e=>{if(e.target.id==="ficha")e.target.close()});
-addEventListener("hashchange",render);
+addEventListener("hashchange",e=>{negando=null;
+  const antes=(new URL(e.oldURL).hash||"#postar").slice(1);const agora=location.hash.slice(1);
+  if(!/^(post|fotos)-/.test(antes))voltarLista=antes;
+  if(/^fotos-/.test(agora))voltarFotos=antes;
+  render();scrollTo(0,0)});
 
 (async()=>{
   render();
-  claude.use("downloads").then(x=>{dl=x}).catch(()=>{});
+  claude.use("downloads").then(x=>{dl=x;if(loaded)render()}).catch(()=>{});
   db=await claude.use("db").catch(()=>null);
-  if(!db){$("#view").innerHTML=`<div class="frame note">Entre na sua conta do claude.ai pra ver e aprovar os posts.</div>`;$("#sync").textContent="";return}
-  const timer=setTimeout(()=>{$("#sync").textContent="Sem conexão com os dados ainda…"},10000);
+  if(!db){$("#view").innerHTML=`<section class="frame empty"><h2>Entre na sua conta</h2><p class="muted">Abra este painel logada no claude.ai pra ver e aprovar os posts.</p></section>`;return}
+  const timer=setTimeout(()=>{if(!loaded)$("#view").innerHTML=`<section class="frame empty muted">Ainda conectando… confira a internet.</section>`},10000);
   db.collection("posts").onSnapshot(snap=>{
-    if(!snap.metadata.fromCache){clearTimeout(timer);$("#sync").textContent="Atualizado agora"}
-    posts=snap.docs.map(d=>({id:d.id,...d.data()}));loaded=true;render();
-  },err=>{clearTimeout(timer);loaded=true;$("#sync").textContent="";$("#view").innerHTML=`<div class="frame note">Não deu pra carregar os posts agora. Abra o painel de novo daqui a pouco.</div>`});
+    if(!snap.metadata.fromCache)clearTimeout(timer);
+    posts=snap.docs.map(d=>({id:d.id,slides:[],...d.data()}));loaded=true;render();
+  },()=>{clearTimeout(timer);loaded=true;$("#view").innerHTML=`<section class="frame empty muted">Não deu pra carregar os posts. Abra o painel de novo daqui a pouco.</section>`});
 })();
 </script>
