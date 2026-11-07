@@ -1,0 +1,21 @@
+/* Base dos vídeos (usa base.css). Palco 1080x1920. */
+body{background:#000;margin:0}
+.stage{width:1080px;height:1920px;position:relative;overflow:hidden}
+.stage>.slide{position:absolute;inset:0}
+[data-fx]{will-change:transform,opacity}
+.lit{background:var(--gold)!important;transform:translateY(6px)}
+.sub2{font-size:46px;line-height:1.2;text-align:center}
+.sub2 b{color:var(--red);font-weight:900}
+.pix{image-rendering:pixelated;display:block}
+.mid-cta{margin-top:22px;white-space:nowrap;text-align:center;background:var(--red);color:#fff;font-family:Nun;font-weight:900;font-size:40px;padding:12px;box-shadow:0 0 0 6px var(--wood)}
+.mid-cta b{color:var(--gold)}
+.final-cta{text-align:center;background:var(--red);color:#fff;font-size:50px;line-height:1.2;padding:26px;box-shadow:0 0 0 7px var(--wood)}
+.final-cta b{font-family:Pix;font-size:110px;color:var(--gold);display:block;text-shadow:5px 5px 0 #000}
+.bigtxt{font-family:Pix;font-size:130px;line-height:.9;color:var(--red);text-align:center;text-shadow:6px 6px 0 rgba(201,106,27,.45)}
+.screen{position:relative;height:300px;margin:10px 0;background:linear-gradient(#1b1650,#5a3a8c 70%,#8a5ab0);border:6px solid var(--wood);overflow:hidden}
+.screen .fly{position:absolute}
+.chip{display:inline-block;background:var(--wood);color:#fff3cf;font-size:34px;padding:6px 16px;box-shadow:0 0 0 4px var(--orange);margin:4px}
+.chip b{color:var(--gold)}
+.vs{display:flex;gap:26px;margin:16px 0}.vs>div{flex:1;background:rgba(255,255,255,.45);box-shadow:0 0 0 5px var(--wood);padding:18px;text-align:center;font-size:36px;line-height:1.2}
+.vs img{image-rendering:pixelated;width:120px;display:block;margin:0 auto 6px}.vs .v{font-family:Nun;font-weight:900;font-size:60px;color:var(--red);display:block}
+.vs .win{background:rgba(255,216,74,.75)}

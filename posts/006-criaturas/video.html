@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="../../assets/base.css"><link rel="stylesheet" href="../../assets/video.css">
+<style>
+.tema-sombra{--sky:linear-gradient(#05060f 0%,#141a3a 55%,#28305e 100%);--h1:#1d3b22;--h2:#2b5530}
+.sea{position:relative;height:330px;margin:10px 0;background:linear-gradient(#1d5f9e,#123c6b);border:6px solid var(--wood);overflow:hidden}
+.sea i{position:absolute;width:48px;height:8px;background:#bfe6ff;opacity:.6}
+.photo{width:100%;border:6px solid var(--wood);display:block;image-rendering:pixelated}
+.ent{width:300px;display:block;margin:0 auto}
+</style></head><body>
+<div class="stage" id="stage">
+
+<!-- 0–3.2 · capa -->
+<section class="slide tema-sombra cover scene" data-in="0" data-out="3.2"><div class="card center">
+  <span class="badge" data-in="0" data-fx="pop">Stardew Valley</span>
+  <h1 style="font-size:136px"><span data-in="0.15" data-fx="type">3 criaturas</span><br><em data-in="0.65" data-fx="type">misteriosas</em></h1>
+  <div class="sub" data-in="1.1" data-fx="up">que talvez você nunca viu</div>
+  <img class="pix" src="../../assets/anim/Asldkfjsquaskutanfsldk.png" style="width:210px;margin:30px auto 0;filter:brightness(.6)" data-in="1.3" data-fx="wobble">
+  <span class="tag" data-in="1.9" data-fx="stamp" data-rot="-3">uma deixa pegada</span>
+ </div></section>
+
+<!-- 3.2–8 · nº 3 criatura da praia -->
+<section class="slide tema-sombra scene" data-in="3.2" data-out="8"><div class="card center">
+  <span class="badge" data-in="3.2" data-fx="pop">Criatura nº 3</span>
+  <div class="name" data-in="3.35" data-fx="left">O bicho da praia</div>
+  <div class="sea" data-in="3.5" data-fx="fade">
+    <i style="left:60px;top:60px"></i><i style="left:400px;top:120px"></i><i style="left:680px;top:40px"></i><i style="left:220px;top:240px"></i><i style="left:600px;top:260px"></i>
+    <img class="pix" data-anim="../../assets/anim/Sea_Monster_Anim" data-n="4" data-ms="400" data-in="3.6" data-fx="move" data-from="300,20" data-to="330,200" data-d="3.6" style="position:absolute;width:192px">
+  </div>
+  <div class="step center" data-in="4.2" data-fx="up">Raríssimo: aparece <b>ao sul do píer</b> da praia</div>
+  <div class="result center" data-in="5.2" data-fx="up">Nada pro sul e some. <b>Não dá pra falar com ele.</b></div>
+ </div></section>
+
+<!-- 8–13.4 · nº 2 a criatura da cápsula (+ CTA do meio) -->
+<section class="slide tema-sombra scene" data-in="8" data-out="13.4"><div class="card center">
+  <span class="badge" data-in="8" data-fx="pop">Criatura nº 2</span>
+  <div class="name" data-in="8.15" data-fx="left">A que saiu da cápsula</div>
+  <img class="ent pix" data-anim="../../assets/anim/Strange_entity_Trim" data-n="30" data-ms="40" data-in="8.3" data-fx="fade">
+  <div class="step center" data-in="8.8" data-fx="up">Do <b>ano 2</b> em diante, pode cair uma <b>Cápsula Estranha</b> na fazenda</div>
+  <div class="result center" data-in="10.0" data-fx="up">Quando ela quebra, à noite, uma <b>criatura corre</b> entre as árvores da vila</div>
+  <div class="mid-cta" data-in="11.4" data-fx="up">comenta <b>CRIATURA</b> pra parte 2</div>
+ </div></section>
+
+<!-- 13.4–19 · nº 1 a criatura grande -->
+<section class="slide tema-sombra scene" data-in="13.4" data-out="19"><div class="card center">
+  <span class="badge" data-in="13.4" data-fx="stamp">Criatura nº 1</span>
+  <div class="name" data-in="13.6" data-fx="left">A sombra gigante</div>
+  <img class="photo" src="../../assets/anim/Secretwoodsbigfoot.jpg" style="width:400px;margin:0 auto" data-in="13.8" data-fx="fade">
+  <div class="step center" data-in="14.4" data-fx="up">À noite, na vila, na floresta ou no <b>Bosque Secreto</b>, ela pode passar por você</div>
+  <div class="result center" data-in="15.8" data-fx="up">E às vezes <b>deixa uma pegada</b> pra trás…</div>
+ </div></section>
+
+<!-- 19–22.5 · final -->
+<section class="slide tema-sombra scene" data-in="19" data-out="99"><div class="card center">
+  <span class="badge" data-in="19" data-fx="pop">E agora?</span>
+  <div class="big" data-in="19.1" data-fx="up">Você já viu<br>alguma delas?</div>
+  <div class="final-cta" data-in="19.6" data-fx="stamp" style="margin-top:30px">Comenta<b>CRIATURA</b>e me segue pra parte 2</div>
+  <div class="step center" data-in="20.2" data-fx="up" style="margin-top:26px">Manda pro amigo que <b>joga de madrugada</b></div>
+ </div></section>
+
+</div>
+<script src="../../assets/base.js"></script>
+<script src="../../assets/video.js"></script>
+<script>window.DUR=22.5</script>
+</body></html>

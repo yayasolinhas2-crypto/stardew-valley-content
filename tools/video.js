@@ -6,10 +6,10 @@ const {chromium}=require('playwright');const path=require('path');const fs=requi
  const b=await chromium.launch();const p=await b.newPage({viewport:{width:1080,height:1920}});
  await p.goto('file://'+dir+'/video.html');await p.evaluate(()=>document.fonts.ready);
  const stage=await p.$('#stage');
- if(so){for(const t of so){await p.evaluate(t=>seek(t),t);await stage.screenshot({path:`${dir}/quadro-${t}.png`})}await b.close();return}
+ if(so){for(const t of so){await p.evaluate(t=>seek(t),t);await p.evaluate(()=>Promise.all([...document.images].map(i=>i.complete?1:new Promise(r=>{i.onload=i.onerror=r}))));await stage.screenshot({path:`${dir}/quadro-${t}.png`})}await b.close();return}
  const tmp=fs.mkdtempSync('/tmp/claude-0/-home-user-stardew-valley-content/390e979c-f63f-5f31-9eff-bd01428cedcb/scratchpad/frames-');
  const dur=await p.evaluate(()=>DUR);const n=Math.ceil(dur*fps);
- for(let f=0;f<n;f++){await p.evaluate(t=>seek(t),f/fps);await stage.screenshot({path:`${tmp}/${String(f).padStart(5,'0')}.jpg`,type:'jpeg',quality:92})}
+ for(let f=0;f<n;f++){await p.evaluate(t=>seek(t),f/fps);await p.evaluate(()=>Promise.all([...document.images].map(i=>i.complete?1:new Promise(r=>{i.onload=i.onerror=r}))));await stage.screenshot({path:`${tmp}/${String(f).padStart(5,'0')}.jpg`,type:'jpeg',quality:92})}
  await b.close();
  execFileSync('ffmpeg',['-y','-loglevel','error','-framerate',String(fps),'-i',`${tmp}/%05d.jpg`,'-c:v','libx264','-pix_fmt','yuv420p','-crf','18','-movflags','+faststart',`${dir}/video.mp4`]);
  fs.rmSync(tmp,{recursive:true});console.log('ok',n,'quadros →',dir+'/video.mp4');
