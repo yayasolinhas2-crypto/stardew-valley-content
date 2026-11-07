@@ -39,6 +39,9 @@
 
 - 07/11 · Vídeos narrados v1: ❌ "sem transição, áudio com chiado, voz sem emoção". Pede mais critério: os próximos já devem sair corrigidos. Oferece ferramentas/recursos se precisar. → criado QUALIDADE.md (checklist obrigatório).
 
+- 07/11 · Vídeos v3 (transição, efeitos, sem chiado, voz Pro com emoção): ok, mas "tá muito devagar" → **ritmo 1,5x** (ela decidiu, mesmo acima da regra de 3,0 palavras/s). "Não quero nada esquisito. Você sempre tem que melhorar."
+- Cota do Gemini: "sem problemas".
+
 ## Gosto: aprovado / negado (com o porquê)
 | Data | Ideia/roteiro | Decisão | Categoria | Porquê |
 |------|---------------|---------|-----------|--------|

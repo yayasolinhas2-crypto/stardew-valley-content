@@ -122,6 +122,13 @@ def main(post):
                     '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', '-ar', '48000', '-ac', '2', '-shortest', '-movflags', '+faststart',
                     f'{post}/video-narrado.mp4'], check=True)
     os.remove(f'{post}/video-mudo-narr.mp4')
+    # ritmo final escolhido pela Yasmin (07/11): 1,5x — acelera vídeo e voz juntos, sem afinar a voz (atempo mantém o tom)
+    vel = float(cfg.get('velocidade', 1.5))
+    if vel != 1.0:
+        subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', f'{post}/video-narrado.mp4', '-filter_complex',
+                        f'[0:v]setpts=PTS/{vel},fps=30[v];[0:a]atempo={vel}[a]', '-map', '[v]', '-map', '[a]', '-c:v', 'libx264', '-crf', '18',
+                        '-pix_fmt', 'yuv420p', '-c:a', 'aac', '-b:a', '192k', '-ar', '48000', '-movflags', '+faststart', f'{post}/video-15x.mp4'], check=True)
+        print(f'OK {post}/video-15x.mp4 · {dur(post + "/video-15x.mp4"):.1f}s (velocidade {vel}x)')
     total = tempos['total']
     print(f'OK {post}/video-narrado.mp4 · {total:.1f}s · {palavras} palavras · média {palavras/total:.2f} palavras/s no vídeo')
 

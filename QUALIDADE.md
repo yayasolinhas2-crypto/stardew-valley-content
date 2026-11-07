@@ -17,7 +17,7 @@ Criado em 07/11/2026 depois do feedback da Yasmin: "sem transição, áudio com 
 - [ ] **Transição visível** em toda troca de cena (chicote, flash, íris, zoom, cortina — muda a cada cena), com a cena anterior por baixo. Nunca corte seco/fundo preto.
 - [ ] **Efeito sonoro** em toda transição (whoosh) e nos destaques (pop, tum, tic, moedas, brilho) — `assets/sfx/`, sintetizados por nós.
 - [ ] Duração **≤ 35 s**. Se passar, corta texto (nunca acelera a voz).
-- [ ] Fala **≤ 3,0 palavras/s** em cada cena (`tools/narrar.py` só desacelera).
+- [ ] Fala gerada a ≤ 3,0 palavras/s e o vídeo final acelerado **1,5x** (decisão da Yasmin, 07/11: "tá muito devagar"). Resultado: ~21–23 s, fala média ~3,3/s. Conferir a transcrição DO ARQUIVO 1,5x (`conferir_narracao.py post video-15x.mp4`).
 - [ ] Conferir quadros no meio das transições e em cada cena (`tools/video.js --quadros`).
 
 ## Voz (Sulafat)
@@ -30,5 +30,6 @@ Criado em 07/11/2026 depois do feedback da Yasmin: "sem transição, áudio com 
 - [ ] Cota grátis do Gemini: **100 áudios/dia por modelo**. Não gastar em teste à toa; tentativas de conferência contam.
 
 ## Antes de mandar pra Yasmin
+- [ ] "Nada esquisito, sempre melhorando": cada lote tem que sair melhor que o anterior. Comparar com o último aprovado.
 - [ ] Testes do painel passando (`painel/teste/`), claro e escuro, iPhone.
 - [ ] Mandar já corrigido — erro que dá pra pegar em checagem não chega até ela.
