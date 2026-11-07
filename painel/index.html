@@ -184,7 +184,7 @@ function passos(p){
       <div class="grid2">${dl?`<button class="primary" data-zip="${esc(p.id)}">Baixar todas</button>`:""}<a class="btn" href="#fotos-${esc(p.id)}">Ver fotos pra salvar</a></div>
       <p class="muted">${dl?"“Baixar todas” salva um .zip. ":""}No iPhone, o mais rápido é “Ver fotos pra salvar”: segure o dedo em cada foto e toque em <b>Adicionar às Fotos</b>.</p></div></li>`}
     <li><div><b>Copie a legenda</b><button class="wide primary" data-copy="legenda" data-id="${esc(p.id)}">Copiar legenda</button><div class="txt">${esc(p.legenda)}</div></div></li>
-    <li><div><b>Poste no TikTok</b><p class="muted">${p.video?`Toque em <b>+</b> → escolha o vídeo → <b>música em alta</b> (o vídeo vem sem som) → cole a legenda → Publicar.`:`Toque em <b>+</b> → <b>Fotos</b> → escolha as ${p.slides.length} na ordem (01 a ${String(p.slides.length).padStart(2,"0")}) → música em alta → cole a legenda → Publicar.`}</p></div></li>
+    <li><div><b>Poste no TikTok</b><p class="muted">${p.video?`${p.narrado?`Toque em <b>+</b> → escolha o vídeo → em <b>Sons</b>, se quiser uma música em alta, abaixe o volume dela pra uns 10–15% (a narração já vem no vídeo) → cole a legenda → Publicar.`:`Toque em <b>+</b> → escolha o vídeo → <b>música em alta</b> (o vídeo vem sem som) → cole a legenda → Publicar.`}`:`Toque em <b>+</b> → <b>Fotos</b> → escolha as ${p.slides.length} na ordem (01 a ${String(p.slides.length).padStart(2,"0")}) → música em alta → cole a legenda → Publicar.`}</p></div></li>
     <li><div><b>Comente e fixe</b><button class="wide primary" data-copy="fixado" data-id="${esc(p.id)}">Copiar comentário</button><div class="txt">${esc(p.fixado)}</div><p class="muted">Cole como comentário no seu post, segure o dedo nele e toque em <b>Fixar</b>.</p></div></li>
     <li><div><b>Pronto?</b>${p.status==="publicado"?`<span class="pill s-publicado">Postado</span>`:`<button class="wide ok" data-pub="${esc(p.id)}" ${writable?"":"disabled"}>Já postei ✓</button>`}</div></li>
   </ol>`;
@@ -193,7 +193,7 @@ function slot(p){return `<div class="slot"><span class="t">${esc(p.hora)}</span>
 function cartaoAprovar(p){
   const neg=negando===p.id;
   return `<article class="frame"><div class="card"><a href="#post-${esc(p.id)}"><img src="${esc(capa(p))}" alt="Capa do post ${esc(p.num)}"></a>
-    <div class="meta"><div class="row">${pill(p)}<span class="tag">#${esc(p.num)}</span><span class="tag">${p.video?"vídeo":"fotos"}</span></div><h3>${esc(p.titulo)}</h3><span class="when">${quando(p)}</span></div></div>
+    <div class="meta"><div class="row">${pill(p)}<span class="tag">#${esc(p.num)}</span><span class="tag">${p.video?(p.narrado?"vídeo narrado":"vídeo"):"fotos"}</span></div><h3>${esc(p.titulo)}</h3><span class="when">${quando(p)}</span></div></div>
     ${strip(p)}
     ${neg?formNegar(p):`<div class="grid2"><button class="ok" data-aprovar="${esc(p.id)}" ${writable?"":"disabled"}>Aprovar</button><button class="bad" data-negar-abrir="${esc(p.id)}" ${writable?"":"disabled"}>Negar</button></div>
     <a class="btn small" href="#post-${esc(p.id)}">Ver post completo</a>`}

@@ -35,6 +35,7 @@
 
 - 07/11 · Teste de 8 vozes: ❌ não gostou. "Muito infantil"; quer **feminina, jovem adulta, nada infantil**. **Pronúncia de "Stardew Valley" ficou feia** (aportuguesada) → sempre falar em inglês.
 - Rodada 2: modelo **gemini-3.8-flash-tts com texto puro** (sem instrução) pronuncia "Stardew Valley" sem o "i" na frente. Finalistas: Despina, Callirrhoe, Sulafat, Zephyr, Autonoe (desaceleradas pra ≤3 palavras/s).
+- ✅ **Voz escolhida: Sulafat** (07/11) pra todos os vídeos. "Se achar uma voz melhor e mais humana, me avise."
 
 ## Gosto: aprovado / negado (com o porquê)
 | Data | Ideia/roteiro | Decisão | Categoria | Porquê |
