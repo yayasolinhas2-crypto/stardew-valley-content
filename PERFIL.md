@@ -23,6 +23,7 @@
 - Ritmo: **3 a 4 posts por dia**.
 - **Repetir dica pode** (públicos diferentes). Muda o gancho e o visual; o conteúdo pode voltar. A regra dos 14 dias fica só para o gancho/capa.
 - Foco forte em **segredos e coisas escondidas** do jogo.
+- **Personagem próprio / bonequinho: não por enquanto** (07/11). Foco em dicas, coisas escondidas e **Recados Secretos** — "tem muita coisa pra explorar antes".
 - Ainda **sem @ no TikTok** (criando em 07/11). Quando tiver, colocar marca discreta nas imagens.
 - Revisão: ela repara em erro de escrita e texto fora do quadro. Sempre conferir em tamanho real antes de entregar.
 
