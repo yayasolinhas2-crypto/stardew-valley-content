@@ -37,6 +37,8 @@
 - Rodada 2: modelo **gemini-3.8-flash-tts com texto puro** (sem instrução) pronuncia "Stardew Valley" sem o "i" na frente. Finalistas: Despina, Callirrhoe, Sulafat, Zephyr, Autonoe (desaceleradas pra ≤3 palavras/s).
 - ✅ **Voz escolhida: Sulafat** (07/11) pra todos os vídeos. "Se achar uma voz melhor e mais humana, me avise."
 
+- 07/11 · Vídeos narrados v1: ❌ "sem transição, áudio com chiado, voz sem emoção". Pede mais critério: os próximos já devem sair corrigidos. Oferece ferramentas/recursos se precisar. → criado QUALIDADE.md (checklist obrigatório).
+
 ## Gosto: aprovado / negado (com o porquê)
 | Data | Ideia/roteiro | Decisão | Categoria | Porquê |
 |------|---------------|---------|-----------|--------|

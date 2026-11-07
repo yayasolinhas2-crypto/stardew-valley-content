@@ -24,6 +24,9 @@ const LEAD=0.2,TAIL=0.35;
   let S=0;const seg=cenas.map(([a,bb],k)=>{const L=Math.max(bb-a,LEAD+ds[k]+TAIL);const o={a,len:bb-a,S,L,fala:S+LEAD};S+=L;return o});
   total=S;tempos={total,cenas:seg};nome='video-mudo-narr.mp4';
   mapa=T=>{const s=seg.find(x=>T<x.S+x.L)||seg[seg.length-1];return s.a+Math.min(T-s.S,s.len-0.001)};
+  // efeitos sonoros no tempo de saída
+  const src2out=t=>{const k=seg.findIndex(x=>t>=x.a&&t<x.a+Math.max(x.len,0.001));const s=seg[k<0?seg.length-1:k];return s.S+Math.min(t-s.a,s.L)};
+  tempos.sfx=(await p.evaluate(()=>window.SFX?SFX():[])).map(x=>({t:+src2out(x.t).toFixed(3),som:x.som}));
   fs.writeFileSync(dir+'/tempos.json',JSON.stringify(tempos,null,1));
  }
  const tmp=fs.mkdtempSync('/tmp/claude-0/-home-user-stardew-valley-content/390e979c-f63f-5f31-9eff-bd01428cedcb/scratchpad/frames-');

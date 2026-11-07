@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="../../assets/base.css">
+<html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="../../assets/base.css"><link rel="stylesheet" href="../../assets/video.css">
 <style>
 /* Vídeo 1080x1920 · 28 s · cada cena é uma <section> com data-in/data-out (segundos).
    Cada elemento animado tem data-in (segundos) e data-fx. seek(t) desenha o quadro t — determinístico, renderizado quadro a quadro. */
@@ -92,7 +92,7 @@ body{background:#000}
   <div class="maze" data-in="22.6" data-fx="fade"></div>
   <div class="result center" data-in="23.4" data-fx="up">…e os <b>Calções Roxos</b> ganham vida e <b>não morrem</b></div>
  </div>
- <img class="chaser" id="chaser" src="../../assets/icons/Springobjects789.png" data-in="22.8" data-fx="chase"></section>
+ <img class="chaser" id="chaser" src="../../assets/icons/Springobjects789.png" data-in="22.8" data-fx="move" data-from="760,1010" data-to="292,1010" data-d="2.6" data-wob="14"></section>
 
 <!-- 25.4–28.5 s · FINAL -->
 <section class="slide tema-noite scene" data-in="25.4" data-out="99"><div class="card center">
@@ -105,37 +105,9 @@ body{background:#000}
 </div>
 <script src="../../assets/base.js"></script>
 <script>
-// labirinto em pixel (1 = caminho)
 const M=["111101111","100101001","101111101","101000101","111011111"];
 document.querySelector('.maze').innerHTML=M.join('').split('').map(c=>`<i class="${c==='1'?'c':''}"></i>`).join('');
-const DUR=28.5;
-const clamp=x=>Math.max(0,Math.min(1,x));
-const easeOut=x=>1-Math.pow(1-x,3);
-const back=x=>{const c=1.7;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
-const els=[...document.querySelectorAll('[data-fx]')];
-els.forEach(e=>{if(e.dataset.fx==='type')e.textContent=''});
-window.seek=function(t){
-  document.querySelectorAll('.scene').forEach(s=>{
-    const a=+s.dataset.in,b=+s.dataset.out;const vis=t>=a&&t<b;s.style.visibility=vis?'visible':'hidden';
-    // transição: entra deslizando (chicote) em 0,22 s
-    const p=clamp((t-a)/.22);s.style.transform=a>0?`translateX(${(1-easeOut(p))*1080}px)`:'none';
-  });
-  for(const e of els){
-    const a=+e.dataset.in,fx=e.dataset.fx,p=clamp((t-a)/.35),q=easeOut(p);
-    let o=1,tr='';
-    if(fx==='pop'){o=p>0?1:0;tr=`scale(${p>0?back(p):0})`}
-    else if(fx==='up'){o=q;tr=`translateY(${(1-q)*60}px)`}
-    else if(fx==='left'){o=q;tr=`translateX(${(1-q)*-120}px)`}
-    else if(fx==='fade'){o=q}
-    else if(fx==='drop'){o=p>0?1:0;const bnc=p<1?(1-back(p))*-1:0;tr=`translateY(${(1-q)*-260}px)`}
-    else if(fx==='stamp'){o=p>0?1:0;tr=`scale(${p>0?1+(1-q)*.9:0}) rotate(${e.classList.contains('tag')?-3:0}deg)`}
-    else if(fx==='light'){e.classList.toggle('lit',t>=a);continue}
-    else if(fx==='type'){const s=e.dataset.text;e.textContent=s.slice(0,Math.round(clamp((t-a)/.45)*s.length));continue}
-    else if(fx==='chase'){const k=t-a;o=k>=0?1:0;const x=760-k*180,y=1010+Math.sin(k*9)*22;e.style.left=x+'px';e.style.top=y+'px';tr=`rotate(${Math.sin(k*12)*14}deg)`}
-    e.style.opacity=o;e.style.transform=tr;
-  }
-  const c=document.getElementById('cannoli');c.src=t>=+c.dataset.swap?c.dataset.swapsrc:'../../assets/anim/cannoli_00.png';
-};
-window.DUR=DUR;seek(0);
+window.DUR=28.5;
 </script>
+<script src="../../assets/video.js"></script>
 </body></html>
