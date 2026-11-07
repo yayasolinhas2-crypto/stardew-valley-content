@@ -33,6 +33,9 @@
 - Teste de 8 vozes no painel (aba #vozes). Modelo: gemini-2.5-flash-preview-tts (aceita instrução de tom; o 3.8 lê a instrução em voz alta e não aceita instrução separada).
 - Regra: máx. 3,0 palavras/s — Leda, Puck, Fenrir, Zephyr e Sulafat passaram um pouco no teste; pedir "ritmo mais calmo" na narração final.
 
+- 07/11 · Teste de 8 vozes: ❌ não gostou. "Muito infantil"; quer **feminina, jovem adulta, nada infantil**. **Pronúncia de "Stardew Valley" ficou feia** (aportuguesada) → sempre falar em inglês.
+- Rodada 2: modelo **gemini-3.8-flash-tts com texto puro** (sem instrução) pronuncia "Stardew Valley" sem o "i" na frente. Finalistas: Despina, Callirrhoe, Sulafat, Zephyr, Autonoe (desaceleradas pra ≤3 palavras/s).
+
 ## Gosto: aprovado / negado (com o porquê)
 | Data | Ideia/roteiro | Decisão | Categoria | Porquê |
 |------|---------------|---------|-----------|--------|

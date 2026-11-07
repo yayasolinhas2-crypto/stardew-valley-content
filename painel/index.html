@@ -276,8 +276,8 @@ function telaVozes(){
     <audio controls preload="none" src="${esc(v.audio)}" style="width:100%"></audio>
     <p class="muted">${esc(v.duracao)} s · ${esc(String(v.pps).replace(".",","))} palavras/s${v.pps>3?" · <b>rápida demais pra regra (máx. 3,0)</b>: dá pra pedir mais calma":""}${v.obs?` · ${esc(v.obs)}`:""}</p>
     ${vozEscolhida===v.id?"":`<button class="primary" data-voz="${esc(v.id)}" ${writable?"":"disabled"}>Escolher esta voz</button>`}</section>`;
-  return `<section class="frame"><h2>Teste de voz</h2><p>A mesma frase do gancho em ${vozes.length} vozes do Gemini, todas com sotaque brasileiro. Ouça com fone e escolha a que combina com o perfil.</p><p class="muted">“Você pula a tela do fim do dia em Stardew Valley? Então você perdeu isso.”</p></section>
-  <h3>Femininas</h3>${fx.map(card).join("")}<h3>Masculinas</h3>${mx.map(card).join("")}`;
+  return `<section class="frame"><h2>Teste de voz</h2><p>Rodada 2: ${vozes.length} vozes femininas adultas, com “Stardew Valley” em inglês e velocidade dentro da regra (até 3 palavras/s). Ouça com fone e escolha.</p><p class="muted">“Você pula a tela do fim do dia em Stardew Valley? Então você perdeu isso. No dia vinte e quatro de inverno, o Papai Noel cruza o céu com as renas.”</p></section>
+  ${fx.length?`<h3>Femininas</h3>${fx.map(card).join("")}`:""}${mx.length?`<h3>Masculinas</h3>${mx.map(card).join("")}`:""}`;
 }
 function render(){
   const h=(location.hash||"#postar").slice(1);
