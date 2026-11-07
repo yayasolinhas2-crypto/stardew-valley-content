@@ -1,0 +1,228 @@
+<title>Painel do Vale</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Nunito:wght@600;800;900&display=swap">
+<style>
+/* Layout: uma coluna de "quadros de madeira" como os menus do jogo; abas no topo; ficha do post abre em tela cheia. */
+:root{
+  --bg:#efe2c4; --paper:#fbefd2; --paper2:#f6e2b4; --wood:#6b3613; --wood2:#a35a1f; --ink:#3b1d07; --muted:#85603c;
+  --gold:#f2c230; --ok:#2f7d32; --okbg:#d9eccb; --warn:#a76a00; --warnbg:#fbe6b0; --bad:#b3261e; --badbg:#f6d3cc; --info:#2c5d8f; --infobg:#d5e4f2;
+  --line:rgba(107,54,19,.22); --shadow:rgba(59,29,7,.25);
+  --pix:"Jersey 10","Nunito",system-ui,sans-serif; --body:"Nunito",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#1f1710; --paper:#2d2117; --paper2:#261c13; --wood:#c98a4b; --wood2:#e0a35c; --ink:#f3e3c4; --muted:#bfa27e;
+  --gold:#f2c230; --ok:#8fd18a; --okbg:#203a1f; --warn:#f0c060; --warnbg:#3d2f10; --bad:#ff9b8f; --badbg:#47201b; --info:#9cc5ef; --infobg:#1b2c3e;
+  --line:rgba(224,163,92,.22); --shadow:rgba(0,0,0,.5); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#1f1710; --paper:#2d2117; --paper2:#261c13; --wood:#c98a4b; --wood2:#e0a35c; --ink:#f3e3c4; --muted:#bfa27e;
+  --gold:#f2c230; --ok:#8fd18a; --okbg:#203a1f; --warn:#f0c060; --warnbg:#3d2f10; --bad:#ff9b8f; --badbg:#47201b; --info:#9cc5ef; --infobg:#1b2c3e;
+  --line:rgba(224,163,92,.22); --shadow:rgba(0,0,0,.5); color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-weight:600;font-size:15px;line-height:1.45}
+.wrap{max-width:860px;margin:0 auto;padding-block:16px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--pix);font-weight:400;letter-spacing:.02em;margin:0;text-wrap:balance}
+h1{font-size:44px;line-height:1;color:var(--wood)}
+h2{font-size:30px;color:var(--wood)}
+h3{font-size:26px;line-height:1.05}
+header.top{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+.sub{color:var(--muted);font-size:14px}
+nav.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 18px}
+nav.tabs a{font-family:var(--pix);font-size:24px;text-decoration:none;color:var(--ink);padding:4px 14px 6px;background:var(--paper);border:3px solid var(--wood);box-shadow:3px 3px 0 var(--shadow)}
+nav.tabs a[aria-current="page"]{background:var(--wood);color:var(--paper)}
+nav.tabs .n{font-family:var(--body);font-weight:900;font-size:13px;margin-left:6px;background:var(--gold);color:#3b1d07;padding:1px 7px;vertical-align:3px}
+.frame{background:linear-gradient(var(--paper),var(--paper2));border:4px solid var(--wood);box-shadow:0 0 0 3px var(--wood2) inset,4px 5px 0 var(--shadow);padding:16px}
+.stack{display:grid;gap:14px}
+.note{padding:12px 14px;border:3px dashed var(--line);color:var(--muted)}
+/* cartão de post */
+.post{display:grid;grid-template-columns:96px 1fr;gap:14px;align-items:start}
+.post img.thumb{width:96px;aspect-ratio:9/16;object-fit:cover;border:3px solid var(--wood);background:var(--paper2);image-rendering:auto;cursor:pointer}
+.post .meta{min-width:0;display:grid;gap:6px}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.pill{font-size:12px;font-weight:900;letter-spacing:.04em;text-transform:uppercase;padding:2px 8px;border:2px solid currentColor}
+.s-aguardando{color:var(--warn);background:var(--warnbg)} .s-aprovado{color:var(--ok);background:var(--okbg)}
+.s-negado{color:var(--bad);background:var(--badbg)} .s-publicado{color:var(--info);background:var(--infobg)}
+.tag{font-size:12px;color:var(--muted);border:2px solid var(--line);padding:1px 7px}
+.when{font-family:var(--pix);font-size:22px;color:var(--wood2);font-variant-numeric:tabular-nums}
+button{font:inherit;font-weight:900;cursor:pointer;border:3px solid var(--wood);background:var(--paper);color:var(--ink);padding:8px 14px;box-shadow:3px 3px 0 var(--shadow)}
+button:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--shadow)}
+button:focus-visible,a:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+button.ok{background:var(--ok);border-color:var(--ok);color:#fff} button.bad{background:var(--paper);color:var(--bad);border-color:var(--bad)}
+button.ghost{box-shadow:none;border-width:2px;padding:5px 10px;font-size:13px}
+button[disabled]{opacity:.5;cursor:default}
+/* semana */
+.week{display:grid;gap:12px}
+.day h3{font-size:24px;margin-bottom:6px}
+.slot{display:grid;grid-template-columns:62px 1fr;gap:10px;align-items:center;padding:8px 0;border-top:2px dashed var(--line)}
+.slot:first-of-type{border-top:0}
+.slot .t{font-family:var(--pix);font-size:24px;color:var(--wood2);font-variant-numeric:tabular-nums}
+.slot .vago{color:var(--muted);font-style:italic}
+.slot .p{min-width:0;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.slot button.link{border:0;box-shadow:none;background:none;padding:0;text-align:left;font-weight:800;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.now{border:3px solid var(--gold);padding:14px;background:var(--paper)}
+.now .when{font-size:30px}
+/* ficha */
+dialog{border:0;padding:0;max-width:min(900px,100vw);width:100%;max-height:100%;background:transparent;color:var(--ink)}
+dialog::backdrop{background:rgba(20,10,0,.6)}
+.sheet{background:var(--bg);border:4px solid var(--wood);margin:max(8px,env(safe-area-inset-top,0px)) 8px;padding:16px;display:grid;gap:14px}
+.sheet header{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+.slides{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px}
+.slides img{flex:none;width:min(62vw,280px);aspect-ratio:9/16;scroll-snap-align:start;border:3px solid var(--wood);background:var(--paper2)}
+.copybox{background:var(--paper);border:3px solid var(--line);padding:10px 12px;white-space:pre-wrap;font-size:14px;overflow-wrap:anywhere}
+.lbl{font-size:12px;font-weight:900;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:4px}
+.reasons{display:flex;gap:6px;flex-wrap:wrap}
+.reasons label{font-size:13px;border:2px solid var(--line);padding:4px 8px;cursor:pointer;background:var(--paper)}
+.reasons input{accent-color:var(--bad)}
+textarea{font:inherit;width:100%;min-height:70px;border:3px solid var(--line);background:var(--paper);color:var(--ink);padding:8px;box-sizing:border-box}
+.actions{display:flex;gap:10px;flex-wrap:wrap}
+ul.src{margin:0;padding-left:18px;font-size:13px;overflow-wrap:anywhere} ul.src a{color:var(--info)}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(16px + env(safe-area-inset-bottom,0px));background:var(--wood);color:var(--paper);padding:10px 16px;font-weight:900;border:3px solid var(--gold)}
+@media (max-width:460px){h1{font-size:36px}.post{grid-template-columns:76px 1fr}.post img.thumb{width:76px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div><h1>Painel do Vale</h1><div class="sub">Posts de Stardew pro TikTok · você aprova, o Claude produz</div></div>
+    <div class="sub" id="sync">Conectando…</div>
+  </header>
+  <nav class="tabs" aria-label="Seções">
+    <a href="#aprovar" data-v="aprovar">Aprovar<span class="n" id="n-aprovar" hidden></span></a>
+    <a href="#hoje" data-v="hoje">Postar hoje</a>
+    <a href="#semana" data-v="semana">Semana</a>
+    <a href="#todos" data-v="todos">Todos</a>
+  </nav>
+  <main id="view"><div class="frame note">Carregando os posts…</div></main>
+</div>
+
+<dialog id="ficha" aria-label="Ficha do post"><div class="sheet" id="sheet"></div></dialog>
+<div class="toast" id="toast" hidden></div>
+
+<script>
+const $=s=>document.querySelector(s);
+const STATUS={aguardando:"Aguardando você",aprovado:"Aprovado",negado:"Negado",publicado:"Publicado"};
+const MOTIVOS=["nichado demais","bobo","confuso","já existe","nada a ver comigo","erro no texto","visual feio","gancho fraco"];
+const DIAS=["dom","seg","ter","qua","qui","sex","sáb"];
+let posts=[], db=null, writable=true, loaded=false;
+
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const pill=s=>`<span class="pill s-${esc(s)}">${esc(STATUS[s]||s)}</span>`;
+const dt=p=>new Date(`${p.data}T${p.hora||"00:00"}:00-03:00`);
+const fmtDia=d=>{const x=new Date(d+"T12:00:00-03:00");return `${DIAS[x.getUTCDay()]} ${d.slice(8,10)}/${d.slice(5,7)}`};
+const hojeBR=()=>new Date(Date.now()-3*3600e3).toISOString().slice(0,10);
+function toast(m){const t=$("#toast");t.textContent=m;t.hidden=false;clearTimeout(toast.h);toast.h=setTimeout(()=>t.hidden=true,2600)}
+
+function card(p){
+  const th=p.slides&&p.slides[0]?`<img class="thumb" src="${esc(p.slides[0])}" alt="Capa do post ${esc(p.num)}" data-open="${esc(p.id)}">`:"";
+  return `<article class="frame post">${th}<div class="meta">
+    <div class="row">${pill(p.status)}<span class="tag">#${esc(p.num)}</span><span class="tag">${esc(p.pilar||"")}</span></div>
+    <h3>${esc(p.titulo)}</h3>
+    <div class="row"><span class="when">${p.data?fmtDia(p.data)+" · "+esc(p.hora||""):"sem horário"}</span></div>
+    ${p.status==="negado"&&p.motivo?`<div class="sub">Motivo: ${esc(p.motivo)}</div>`:""}
+    <div class="row"><button data-open="${esc(p.id)}">Abrir ficha</button>
+    ${p.status==="aguardando"?`<button class="ok" data-aprovar="${esc(p.id)}" ${writable?"":"disabled"}>Aprovar</button>`:""}</div>
+  </div></article>`;
+}
+
+function render(){
+  const v=(location.hash||"#aprovar").slice(1);
+  document.querySelectorAll("nav.tabs a").forEach(a=>{if(a.dataset.v===v)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current")});
+  const pend=posts.filter(p=>p.status==="aguardando");
+  const n=$("#n-aprovar");n.hidden=!pend.length;n.textContent=pend.length;
+  const el=$("#view");
+  if(!loaded){return}
+  const ord=[...posts].sort((a,b)=>dt(a)-dt(b));
+  if(v==="aprovar"){
+    el.innerHTML=pend.length?`<div class="stack">${pend.sort((a,b)=>dt(a)-dt(b)).map(card).join("")}</div>`
+      :`<div class="frame"><h2>Nada esperando por você</h2><p class="sub">Quando o Claude terminar um lote novo, os posts aparecem aqui com os botões Aprovar e Negar.</p></div>`;
+  } else if(v==="hoje"){
+    const h=hojeBR(), agora=Date.now();
+    const doDia=ord.filter(p=>p.data===h);
+    const prox=ord.find(p=>p.status==="aprovado"&&dt(p).getTime()>=agora-90*60e3);
+    el.innerHTML=`<div class="stack">
+      ${prox?`<section class="now"><div class="lbl">Próximo a postar</div><div class="when">${fmtDia(prox.data)} · ${esc(prox.hora)}</div><h3>${esc(prox.titulo)}</h3>
+        <div class="row" style="margin-top:8px"><button data-open="${esc(prox.id)}">Ver fotos e legenda</button><button class="ghost" data-pub="${esc(prox.id)}" ${writable?"":"disabled"}>Já postei</button></div></section>`
+        :`<div class="frame note">Nenhum post aprovado na fila. Veja a aba Aprovar.</div>`}
+      <section class="frame"><h2>Hoje · ${fmtDia(h)}</h2>${doDia.length?doDia.map(slotRow).join(""):`<p class="sub">Nenhum post marcado pra hoje.</p>`}</section></div>`;
+  } else if(v==="semana"){
+    const h=hojeBR(), dias=[];
+    for(let i=0;i<7;i++){const d=new Date(new Date(h+"T12:00:00-03:00").getTime()+i*864e5);dias.push(d.toISOString().slice(0,10))}
+    el.innerHTML=`<div class="week">${dias.map(d=>{
+      const wd=new Date(d+"T12:00:00-03:00").getUTCDay(), fds=wd===0||wd===6;
+      const horas=fds?["09:00","13:00","17:00","20:30"]:["06:00","12:00","17:00","19:30"];
+      const doDia=ord.filter(p=>p.data===d);
+      const extras=doDia.filter(p=>!horas.includes(p.hora)).map(p=>p.hora);
+      const todas=[...new Set([...horas,...extras])].sort();
+      return `<section class="frame day"><h3>${fmtDia(d)}${d===h?" · hoje":""}</h3>${todas.map(t=>{
+        const ps=doDia.filter(p=>p.hora===t);
+        return ps.length?ps.map(slotRow).join(""):`<div class="slot"><span class="t">${t}</span><span class="vago">vago</span></div>`}).join("")}</section>`}).join("")}</div>`;
+  } else {
+    el.innerHTML=ord.length?`<div class="stack">${ord.map(card).join("")}</div>`:`<div class="frame note">Ainda não há posts.</div>`;
+  }
+}
+function slotRow(p){return `<div class="slot"><span class="t">${esc(p.hora)}</span><span class="p">${pill(p.status)}<button class="link" data-open="${esc(p.id)}">#${esc(p.num)} · ${esc(p.titulo)}</button></span></div>`}
+
+function openFicha(id){
+  const p=posts.find(x=>x.id===id);if(!p)return;
+  const s=$("#sheet");
+  s.innerHTML=`<header><div><div class="row">${pill(p.status)}<span class="tag">#${esc(p.num)}</span><span class="tag">${esc(p.pilar||"")}</span><span class="tag">${esc(p.categoria||"")}</span></div>
+      <h2 style="margin-top:6px">${esc(p.titulo)}</h2><div class="when">${p.data?fmtDia(p.data)+" · "+esc(p.hora||""):""}</div></div>
+      <button class="ghost" id="fechar" aria-label="Fechar ficha">Fechar</button></header>
+    <div><div class="lbl">Fotos na ordem (arraste pro lado)</div><div class="slides">${(p.slides||[]).map((u,i)=>`<img src="${esc(u)}" alt="Foto ${i+1}" loading="lazy">`).join("")}</div></div>
+    ${p.gancho?`<div><div class="lbl">Gancho da capa</div><div class="copybox">${esc(p.gancho)}</div></div>`:""}
+    <div><div class="lbl">Legenda <button class="ghost" data-copy="legenda">Copiar</button></div><div class="copybox" id="c-legenda">${esc(p.legenda)}</div></div>
+    <div><div class="lbl">Comentário pra fixar <button class="ghost" data-copy="fixado">Copiar</button></div><div class="copybox" id="c-fixado">${esc(p.fixado)}</div></div>
+    ${p.fontes&&p.fontes.length?`<div><div class="lbl">Fontes conferidas</div><ul class="src">${p.fontes.map(f=>`<li><a href="${esc(f)}" target="_blank" rel="noopener">${esc(f.replace(/^https?:\/\//,""))}</a></li>`).join("")}</ul></div>`:""}
+    ${p.status==="negado"&&p.motivo?`<div class="copybox">Motivo da recusa: ${esc(p.motivo)}</div>`:""}
+    <div class="frame" style="display:grid;gap:10px">
+      ${writable?`<div class="actions">
+        ${p.status!=="aprovado"&&p.status!=="publicado"?`<button class="ok" data-aprovar="${esc(p.id)}">Aprovar</button>`:""}
+        ${p.status!=="publicado"?`<button class="bad" id="abrirNegar">Negar com motivo</button>`:""}
+        ${p.status==="aprovado"?`<button data-pub="${esc(p.id)}">Já postei</button>`:""}
+        ${p.status!=="aguardando"?`<button class="ghost" data-volta="${esc(p.id)}">Voltar pra aguardando</button>`:""}</div>
+      <div id="negarBox" hidden style="display:grid;gap:8px">
+        <div class="lbl">Por que não?</div>
+        <div class="reasons">${MOTIVOS.map((m,i)=>`<label><input type="checkbox" id="m${i}" value="${esc(m)}"> ${esc(m)}</label>`).join("")}</div>
+        <textarea id="motivoTxt" placeholder="Conta com suas palavras o que mudar (opcional)"></textarea>
+        <div class="actions"><button class="bad" data-negar="${esc(p.id)}">Confirmar recusa</button></div></div>`
+      :`<div class="sub">Você está vendo em modo leitura.</div>`}
+    </div>`;
+  const d=$("#ficha"); if(!d.open)d.showModal();
+}
+
+async function salvar(id,patch,msg){
+  if(!db)return;
+  try{await db.collection("posts").doc(id).update({...patch,decididoEm:new Date().toISOString()});toast(msg)}
+  catch(e){if(e&&e.code==="invalid_argument"){writable=false;render();toast("Você não tem permissão pra mudar os posts.")}else toast("Não salvou. Tente de novo em instantes.")}
+}
+
+document.addEventListener("click",async e=>{
+  const t=e.target.closest("button,img");if(!t)return;
+  if(t.dataset.open){openFicha(t.dataset.open)}
+  else if(t.id==="fechar"){$("#ficha").close()}
+  else if(t.dataset.aprovar){await salvar(t.dataset.aprovar,{status:"aprovado",motivo:""},"Aprovado ✓");$("#ficha").open&&openFicha(t.dataset.aprovar)}
+  else if(t.dataset.pub){await salvar(t.dataset.pub,{status:"publicado"},"Marcado como postado");$("#ficha").open&&openFicha(t.dataset.pub)}
+  else if(t.dataset.volta){await salvar(t.dataset.volta,{status:"aguardando"},"Voltou pra aguardando");$("#ficha").open&&openFicha(t.dataset.volta)}
+  else if(t.id==="abrirNegar"){const b=$("#negarBox");b.hidden=!b.hidden}
+  else if(t.dataset.negar){
+    const ms=[...document.querySelectorAll(".reasons input:checked")].map(i=>i.value);const tx=$("#motivoTxt").value.trim();
+    if(!ms.length&&!tx){toast("Marque um motivo ou escreva o que mudar.");return}
+    await salvar(t.dataset.negar,{status:"negado",motivo:[...ms,tx].filter(Boolean).join(" · ")},"Recusado. O Claude vai refazer.");$("#ficha").close()}
+  else if(t.dataset.copy){
+    const txt=$("#c-"+t.dataset.copy).textContent;
+    try{await navigator.clipboard.writeText(txt);toast("Copiado")}
+    catch{const r=document.createRange();r.selectNodeContents($("#c-"+t.dataset.copy));const s=getSelection();s.removeAllRanges();s.addRange(r);toast("Texto selecionado: copie pelo menu")}}
+});
+$("#ficha").addEventListener("click",e=>{if(e.target.id==="ficha")e.target.close()});
+addEventListener("hashchange",render);
+
+(async()=>{
+  render();
+  db=await claude.use("db").catch(()=>null);
+  if(!db){$("#view").innerHTML=`<div class="frame note">Entre na sua conta do claude.ai pra ver e aprovar os posts.</div>`;$("#sync").textContent="";return}
+  const timer=setTimeout(()=>{$("#sync").textContent="Sem conexão com os dados ainda…"},10000);
+  db.collection("posts").onSnapshot(snap=>{
+    if(!snap.metadata.fromCache){clearTimeout(timer);$("#sync").textContent="Atualizado agora"}
+    posts=snap.docs.map(d=>({id:d.id,...d.data()}));loaded=true;render();
+  },err=>{clearTimeout(timer);loaded=true;$("#sync").textContent="";$("#view").innerHTML=`<div class="frame note">Não deu pra carregar os posts agora. Abra o painel de novo daqui a pouco.</div>`});
+})();
+</script>

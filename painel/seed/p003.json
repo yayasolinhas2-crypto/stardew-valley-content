@@ -1,0 +1,26 @@
+{
+ "num": "003",
+ "titulo": "Você tá usando o barril errado?",
+ "gancho": "VOCÊ TÁ USANDO O BARRIL ERRADO? · Barril ou Jarra? a regra que decide",
+ "pilar": "Dinheiro e tempo",
+ "categoria": "comparação",
+ "data": "2026-11-07",
+ "hora": "18:45",
+ "legenda": "Você tá usando o Barril errado? 🍷 A regra de Stardew Valley que decide entre Barril e Jarra de conserva. Comenta BARRIL que eu mando a lista do que vai em cada um!\nVocê é time vinho ou time geleia?\n#stardewvalley #stardew #dicasstardewvalley #dinheirostardew #jogosaconchegantes",
+ "fixado": "💬 Comenta BARRIL que eu mando a lista de tudo que rende mais no Barril!",
+ "fontes": [
+  "https://stardewvalleywiki.com/Keg",
+  "https://stardewvalleywiki.com/Preserves_Jar"
+ ],
+ "status": "aprovado",
+ "motivo": "",
+ "slides": [
+  "slides/003/01.png",
+  "slides/003/02.png",
+  "slides/003/03.png",
+  "slides/003/04.png",
+  "slides/003/05.png",
+  "slides/003/06.png",
+  "slides/003/07.png"
+ ]
+}

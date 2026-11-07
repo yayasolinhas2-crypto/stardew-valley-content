@@ -13,3 +13,7 @@ Nunca 2 posts da mesma categoria seguidos.
 | dom 08/11 | 17:00 | (dica / dinheiro) | a produzir |
 | dom 08/11 | 20:30 | Recados Secretos 2 | a produzir |
 | seg 09/11 | 06:00 · 12:00 · 17:00 · 19:30 | 4 posts | a produzir |
+
+## Painel de aprovação
+https://claude.ai/artifact/VcfHJ9URGoLjqq9kzcaCX9 — banco `posts` (um documento por post: status aguardando/aprovado/negado/publicado, motivo, horário, legenda, fotos).
+Antes de cada lote: ler `posts` no painel, anotar no PERFIL.md o que foi negado e por quê, refazer os negados. Post novo entra como `aguardando`, com as fotos publicadas em `slides/<num>/`.
