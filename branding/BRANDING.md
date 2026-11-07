@@ -1,4 +1,6 @@
-# Identidade do perfil (proposta de 07/11/2026, aguardando a Yasmin)
+# Identidade do perfil
+
+**Escolhido pela Yasmin (07/11/2026): @segredosdovalley · foto `avatar-B-lupa.png`.** Assinatura @segredosdovalley no rodapé de todos os slides.
 
 ## Nome do perfil
 **Segredos do Vale · Stardew** (26 caracteres)

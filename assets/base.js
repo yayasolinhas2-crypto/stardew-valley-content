@@ -12,6 +12,7 @@
       [[60,120,140],[520,60,180],[820,170,120],[300,200,100]].forEach(([x,y,w])=>{const b=document.createElement('b');b.style.left=x+'px';b.style.top=y+'px';b.style.width=w+'px';layer.appendChild(b)})}
     if(t.includes('tema-mar')){layer.className='waves';
       for(let i=0;i<40;i++){const y=1600+Math.floor(r()*38)*8;const e=document.createElement('i');e.style.left=Math.floor(r()*130)*8+'px';e.style.top=y+'px';layer.appendChild(e)}}
+    const card=s.querySelector('.card');if(card){const g=document.createElement('div');g.className='sig';g.textContent='@segredosdovalley';card.appendChild(g)}
     if(!t.includes('tema-mar')){['hills','hills2'].forEach(c=>{const h=document.createElement('div');h.className=c;s.appendChild(h)})}
   });
 })();

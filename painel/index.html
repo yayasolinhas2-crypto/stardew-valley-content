@@ -66,7 +66,10 @@ dialog::backdrop{background:rgba(20,10,0,.6)}
 .sheet{background:var(--bg);border:4px solid var(--wood);margin:max(8px,env(safe-area-inset-top,0px)) 8px;padding:16px;display:grid;gap:14px}
 .sheet header{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
 .slides{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px}
-.slides img{flex:none;width:min(62vw,280px);aspect-ratio:9/16;scroll-snap-align:start;border:3px solid var(--wood);background:var(--paper2)}
+.slides figure.sl{flex:none;margin:0;width:min(62vw,280px);scroll-snap-align:start;display:grid;gap:6px}
+.slides img{width:100%;aspect-ratio:9/16;border:3px solid var(--wood);background:var(--paper2);-webkit-touch-callout:default}
+.slides figcaption{display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted)}
+.dlbar{display:grid;gap:6px;margin-top:6px}.dlbar>.ok{justify-self:start}
 .copybox{background:var(--paper);border:3px solid var(--line);padding:10px 12px;white-space:pre-wrap;font-size:14px;overflow-wrap:anywhere}
 .lbl{font-size:12px;font-weight:900;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:4px}
 .reasons{display:flex;gap:6px;flex-wrap:wrap}
@@ -102,7 +105,12 @@ const $=s=>document.querySelector(s);
 const STATUS={aguardando:"Aguardando você",aprovado:"Aprovado",negado:"Negado",publicado:"Publicado"};
 const MOTIVOS=["nichado demais","bobo","confuso","já existe","nada a ver comigo","erro no texto","visual feio","gancho fraco"];
 const DIAS=["dom","seg","ter","qua","qui","sex","sáb"];
-let posts=[], db=null, writable=true, loaded=false;
+let posts=[], db=null, writable=true, loaded=false, dl=null, baixando=false;
+async function baixar(p,i){
+  const r=await fetch(p.slides[i]);if(!r.ok)throw {code:"fetch"};
+  const blob=await r.blob();
+  return dl.save({filename:`segredosdovalley-${p.num}-${String(i+1).padStart(2,"0")}.png`,data:blob});
+}
 
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const pill=s=>`<span class="pill s-${esc(s)}">${esc(STATUS[s]||s)}</span>`;
@@ -167,7 +175,11 @@ function openFicha(id){
   s.innerHTML=`<header><div><div class="row">${pill(p.status)}<span class="tag">#${esc(p.num)}</span><span class="tag">${esc(p.pilar||"")}</span><span class="tag">${esc(p.categoria||"")}</span></div>
       <h2 style="margin-top:6px">${esc(p.titulo)}</h2><div class="when">${p.data?fmtDia(p.data)+" · "+esc(p.hora||""):""}</div></div>
       <button class="ghost" id="fechar" aria-label="Fechar ficha">Fechar</button></header>
-    <div><div class="lbl">Fotos na ordem (arraste pro lado)</div><div class="slides">${(p.slides||[]).map((u,i)=>`<img src="${esc(u)}" alt="Foto ${i+1}" loading="lazy">`).join("")}</div></div>
+    <div><div class="lbl">Fotos na ordem (arraste pro lado)</div>
+      <div class="slides">${(p.slides||[]).map((u,i)=>`<figure class="sl"><img src="${esc(u)}" alt="Foto ${i+1}" loading="lazy">
+        <figcaption><span>${i+1} de ${p.slides.length}</span>${dl?`<button class="ghost" data-dl="${esc(p.id)}" data-i="${i}">Baixar</button>`:""}</figcaption></figure>`).join("")}</div>
+      <div class="dlbar">${dl?`<button class="ok" data-dlall="${esc(p.id)}">Baixar as ${(p.slides||[]).length} fotos</button><span class="sub" id="dlstatus"></span>`:""}
+        <p class="sub" style="margin:6px 0 0">No iPhone pelo Safari: segure o dedo em cada foto e toque em <b>Adicionar às Fotos</b>. Elas vão direto pro rolo da câmera.</p></div></div>
     ${p.gancho?`<div><div class="lbl">Gancho da capa</div><div class="copybox">${esc(p.gancho)}</div></div>`:""}
     <div><div class="lbl">Legenda <button class="ghost" data-copy="legenda">Copiar</button></div><div class="copybox" id="c-legenda">${esc(p.legenda)}</div></div>
     <div><div class="lbl">Comentário pra fixar <button class="ghost" data-copy="fixado">Copiar</button></div><div class="copybox" id="c-fixado">${esc(p.fixado)}</div></div>
@@ -207,6 +219,20 @@ document.addEventListener("click",async e=>{
     const ms=[...document.querySelectorAll(".reasons input:checked")].map(i=>i.value);const tx=$("#motivoTxt").value.trim();
     if(!ms.length&&!tx){toast("Marque um motivo ou escreva o que mudar.");return}
     await salvar(t.dataset.negar,{status:"negado",motivo:[...ms,tx].filter(Boolean).join(" · ")},"Recusado. O Claude vai refazer.");$("#ficha").close()}
+  else if(t.dataset.dl&&!baixando){
+    const p=posts.find(x=>x.id===t.dataset.dl);baixando=true;
+    try{await baixar(p,+t.dataset.i);toast("Foto "+(+t.dataset.i+1)+" salva")}catch(e){toast(e&&e.code==="declined"?"Download cancelado":"Não deu pra baixar essa foto")}
+    baixando=false}
+  else if(t.dataset.dlall&&!baixando){
+    const p=posts.find(x=>x.id===t.dataset.dlall);baixando=true;const st=$("#dlstatus");let ok=0,espera=0;
+    for(let i=0;i<p.slides.length;i++){
+      st.textContent=`Foto ${i+1} de ${p.slides.length}…`;
+      try{await baixar(p,i);ok++}
+      catch(e){if(e&&e.code==="rate_limited"&&espera++<5){await new Promise(r=>setTimeout(r,1500));i--;continue}
+        if(e&&e.code==="declined"){st.textContent=`Parou na foto ${i+1}. ${ok} salvas.`;break}
+        st.textContent=`Não deu pra baixar a foto ${i+1}.`;break}}
+    if(ok===p.slides.length)st.textContent=`Pronto: as ${ok} fotos foram salvas.`;
+    baixando=false}
   else if(t.dataset.copy){
     const txt=$("#c-"+t.dataset.copy).textContent;
     try{await navigator.clipboard.writeText(txt);toast("Copiado")}
@@ -217,6 +243,7 @@ addEventListener("hashchange",render);
 
 (async()=>{
   render();
+  claude.use("downloads").then(x=>{dl=x}).catch(()=>{});
   db=await claude.use("db").catch(()=>null);
   if(!db){$("#view").innerHTML=`<div class="frame note">Entre na sua conta do claude.ai pra ver e aprovar os posts.</div>`;$("#sync").textContent="";return}
   const timer=setTimeout(()=>{$("#sync").textContent="Sem conexão com os dados ainda…"},10000);

@@ -11,6 +11,7 @@ for(const arg of process.argv.slice(2)){const dir=path.resolve(arg);fs.mkdirSync
   s.querySelectorAll('.card').forEach(c=>{if(c.scrollHeight>c.clientHeight+1)out.push(s.id+': texto vazando do quadro')});
   s.querySelectorAll('.bridge').forEach(e=>{if(e.scrollWidth>e.clientWidth+1)out.push(s.id+': frase-ponte cortada')});
   s.querySelectorAll('.card *').forEach(e=>{const r=e.getBoundingClientRect();if(r.width&&(r.right-o.left>942||r.left-o.left<78))out.push(s.id+': saiu pela lateral: '+e.textContent.slice(0,30))});
+  const g=s.querySelector('.sig'),c=s.querySelector('.src');if(g&&c){const a=g.getBoundingClientRect(),b=c.getBoundingClientRect();if(a.right>b.left-12)out.push(s.id+': assinatura encosta na fonte')}
   return out}));
  console.log(path.basename(dir)+': '+ids.length+' slides · '+(probs.length?'PROBLEMAS: '+[...new Set(probs)].join(' | '):'tudo ok'));await p.close()}
 await b.close()})();
