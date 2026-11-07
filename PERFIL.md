@@ -16,6 +16,14 @@
    - Leitura: **guia de consulta pra salvar** (salvos ≈ 60–75% das curtidas); série "Parte N"; visual fofo em pixel art, papel quadriculado, flores; marcado "Contém mídia gerada por IA".
    - Falhas dela (nossa chance): gancho genérico, erro de digitação ("BARRL"), "Trigo" repetido com ícone de lúpulo, comentários baixos (sem CTA).
 
+## Decisões da Yasmin (07/11/2026)
+- Imagens: **ícones originais do jogo, tirados da wiki** ("tá perfeito"). Visual tem que ser **muito fiel ao jogo**, com identidade própria nos detalhes.
+- Cenas e capas no estilo das geradas por IA: **o Claude monta e manda pronto**.
+- Formato: **carrossel de fotos no TikTok** (sem gravação de tela por enquanto).
+- Ritmo: **3 a 4 posts por dia**.
+- **Repetir dica pode** (públicos diferentes). Muda o gancho e o visual; o conteúdo pode voltar. A regra dos 14 dias fica só para o gancho/capa.
+- Foco forte em **segredos e coisas escondidas** do jogo.
+
 ## Gosto: aprovado / negado (com o porquê)
 | Data | Ideia/roteiro | Decisão | Categoria | Porquê |
 |------|---------------|---------|-----------|--------|
