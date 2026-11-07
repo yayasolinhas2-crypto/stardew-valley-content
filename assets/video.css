@@ -19,3 +19,13 @@ body{background:#000;margin:0}
 .vs{display:flex;gap:26px;margin:16px 0}.vs>div{flex:1;background:rgba(255,255,255,.45);box-shadow:0 0 0 5px var(--wood);padding:18px;text-align:center;font-size:36px;line-height:1.2}
 .vs img{image-rendering:pixelated;width:120px;display:block;margin:0 auto 6px}.vs .v{font-family:Nun;font-weight:900;font-size:60px;color:var(--red);display:block}
 .vs .win{background:rgba(255,216,74,.75)}
+
+/* vídeos com legenda sincronizada: quadro mais baixo, legenda logo abaixo (dentro da área segura, até y=1500) */
+.com-legenda .card{height:1040px}
+#legenda{position:absolute;left:90px;right:150px;top:1372px;z-index:200;display:flex;justify-content:center;pointer-events:none}
+#legenda span.box{background:rgba(20,10,4,.88);color:#fff;font-family:Nun;font-weight:900;font-size:54px;line-height:1.15;padding:10px 22px 14px;
+  box-shadow:0 0 0 5px var(--gold);text-align:center;max-width:100%}
+#legenda i{font-style:normal;opacity:.55}
+#legenda b{color:var(--gold)}
+#legenda em{font-style:normal;color:#ff8a65}
+.tema-inverno .stars i{background:#fff}

@@ -18,7 +18,8 @@ Criado em 07/11/2026 depois do feedback da Yasmin: "sem transição, áudio com 
 - [ ] **Efeito sonoro** em toda transição (whoosh) e nos destaques (pop, tum, tic, moedas, brilho) — `assets/sfx/`, sintetizados por nós.
 - [ ] Duração **≤ 35 s**. Se passar, corta texto (nunca acelera a voz).
 - [ ] Fala gerada a ≤ 3,0 palavras/s e o vídeo final acelerado **1,5x** (decisão da Yasmin, 07/11: "tá muito devagar"). Resultado: ~21–23 s, fala média ~3,3/s. Conferir a transcrição DO ARQUIVO 1,5x (`conferir_narracao.py post video-15x.mp4`).
-- [ ] Conferir quadros no meio das transições e em cada cena (`tools/video.js --quadros`).
+- [ ] Conferir quadros no meio das transições e em cada cena (`tools/video.js --quadros`) — ele agora avisa ⚠ quando algo vaza do quadro.
+- [ ] **Legenda sincronizada** (class `com-legenda` no #stage): palavra falada em dourado, palavra-chave em destaque, abaixo do quadro (quadro de vídeo com 1040 px de altura).
 
 ## Voz (Sulafat)
 - [ ] Modelo **gemini-2.5-pro-preview-tts** com instrução de interpretação por fala (`[emoção]` no `narracao.json`).
@@ -27,7 +28,7 @@ Criado em 07/11/2026 depois do feedback da Yasmin: "sem transição, áudio com 
 - [ ] **Cada fala conferida por transcrição** na hora (`narrar.py`): palavra a mais/a menos → gera de novo.
 - [ ] Conferência final do vídeo inteiro (`tools/conferir_narracao.py`): diferenças = 0, "Stardew Valley" em inglês, sem leitura de marcação, chiado = 0.
 - [ ] **Sem chiado:** áudio do Gemini chega no limite (pico ~0 dB) e com ruído em −57 dB → folga de 4 dB, filtro 80 Hz–11 kHz, redução de ruído leve, tudo em WAV até o fim, loudnorm em 2 passadas (linear) + limitador, um único AAC 192k.
-- [ ] Cota grátis do Gemini: **100 áudios/dia por modelo**. Não gastar em teste à toa; tentativas de conferência contam.
+- [ ] Cota grátis do Gemini: **100 áudios/dia por modelo** (3.8 Flash) e **50/dia no 2.5 Pro TTS** — 1 vídeo ≈ 6–10 chamadas com as reconferências. Não gastar em teste à toa; tentativas de conferência contam.
 
 ## Antes de mandar pra Yasmin
 - [ ] "Nada esquisito, sempre melhorando": cada lote tem que sair melhor que o anterior. Comparar com o último aprovado.

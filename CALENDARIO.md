@@ -12,9 +12,9 @@ Nunca 2 posts da mesma categoria seguidos.
 | dom 08/11 | 13:00 | 003v · Barril errado? (vídeo) | aprovado |
 | dom 08/11 | 17:00 | 001v · 5 segredos (vídeo) | aprovado |
 | dom 08/11 | 20:30 | 002v · 6 presentes (vídeo) | aprovado |
-| seg 09/11 | 06:00 | (vago — próximo lote: Recados Secretos) | a produzir |
+| seg 09/11 | 06:00 | 007v · Recados Secretos Ep. 1: como destravar (vídeo narrado + legenda) | aguardando aprovação |
 | seg 09/11 | 12:00 | 002 · 6 presentes (fotos) — movido de sáb 20:30 | aprovado |
-| seg 09/11 | 17:00 | (vago — próximo lote) | a produzir |
+| seg 09/11 | 17:00 | 008v · Recados Secretos Ep. 2: Recado #21 (Lewis e Marnie) | produzindo — cota de voz do Gemini volta ~05:30 de dom |
 | seg 09/11 | 19:30 | 006v · 3 criaturas (vídeo) — movido de sáb 21:15 | aprovado |
 
 ## Painel de aprovação

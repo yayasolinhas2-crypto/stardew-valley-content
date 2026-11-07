@@ -96,7 +96,7 @@ def main(post):
         d, w = fala(t, voz, f'{post}/narracao/{i+1:02d}.wav', tmpdir)
         durs.append(round(d, 3)); palavras += w
         print(f'  cena {i+1}: {d:.2f}s · {w/d:.2f} palavras/s · {t}')
-    json.dump({'duracoes': durs}, open(f'{post}/narracao/duracoes.json', 'w'))
+    json.dump({'duracoes': durs, 'falas': cfg['falas']}, open(f'{post}/narracao/duracoes.json', 'w'), ensure_ascii=False)
     subprocess.run(['node', 'tools/video.js', post, '30', '--narr', f'{post}/narracao/duracoes.json'], check=True)
     tempos = json.load(open(f'{post}/tempos.json'))
     # trilha: voz (cada fala no início da sua cena) + efeitos sonoros

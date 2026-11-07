@@ -6,10 +6,10 @@ Fonte de tudo: wiki oficial (stardewvalleywiki.com e pt.stardewvalleywiki.com). 
 ## Série A: Recados Secretos (27 no jogo)
 | # | Pauta | Gancho | Status |
 |---|-------|--------|--------|
-| A1 | Como destravar os Recados Secretos (inverno, ponto de ônibus, o "Homem das Sombras", a Lupa) | "Tem 27 recados escondidos no jogo e quase ninguém destrava" | ideia |
+| A1 ✅ Ep.1 (007v) | Como destravar os Recados Secretos (inverno, ponto de ônibus, o "Homem das Sombras", a Lupa) | "Tem 27 recados escondidos no jogo e quase ninguém destrava" | ideia |
 | A2 | Recado #10: alguém te espera no andar 100 da Caverna da Caveira (Sr. Qi, +25 de vida pra sempre) | "Um bilhete misterioso te manda pro andar 100…" | ideia |
 | A3 | Recado #23: "seecrit wuds" + xarope de bordo = o urso (frutinhas valem o triplo) | "Um bilhete escrito errado esconde um bônus permanente" | ideia |
-| A4 | Recado #21: arbusto às 0:40 → Marnie e Lewis pulam e fogem | "O que o Lewis e a Marnie fazem de madrugada" | ideia |
+| A4 ✅ Ep.2 (008v) | Recado #21: arbusto às 0:40 → Marnie e Lewis pulam e fogem | "O que o Lewis e a Marnie fazem de madrugada" | ideia |
 | A5 | Recados #17 e #18: os bonecos estranhos (verde atrás do Joja, amarelo no Deserto) | "Tem 2 bonecos assustadores enterrados no Vale" | ideia |
 | A6 | Recado #14: a estátua Junimo escondida atrás do Centro Comunitário | "Olha atrás do Centro Comunitário" | ideia |
 | A7 | Recado #16: baú enterrado perto da ferrovia | "Tem um tesouro enterrado do lado da ferrovia" | ideia |

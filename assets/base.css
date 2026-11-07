@@ -74,3 +74,6 @@ body{background:#111}
 .big{font-family:Pix;font-size:100px;line-height:1.05;color:var(--wood);text-align:center;text-transform:uppercase;margin-top:40px}
 .cta{margin-top:26px;text-align:center;background:var(--red);color:#fff;font-size:50px;line-height:1.2;padding:26px;box-shadow:0 0 0 7px var(--wood)}
 .cta b{font-family:Pix;font-size:108px;color:var(--gold);display:block;text-shadow:5px 5px 0 #000;margin:6px 0}
+
+/* inverno (série Recados Secretos) */
+.tema-inverno{--sky:linear-gradient(#5b7fb0 0%,#9cc0e4 50%,#dcebf7 100%);--h1:#cfdff0;--h2:#f4f8fc}
