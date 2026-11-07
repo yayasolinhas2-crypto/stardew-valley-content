@@ -1,6 +1,6 @@
 # Post 001: 5 segredos escondidos em Stardew Valley
 
-**Status:** aguardando aprovação da Yasmin
+**Status:** aprovado pela Yasmin (07/11), revisado: fonte trocada (C virava O, 5 virava S)
 **Formato:** carrossel de fotos no TikTok, 7 slides 1080×1920 (`slides/01.png` a `07.png`)
 **Tese:** segredos escondidos que você pode testar hoje
 **Pilar:** Segredos · **Categoria:** contagem regressiva com mistério

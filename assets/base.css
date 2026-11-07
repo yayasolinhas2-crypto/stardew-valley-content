@@ -1,0 +1,75 @@
+/* Base visual dos posts (1080x1920). Cada post escolhe um tema no <section class="slide tema-...">. */
+/* Fonte pixel: Jersey 10 (testada: C, f, 5 e 8 legíveis; a Pixelify trocava C por O e 5 por S). */
+@font-face{font-family:Pix;src:url(fonts/jersey-10-latin-400-normal.woff2)}
+@font-face{font-family:Pix;src:url(fonts/nunito-latin-900-normal.woff2);unicode-range:U+BA,U+D7}
+@font-face{font-family:Nun;font-weight:800;src:url(fonts/nunito-latin-800-normal.woff2)}
+@font-face{font-family:Nun;font-weight:900;src:url(fonts/nunito-latin-900-normal.woff2)}
+:root{--ink:#3b1d07;--wood:#5b2a0c;--orange:#c96a1b;--paper:#fbe0a8;--paper2:#f4c97c;--red:#b8300f;--gold:#ffd84a}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#111}
+.slide{width:1080px;height:1920px;position:relative;overflow:hidden;font-family:Nun;font-weight:800;color:var(--ink);background:var(--sky)}
+.nw{white-space:nowrap}
+
+/* ---------- temas de fundo ---------- */
+.tema-noite{--sky:linear-gradient(#141640 0%,#26297a 45%,#4b4fb0 75%,#7a7fd6 100%);--h1:#3f8a2e;--h2:#5fb33a}
+.tema-por-do-sol{--sky:linear-gradient(#5a3a8c 0%,#c45c8e 35%,#f39a7b 65%,#ffd59a 100%);--h1:#6b8f3a;--h2:#8fb84a}
+.tema-dia{--sky:linear-gradient(#4aa8f0 0%,#7cc6ff 50%,#c4ebff 100%);--h1:#3f8a2e;--h2:#6cc04a}
+.tema-mar{--sky:linear-gradient(#ffb27a 0%,#ffd6a0 30%,#9fd8ff 55%,#2f86c9 72%,#1d5f9e 100%)}
+.tema-mar .hills,.tema-mar .hills2{display:none}
+
+.stars i{position:absolute;width:8px;height:8px;background:#fff8d0}
+.stars i.b{width:12px;height:12px;background:#ffe98a}
+.clouds b{position:absolute;height:32px;background:#fff;opacity:.9;box-shadow:16px -16px 0 0 #fff,32px 0 0 0 #fff}
+.waves i{position:absolute;width:48px;height:8px;background:#bfe6ff;opacity:.7}
+.hills{position:absolute;left:0;right:0;bottom:0;height:300px;background:var(--h1);
+  clip-path:polygon(0 30%,8% 30%,8% 22%,18% 22%,18% 14%,30% 14%,30% 22%,42% 22%,42% 30%,55% 30%,55% 18%,66% 18%,66% 10%,78% 10%,78% 18%,88% 18%,88% 26%,100% 26%,100% 100%,0 100%)}
+.hills2{position:absolute;left:0;right:0;bottom:0;height:160px;background:var(--h2);
+  clip-path:polygon(0 20%,12% 20%,12% 10%,26% 10%,26% 0,40% 0,40% 12%,58% 12%,58% 4%,74% 4%,74% 16%,90% 16%,90% 8%,100% 8%,100% 100%,0 100%)}
+
+/* ---------- painel no estilo menu do jogo (área segura: y 290–1450, x 78–942) ---------- */
+.card{position:absolute;left:78px;width:864px;top:290px;height:1160px;padding:48px 50px 64px;
+  display:flex;flex-direction:column;justify-content:center;
+  background:linear-gradient(var(--paper),var(--paper2));
+  box-shadow:0 0 0 8px var(--wood),0 0 0 18px var(--orange),0 0 0 26px var(--wood),14px 22px 0 26px rgba(0,0,0,.35)}
+.card>*{flex:none}
+.badge{align-self:flex-start;font-family:Pix;font-size:69px;color:var(--gold);background:var(--wood);padding:10px 26px 14px;text-transform:uppercase;
+  box-shadow:0 0 0 6px var(--orange);text-shadow:4px 4px 0 #000}
+.center{text-align:center}.center .badge{align-self:center}
+.name{font-family:Pix;font-size:97px;line-height:1.02;margin:28px 0 8px;color:var(--wood);text-transform:uppercase;text-shadow:4px 4px 0 rgba(201,106,27,.45)}
+.where{font-size:36px;color:#7a4515;margin-bottom:10px}
+.icons{display:flex;align-items:flex-end;justify-content:center;gap:40px;margin:18px 0}
+.icons img{image-rendering:pixelated;display:block}
+.icons figure{text-align:center;font-size:34px}
+.arrow{font-family:Nun;font-weight:900;font-size:56px;align-self:center;color:var(--wood)}
+.step{font-size:41px;line-height:1.2;margin:14px 0}
+.step b{color:var(--red);font-weight:900}
+.result{margin-top:20px;background:var(--wood);color:#fff3cf;font-size:41px;line-height:1.2;padding:20px 28px;box-shadow:0 0 0 6px var(--orange)}
+.result b{color:var(--gold)}
+.src{position:absolute;right:50px;bottom:20px;font-size:24px;color:#8a5a2b}
+.bridge{position:absolute;left:40px;right:40px;top:1488px;text-align:center;font-family:Nun;font-weight:900;font-size:42px;white-space:nowrap;color:#fff;
+  text-shadow:3px 3px 0 #000,-2px -2px 0 #000,2px -2px 0 #000,-2px 2px 0 #000}
+
+/* chips numerados (teclas, conchas) */
+.keys{display:flex;gap:14px;justify-content:center;margin:10px 0}
+.keys span{font-family:Nun;font-weight:900;font-size:60px;width:80px;height:100px;display:flex;align-items:center;justify-content:center;background:#fff;color:var(--ink);box-shadow:0 0 0 6px var(--ink)}
+.keys span.sp{background:none;box-shadow:none;width:30px}
+.shells{display:flex;gap:18px;justify-content:center;margin:6px 0 4px}
+.shells span{font-family:Nun;font-weight:900;font-size:58px;width:104px;height:104px;display:flex;align-items:center;justify-content:center;background:#ffd1dc;color:var(--ink);box-shadow:0 0 0 6px var(--wood);border-radius:60px 60px 10px 10px}
+
+/* tabela estilo livro do jogo */
+.tbl{width:100%;border-collapse:collapse;font-size:38px;margin:10px 0}
+.tbl td{padding:12px 8px;border-bottom:4px dashed rgba(91,42,12,.35);vertical-align:middle}
+.tbl td img{image-rendering:pixelated;width:96px;display:block}
+.tbl .v{font-weight:900;color:var(--red);text-align:right;white-space:nowrap}
+.tbl .win{background:rgba(255,216,74,.55)}
+
+/* capa */
+.cover h1{font-family:Pix;font-size:159px;line-height:.9;color:var(--wood);text-transform:uppercase;text-shadow:6px 6px 0 rgba(201,106,27,.5);margin-top:40px}
+.cover h1 em{font-style:normal;color:var(--red)}
+.cover .sub{font-size:50px;margin-top:22px}
+.tag{align-self:center;display:inline-block;margin-top:34px;font-family:Pix;font-size:74px;color:var(--gold);background:var(--red);padding:12px 30px 16px;text-transform:uppercase;
+  box-shadow:0 0 0 7px var(--wood);text-shadow:4px 4px 0 #000;transform:rotate(-3deg)}
+.qbox{width:150px;height:150px;background:var(--gold);box-shadow:0 0 0 8px var(--wood),inset -12px -12px 0 #d9a520;font-family:Nun;font-weight:900;font-size:100px;color:var(--wood);display:flex;align-items:center;justify-content:center}
+.big{font-family:Pix;font-size:100px;line-height:1.05;color:var(--wood);text-align:center;text-transform:uppercase;margin-top:40px}
+.cta{margin-top:26px;text-align:center;background:var(--red);color:#fff;font-size:50px;line-height:1.2;padding:26px;box-shadow:0 0 0 7px var(--wood)}
+.cta b{font-family:Pix;font-size:108px;color:var(--gold);display:block;text-shadow:5px 5px 0 #000;margin:6px 0}
