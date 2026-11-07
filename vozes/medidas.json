@@ -1,0 +1,74 @@
+{
+ "Leda": {
+  "dur": 4.5,
+  "wps": 3.33,
+  "tokens": 164,
+  "transcricao": "Você pula a tela do fim do dia em Stardew Valley? Então você perdeu isso.",
+  "sotaque": "brasileiro",
+  "genero_voz": "feminina",
+  "tom": "curioso, expressivo, descontraído"
+ },
+ "Aoede": {
+  "dur": 5.3,
+  "wps": 2.83,
+  "tokens": 178,
+  "transcricao": "Você pula a tela do fim do dia em Stardew Valley? Então você perdeu isso.",
+  "sotaque": "brasileiro",
+  "genero_voz": "feminina",
+  "tom": "curioso, expressivo, dinâmico"
+ },
+ "Laomedeia": {
+  "dur": 5.5,
+  "wps": 2.73,
+  "tokens": 184,
+  "transcricao": "Você pula a tela do fim do dia em Stardew Valley? Então você perdeu isso.",
+  "sotaque": "brasileiro",
+  "genero_voz": "feminina",
+  "tom": "curioso, envolvente"
+ },
+ "Zephyr": {
+  "dur": 4.8,
+  "wps": 3.12,
+  "tokens": 170,
+  "transcricao": "Você pula a tela do fim do dia em Stardew Valley? Então você perdeu isso.",
+  "sotaque": "brasileiro",
+  "genero_voz": "feminina",
+  "tom": "animado e curioso"
+ },
+ "Sulafat": {
+  "dur": 4.9,
+  "wps": 3.06,
+  "tokens": 169,
+  "transcricao": "Você pula a tela do fim do dia em Stardew Valley? Hum, então você perdeu isso.",
+  "sotaque": "brasileiro",
+  "genero_voz": "feminina",
+  "tom": "curioso, expressivo, intrigante"
+ },
+ "Puck": {
+  "dur": 4.3,
+  "wps": 3.49,
+  "tokens": 159,
+  "transcricao": "Você pula a tela do fim do dia em Stardew Valley? Então você perdeu isso.",
+  "sotaque": "brasileiro",
+  "genero_voz": "masculina",
+  "tom": "curioso, dinâmico"
+ },
+ "Achird": {
+  "dur": 5.0,
+  "wps": 3.0,
+  "tokens": 178,
+  "transcricao": "Você pula a tela do fim do dia em Stardew Valley? Então você perdeu isso.",
+  "sotaque": "brasileiro",
+  "genero_voz": "masculina",
+  "tom": "curioso, chamativo"
+ },
+ "Fenrir": {
+  "dur": 4.7,
+  "wps": 3.19,
+  "tokens": 181,
+  "transcricao": "Você pula a tela do fim do dia em Stardew Valley? Então você perdeu isso.",
+  "sotaque": "brasileiro",
+  "genero_voz": "masculina",
+  "tom": "curioso e dinâmico"
+ }
+}

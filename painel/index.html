@@ -115,7 +115,7 @@ const $=s=>document.querySelector(s);
 const STATUS={aguardando:"Aguardando você",aprovado:"Aprovado",negado:"Negado",publicado:"Postado"};
 const MOTIVOS=["gancho fraco","erro no texto","visual feio","confuso","bobo","nichado demais","já existe","nada a ver comigo"];
 const DIAS=["dom","seg","ter","qua","qui","sex","sáb"];
-let posts=[],db=null,dl=null,writable=true,loaded=false,busy=false,negando=null,voltarLista="postar",voltarFotos="";
+let vozes=[],vozEscolhida=null,posts=[],db=null,dl=null,writable=true,loaded=false,busy=false,negando=null,voltarLista="postar",voltarFotos="";
 
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const when=p=>new Date(`${p.data}T${p.hora||"00:00"}:00-03:00`).getTime();
@@ -214,7 +214,8 @@ function telaPostar(){
   const doDia=posts.filter(p=>p.data===h).sort(byTime);
   const amanha=new Date(new Date(h+"T12:00:00-03:00").getTime()+864e5).toISOString().slice(0,10);
   const doAmanha=posts.filter(p=>p.data===amanha).sort(byTime);
-  return `${prox?`<section class="frame hl"><div class="row" style="justify-content:space-between"><span class="lbl">Próximo a postar</span>${pill(prox)}</div>
+  const aviso=vozes.length&&!vozEscolhida?`<a class="btn wide" href="#vozes">🎙 Teste de voz: escolha a narração dos vídeos →</a>`:"";
+  return `${aviso}${prox?`<section class="frame hl"><div class="row" style="justify-content:space-between"><span class="lbl">Próximo a postar</span>${pill(prox)}</div>
       <div><span class="when">${quando(prox)}</span><h2 style="margin-top:4px">${esc(prox.titulo)}</h2></div>${strip(prox)}${passos(prox)}</section>`
     :`<section class="frame empty"><h2>Fila vazia</h2><p class="muted">Nenhum post aprovado esperando. Veja a aba Aprovar.</p></section>`}
     <section class="frame"><h3>Hoje · ${dia(h)}</h3>${doDia.length?doDia.map(slot).join(""):`<p class="muted">Nada marcado pra hoje.</p>`}</section>
@@ -268,6 +269,16 @@ function telaFotos(p){
   <div class="gal">${p.slides.map((u,i)=>`<figure><img src="${esc(u)}" alt="Foto ${i+1} de ${p.slides.length}"><figcaption><b>${i+1} de ${p.slides.length}</b>${dl?`<button class="small" data-uma="${esc(p.id)}" data-i="${i}">Baixar esta</button>`:""}</figcaption></figure>`).join("")}</div>`;
 }
 
+function telaVozes(){
+  if(!vozes.length)return `<section class="frame empty muted">Nenhum teste de voz no momento.</section>`;
+  const fx=vozes.filter(v=>v.genero==="feminina"),mx=vozes.filter(v=>v.genero!=="feminina");
+  const card=v=>`<section class="frame${vozEscolhida===v.id?" hl":""}"><div class="row" style="justify-content:space-between"><h3>${esc(v.nome)}</h3>${vozEscolhida===v.id?`<span class="pill s-aprovado">Escolhida</span>`:`<span class="tag">${esc(v.tom||"")}</span>`}</div>
+    <audio controls preload="none" src="${esc(v.audio)}" style="width:100%"></audio>
+    <p class="muted">${esc(v.duracao)} s · ${esc(String(v.pps).replace(".",","))} palavras/s${v.pps>3?" · <b>rápida demais pra regra (máx. 3,0)</b>: dá pra pedir mais calma":""}${v.obs?` · ${esc(v.obs)}`:""}</p>
+    ${vozEscolhida===v.id?"":`<button class="primary" data-voz="${esc(v.id)}" ${writable?"":"disabled"}>Escolher esta voz</button>`}</section>`;
+  return `<section class="frame"><h2>Teste de voz</h2><p>A mesma frase do gancho em ${vozes.length} vozes do Gemini, todas com sotaque brasileiro. Ouça com fone e escolha a que combina com o perfil.</p><p class="muted">“Você pula a tela do fim do dia em Stardew Valley? Então você perdeu isso.”</p></section>
+  <h3>Femininas</h3>${fx.map(card).join("")}<h3>Masculinas</h3>${mx.map(card).join("")}`;
+}
 function render(){
   const h=(location.hash||"#postar").slice(1);
   const [v,...rest]=h.split("-");const id=rest.join("-");
@@ -275,7 +286,7 @@ function render(){
   const pend=posts.filter(p=>p.status==="aguardando").length;const n=$("#n-aprovar");n.hidden=!pend;n.textContent=pend;
   if(!loaded)return;
   const el=$("#view");
-  el.innerHTML=v==="aprovar"?telaAprovar():v==="semana"?telaSemana():v==="todos"?telaTodos():v==="post"?telaPost(get(id)):v==="fotos"?telaFotos(get(id)):telaPostar();
+  el.innerHTML=v==="aprovar"?telaAprovar():v==="semana"?telaSemana():v==="todos"?telaTodos():v==="post"?telaPost(get(id)):v==="fotos"?telaFotos(get(id)):v==="vozes"?telaVozes():telaPostar();
 }
 
 document.addEventListener("click",e=>{
@@ -292,6 +303,7 @@ document.addEventListener("click",e=>{
     const id=d.negar;const ms=[...document.querySelectorAll(`input[id^="m-${CSS.escape(id)}-"]:checked`)].map(i=>i.value);const tx=($("#txt-"+CSS.escape(id))||{}).value?.trim()||"";
     if(!ms.length&&!tx){toast("Marque um motivo ou escreva o que mudar");return}
     negando=null;salvar(id,{status:"negado",motivo:[...ms,tx].filter(Boolean).join(" · ")},"Recusado. O Claude vai refazer.")}
+  else if(d.voz){if(!db)return;vozEscolhida=d.voz;render();db.collection("config").doc("voz").set({escolhida:d.voz,em:new Date().toISOString()}).then(()=>toast("Voz escolhida! O Claude vai usar essa nos vídeos"),()=>toast("Não salvou. Tente de novo."))}
   else if(d.pub){salvar(d.pub,{status:"publicado"},"Marcado como postado 🎉")}
   else if(d.volta){salvar(d.volta,{status:"aguardando"},"Voltou pra aguardando")}
 });
@@ -307,6 +319,8 @@ addEventListener("hashchange",e=>{negando=null;
   db=await claude.use("db").catch(()=>null);
   if(!db){$("#view").innerHTML=`<section class="frame empty"><h2>Entre na sua conta</h2><p class="muted">Abra este painel logada no claude.ai pra ver e aprovar os posts.</p></section>`;return}
   const timer=setTimeout(()=>{if(!loaded)$("#view").innerHTML=`<section class="frame empty muted">Ainda conectando… confira a internet.</section>`},10000);
+  db.collection("vozes").onSnapshot(sn=>{vozes=sn.docs.map(d=>({id:d.id,...d.data()})).sort((a,b)=>(a.ordem||0)-(b.ordem||0));render()},()=>{});
+  db.collection("config").doc("voz").onSnapshot(sn=>{vozEscolhida=sn.exists?sn.data().escolhida:null;render()},()=>{});
   db.collection("posts").onSnapshot(snap=>{
     if(!snap.metadata.fromCache)clearTimeout(timer);
     posts=snap.docs.map(d=>({id:d.id,slides:[],...d.data()}));loaded=true;render();

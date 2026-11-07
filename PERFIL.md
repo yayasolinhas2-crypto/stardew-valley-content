@@ -28,6 +28,11 @@
 - Painel: https://claude.ai/artifact/VcfHJ9URGoLjqq9kzcaCX9 (fixado na barra lateral; quer baixar as fotos por lá).
 - Revisão: ela repara em erro de escrita e texto fora do quadro. Sempre conferir em tamanho real antes de entregar.
 
+## Narração (07/11)
+- Quer narração nos vídeos. Chave do Gemini cadastrada no ambiente (Network secrets, host generativelanguage.googleapis.com, header x-goog-api-key).
+- Teste de 8 vozes no painel (aba #vozes). Modelo: gemini-2.5-flash-preview-tts (aceita instrução de tom; o 3.8 lê a instrução em voz alta e não aceita instrução separada).
+- Regra: máx. 3,0 palavras/s — Leda, Puck, Fenrir, Zephyr e Sulafat passaram um pouco no teste; pedir "ritmo mais calmo" na narração final.
+
 ## Gosto: aprovado / negado (com o porquê)
 | Data | Ideia/roteiro | Decisão | Categoria | Porquê |
 |------|---------------|---------|-----------|--------|
