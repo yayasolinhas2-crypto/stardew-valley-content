@@ -85,6 +85,7 @@ ol.steps>li>div{display:grid;gap:8px;min-width:0}
 .slot a{color:var(--ink);text-decoration:none;display:grid;gap:4px;min-width:0}
 .slot a b{font-weight:800;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
 .back{justify-self:start}
+video.player{width:100%;max-width:420px;justify-self:center;aspect-ratio:9/16;border:3px solid var(--wood);background:#000;display:block}
 .reasons{display:flex;gap:6px;flex-wrap:wrap}
 .reasons label{font-size:14px;border:2px solid var(--line);padding:6px 9px;cursor:pointer;background:var(--paper);display:flex;gap:6px;align-items:center}
 .reasons input{accent-color:var(--bad);width:18px;height:18px}
@@ -152,6 +153,12 @@ async function baixarZip(p,btn){
   }catch(e){btn.textContent=orig;toast(e&&e.code==="declined"?"Download cancelado":e&&e.code==="nozip"?"Não carregou o compactador. Use 'Ver fotos pra salvar'.":"Não deu pra baixar. Tente 'Ver fotos pra salvar'.")}
   busy=false;
 }
+async function baixarVideo(p,btn){
+  if(busy)return;busy=true;const orig=btn.textContent;btn.textContent="Preparando…";
+  try{await dl.save({filename:`segredosdovalley-${p.num}.mp4`,data:await blobDe(p.video)});btn.textContent="Vídeo salvo ✓";btn.classList.add("done")}
+  catch(e){btn.textContent=orig;toast(e&&e.code==="declined"?"Download cancelado":"Não deu pra baixar. Use o compartilhar do próprio vídeo.")}
+  busy=false;
+}
 async function baixarUma(p,i,btn){
   if(busy)return;busy=true;
   try{await dl.save({filename:nomeFoto(p,i),data:await blobDe(p.slides[i])});btn.textContent="Salva ✓";btn.classList.add("done")}
@@ -167,14 +174,17 @@ async function salvar(id,patch,msg){
 }
 
 /* ---------- pedaços de tela ---------- */
-const strip=p=>`<a href="#fotos-${esc(p.id)}" class="strip" aria-label="Ver as fotos">${(p.slides||[]).map((u,i)=>`<img src="${esc(u)}" alt="Foto ${i+1}" loading="lazy">`).join("")}</a>`;
+const capa=p=>p.capa||(p.slides||[])[0]||"";
+const strip=p=>p.video?`<video class="player" src="${esc(p.video)}" poster="${esc(capa(p))}" controls playsinline preload="metadata"></video>`:`<a href="#fotos-${esc(p.id)}" class="strip" aria-label="Ver as fotos">${(p.slides||[]).map((u,i)=>`<img src="${esc(u)}" alt="Foto ${i+1}" loading="lazy">`).join("")}</a>`;
 function passos(p){
+  const passo1=p.video?`<li><div><b>Salve o vídeo</b>${dl?`<button class="wide primary" data-vid="${esc(p.id)}">Baixar vídeo</button>`:""}
+      <p class="muted">No iPhone: toque no vídeo acima → tela cheia → botão de compartilhar → <b>Salvar Vídeo</b>. Pelo botão "Baixar vídeo", ele vai pro app Arquivos (de lá: Compartilhar → Salvar Vídeo).</p></div></li>`:null;
   return `<ol class="steps">
-    <li><div><b>Salve as ${p.slides.length} fotos</b>
+    ${passo1||`<li><div><b>Salve as ${p.slides.length} fotos</b>
       <div class="grid2">${dl?`<button class="primary" data-zip="${esc(p.id)}">Baixar todas</button>`:""}<a class="btn" href="#fotos-${esc(p.id)}">Ver fotos pra salvar</a></div>
-      <p class="muted">${dl?"“Baixar todas” salva um .zip. ":""}No iPhone, o mais rápido é “Ver fotos pra salvar”: segure o dedo em cada foto e toque em <b>Adicionar às Fotos</b>.</p></div></li>
+      <p class="muted">${dl?"“Baixar todas” salva um .zip. ":""}No iPhone, o mais rápido é “Ver fotos pra salvar”: segure o dedo em cada foto e toque em <b>Adicionar às Fotos</b>.</p></div></li>`}
     <li><div><b>Copie a legenda</b><button class="wide primary" data-copy="legenda" data-id="${esc(p.id)}">Copiar legenda</button><div class="txt">${esc(p.legenda)}</div></div></li>
-    <li><div><b>Poste no TikTok</b><p class="muted">Toque em <b>+</b> → <b>Fotos</b> → escolha as ${p.slides.length} na ordem (01 a ${String(p.slides.length).padStart(2,"0")}) → música em alta → cole a legenda → Publicar.</p></div></li>
+    <li><div><b>Poste no TikTok</b><p class="muted">${p.video?`Toque em <b>+</b> → escolha o vídeo → <b>música em alta</b> (o vídeo vem sem som) → cole a legenda → Publicar.`:`Toque em <b>+</b> → <b>Fotos</b> → escolha as ${p.slides.length} na ordem (01 a ${String(p.slides.length).padStart(2,"0")}) → música em alta → cole a legenda → Publicar.`}</p></div></li>
     <li><div><b>Comente e fixe</b><button class="wide primary" data-copy="fixado" data-id="${esc(p.id)}">Copiar comentário</button><div class="txt">${esc(p.fixado)}</div><p class="muted">Cole como comentário no seu post, segure o dedo nele e toque em <b>Fixar</b>.</p></div></li>
     <li><div><b>Pronto?</b>${p.status==="publicado"?`<span class="pill s-publicado">Postado</span>`:`<button class="wide ok" data-pub="${esc(p.id)}" ${writable?"":"disabled"}>Já postei ✓</button>`}</div></li>
   </ol>`;
@@ -182,8 +192,8 @@ function passos(p){
 function slot(p){return `<div class="slot"><span class="t">${esc(p.hora)}</span><a href="#post-${esc(p.id)}"><span class="row">${pill(p)}</span><b>#${esc(p.num)} · ${esc(p.titulo)}</b></a></div>`}
 function cartaoAprovar(p){
   const neg=negando===p.id;
-  return `<article class="frame"><div class="card"><a href="#post-${esc(p.id)}"><img src="${esc(p.slides[0])}" alt="Capa do post ${esc(p.num)}"></a>
-    <div class="meta"><div class="row">${pill(p)}<span class="tag">#${esc(p.num)}</span></div><h3>${esc(p.titulo)}</h3><span class="when">${quando(p)}</span></div></div>
+  return `<article class="frame"><div class="card"><a href="#post-${esc(p.id)}"><img src="${esc(capa(p))}" alt="Capa do post ${esc(p.num)}"></a>
+    <div class="meta"><div class="row">${pill(p)}<span class="tag">#${esc(p.num)}</span><span class="tag">${p.video?"vídeo":"fotos"}</span></div><h3>${esc(p.titulo)}</h3><span class="when">${quando(p)}</span></div></div>
     ${strip(p)}
     ${neg?formNegar(p):`<div class="grid2"><button class="ok" data-aprovar="${esc(p.id)}" ${writable?"":"disabled"}>Aprovar</button><button class="bad" data-negar-abrir="${esc(p.id)}" ${writable?"":"disabled"}>Negar</button></div>
     <a class="btn small" href="#post-${esc(p.id)}">Ver post completo</a>`}
@@ -241,7 +251,7 @@ function telaPost(p){
   <section class="frame"><div class="row">${pill(p)}<span class="tag">#${esc(p.num)}</span><span class="tag">${esc(p.pilar||"")}</span></div>
     <h2>${esc(p.titulo)}</h2><span class="when">${quando(p)}</span>
     ${p.status==="negado"&&p.motivo?`<p class="muted"><b>Motivo da recusa:</b> ${esc(p.motivo)}</p>`:""}
-    <a href="#fotos-${esc(p.id)}" class="thumbs">${p.slides.map((u,i)=>`<img src="${esc(u)}" alt="Foto ${i+1}" loading="lazy">`).join("")}</a>
+    ${p.video?strip(p):`<a href="#fotos-${esc(p.id)}" class="thumbs">${p.slides.map((u,i)=>`<img src="${esc(u)}" alt="Foto ${i+1}" loading="lazy">`).join("")}</a>`}
     ${p.gancho?`<div><span class="lbl">Gancho da capa</span><p>${esc(p.gancho)}</p></div>`:""}
   </section>
   ${p.status==="aguardando"||p.status==="negado"?`<section class="frame"><h3>Sua decisão</h3>${neg?formNegar(p):`<div class="grid2"><button class="ok" data-aprovar="${esc(p.id)}" ${writable?"":"disabled"}>Aprovar</button>${p.status!=="negado"?`<button class="bad" data-negar-abrir="${esc(p.id)}" ${writable?"":"disabled"}>Negar</button>`:""}</div>`}</section>`:""}
@@ -273,6 +283,7 @@ document.addEventListener("click",e=>{
   const d=t.dataset;
   if(d.copy){const p=get(d.id);copiar(d.copy==="legenda"?p.legenda:p.fixado,t)}
   else if(d.zip){baixarZip(get(d.zip),t)}
+  else if(d.vid){baixarVideo(get(d.vid),t)}
   else if(d.uma){baixarUma(get(d.uma),+d.i,t)}
   else if(d.aprovar){negando=null;salvar(d.aprovar,{status:"aprovado",motivo:""},"Aprovado ✓")}
   else if(d.negarAbrir){negando=d.negarAbrir;render()}

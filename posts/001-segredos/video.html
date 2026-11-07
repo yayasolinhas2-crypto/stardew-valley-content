@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="../../assets/base.css">
+<style>
+/* Vídeo 1080x1920 · 28 s · cada cena é uma <section> com data-in/data-out (segundos).
+   Cada elemento animado tem data-in (segundos) e data-fx. seek(t) desenha o quadro t — determinístico, renderizado quadro a quadro. */
+body{background:#000}
+.stage{width:1080px;height:1920px;position:relative;overflow:hidden}
+.stage>.slide{position:absolute;inset:0}
+.scene{position:absolute;inset:0}
+[data-fx]{will-change:transform,opacity}
+.keys span.lit{background:var(--gold);transform:translateY(6px)}
+.shells span.lit{background:#ff8fb0}
+.heart{font-family:Nun;font-weight:900;font-size:120px;color:#e0304a;text-shadow:5px 5px 0 #000}
+.bigtime{font-family:Pix;font-size:150px;line-height:.9;color:var(--red);text-align:center;text-shadow:6px 6px 0 rgba(201,106,27,.45)}
+.sub2{font-size:46px;line-height:1.2;text-align:center}
+.sub2 b{color:var(--red);font-weight:900}
+.cannoli{image-rendering:pixelated;width:228px;display:block}
+.chain{display:flex;align-items:center;justify-content:center;gap:24px}
+.chain img{image-rendering:pixelated}
+.mid-cta{margin-top:22px;white-space:nowrap;text-align:center;background:var(--red);color:#fff;font-family:Nun;font-weight:900;font-size:40px;padding:12px;box-shadow:0 0 0 6px var(--wood)}
+.mid-cta b{color:var(--gold)}
+.maze{display:grid;grid-template-columns:repeat(9,52px);gap:0;justify-content:center;margin:8px 0}
+.maze i{width:52px;height:52px;background:#3a2414}
+.maze i.c{background:#c9a36b}
+.chaser{position:absolute;image-rendering:pixelated;width:150px}
+.final-cta{text-align:center;background:var(--red);color:#fff;font-size:50px;line-height:1.2;padding:26px;box-shadow:0 0 0 7px var(--wood)}
+.final-cta b{font-family:Pix;font-size:110px;color:var(--gold);display:block;text-shadow:5px 5px 0 #000}
+</style></head><body>
+<div class="stage" id="stage">
+
+<!-- 0–3.2 s · CAPA -->
+<section class="slide tema-noite cover scene" data-in="0" data-out="3.2"><div class="card center">
+  <span class="badge" data-in="0" data-fx="pop">Stardew Valley</span>
+  <h1><span data-in="0.15" data-fx="type" data-text="5 segredos"></span><br><em data-in="0.7" data-fx="type" data-text="escondidos"></em></h1>
+  <div class="sub" data-in="1.25" data-fx="up">que quase ninguém acha</div>
+  <div class="icons" style="margin:40px 0 6px;gap:46px">
+   <div class="qbox" data-in="1.4" data-fx="drop">?</div><img src="../../assets/icons/Junimo_Plush.png" style="width:288px" data-in="1.55" data-fx="drop"><div class="qbox" data-in="1.7" data-fx="drop">?</div>
+  </div>
+  <span class="tag" data-in="2.1" data-fx="stamp">e o nº 1 é bizarro</span>
+ </div></section>
+
+<!-- 3.2–7.2 s · Nº 5 -->
+<section class="slide tema-noite scene" data-in="3.2" data-out="7.2"><div class="card">
+  <span class="badge" data-in="3.2" data-fx="pop">Segredo nº 5</span>
+  <div class="name" data-in="3.35" data-fx="left">O piano do Elliott</div>
+  <div class="icons" style="gap:30px"><img src="../../assets/icons/Elliott.png" style="width:224px" data-in="3.5" data-fx="up"><span class="heart" data-in="6.2" data-fx="pop">♥</span></div>
+  <div class="step center" data-in="3.7" data-fx="up">Enquanto ele escreve, toque:</div>
+  <div class="keys"><span data-in="4.3" data-fx="light">2</span><span data-in="4.5" data-fx="light">4</span><span data-in="4.7" data-fx="light">3</span><span data-in="4.9" data-fx="light">2</span><span class="sp"></span><span data-in="5.2" data-fx="light">3</span><span data-in="5.4" data-fx="light">4</span><span data-in="5.6" data-fx="light">2</span><span data-in="5.8" data-fx="light">1</span></div>
+  <div class="result center" data-in="6.2" data-fx="up">Ele <b>vira e solta um coração</b></div>
+ </div></section>
+
+<!-- 7.2–11.2 s · Nº 4 -->
+<section class="slide tema-noite scene" data-in="7.2" data-out="11.2"><div class="card center">
+  <span class="badge" data-in="7.2" data-fx="pop">Segredo nº 4</span>
+  <div class="bigtime" data-in="7.4" data-fx="stamp" style="margin-top:30px">dia 28<br>12:00</div>
+  <div class="sub2" data-in="8.0" data-fx="up" style="margin-top:20px">sacuda o arbusto do <b>canto noroeste</b> da vila</div>
+  <div class="icons"><img src="../../assets/icons/Junimo_Plush.png" style="width:288px" data-in="9.0" data-fx="drop"></div>
+  <div class="result center" data-in="9.6" data-fx="up">Cai uma <b>Pelúcia Junimo</b></div>
+ </div></section>
+
+<!-- 11.2–16.4 s · Nº 3 (com CTA do meio) -->
+<section class="slide tema-noite scene" data-in="11.2" data-out="16.4"><div class="card center">
+  <span class="badge" data-in="11.2" data-fx="pop">Segredo nº 3</span>
+  <div class="name" data-in="11.35" data-fx="left">A estátua que tem fome</div>
+  <div class="icons" style="margin:10px 0"><img class="cannoli" id="cannoli" src="../../assets/anim/cannoli_00.png" data-in="11.5" data-fx="up" data-swap="13.6" data-swapsrc="../../assets/anim/cannoli_01.png"></div>
+  <div class="chain">
+   <img src="../../assets/icons/Rare_Seed.png" style="width:100px" data-in="12.0" data-fx="pop"><span class="arrow" data-in="12.3" data-fx="fade">→</span>
+   <img src="../../assets/icons/Sweet_Gem_Berry.png" style="width:100px" data-in="12.5" data-fx="pop"><span class="arrow" data-in="13.4" data-fx="fade">→</span>
+   <img src="../../assets/icons/Stardrop.png" style="width:120px" data-in="13.7" data-fx="pop">
+  </div>
+  <div class="result center" data-in="14.0" data-fx="up">Dê a <b>Cereja de Joia Doce</b> e ganhe uma <b class="nw">Fruta-estrela</b></div>
+  <div class="mid-cta" data-in="14.6" data-fx="up">comenta <b>SEGREDO</b> pra parte 2</div>
+ </div></section>
+
+<!-- 16.4–20.6 s · Nº 2 -->
+<section class="slide tema-noite scene" data-in="16.4" data-out="20.6"><div class="card center">
+  <span class="badge" data-in="16.4" data-fx="pop">Segredo nº 2</span>
+  <div class="name" data-in="16.55" data-fx="left">O barco da sereia</div>
+  <div class="sub2" data-in="16.8" data-fx="up">Mercado Noturno · <b>15 a 17 de inverno</b></div>
+  <div class="step" data-in="17.2" data-fx="up">Depois do show, toque as conchas:</div>
+  <div class="shells"><span data-in="17.7" data-fx="light">1</span><span data-in="17.95" data-fx="light">5</span><span data-in="18.2" data-fx="light">4</span><span data-in="18.45" data-fx="light">2</span><span data-in="18.7" data-fx="light">3</span></div>
+  <div class="icons"><img src="../../assets/icons/Pearl.png" style="width:168px" data-in="19.1" data-fx="drop"></div>
+  <div class="result center" data-in="19.3" data-fx="up">Você ganha uma <b>Pérola</b></div>
+ </div></section>
+
+<!-- 20.6–25.4 s · Nº 1 -->
+<section class="slide tema-noite scene" data-in="20.6" data-out="25.4"><div class="card center" id="card1">
+  <span class="badge" data-in="20.6" data-fx="stamp">Segredo nº 1</span>
+  <div class="name" data-in="20.8" data-fx="left">O porão do Lewis</div>
+  <div class="icons" style="gap:40px"><img src="../../assets/icons/Lewis.png" style="width:200px" data-in="21.0" data-fx="up"><img src="../../assets/icons/Staircase.png" style="width:150px" data-in="21.4" data-fx="drop"></div>
+  <div class="step center" data-in="21.6" data-fx="up">Uma <b>Escadaria</b> no quarto dele leva a um <b>labirinto secreto</b>…</div>
+  <div class="maze" data-in="22.6" data-fx="fade"></div>
+  <div class="result center" data-in="23.4" data-fx="up">…e os <b>Calções Roxos</b> ganham vida e <b>não morrem</b></div>
+ </div>
+ <img class="chaser" id="chaser" src="../../assets/icons/Springobjects789.png" data-in="22.8" data-fx="chase"></section>
+
+<!-- 25.4–28.5 s · FINAL -->
+<section class="slide tema-noite scene" data-in="25.4" data-out="99"><div class="card center">
+  <span class="badge" data-in="25.4" data-fx="pop">E agora?</span>
+  <div class="big" data-in="25.5" data-fx="up">Qual desses 5<br>você já sabia?</div>
+  <div class="final-cta" data-in="26.0" data-fx="stamp" style="margin-top:30px">Comenta<b>SEGREDO</b>e me segue pra parte 2</div>
+  <div class="step center" data-in="26.6" data-fx="up" style="margin-top:26px">Manda pro amigo que <b>nunca achou o porão do Lewis</b></div>
+ </div></section>
+
+</div>
+<script src="../../assets/base.js"></script>
+<script>
+// labirinto em pixel (1 = caminho)
+const M=["111101111","100101001","101111101","101000101","111011111"];
+document.querySelector('.maze').innerHTML=M.join('').split('').map(c=>`<i class="${c==='1'?'c':''}"></i>`).join('');
+const DUR=28.5;
+const clamp=x=>Math.max(0,Math.min(1,x));
+const easeOut=x=>1-Math.pow(1-x,3);
+const back=x=>{const c=1.7;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
+const els=[...document.querySelectorAll('[data-fx]')];
+els.forEach(e=>{if(e.dataset.fx==='type')e.textContent=''});
+window.seek=function(t){
+  document.querySelectorAll('.scene').forEach(s=>{
+    const a=+s.dataset.in,b=+s.dataset.out;const vis=t>=a&&t<b;s.style.visibility=vis?'visible':'hidden';
+    // transição: entra deslizando (chicote) em 0,22 s
+    const p=clamp((t-a)/.22);s.style.transform=a>0?`translateX(${(1-easeOut(p))*1080}px)`:'none';
+  });
+  for(const e of els){
+    const a=+e.dataset.in,fx=e.dataset.fx,p=clamp((t-a)/.35),q=easeOut(p);
+    let o=1,tr='';
+    if(fx==='pop'){o=p>0?1:0;tr=`scale(${p>0?back(p):0})`}
+    else if(fx==='up'){o=q;tr=`translateY(${(1-q)*60}px)`}
+    else if(fx==='left'){o=q;tr=`translateX(${(1-q)*-120}px)`}
+    else if(fx==='fade'){o=q}
+    else if(fx==='drop'){o=p>0?1:0;const bnc=p<1?(1-back(p))*-1:0;tr=`translateY(${(1-q)*-260}px)`}
+    else if(fx==='stamp'){o=p>0?1:0;tr=`scale(${p>0?1+(1-q)*.9:0}) rotate(${e.classList.contains('tag')?-3:0}deg)`}
+    else if(fx==='light'){e.classList.toggle('lit',t>=a);continue}
+    else if(fx==='type'){const s=e.dataset.text;e.textContent=s.slice(0,Math.round(clamp((t-a)/.45)*s.length));continue}
+    else if(fx==='chase'){const k=t-a;o=k>=0?1:0;const x=760-k*180,y=1010+Math.sin(k*9)*22;e.style.left=x+'px';e.style.top=y+'px';tr=`rotate(${Math.sin(k*12)*14}deg)`}
+    e.style.opacity=o;e.style.transform=tr;
+  }
+  const c=document.getElementById('cannoli');c.src=t>=+c.dataset.swap?c.dataset.swapsrc:'../../assets/anim/cannoli_00.png';
+};
+window.DUR=DUR;seek(0);
+</script>
+</body></html>

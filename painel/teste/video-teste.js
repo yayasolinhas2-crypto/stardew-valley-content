@@ -1,0 +1,11 @@
+const {chromium,devices}=require('playwright');
+(async()=>{const b=await chromium.launch();const ctx=await b.newContext({...devices['iPhone 13']});const p=await ctx.newPage();
+ await p.route('**/jszip.min.js',r=>r.fulfill({path:'../node_modules/jszip/dist/jszip.min.js'}));await p.route('https://fonts.googleapis.com/**',r=>r.abort());
+ const errs=[];p.on('pageerror',e=>errs.push(e.message));
+ await p.goto('http://localhost:8765/p.html#aprovar');await p.waitForTimeout(800);
+ console.log('aguardando na aba:',await p.locator('button[data-aprovar]').count());
+ await p.click('a[href="#post-p001v"] >> nth=0');await p.waitForTimeout(800);
+ const v=await p.evaluate(()=>{const v=document.querySelector('video.player');return v&&{dur:v.duration,w:v.videoWidth,h:v.videoHeight}});console.log('player:',JSON.stringify(v));
+ await p.screenshot({path:'t-video.png',fullPage:true});
+ await p.click('button[data-vid]');await p.waitForTimeout(800);console.log('salvo:',JSON.stringify(await p.evaluate(()=>__saves)));
+ console.log('erros:',errs);await b.close()})();
