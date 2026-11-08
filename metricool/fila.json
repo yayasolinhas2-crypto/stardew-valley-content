@@ -1,110 +1,34 @@
 {
- "atualizado_em": "2026-11-08T03:19:42+00:00",
+ "recado_para_claude_do_vitor": {
+  "de": "Claude da Yasmin",
+  "data": "2026-11-08",
+  "pedido": "A Yasmin mudou o padrão: nada de \"comenta PALAVRA\". Os posts abaixo com \"substituir_metricool_post_id\" são versões novas (mesmo horário, legenda e imagens novas): APAGUE no Metricool o post antigo com esse id e agende a versão nova no mesmo horário. Os demais são novos. Tudo aprovado por ela.",
+  "substituicoes": [
+   {
+    "id": "p002",
+    "apagar_metricool_post_id": "420466731",
+    "quando_brasilia": "2026-11-09 12:00"
+   },
+   {
+    "id": "p009",
+    "apagar_metricool_post_id": "420466840",
+    "quando_brasilia": "2026-11-10 12:00"
+   },
+   {
+    "id": "p010",
+    "apagar_metricool_post_id": "420466943",
+    "quando_brasilia": "2026-11-10 19:30"
+   },
+   {
+    "id": "p012",
+    "apagar_metricool_post_id": "420467007",
+    "quando_brasilia": "2026-11-11 17:00"
+   }
+  ]
+ },
+ "atualizado_em": "2026-11-08T07:58:04+00:00",
  "gerado_por": "Claude da Yasmin (a partir das aprovações dela no painel)",
  "posts": [
-  {
-   "id": "p004",
-   "titulo": "5 peixes lendários: onde e quando pegar",
-   "quando_brasilia": "2026-11-08 09:00",
-   "fuso": "America/Sao_Paulo",
-   "formato": "carrossel_fotos",
-   "redes": [
-    "tiktok"
-   ],
-   "midia_no_repositorio": [
-    "posts/004-peixes-lendarios/slides/01.png",
-    "posts/004-peixes-lendarios/slides/02.png",
-    "posts/004-peixes-lendarios/slides/03.png",
-    "posts/004-peixes-lendarios/slides/04.png",
-    "posts/004-peixes-lendarios/slides/05.png",
-    "posts/004-peixes-lendarios/slides/06.png",
-    "posts/004-peixes-lendarios/slides/07.png"
-   ],
-   "legenda": "Os 5 peixes lendários de Stardew Valley: onde, quando e qual nível 🎣 E você só pega UMA vez cada! Comenta LENDA que eu faço a parte 2.\nQual deles você já pegou?\n#stardewvalley #stardew #dicasstardewvalley #pescastardew #jogosaconchegantes",
-   "comentario_fixado": "💬 Comenta LENDA que eu faço a parte 2 com os segredos da pesca!",
-   "conteudo_gerado_por_ia": false,
-   "status": "agendado"
-  },
-  {
-   "id": "p003v",
-   "titulo": "VÍDEO · Você tá usando o barril errado?",
-   "quando_brasilia": "2026-11-08 13:00",
-   "fuso": "America/Sao_Paulo",
-   "formato": "video",
-   "redes": [
-    "tiktok",
-    "instagram"
-   ],
-   "midia_no_repositorio": [
-    "posts/003-barril-ou-jarra/video-15x.mp4"
-   ],
-   "legenda": "Você tá usando o Barril errado? 🍷 A regra de Stardew Valley que decide entre Barril e Jarra de conserva. Comenta BARRIL que eu mando a lista do que vai em cada um!\nVocê é time vinho ou time geleia?\n#stardewvalley #stardew #dicasstardewvalley #dinheirostardew #jogosaconchegantes",
-   "comentario_fixado": "💬 Comenta BARRIL que eu mando a lista de tudo que rende mais no Barril!",
-   "conteudo_gerado_por_ia": false,
-   "status": "agendado"
-  },
-  {
-   "id": "p011",
-   "titulo": "Como seria Stardew Valley na vida real?",
-   "quando_brasilia": "2026-11-08 17:00",
-   "fuso": "America/Sao_Paulo",
-   "formato": "carrossel_fotos",
-   "redes": [
-    "tiktok"
-   ],
-   "midia_no_repositorio": [
-    "posts/011-vila-real/slides/01.png",
-    "posts/011-vila-real/slides/02.png",
-    "posts/011-vila-real/slides/03.png",
-    "posts/011-vila-real/slides/04.png",
-    "posts/011-vila-real/slides/05.png",
-    "posts/011-vila-real/slides/06.png",
-    "posts/011-vila-real/slides/07.png",
-    "posts/011-vila-real/slides/08.png",
-    "posts/011-vila-real/slides/09.png",
-    "posts/011-vila-real/slides/10.png"
-   ],
-   "legenda": "Como seria Stardew Valley na vida real? 🌾 A fazenda, a Vila Pelicanos, o Saloon, a praia, as minas, a montanha, o deserto e a Ilha Gengibre. Comenta VALE que eu faço a parte 2!\nQual lugar você queria visitar?\n#stardewvalley #stardew #stardewvalleyrealife #jogosaconchegantes #ia",
-   "comentario_fixado": "💬 Comenta VALE que eu faço a parte 2 com mais lugares do jogo na vida real!",
-   "conteudo_gerado_por_ia": true,
-   "status": "agendado"
-  },
-  {
-   "id": "p002v",
-   "titulo": "VÍDEO · 6 presentes que todo morador ama",
-   "quando_brasilia": "2026-11-08 20:30",
-   "fuso": "America/Sao_Paulo",
-   "formato": "video",
-   "redes": [
-    "tiktok",
-    "instagram"
-   ],
-   "midia_no_repositorio": [
-    "posts/002-presentes/video-15x.mp4"
-   ],
-   "legenda": "6 presentes que QUASE todo morador de Stardew Valley ama 🎁 mas 2 pessoas odeiam um deles! Comenta PRESENTE que eu faço o guia de cada morador.\nQual desses você já tem no baú?\n#stardewvalley #stardew #dicasstardewvalley #presentesstardew #jogosaconchegantes",
-   "comentario_fixado": "💬 Comenta PRESENTE que eu faço o guia de presentes de cada morador!",
-   "conteudo_gerado_por_ia": false,
-   "status": "agendado"
-  },
-  {
-   "id": "p007v",
-   "titulo": "Recados Secretos · Ep. 1: como destravar",
-   "quando_brasilia": "2026-11-09 06:00",
-   "fuso": "America/Sao_Paulo",
-   "formato": "video",
-   "redes": [
-    "tiktok",
-    "instagram"
-   ],
-   "midia_no_repositorio": [
-    "posts/007-recados-ep1/video-15x.mp4"
-   ],
-   "legenda": "Tem 27 Recados Secretos escondidos em Stardew Valley e quase ninguém destrava 📜 Ep. 1: como conseguir a Lupa. Comenta RECADO que eu posto o Ep. 2!\nVocê já achou algum recado?\n#stardewvalley #stardew #dicasstardewvalley #segredosstardewvalley #jogosaconchegantes",
-   "comentario_fixado": "💬 Comenta RECADO que eu posto o próximo episódio dos Recados Secretos!",
-   "conteudo_gerado_por_ia": false,
-   "status": "agendado"
-  },
   {
    "id": "p002",
    "titulo": "6 presentes que todo morador ama",
@@ -123,15 +47,17 @@
     "posts/002-presentes/slides/06.png",
     "posts/002-presentes/slides/07.png"
    ],
-   "legenda": "6 presentes que QUASE todo morador de Stardew Valley ama 🎁 e 2 pessoas odeiam um deles! Comenta PRESENTE que eu faço o guia de cada morador.\nQual desses você já tem guardado no baú?\n#stardewvalley #stardew #dicasstardewvalley #presentesstardew #jogosaconchegantes",
-   "comentario_fixado": "💬 Comenta PRESENTE que eu faço o guia de presentes de cada morador!",
+   "legenda": "6 presentes que QUASE todo morador de Stardew Valley ama 🎁 e 2 pessoas odeiam um deles! Curte se te ajudou e me segue pra mais dicas!\nQual desses você já tem guardado no baú?\n#stardewvalley #stardew #dicasstardewvalley #presentesstardew #jogosaconchegantes",
+   "comentario_fixado": "♥ Curte se te ajudou! Me segue pra mais dicas do Vale.",
    "conteudo_gerado_por_ia": false,
-   "status": "agendado"
+   "status": "pronto_para_agendar",
+   "substituir_metricool_post_id": "420466731",
+   "acao": "APAGAR o post antigo agendado com esse id no Metricool e agendar esta versão nova no mesmo horário"
   },
   {
-   "id": "p006v",
-   "titulo": "3 criaturas misteriosas que você talvez nunca viu",
-   "quando_brasilia": "2026-11-09 19:30",
+   "id": "p008v",
+   "titulo": "Recados Secretos · Ep. 2: o que eles fazem de madrugada?",
+   "quando_brasilia": "2026-11-09 17:00",
    "fuso": "America/Sao_Paulo",
    "formato": "video",
    "redes": [
@@ -139,12 +65,12 @@
     "instagram"
    ],
    "midia_no_repositorio": [
-    "posts/006-criaturas/video-15x.mp4"
+    "posts/008-recados-ep2/video-15x.mp4"
    ],
-   "legenda": "3 criaturas misteriosas de Stardew Valley que talvez você nunca viu 👻 e uma deixa pegada… Comenta CRIATURA que eu faço a parte 2!\nVocê já viu alguma?\n#stardewvalley #stardew #dicasstardewvalley #segredosstardewvalley #jogosaconchegantes",
-   "comentario_fixado": "💬 Comenta CRIATURA que eu posto a parte 2 com mais mistérios do Vale!",
+   "legenda": "O que o Lewis e a Marnie fazem de madrugada em Stardew Valley? 🌙 O Recado Secreto #21 é só um desenho… e a solução é à 0:40. Comenta RECADO que eu posto o Ep. 3!\nO que você acha que eles estavam fazendo?\n#stardewvalley #stardew #segredosstardewvalley #recadossecretos #jogosaconchegantes",
+   "comentario_fixado": "💬 Comenta RECADO que eu posto o próximo episódio dos Recados Secretos!",
    "conteudo_gerado_por_ia": false,
-   "status": "agendado"
+   "status": "pronto_para_agendar"
   },
   {
    "id": "p009",
@@ -164,28 +90,12 @@
     "posts/009-erros-iniciante/slides/06.png",
     "posts/009-erros-iniciante/slides/07.png"
    ],
-   "legenda": "Você tá cometendo esses 5 erros no ano 1 de Stardew Valley? 😬 O nº 1 tira dinheiro do seu bolso! Comenta INICIANTE que eu faço a parte 2.\nQual desses você já cometeu?\n#stardewvalley #stardew #dicasstardewvalley #iniciantestardew #jogosaconchegantes",
-   "comentario_fixado": "💬 Comenta INICIANTE que eu posto a parte 2 com mais erros do ano 1!",
+   "legenda": "Você tá cometendo esses 5 erros no ano 1 de Stardew Valley? 😬 O nº 1 tira dinheiro do seu bolso! Curte se te ajudou e me segue pra mais dicas!\nQual desses você já cometeu?\n#stardewvalley #stardew #dicasstardewvalley #iniciantestardew #jogosaconchegantes",
+   "comentario_fixado": "♥ Curte se te ajudou! Me segue pra mais dicas do Vale.",
    "conteudo_gerado_por_ia": false,
-   "status": "agendado"
-  },
-  {
-   "id": "p001v",
-   "titulo": "VÍDEO · 5 segredos escondidos que quase ninguém acha",
-   "quando_brasilia": "2026-11-10 17:00",
-   "fuso": "America/Sao_Paulo",
-   "formato": "video",
-   "redes": [
-    "tiktok",
-    "instagram"
-   ],
-   "midia_no_repositorio": [
-    "posts/001-segredos/video-15x.mp4"
-   ],
-   "legenda": "5 segredos escondidos em Stardew Valley que quase ninguém acha 👀 Comenta SEGREDO que eu faço a parte 2!\nO nº 1 é o porão secreto do Lewis… qual desses você já sabia?\n#stardewvalley #stardew #segredosstardewvalley #dicasstardewvalley #jogosaconchegantes",
-   "comentario_fixado": "💬 Comenta SEGREDO que eu posto a parte 2 com mais coisas escondidas do Vale!",
-   "conteudo_gerado_por_ia": false,
-   "status": "agendado"
+   "status": "pronto_para_agendar",
+   "substituir_metricool_post_id": "420466840",
+   "acao": "APAGAR o post antigo agendado com esse id no Metricool e agendar esta versão nova no mesmo horário"
   },
   {
    "id": "p010",
@@ -205,10 +115,30 @@
     "posts/010-construcoes/slides/06.png",
     "posts/010-construcoes/slides/07.png"
    ],
-   "legenda": "Quanto custa cada construção da Robin em Stardew Valley? 🏠 Ouro, madeira e pedra de tudo: galinheiro, celeiro, galpão, silo e até a sua casa. Comenta ROBIN que eu faço o guia dos animais!\nQual você vai construir primeiro?\n#stardewvalley #stardew #dicasstardewvalley #guiastardew #jogosaconchegantes",
-   "comentario_fixado": "💬 Comenta ROBIN que eu posto o guia de cada animal da fazenda!",
+   "legenda": "Quanto custa cada construção da Robin em Stardew Valley? 🏠 Ouro, madeira e pedra de tudo: galinheiro, celeiro, galpão, silo e até a sua casa. Curte se te ajudou e me segue pra mais dicas!\nQual você vai construir primeiro?\n#stardewvalley #stardew #dicasstardewvalley #guiastardew #jogosaconchegantes",
+   "comentario_fixado": "♥ Curte se te ajudou! Me segue pra mais dicas do Vale.",
    "conteudo_gerado_por_ia": false,
-   "status": "agendado"
+   "status": "pronto_para_agendar",
+   "substituir_metricool_post_id": "420466943",
+   "acao": "APAGAR o post antigo agendado com esse id no Metricool e agendar esta versão nova no mesmo horário"
+  },
+  {
+   "id": "p013v",
+   "titulo": "3 coisas pra fazer todo dia (sua gameplay)",
+   "quando_brasilia": "2026-11-11 12:00",
+   "fuso": "America/Sao_Paulo",
+   "formato": "video",
+   "redes": [
+    "tiktok",
+    "instagram"
+   ],
+   "midia_no_repositorio": [
+    "posts/013-todo-dia/video-15x.mp4"
+   ],
+   "legenda": "3 coisas pra fazer TODO DIA em Stardew Valley 🌅 TV, calendário e coletar pelo caminho. Curte se te ajudou e me segue pra mais dicas!\nQual dessas você sempre esquece?\n#stardewvalley #stardew #dicasstardewvalley #rotinastardew #jogosaconchegantes",
+   "comentario_fixado": "♥ Qual dessas você faz todo dia? Me segue pra mais dicas do Vale!",
+   "conteudo_gerado_por_ia": false,
+   "status": "pronto_para_agendar"
   },
   {
    "id": "p012",
@@ -231,10 +161,84 @@
     "posts/012-festivais-real/slides/09.png",
     "posts/012-festivais-real/slides/10.png"
    ],
-   "legenda": "E se os festivais de Stardew Valley fossem reais? 🎉 Festival do Ovo, Luau, Dança das Medusas-da-Lua, Festival do Gelo e mais, com a data de cada um. Comenta VALE que eu faço a parte 3!\nQual festival você mais espera no ano?\n#stardewvalley #stardew #festivaisstardew #jogosaconchegantes #ia",
-   "comentario_fixado": "💬 Comenta VALE que eu faço a parte 3 com os moradores na vida real!",
+   "legenda": "E se os festivais de Stardew Valley fossem reais? 🎉 Festival do Ovo, Luau, Dança das Medusas-da-Lua, Festival do Gelo e mais, com a data de cada um. Curte se te ajudou e me segue pra mais dicas!\nQual festival você mais espera no ano?\n#stardewvalley #stardew #festivaisstardew #jogosaconchegantes #ia",
+   "comentario_fixado": "♥ Curte se te ajudou! Me segue pra mais dicas do Vale.",
    "conteudo_gerado_por_ia": true,
-   "status": "agendado"
+   "status": "pronto_para_agendar",
+   "substituir_metricool_post_id": "420467007",
+   "acao": "APAGAR o post antigo agendado com esse id no Metricool e agendar esta versão nova no mesmo horário"
+  },
+  {
+   "id": "p014v",
+   "titulo": "Vale a pena a mochila? (sua gameplay)",
+   "quando_brasilia": "2026-11-11 19:30",
+   "fuso": "America/Sao_Paulo",
+   "formato": "video",
+   "redes": [
+    "tiktok",
+    "instagram"
+   ],
+   "midia_no_repositorio": [
+    "posts/014-mochila/video-15x.mp4"
+   ],
+   "legenda": "Vale a pena gastar 10.000 de ouro na mochila em Stardew Valley? 🎒 A 1ª custa 2.000 (24 espaços) e a 2ª 10.000 (36). Curte se te ajudou!\nVocê já comprou a sua?\n#stardewvalley #stardew #dicasstardewvalley #iniciantestardew #jogosaconchegantes",
+   "comentario_fixado": "♥ Você já comprou a mochila de 36? Me segue pra mais dicas!",
+   "conteudo_gerado_por_ia": false,
+   "status": "pronto_para_agendar"
+  },
+  {
+   "id": "p015v",
+   "titulo": "O carrinho secreto da floresta (sua gameplay)",
+   "quando_brasilia": "2026-11-12 12:00",
+   "fuso": "America/Sao_Paulo",
+   "formato": "video",
+   "redes": [
+    "tiktok",
+    "instagram"
+   ],
+   "midia_no_repositorio": [
+    "posts/015-carrinho/video-15x.mp4"
+   ],
+   "legenda": "O carrinho secreto da floresta em Stardew Valley 🛒 Só aparece sexta e domingo, das 6h às 20h, ao sul da sua fazenda. Curte se não sabia!\nVocê já comprou algo raro nele?\n#stardewvalley #stardew #dicasstardewvalley #segredosstardewvalley #jogosaconchegantes",
+   "comentario_fixado": "♥ Curte se não sabia do carrinho! Me segue pra mais segredos do Vale.",
+   "conteudo_gerado_por_ia": false,
+   "status": "pronto_para_agendar"
+  },
+  {
+   "id": "p009v",
+   "titulo": "VÍDEO · 5 erros no ano 1",
+   "quando_brasilia": "2026-11-12 19:30",
+   "fuso": "America/Sao_Paulo",
+   "formato": "video",
+   "redes": [
+    "tiktok",
+    "instagram"
+   ],
+   "midia_no_repositorio": [
+    "posts/009-erros-iniciante/video-15x.mp4"
+   ],
+   "legenda": "Você tá cometendo esses 5 erros no ano 1 de Stardew Valley? 😬 O nº 1 tira dinheiro do seu bolso! Curte se te ajudou.\nQual desses você já cometeu?\n#stardewvalley #stardew #dicasstardewvalley #iniciantestardew #jogosaconchegantes",
+   "comentario_fixado": "♥ Qual desses erros você já cometeu? Me segue pra mais dicas!",
+   "conteudo_gerado_por_ia": false,
+   "status": "pronto_para_agendar"
+  },
+  {
+   "id": "p010v",
+   "titulo": "VÍDEO · Quanto custa cada construção da Robin?",
+   "quando_brasilia": "2026-11-13 12:00",
+   "fuso": "America/Sao_Paulo",
+   "formato": "video",
+   "redes": [
+    "tiktok",
+    "instagram"
+   ],
+   "midia_no_repositorio": [
+    "posts/010-construcoes/video-15x.mp4"
+   ],
+   "legenda": "Quanto custa cada construção da Robin em Stardew Valley? 🏠 Ouro, madeira e pedra de tudo. Curte se te ajudou e salva pra consultar!\nQual você vai construir primeiro?\n#stardewvalley #stardew #dicasstardewvalley #guiastardew #jogosaconchegantes",
+   "comentario_fixado": "♥ Qual você vai construir primeiro? Me segue pra mais guias!",
+   "conteudo_gerado_por_ia": false,
+   "status": "pronto_para_agendar"
   }
  ]
 }
