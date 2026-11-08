@@ -55,24 +55,6 @@
    "acao": "APAGAR o post antigo agendado com esse id no Metricool e agendar esta versão nova no mesmo horário"
   },
   {
-   "id": "p008v",
-   "titulo": "Recados Secretos · Ep. 2: o que eles fazem de madrugada?",
-   "quando_brasilia": "2026-11-09 17:00",
-   "fuso": "America/Sao_Paulo",
-   "formato": "video",
-   "redes": [
-    "tiktok",
-    "instagram"
-   ],
-   "midia_no_repositorio": [
-    "posts/008-recados-ep2/video-15x.mp4"
-   ],
-   "legenda": "O que o Lewis e a Marnie fazem de madrugada em Stardew Valley? 🌙 O Recado Secreto #21 é só um desenho… e a solução é à 0:40. Comenta RECADO que eu posto o Ep. 3!\nO que você acha que eles estavam fazendo?\n#stardewvalley #stardew #segredosstardewvalley #recadossecretos #jogosaconchegantes",
-   "comentario_fixado": "💬 Comenta RECADO que eu posto o próximo episódio dos Recados Secretos!",
-   "conteudo_gerado_por_ia": false,
-   "status": "pronto_para_agendar"
-  },
-  {
    "id": "p009",
    "titulo": "Você tá cometendo esses 5 erros no ano 1?",
    "quando_brasilia": "2026-11-10 12:00",
