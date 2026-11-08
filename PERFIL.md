@@ -43,6 +43,19 @@
 - Cota do Gemini: "sem problemas".
 - 07/11 · Vídeos 1,5x: ✅ "gostei, mas sempre precisa melhorar". Aprovou pelo chat todos os vídeos e posts de sáb e dom.
 
+## Números (TikTok)
+| Data | Post | Views | Obs |
+|------|------|-------|-----|
+| 07/11 21:43 | 001 · 5 segredos (fotos) | 121 | ~4h no ar |
+| 07/11 21:43 | 003 · Barril (fotos) | 23 | ~3h no ar |
+| 07/11 21:43 | 005v · Tela do fim do dia (vídeo) | 0 | recém-postado |
+
+## Fuso horário
+- Celular da Yasmin marcou 4:42 quando eram 21:43 em Brasília → **horário do Pacífico (Brasília − 5 h)**. Agenda está em horário de Brasília (público).
+
+## Instagram (08/11)
+- Criou conta nova; escreveu **@segredosdovelley** (confirmar se é "valley"). Kit em `branding/INSTAGRAM.md`. Só Reels, arquivo original do painel.
+
 ## Gosto: aprovado / negado (com o porquê)
 | Data | Ideia/roteiro | Decisão | Categoria | Porquê |
 |------|---------------|---------|-----------|--------|
