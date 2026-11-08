@@ -31,6 +31,10 @@ Criado em 07/11/2026 depois do feedback da Yasmin: "sem transição, áudio com 
 - [ ] **Sem chiado:** áudio do Gemini chega no limite (pico ~0 dB) e com ruído em −57 dB → folga de 4 dB, filtro 80 Hz–11 kHz, redução de ruído leve, tudo em WAV até o fim, loudnorm em 2 passadas (linear) + limitador, um único AAC 192k.
 - [ ] Cota grátis do Gemini: **100 áudios/dia por modelo** (3.8 Flash) e **50/dia no 2.5 Pro TTS** — 1 vídeo ≈ 6–10 chamadas com as reconferências. Não gastar em teste à toa; tentativas de conferência contam.
 
+## Imagens geradas por IA
+- [ ] Texto/placas em português; revisar cada imagem (a IA pode inventar nomes ruins — refazer).
+- [ ] Marca "imagem gerada por IA" no slide + lembrar a Yasmin de ativar a etiqueta de IA no TikTok/Instagram.
+
 ## Antes de mandar pra Yasmin
 - [ ] "Nada esquisito, sempre melhorando": cada lote tem que sair melhor que o anterior. Comparar com o último aprovado.
 - [ ] Testes do painel passando (`painel/teste/`), claro e escuro, iPhone.

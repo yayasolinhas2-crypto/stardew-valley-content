@@ -48,3 +48,8 @@ Fonte de tudo: wiki oficial (stardewvalleywiki.com e pt.stardewvalleywiki.com). 
 | D4 | O que cada morador ama e odeia (começar pelos solteiros, 1 slide por pessoa) | próximo |
 | D5 | Lago de Peixes: o que cada peixe produz | próximo |
 Observação: referências em inglês ou "AI content" têm erros; tudo nosso sai conferido na wiki, com nome oficial em PT.
+
+## Série E: Stardew na vida real (imagens realistas geradas no Gemini, grátis)
+| E1 | 8 lugares: fazenda, vila, saloon, praia, minas, montanha, deserto, ilha | ✅ post 011 |
+| E2 | Parte 2: os moradores / festivais (Luau, Feira, Festa do Gelo) / casas dos personagens | ideia |
+Regras: placas em PT; nada de nome ofensivo (refazer se a IA inventar); sempre "imagem gerada por IA" no slide e etiqueta de IA na plataforma.
