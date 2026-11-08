@@ -3,7 +3,7 @@
 import json,glob,os,sys,datetime as dt
 DIR={'001':'001-segredos','002':'002-presentes','003':'003-barril-ou-jarra','004':'004-peixes-lendarios','005':'005-tela-fim-do-dia','006':'006-criaturas',
      '007':'007-recados-ep1','008':'008-recados-ep2','009':'009-erros-iniciante','010':'010-construcoes','011':'011-vila-real','012':'012-festivais-real',
-     '013':'013-todo-dia','014':'014-mochila','015':'015-carrinho'}
+     '013':'013-todo-dia','014':'014-mochila','015':'015-carrinho','016':'016-presente-do-pet','017':'017-maquina-de-costura','018':'018-torneirinha'}
 agora=dt.datetime.now(dt.timezone.utc)
 fila=[]
 for f in sorted(glob.glob(sys.argv[1]+'/*.json')):
