@@ -19,6 +19,7 @@ Nunca 2 posts da mesma categoria seguidos.
 | ter 10/11 | 12:00 | 009 · Você tá cometendo esses 5 erros no ano 1? (fotos) | aguardando aprovação |
 | ter 10/11 | 17:00 | 011 · Como seria Stardew Valley na vida real? (fotos IA — marcar "conteúdo de IA") | aguardando aprovação |
 | ter 10/11 | 19:30 | 010 · Quanto custa cada construção da Robin? (fotos) | aguardando aprovação |
+| qua 11/11 | 17:00 | 012 · E se os festivais fossem reais? (parte 2, fotos IA — marcar "conteúdo de IA") | aguardando aprovação |
 
 ## Painel de aprovação
 https://claude.ai/artifact/VcfHJ9URGoLjqq9kzcaCX9 — banco `posts` (um documento por post: status aguardando/aprovado/negado/publicado, motivo, horário, legenda, fotos).

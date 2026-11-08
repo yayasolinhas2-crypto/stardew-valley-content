@@ -67,6 +67,8 @@
 - 08/11 · Quer versão em vídeo dos guias (009, 010) "pra já" — agendado para depois do Ep. 2.
 - 08/11 · Metricool: o Vitor tem plano Starter; ideia de usar uma marca separada na conta dele (ela conecta as próprias redes, sem senha). Verificar nº de marcas e se o Starter tem API.
 
+- 08/11 · Adorou "Stardew na vida real" (011): "pode postar mais sobre isso quando der" → série fixa (parte 2 = festivais, 012).
+
 ## Gosto: aprovado / negado (com o porquê)
 | Data | Ideia/roteiro | Decisão | Categoria | Porquê |
 |------|---------------|---------|-----------|--------|

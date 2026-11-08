@@ -51,5 +51,6 @@ Observação: referências em inglês ou "AI content" têm erros; tudo nosso sai
 
 ## Série E: Stardew na vida real (imagens realistas geradas no Gemini, grátis)
 | E1 | 8 lugares: fazenda, vila, saloon, praia, minas, montanha, deserto, ilha | ✅ post 011 |
-| E2 | Parte 2: os moradores / festivais (Luau, Feira, Festa do Gelo) / casas dos personagens | ideia |
+| E2 | Parte 2: os 8 festivais com data | ✅ post 012 |
+| E3 | Parte 3: casas e lojas dos moradores (Clínica, Museu, Torre do Mago, Rancho da Marnie…) | ideia |
 Regras: placas em PT; nada de nome ofensivo (refazer se a IA inventar); sempre "imagem gerada por IA" no slide e etiqueta de IA na plataforma.
