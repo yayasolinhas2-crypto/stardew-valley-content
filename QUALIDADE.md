@@ -29,7 +29,7 @@ Criado em 07/11/2026 depois do feedback da Yasmin: "sem transição, áudio com 
 - [ ] **Cada fala conferida por transcrição** na hora (`narrar.py`): palavra a mais/a menos → gera de novo.
 - [ ] Conferência final do vídeo inteiro (`tools/conferir_narracao.py`): diferenças = 0, "Stardew Valley" em inglês, sem leitura de marcação, chiado = 0.
 - [ ] **Sem chiado:** áudio do Gemini chega no limite (pico ~0 dB) e com ruído em −57 dB → folga de 4 dB, filtro 80 Hz–11 kHz, redução de ruído leve, tudo em WAV até o fim, loudnorm em 2 passadas (linear) + limitador, um único AAC 192k.
-- [ ] Cota grátis do Gemini: **100 áudios/dia por modelo** (3.8 Flash) e **50/dia no 2.5 Pro TTS** — 1 vídeo ≈ 6–10 chamadas com as reconferências. Não gastar em teste à toa; tentativas de conferência contam.
+- [ ] Cota: conta do Vitor é PAGA (Tier 1), mas o **2.5 Pro TTS tem 50 pedidos/dia no Tier 1, dividido com o Vitor**. Por isso `narrar.py` usa o **modo lote**: o vídeo inteiro num pedido só (pausas de 3 s entre falas), corte nas pausas e conferência de cada pedaço por transcrição; se falhar, cai no modo fala a fala. Não gastar em teste à toa; tentativas de conferência contam.
 
 ## Imagens geradas por IA
 - [ ] Texto/placas em português; revisar cada imagem (a IA pode inventar nomes ruins — refazer).

@@ -85,17 +85,81 @@ def fala(texto, voz, out, tmpdir):
     subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', cache, '-af', f'atempo={f:.3f}', '-c:a', 'pcm_s16le', out], check=True)
     return dur(out), len(falado)
 
+
+def lote(cfg, post, tmpdir):
+    """Gera TODAS as falas num pedido só (pausa longa entre elas) e corta nas pausas.
+    Economiza cota: 1–2 pedidos por vídeo em vez de 8–15. Volta False se não der certo (aí usa o modo fala a fala)."""
+    voz, falas = cfg.get('voz', 'Sulafat'), cfg['falas']
+    n = len(falas)
+    linhas = []
+    for t in falas:
+        m = re.match(r'^\[([^\]]*)\]\s*(.*)$', t)
+        linhas.append(f'({m.group(1)}) {m.group(2)}' if m else t)
+    pedido = ('Narre como uma narradora brasileira de TikTok, com um sorriso na voz. Pronuncie "Stardew Valley" em inglês americano, sem "i" no começo. '
+              'Cada linha abaixo é um trecho: siga a emoção indicada entre parênteses, mas NÃO leia o que está entre parênteses. '
+              'Entre um trecho e o próximo, faça uma pausa longa e silenciosa de três segundos, maior que qualquer pausa dentro de uma frase.\n\n' + '\n'.join(linhas))
+    alvo = [w for t in falas for w in palavras(t)]
+    for tentativa in range(2):
+        bruto = f'{tmpdir}/lote-{tentativa}.wav'
+        d = curl_json(API + MODELO + ':generateContent', {"contents": [{"parts": [{"text": pedido}]}],
+              "generationConfig": {"responseModalities": ["AUDIO"], "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": voz}}}}}, tmpdir + '/r.json')
+        if 'candidates' not in d:
+            print('  lote: pedido falhou:', str(d)[:160]); return False
+        open(tmpdir + '/a.pcm', 'wb').write(base64.b64decode(d['candidates'][0]['content']['parts'][0]['inlineData']['data']))
+        subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-f', 's16le', '-ar', '24000', '-ac', '1', '-i', tmpdir + '/a.pcm',
+                        '-af', 'volume=-4dB,highpass=f=80,lowpass=f=11000,afftdn=nf=-32:tn=1', '-ar', '48000', '-c:a', 'pcm_s16le', bruto], check=True)
+        ouvido = palavras(transcrever(bruto, tmpdir))
+        erro = sum(1 for w in ouvido if w not in alvo) + sum(1 for w in alvo if w not in ouvido)
+        r = subprocess.run(['ffmpeg', '-hide_banner', '-i', bruto, '-af', 'silencedetect=noise=-38dB:d=0.22', '-f', 'null', '-'], capture_output=True, text=True).stderr
+        ini = [float(x) for x in re.findall(r'silence_start: ([\d.]+)', r)]
+        fim = [float(x) for x in re.findall(r'silence_end: ([\d.]+)', r)]
+        total = dur(bruto)
+        pausas = [(b - a, (a + b) / 2) for a, b in zip(ini, fim) if a > 0.3 and b < total - 0.3]
+        pausas = sorted(sorted(pausas, reverse=True)[:n - 1], key=lambda x: x[1])
+        print(f'  lote tentativa {tentativa+1}: {erro} diferença(s), {len(pausas)}/{n-1} pausas')
+        if erro > 2 or len(pausas) != n - 1:
+            continue
+        cortes = [0.0] + [m for _, m in pausas] + [total]
+        # confere cada pedaço: tem que ser a fala certa (as pausas mais longas podem cair no meio de uma frase)
+        ok = True
+        for i in range(n):
+            seg = f'{tmpdir}/chk{i}.wav'
+            subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', bruto, '-ss', f'{cortes[i]:.3f}', '-to', f'{cortes[i+1]:.3f}', '-c:a', 'pcm_s16le', seg], check=True)
+            ouv, esp = palavras(transcrever(seg, tmpdir)), palavras(falas[i])
+            e = sum(1 for w in ouv if w not in esp) + sum(1 for w in esp if w not in ouv)
+            if e > 1:
+                print(f'    pedaço {i+1} não bate: "{" ".join(ouv)}"'); ok = False; break
+        if not ok:
+            continue
+        for i in range(n):
+            seg = f'{tmpdir}/seg{i}.wav'
+            subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', bruto, '-ss', f'{cortes[i]:.3f}', '-to', f'{cortes[i+1]:.3f}',
+                            '-af', 'silenceremove=start_periods=1:start_threshold=-45dB,areverse,silenceremove=start_periods=1:start_threshold=-45dB,areverse',
+                            '-c:a', 'pcm_s16le', seg], check=True)
+            w = palavras(falas[i]); pps = len(w) / max(dur(seg), 0.1); f = min(1.0, MAX_PPS / pps)
+            subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', seg, '-af', f'atempo={f:.3f}', '-c:a', 'pcm_s16le', f'{post}/narracao/{i+1:02d}.wav'], check=True)
+        return True
+    return False
+
 def main(post):
     cfg = json.load(open(f'{post}/narracao.json'))
     voz = cfg.get('voz', 'Sulafat')
     os.makedirs(f'{post}/narracao', exist_ok=True)
     tmpdir = os.environ.get('NARR_TMP', '/tmp/claude-0/-home-user-stardew-valley-content/390e979c-f63f-5f31-9eff-bd01428cedcb/scratchpad/narr-cache')
     os.makedirs(tmpdir, exist_ok=True)
-    durs, palavras = [], 0
-    for i, t in enumerate(cfg['falas']):
-        d, w = fala(t, voz, f'{post}/narracao/{i+1:02d}.wav', tmpdir)
-        durs.append(round(d, 3)); palavras += w
-        print(f'  cena {i+1}: {d:.2f}s · {w/d:.2f} palavras/s · {t}')
+    durs, palavras_total = [], 0
+    if os.environ.get('NARR_MODO', 'lote') == 'lote' and lote(cfg, post, tmpdir):
+        print('  narração gerada em lote (1 pedido)')
+        for i, t in enumerate(cfg['falas']):
+            d = dur(f'{post}/narracao/{i+1:02d}.wav'); w = len(palavras(t))
+            durs.append(round(d, 3)); palavras_total += w
+            print(f'  cena {i+1}: {d:.2f}s · {w/d:.2f} palavras/s · {t}')
+    else:
+        print('  modo fala a fala')
+        for i, t in enumerate(cfg['falas']):
+            d, w = fala(t, voz, f'{post}/narracao/{i+1:02d}.wav', tmpdir)
+            durs.append(round(d, 3)); palavras_total += w
+            print(f'  cena {i+1}: {d:.2f}s · {w/d:.2f} palavras/s · {t}')
     json.dump({'duracoes': durs, 'falas': cfg['falas']}, open(f'{post}/narracao/duracoes.json', 'w'), ensure_ascii=False)
     subprocess.run(['node', 'tools/video.js', post, '30', '--narr', f'{post}/narracao/duracoes.json'], check=True)
     tempos = json.load(open(f'{post}/tempos.json'))
@@ -130,7 +194,7 @@ def main(post):
                         '-pix_fmt', 'yuv420p', '-c:a', 'aac', '-b:a', '192k', '-ar', '48000', '-movflags', '+faststart', f'{post}/video-15x.mp4'], check=True)
         print(f'OK {post}/video-15x.mp4 · {dur(post + "/video-15x.mp4"):.1f}s (velocidade {vel}x)')
     total = tempos['total']
-    print(f'OK {post}/video-narrado.mp4 · {total:.1f}s · {palavras} palavras · média {palavras/total:.2f} palavras/s no vídeo')
+    print(f'OK {post}/video-narrado.mp4 · {total:.1f}s · {palavras_total} palavras · média {palavras_total/total:.2f} palavras/s no vídeo')
 
 if __name__ == '__main__':
     main(sys.argv[1].rstrip('/'))

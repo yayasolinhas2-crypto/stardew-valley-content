@@ -73,6 +73,8 @@
 
 - 08/11 · Metricool é do Vitor (plano Starter não permite convidar usuário). Solução combinada: **caixa de correio no GitHub** — eu escrevo `metricool/fila.json` (só aprovados), a Claude do Vitor agenda e responde em `metricool/agendados.json` e `metricas.json`. Ver `metricool/LEIA-ME-CLAUDE-DO-VITOR.md`.
 
+- 08/11 · Gemini: conta do Vitor é paga (Tier 1, ~2 centavos/vídeo); limite da voz Pro é 50/dia mesmo pago e dividido com ele → narração passou a ser em lote (1 pedido/vídeo). OK dividir a cota.
+
 ## Gosto: aprovado / negado (com o porquê)
 | Data | Ideia/roteiro | Decisão | Categoria | Porquê |
 |------|---------------|---------|-----------|--------|
