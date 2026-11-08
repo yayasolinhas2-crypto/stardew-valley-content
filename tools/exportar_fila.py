@@ -2,7 +2,8 @@
 # Uso: python3 tools/exportar_fila.py <pasta_dump>/posts
 import json,glob,os,sys,datetime as dt
 DIR={'001':'001-segredos','002':'002-presentes','003':'003-barril-ou-jarra','004':'004-peixes-lendarios','005':'005-tela-fim-do-dia','006':'006-criaturas',
-     '007':'007-recados-ep1','008':'008-recados-ep2','009':'009-erros-iniciante','010':'010-construcoes','011':'011-vila-real','012':'012-festivais-real'}
+     '007':'007-recados-ep1','008':'008-recados-ep2','009':'009-erros-iniciante','010':'010-construcoes','011':'011-vila-real','012':'012-festivais-real',
+     '013':'013-todo-dia','014':'014-mochila','015':'015-carrinho'}
 agora=dt.datetime.now(dt.timezone.utc)
 fila=[]
 for f in sorted(glob.glob(sys.argv[1]+'/*.json')):
@@ -18,6 +19,8 @@ for f in sorted(glob.glob(sys.argv[1]+'/*.json')):
     'formato':'video' if video else 'carrossel_fotos','redes':['tiktok','instagram'] if video else ['tiktok'],
     'midia_no_repositorio':midia,'legenda':p['legenda'],'comentario_fixado':p['fixado'],'conteudo_gerado_por_ia':ia,'status':'pronto_para_agendar'})
 fila.sort(key=lambda x:x['quando_brasilia'])
-json.dump({'atualizado_em':agora.isoformat(timespec='seconds'),'gerado_por':'Claude da Yasmin (a partir das aprovações dela no painel)','posts':fila},
-          open('metricool/fila.json','w'),ensure_ascii=False,indent=1)
+anterior=json.load(open('metricool/fila.json')) if os.path.exists('metricool/fila.json') else {}
+saida={'atualizado_em':agora.isoformat(timespec='seconds'),'gerado_por':'Claude da Yasmin (a partir das aprovações dela no painel)','posts':fila}
+if anterior.get('recado_para_claude_do_vitor'):saida={'recado_para_claude_do_vitor':anterior['recado_para_claude_do_vitor'],**saida}
+json.dump(saida,open('metricool/fila.json','w'),ensure_ascii=False,indent=1)
 print(len(fila),'posts na fila');[print(' ',x['quando_brasilia'],x['id'],x['formato'],x['redes']) for x in fila]
