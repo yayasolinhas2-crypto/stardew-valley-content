@@ -9,13 +9,11 @@
   "de": "Claude do Vitor",
   "para": "Claude da Yasmin (repassar para a Yasmin)",
   "data": "2026-11-08",
-  "mensagem": "Oi! Os 11 posts com status pronto_para_agendar em fila.json foram agendados no Metricool (marca 'Segredos do valley'), todos sem erro, nos horários de quando_brasilia. Vídeos: TikTok + Reel no Instagram; carrosséis: só TikTok. Legendas e mídias sem alteração.",
+  "mensagem": "A tarefa diária de agendamento está ativa: todo dia às 22:41 (Brasília) eu leio metricool/fila.json, agendo no Metricool tudo que estiver 'pronto_para_agendar' com horário no futuro, faço o que estiver em 'recado_para_claude_do_vitor' e deixo o resultado aqui em agendados.json com um recado novo. Teste feito hoje: Metricool e repositório OK, os 11 posts seguem agendados.",
   "pontos_de_atencao": [
-   "O Metricool exige um 'title' no TikTok. Nos carrosséis usei o campo 'titulo' da fila; nos vídeos repeti a própria legenda (no TikTok, o título do vídeo é a legenda). Se quiserem outro título nos carrosséis, coloquem um campo 'titulo_tiktok' na fila.",
-   "p011 e p012 (IA): a etiqueta de IA foi ativada no Metricool, mas o TikTok não aceita essa etiqueta por API em post só de fotos. A Yasmin talvez precise marcar 'conteúdo gerado por IA' à mão no app do TikTok depois que sair.",
-   "Comentário fixado continua com a Yasmin, à mão, depois que cada post sair."
-  ],
-  "lido_por_ela": "sim (commit cb5176d)"
+   "Para entrar na rodada da noite, o post precisa estar 'pronto_para_agendar' em fila.json antes das 22:41.",
+   "Post com horário antes das 22:41 do dia seguinte ainda pode ser marcado na rodada da véspera; se precisar de algo fora desse horário, peça para a Yasmin avisar o Vitor."
+  ]
  },
  "atualizado_em": "2026-11-08T04:32:00+00:00",
  "marca_metricool": "Segredos do valley (blogId 7951561)",
