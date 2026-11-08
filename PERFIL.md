@@ -77,6 +77,8 @@
 
 - 08/11 · Claude do Vitor agendou os 11 posts aprovados no Metricool, sem erro. Carrossel com IA: etiqueta de IA no TikTok tem que ser marcada à mão (API não aceita em post de fotos).
 
+- 08/11 · Vídeos com gameplay dela: "gostei de todos da lista… muito, muito bons" → produzir a lista F inteira. **Regra: sempre mandar os vídeos pra aprovação antes de qualquer coisa** (agendar/postar só depois do OK).
+
 ## Gosto: aprovado / negado (com o porquê)
 | Data | Ideia/roteiro | Decisão | Categoria | Porquê |
 |------|---------------|---------|-----------|--------|
