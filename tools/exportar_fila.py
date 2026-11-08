@@ -17,7 +17,8 @@ for f in sorted(glob.glob(sys.argv[1]+'/*.json')):
   ia='IA' in p.get('titulo','') or 'IA' in p.get('categoria','')
   fila.append({'id':pid,'titulo':p['titulo'].replace(' (marcar como IA)','').replace(' · marcar como IA',''),'quando_brasilia':f"{p['data']} {p['hora']}",'fuso':'America/Sao_Paulo',
     'formato':'video' if video else 'carrossel_fotos','redes':['tiktok','instagram'] if video else ['tiktok'],
-    'midia_no_repositorio':midia,'legenda':p['legenda'],'comentario_fixado':p['fixado'],'conteudo_gerado_por_ia':ia,'status':'pronto_para_agendar'})
+    'midia_no_repositorio':midia,'legenda':p['legenda'],'comentario_fixado':p['fixado'],'conteudo_gerado_por_ia':ia,'status':'pronto_para_agendar',
+    **({'substituir_metricool_post_id':p['substitui_metricool'],'acao':'APAGAR o post antigo agendado com esse id no Metricool e agendar esta versão nova no mesmo horário'} if p.get('substitui_metricool') else {})})
 fila.sort(key=lambda x:x['quando_brasilia'])
 anterior=json.load(open('metricool/fila.json')) if os.path.exists('metricool/fila.json') else {}
 saida={'atualizado_em':agora.isoformat(timespec='seconds'),'gerado_por':'Claude da Yasmin (a partir das aprovações dela no painel)','posts':fila}

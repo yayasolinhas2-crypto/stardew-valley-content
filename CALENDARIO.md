@@ -13,13 +13,13 @@ Nunca 2 posts da mesma categoria seguidos.
 | dom 08/11 | 17:00 | 011 · Stardew na vida real, parte 1 (fotos IA — marcar IA) — trocado com 001v a pedido da Yasmin | 📅 agendado no Metricool |
 | dom 08/11 | 20:30 | 002v · 6 presentes (vídeo) | 📅 agendado no Metricool |
 | seg 09/11 | 06:00 | 007v · Recados Secretos Ep. 1 (vídeo) | 📅 agendado no Metricool |
-| seg 09/11 | 12:00 | 002 · 6 presentes (fotos) | 📅 agendado no Metricool |
+| seg 09/11 | 12:00 | 002 · 6 presentes (fotos) | 🔄 versão nova (sem "comenta") aguardando aprovação; a antiga segue agendada |
 | seg 09/11 | 17:00 | 008v · Recados Secretos Ep. 2 (vídeo) | aguardando aprovação |
 | seg 09/11 | 19:30 | 006v · 3 criaturas (vídeo) | 📅 agendado no Metricool |
-| ter 10/11 | 12:00 | 009 · 5 erros no ano 1 (fotos) | 📅 agendado no Metricool |
+| ter 10/11 | 12:00 | 009 · 5 erros no ano 1 (fotos) | 🔄 versão nova (sem "comenta") aguardando aprovação; a antiga segue agendada |
 | ter 10/11 | 17:00 | 001v · 5 segredos (vídeo) — veio de dom 17:00 | 📅 agendado no Metricool |
-| ter 10/11 | 19:30 | 010 · Construções da Robin (fotos) | 📅 agendado no Metricool |
-| qua 11/11 | 17:00 | 012 · Festivais na vida real, parte 2 (fotos IA — marcar IA) | 📅 agendado no Metricool |
+| ter 10/11 | 19:30 | 010 · Construções da Robin (fotos) | 🔄 versão nova (sem "comenta") aguardando aprovação; a antiga segue agendada |
+| qua 11/11 | 17:00 | 012 · Festivais na vida real, parte 2 (fotos IA — marcar IA) | 🔄 versão nova (sem "comenta") aguardando aprovação; a antiga segue agendada |
 | qua 11/11 | 12:00 | 013v · 3 coisas pra fazer todo dia (gameplay) | aguardando aprovação |
 | qua 11/11 | 19:30 | 014v · Vale a pena a mochila? (gameplay) | aguardando aprovação |
 | qui 12/11 | 12:00 | 015v · O carrinho secreto da floresta (gameplay) | aguardando aprovação |
