@@ -6,7 +6,7 @@
   document.querySelectorAll('.slide').forEach(s=>{
     const t=s.className;
     const layer=document.createElement('div');s.prepend(layer);
-    if(t.includes('tema-noite')||t.includes('tema-por-do-sol')||t.includes('tema-inverno')){layer.className='stars';
+    if(t.includes('tema-noite')||t.includes('tema-por-do-sol')||t.includes('tema-inverno')||t.includes('tema-primavera')||t.includes('tema-outono')){layer.className='stars';
       for(let i=0;i<60;i++){const y=Math.floor(r()*205)*8;if(!yOk(y))continue;const e=document.createElement('i');if(r()<.25)e.className='b';e.style.left=Math.floor(r()*135)*8+'px';e.style.top=y+'px';layer.appendChild(e)}}
     if(t.includes('tema-dia')){layer.className='clouds';
       [[60,120,140],[520,60,180],[820,170,120],[300,200,100]].forEach(([x,y,w])=>{const b=document.createElement('b');b.style.left=x+'px';b.style.top=y+'px';b.style.width=w+'px';layer.appendChild(b)})}

@@ -16,6 +16,8 @@ Nunca 2 posts da mesma categoria seguidos.
 | seg 09/11 | 12:00 | 002 · 6 presentes (fotos) — movido de sáb 20:30 | aprovado |
 | seg 09/11 | 17:00 | 008v · Recados Secretos Ep. 2: Recado #21 (Lewis e Marnie) | produzindo — cota de voz do Gemini volta ~05:30 de dom |
 | seg 09/11 | 19:30 | 006v · 3 criaturas (vídeo) — movido de sáb 21:15 | aprovado |
+| ter 10/11 | 12:00 | 009 · Você tá cometendo esses 5 erros no ano 1? (fotos) | aguardando aprovação |
+| ter 10/11 | 19:30 | 010 · Quanto custa cada construção da Robin? (fotos) | aguardando aprovação |
 
 ## Painel de aprovação
 https://claude.ai/artifact/VcfHJ9URGoLjqq9kzcaCX9 — banco `posts` (um documento por post: status aguardando/aprovado/negado/publicado, motivo, horário, legenda, fotos).

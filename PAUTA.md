@@ -38,3 +38,13 @@ Fonte de tudo: wiki oficial (stardewvalleywiki.com e pt.stardewvalleywiki.com). 
 | C2 | Presentes por morador (série pedida no CTA PRESENTE) | ideia |
 | C3 | Peixes lendários parte 2 (os filhos dos lendários) | ideia |
 | C4 | Erros do ano 1 (só com fatos da wiki) | ideia |
+
+## Série D: Guias de consulta (modelos que a Yasmin mandou em 08/11 — cafe.stardew, sonniegaming, the_tanbear, christopherloft)
+| # | Pauta | Status |
+|---|-------|--------|
+| D1 | 5 erros que todo iniciante comete (com fontes) | ✅ post 009 |
+| D2 | Quanto custa cada construção da Robin | ✅ post 010 |
+| D3 | O que dá pra costurar (chapéus na máquina de costura: item + Tecido) | próximo |
+| D4 | O que cada morador ama e odeia (começar pelos solteiros, 1 slide por pessoa) | próximo |
+| D5 | Lago de Peixes: o que cada peixe produz | próximo |
+Observação: referências em inglês ou "AI content" têm erros; tudo nosso sai conferido na wiki, com nome oficial em PT.

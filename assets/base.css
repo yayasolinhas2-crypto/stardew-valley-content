@@ -1,7 +1,7 @@
 /* Base visual dos posts (1080x1920). Cada post escolhe um tema no <section class="slide tema-...">. */
 /* Fonte pixel: Jersey 10 (testada: C, f, 5 e 8 legíveis; a Pixelify trocava C por O e 5 por S). */
 @font-face{font-family:Pix;src:url(fonts/jersey-10-latin-400-normal.woff2)}
-@font-face{font-family:Pix;src:url(fonts/nunito-latin-900-normal.woff2);unicode-range:U+BA,U+D7}
+@font-face{font-family:Pix;src:url(fonts/nunito-latin-900-normal.woff2);unicode-range:U+BA,U+AA,U+D7}
 @font-face{font-family:Nun;font-weight:800;src:url(fonts/nunito-latin-800-normal.woff2)}
 @font-face{font-family:Nun;font-weight:900;src:url(fonts/nunito-latin-900-normal.woff2)}
 :root{--ink:#3b1d07;--wood:#5b2a0c;--orange:#c96a1b;--paper:#fbe0a8;--paper2:#f4c97c;--red:#b8300f;--gold:#ffd84a}
@@ -77,3 +77,14 @@ body{background:#111}
 
 /* inverno (série Recados Secretos) */
 .tema-inverno{--sky:linear-gradient(#5b7fb0 0%,#9cc0e4 50%,#dcebf7 100%);--h1:#cfdff0;--h2:#f4f8fc}
+.tema-primavera{--sky:linear-gradient(#f7a8c4 0%,#ffd0de 50%,#fff2f6 100%);--h1:#5aa03a;--h2:#7cc24f}
+.tema-primavera .stars i{background:#ff7fa8}.tema-primavera .stars i.b{background:#fff}
+.tema-outono{--sky:linear-gradient(#e9783a 0%,#f6b25e 50%,#ffe3b3 100%);--h1:#9c5a1f;--h2:#c9802e}
+.tema-outono .stars i{background:#c4461b}.tema-outono .stars i.b{background:#ffd84a}
+/* linhas de guia (custos, erros) */
+.row-g{display:grid;grid-template-columns:200px 1fr;gap:24px;align-items:center;margin:16px 0}
+.row-g img{width:200px;image-rendering:pixelated;display:block;justify-self:center}
+.row-g b.nm{font-family:Pix;font-size:68px;color:var(--wood);text-transform:uppercase;display:block;line-height:1}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.chips span{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.6);box-shadow:0 0 0 3px var(--wood);padding:4px 12px 4px 6px;font-family:Nun;font-weight:900;font-size:40px}
+.chips img{width:52px;image-rendering:pixelated}
