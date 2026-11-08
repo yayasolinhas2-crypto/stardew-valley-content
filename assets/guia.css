@@ -1,0 +1,88 @@
+/* Guia de 1 página (estilo "incrementado", 08/11). 1080x1920.
+   Placa de madeira no topo, faixas de pergaminho com abas coloridas, espaços de inventário iguais aos do jogo,
+   selo dourado nos itens raros, cenário em pixel com textura. Conteúdo entre y 190 e 1495, x 50–950 (folga de 130 à direita). */
+@font-face{font-family:Pix;src:url(fonts/jersey-10-latin-400-normal.woff2)}
+@font-face{font-family:Pix;src:url(fonts/nunito-latin-900-normal.woff2);unicode-range:U+BA,U+AA,U+D7,U+25}
+@font-face{font-family:Nun;font-weight:800;src:url(fonts/nunito-latin-800-normal.woff2)}
+@font-face{font-family:Nun;font-weight:900;src:url(fonts/nunito-latin-900-normal.woff2)}
+:root{--ink:#3b1d07;--wood:#5b2a0c;--wood2:#7a3d14;--wood3:#9c5520;--orange:#c96a1b;--paper:#fff1cf;--paper2:#f6d79a;--gold:#ffd84a;--red:#b8300f;
+  --slot:#f9c97a;--slot2:#e8a75a}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#111}
+.pg{width:1080px;height:1920px;position:relative;overflow:hidden;font-family:Nun;font-weight:800;color:var(--ink);background:var(--bg)}
+.pg img{image-rendering:pixelated;display:block}
+
+/* ---------- cenário ---------- */
+.cen-tarde{--bg:linear-gradient(#ff9e6b 0%,#ffc58a 22%,#ffe2a8 40%,#bfe6a0 62%,#7cc35a 80%,#4f9a3a 100%)}
+.cen-noite{--bg:linear-gradient(#1b1d4f 0%,#2e3388 30%,#5a58b8 55%,#3d7b4c 78%,#2c5e36 100%)}
+.cen-campo{--bg:linear-gradient(#7fcaf5 0%,#b9e4ff 30%,#e7f6ff 45%,#a4dc7c 62%,#6db84a 82%,#4c8f35 100%)}
+.textura{position:absolute;inset:0;opacity:.09;background:
+  repeating-linear-gradient(0deg,#000 0 4px,transparent 4px 8px),repeating-linear-gradient(90deg,#000 0 4px,transparent 4px 8px);mix-blend-mode:multiply}
+.sol{position:absolute;width:150px;height:150px;background:#fff6b0;box-shadow:0 0 0 12px rgba(255,246,176,.45),0 0 0 26px rgba(255,246,176,.2);
+  clip-path:polygon(25% 0,75% 0,75% 8%,92% 8%,92% 25%,100% 25%,100% 75%,92% 75%,92% 92%,75% 92%,75% 100%,25% 100%,25% 92%,8% 92%,8% 75%,0 75%,0 25%,8% 25%,8% 8%,25% 8%)}
+.nuvem{position:absolute;height:40px;background:#fff;opacity:.95;box-shadow:20px -20px 0 0 #fff,40px 0 0 0 #fff,60px -20px 0 0 #fff}
+.arvores{position:absolute;left:0;right:0;bottom:0;height:420px;background:#3e7f33;
+  clip-path:polygon(0 30%,4% 30%,4% 18%,8% 18%,8% 8%,12% 8%,12% 18%,16% 18%,16% 28%,22% 28%,22% 14%,26% 14%,26% 4%,30% 4%,30% 14%,34% 14%,34% 26%,64% 26%,64% 12%,68% 12%,68% 2%,72% 2%,72% 12%,76% 12%,76% 24%,84% 24%,84% 10%,88% 10%,88% 0,92% 0,92% 10%,96% 10%,96% 22%,100% 22%,100% 100%,0 100%)}
+.grama{position:absolute;left:0;right:0;bottom:0;height:230px;background:#5aa83e;
+  clip-path:polygon(0 12%,6% 12%,6% 6%,14% 6%,14% 0,26% 0,26% 8%,40% 8%,40% 2%,58% 2%,58% 10%,72% 10%,72% 4%,86% 4%,86% 0,100% 0,100% 100%,0 100%)}
+.flor{position:absolute;width:12px;height:12px;background:#fff;box-shadow:12px 0 0 #ffd84a,24px 0 0 #fff,12px -12px 0 #fff,12px 12px 0 #fff,12px 24px 0 #2f6d26}
+.flor.r{background:#ff7fa8;box-shadow:12px 0 0 #fff,24px 0 0 #ff7fa8,12px -12px 0 #ff7fa8,12px 12px 0 #ff7fa8,12px 24px 0 #2f6d26}
+.brilho{position:absolute;width:10px;height:10px;background:#fff;box-shadow:0 -14px 0 #fff,0 14px 0 #fff,-14px 0 0 #fff,14px 0 0 #fff;opacity:.9}
+
+/* ---------- placa de título ---------- */
+.placa{position:absolute;left:60px;width:890px;top:190px;padding:30px 30px 34px;text-align:center;
+  background:repeating-linear-gradient(0deg,var(--wood3) 0 52px,var(--wood2) 52px 56px);
+  box-shadow:0 0 0 8px var(--wood),0 0 0 14px #2a1204,12px 16px 0 14px rgba(0,0,0,.3)}
+.placa:before,.placa:after{content:"";position:absolute;top:14px;width:14px;height:14px;background:#ffd98a;box-shadow:0 0 0 4px #2a1204}
+.placa:before{left:14px}.placa:after{right:14px}
+.corda{position:absolute;top:120px;width:12px;height:76px;background:repeating-linear-gradient(0deg,#d9a35f 0 10px,#a8722f 10px 14px)}
+.placa h1{font-family:Pix;font-weight:400;font-size:132px;line-height:.86;color:var(--gold);text-transform:uppercase;letter-spacing:2px;
+  text-shadow:0 7px 0 #2a1204,6px 0 0 #2a1204,-6px 0 0 #2a1204,0 -6px 0 #2a1204,6px 7px 0 #2a1204,-6px 7px 0 #2a1204,6px -6px 0 #2a1204,-6px -6px 0 #2a1204,0 14px 0 rgba(0,0,0,.35)}
+.placa h1 em{font-style:normal;color:#fff}
+.fita{display:inline-block;margin-top:18px;position:relative;background:var(--red);color:#fff;font-family:Nun;font-weight:900;font-size:40px;padding:8px 34px 10px;box-shadow:0 0 0 5px #2a1204}
+.fita b{color:var(--gold)}
+
+/* ---------- passos (como liberar) ---------- */
+.passos{position:absolute;left:60px;width:890px;display:grid;gap:14px}
+.passo{background:linear-gradient(var(--paper),var(--paper2));box-shadow:0 0 0 6px var(--wood),8px 10px 0 6px rgba(0,0,0,.25);
+  padding:14px 10px 12px;text-align:center;position:relative}
+.passo .n{position:absolute;left:-10px;top:-14px;width:46px;height:46px;background:var(--red);color:#fff;font-family:Pix;font-size:42px;line-height:44px;box-shadow:0 0 0 4px #2a1204}
+.passo img{margin:0 auto 4px;height:64px;width:auto}
+.passo p{font-size:29px;line-height:1.08}
+.passo p b{display:block;font-family:Pix;font-weight:400;font-size:52px;line-height:.9;color:var(--red)}
+
+/* ---------- faixas (uma por bicho) ---------- */
+.faixa{position:absolute;left:60px;width:890px;display:grid;grid-template-columns:186px 1fr;
+  background:linear-gradient(var(--paper),var(--paper2));box-shadow:0 0 0 7px var(--wood),0 0 0 13px var(--orange),0 0 0 19px var(--wood),10px 14px 0 19px rgba(0,0,0,.28)}
+.retrato{position:relative;background:var(--cor);display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding:0 0 12px;
+  box-shadow:inset -6px 0 0 rgba(0,0,0,.18)}
+.retrato:before{content:"";position:absolute;inset:0;opacity:.18;background:repeating-linear-gradient(45deg,#fff 0 10px,transparent 10px 20px)}
+.retrato img{position:relative;margin-bottom:6px}
+.retrato .nm{position:relative;font-family:Pix;font-size:58px;line-height:.9;color:#fff;text-transform:uppercase;text-shadow:4px 4px 0 #2a1204}
+.retrato .obs{position:relative;font-size:22px;color:#fff;background:rgba(42,18,4,.55);padding:2px 8px;margin-top:4px}
+.grade{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:14px 14px 14px 16px}
+.slot{position:relative;background:var(--slot);box-shadow:inset 0 0 0 4px var(--slot2),inset 6px 6px 0 rgba(255,255,255,.35),0 0 0 4px var(--wood);
+  display:flex;flex-direction:column;align-items:center;padding:8px 4px 6px;text-align:center}
+.slot img{width:72px;height:72px}
+.slot .q{position:absolute;right:8px;top:54px;font-family:Pix;font-size:34px;line-height:1;color:#fff;text-shadow:3px 3px 0 #2a1204,-2px 0 0 #2a1204,0 -2px 0 #2a1204}
+.slot .it{font-size:23px;line-height:1.02;margin-top:4px;min-height:48px;display:flex;align-items:center}
+.slot .pc{margin-top:4px;font-family:Pix;font-size:38px;line-height:.9;color:#fff;background:var(--wood);padding:0 10px 3px}
+.slot.raro{background:#fff3a0;box-shadow:inset 0 0 0 4px #e8b520,inset 6px 6px 0 rgba(255,255,255,.6),0 0 0 4px #8a5a00,0 0 18px 6px rgba(255,216,74,.8)}
+.slot.raro .pc{background:var(--red)}
+.slot.raro:after{content:"RARO";position:absolute;top:-14px;left:50%;transform:translateX(-50%) rotate(-4deg);font-family:Pix;font-size:28px;line-height:1;
+  color:#2a1204;background:var(--gold);padding:2px 10px 4px;box-shadow:0 0 0 3px #2a1204}
+.slot.top .pc{background:#2f7d2a}
+
+/* ---------- selo "salva" e rodapé ---------- */
+.selo{position:absolute;background:var(--gold);color:#2a1204;font-family:Pix;font-size:46px;line-height:.95;text-align:center;padding:12px 18px 14px;text-transform:uppercase;
+  box-shadow:0 0 0 5px #2a1204,8px 8px 0 5px rgba(0,0,0,.3);transform:rotate(6deg)}
+.selo:before{content:"";position:absolute;left:50%;top:-22px;width:90px;height:30px;transform:translateX(-50%) rotate(-4deg);background:rgba(255,255,255,.65)}
+.rodape{position:absolute;left:60px;width:890px;display:flex;justify-content:space-between;align-items:center;font-weight:900;color:#fff;
+  text-shadow:3px 3px 0 #1d3d14,-2px 0 0 #1d3d14,0 -2px 0 #1d3d14,2px 0 0 #1d3d14}
+.rodape .sig{font-size:34px}.rodape .src{font-size:24px;opacity:.95}
+.dica{position:absolute;left:60px;width:890px;text-align:center;font-size:30px;color:#fff;background:rgba(42,18,4,.78);padding:10px 14px;box-shadow:0 0 0 4px #2a1204}
+.dica b{color:var(--gold)}
+.cerca{position:absolute;left:0;right:0;height:120px;background:
+  linear-gradient(#c98b4a,#c98b4a) 0 26px/100% 16px no-repeat,linear-gradient(#c98b4a,#c98b4a) 0 74px/100% 16px no-repeat,
+  repeating-linear-gradient(90deg,transparent 0 58px,#8a5228 58px 62px,#e0a868 62px 82px,#8a5228 82px 86px,transparent 86px 144px);
+  filter:drop-shadow(0 6px 0 rgba(0,0,0,.25))}

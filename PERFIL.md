@@ -100,3 +100,4 @@
 ## Números por post
 | Data | Post | Views | Ret. 3s | Tempo médio | Envios | Salvos | Coment. | Seguidores |
 |------|------|-------|---------|-------------|--------|--------|---------|------------|
+- 08/11: achou o design "simples demais" olhando referências; quer algo mais incrementado. Pediu guias de UMA página (ex.: máquina de costura, presente dos pets) — "as pessoas querem salvar". Feito visual novo (`assets/guia.css`) em 016 e 017, aguardando aprovação.

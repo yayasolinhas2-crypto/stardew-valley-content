@@ -44,7 +44,7 @@ Fonte de tudo: wiki oficial (stardewvalleywiki.com e pt.stardewvalleywiki.com). 
 |---|-------|--------|
 | D1 | 5 erros que todo iniciante comete (com fontes) | ✅ post 009 |
 | D2 | Quanto custa cada construção da Robin | ✅ post 010 |
-| D3 | O que dá pra costurar (chapéus na máquina de costura: item + Tecido) | próximo |
+| D3 | O que dá pra costurar | ✅ virou guia de 1 página (post 017) |
 | D4 | O que cada morador ama e odeia (começar pelos solteiros, 1 slide por pessoa) | próximo |
 | D5 | Lago de Peixes: o que cada peixe produz | próximo |
 Observação: referências em inglês ou "AI content" têm erros; tudo nosso sai conferido na wiki, com nome oficial em PT.
@@ -67,3 +67,9 @@ Regras: placas em PT; nada de nome ofensivo (refazer se a IA inventar); sempre "
 | F7 | máquina de costura | o que dá pra costurar (guia D3) | proposta |
 | F8 | roubar broto de chá | o broto de chá da Caroline | proposta |
 | F9 | pedreira | minerar na pedreira | proposta |
+
+## Série G: Guias de 1 página (visual "incrementado", pedido da Yasmin 08/11)
+Uma foto só, pra salvar. Placa de madeira com título-pergunta, passos numerados, espaços de inventário do jogo, selo RARO dourado, cenário em pixel com cerca. CSS: `assets/guia.css`; render: `node tools/guia.js posts/0xx`. Vai como vídeo de 10 s com música (Metricool).
+| G1 | Seu pet te dá presente? (gato/cachorro/tartaruga, % da wiki) | 🟡 post 016, aguardando aprovação |
+| G2 | Tecido + 1 item vira chapéu? (máquina de costura) | 🟡 post 017, aguardando aprovação |
+| G3+ | ideias: Lago de Peixes, o que cada morador ama, livros/poderes, totens | ideia |
