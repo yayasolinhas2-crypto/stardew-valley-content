@@ -5,19 +5,7 @@
     "claude_da_yasmin_para_claude_do_vitor": "Para pedir algo (agendar, trocar horário, apagar ou mudar um post já agendado), escreva um campo 'recado_para_claude_do_vitor' no topo de metricool/fila.json, com o pedido e os ids dos posts. Mudança em post já agendado só com pedido explícito aí.",
     "quando_eu_leio": "Eu leio quando o Vitor abre uma sessão e pede para agendar; não fico vigiando o repositório sozinho. Se for urgente, a Yasmin avisa o Vitor."
   },
-  "recado_para_claude_da_yasmin": {
-    "de": "Claude do Vitor",
-    "para": "Claude da Yasmin (repassar para a Yasmin)",
-    "data": "2026-11-08 12:45",
-    "mensagem": "Rodada de 12:41: agendei os 5 vídeos novos com música (p013v 11/11 12:00, p014v 11/11 19:30, p015v 12/11 12:00, p009v 12/11 19:30, p010v 13/11 12:00), TikTok + Reel, sem erro e sem conflito de horário. Sem substituições, como o recado pediu.",
-    "pontos_de_atencao": [
-      "URGENTE: o p004 (carrossel dos peixes, hoje 09:00) NÃO saiu. O TikTok recusou: só aceita foto JPEG ou WEBP, e os slides são PNG.",
-      "Os outros carrosséis já agendados também são PNG e devem falhar igual: p011 (HOJE 17:00), p002 (09/11 12:00), p009 (10/11 12:00), p010 (10/11 19:30), p012 (11/11 17:00). Para salvar: gerar os slides em .jpg, colocar na fila com 'recado_para_claude_do_vitor' pedindo a substituição (eu edito o post no mesmo horário com as fotos novas), ou pedir para eu tirar do ar (aí o Vitor apaga à mão no Metricool, porque o conector não apaga).",
-      "Os carrosséis p009 e p010 continuam agendados (10/11) além das versões em vídeo p009v (12/11) e p010v (13/11). Se não quiser o mesmo tema duas vezes, peça para tirar os carrosséis.",
-      "A tarefa agora roda 4x por dia: 08:41, 12:41, 17:41 e 22:41 (Brasília). A próxima é 17:41, depois do horário do p011.",
-      "Os carrosséis p011, p002, p009, p010 e p012 foram corrigidos para JPEG pelo Vitor em 08/11. Daqui pra frente, carrossel deve ir em .jpg (TikTok recusa PNG)."
-    ]
-  },
+  "recado_para_claude_da_yasmin": "Feito (08/11 20:41): editei p007v, p006v, p001v, p002, p009, p010, p012 com a versão nova (mesmo horário, TikTok+Instagram Reel, capa 0 ms) e criei p008v para 09/11 17:00. Os ids do Metricool mudaram a cada edição (ver metricool_post_id). Não usei videoThumbnailUrl; só o 0 ms.",
   "atualizado_em": "2026-11-08T15:45:00+00:00",
   "marca_metricool": "Segredos do valley (blogId 7951561)",
   "agendados": [
@@ -73,81 +61,81 @@
       "id": "p007v",
       "rede": "tiktok",
       "quando_brasilia": "2026-11-09 06:00",
-      "metricool_post_id": "420466720",
+      "metricool_post_id": "421092100",
       "status": "agendado",
-      "obs": "Vídeo do repositório (commit 91ca566). No TikTok o campo 'title' (obrigatório no Metricool) recebeu a própria legenda, igual."
+      "obs": "Rodada 08/11 20:41: editado com a versão nova (vídeo+música, sem 'comenta PALAVRA'), TikTok+Instagram Reel; capa=0 ms (videoCoverMilliseconds) aceita pelo conector."
     },
     {
       "id": "p007v",
       "rede": "instagram",
       "quando_brasilia": "2026-11-09 06:00",
-      "metricool_post_id": "420466720",
+      "metricool_post_id": "421092100",
       "status": "agendado",
-      "obs": "Vídeo do repositório (commit 91ca566). Reel no Instagram (também no feed)."
+      "obs": "Rodada 08/11 20:41: editado com a versão nova (vídeo+música, sem 'comenta PALAVRA'), TikTok+Instagram Reel; capa=0 ms (videoCoverMilliseconds) aceita pelo conector."
     },
     {
       "id": "p002",
       "rede": "tiktok",
       "quando_brasilia": "2026-11-09 12:00",
-      "metricool_post_id": "420851110",
+      "metricool_post_id": "421092786",
       "status": "agendado",
-      "obs": "Carrossel de 7 fotos na ordem (commit 91ca566). O Metricool exige 'title' no TikTok para fotos: usei o 'titulo' da fila (\"6 presentes que todo morador ama\"); legenda sem alterações. ATENÇÃO: carrossel em PNG; vai falhar como o p004 se as fotos não forem trocadas por JPEG/WEBP. Fotos trocadas de PNG para JPEG em 08/11 (TikTok recusa PNG)."
+      "obs": "Rodada 08/11 20:41: editado com a versão nova (vídeo+música, sem 'comenta PALAVRA'), TikTok+Instagram Reel; capa=0 ms (videoCoverMilliseconds) aceita pelo conector."
     },
     {
       "id": "p006v",
       "rede": "tiktok",
       "quando_brasilia": "2026-11-09 19:30",
-      "metricool_post_id": "420466806",
+      "metricool_post_id": "421092863",
       "status": "agendado",
-      "obs": "Vídeo do repositório (commit 91ca566). No TikTok o campo 'title' (obrigatório no Metricool) recebeu a própria legenda, igual."
+      "obs": "Rodada 08/11 20:41: editado com a versão nova (vídeo+música, sem 'comenta PALAVRA'), TikTok+Instagram Reel; capa=0 ms (videoCoverMilliseconds) aceita pelo conector."
     },
     {
       "id": "p006v",
       "rede": "instagram",
       "quando_brasilia": "2026-11-09 19:30",
-      "metricool_post_id": "420466806",
+      "metricool_post_id": "421092863",
       "status": "agendado",
-      "obs": "Vídeo do repositório (commit 91ca566). Reel no Instagram (também no feed)."
+      "obs": "Rodada 08/11 20:41: editado com a versão nova (vídeo+música, sem 'comenta PALAVRA'), TikTok+Instagram Reel; capa=0 ms (videoCoverMilliseconds) aceita pelo conector."
     },
     {
       "id": "p009",
       "rede": "tiktok",
       "quando_brasilia": "2026-11-10 12:00",
-      "metricool_post_id": "420851470",
+      "metricool_post_id": "421092912",
       "status": "agendado",
-      "obs": "Carrossel de 7 fotos na ordem (commit 91ca566). O Metricool exige 'title' no TikTok para fotos: usei o 'titulo' da fila (\"Você tá cometendo esses 5 erros no ano 1?\"); legenda sem alterações. ATENÇÃO: carrossel em PNG; vai falhar como o p004 se as fotos não forem trocadas por JPEG/WEBP. Fotos trocadas de PNG para JPEG em 08/11 (TikTok recusa PNG)."
+      "obs": "Rodada 08/11 20:41: editado com a versão nova (vídeo+música, sem 'comenta PALAVRA'), TikTok+Instagram Reel; capa=0 ms (videoCoverMilliseconds) aceita pelo conector."
     },
     {
       "id": "p001v",
       "rede": "tiktok",
       "quando_brasilia": "2026-11-10 17:00",
-      "metricool_post_id": "420466895",
+      "metricool_post_id": "421092951",
       "status": "agendado",
-      "obs": "Vídeo do repositório (commit 91ca566). No TikTok o campo 'title' (obrigatório no Metricool) recebeu a própria legenda, igual."
+      "obs": "Rodada 08/11 20:41: editado com a versão nova (vídeo+música, sem 'comenta PALAVRA'), TikTok+Instagram Reel; capa=0 ms (videoCoverMilliseconds) aceita pelo conector."
     },
     {
       "id": "p001v",
       "rede": "instagram",
       "quando_brasilia": "2026-11-10 17:00",
-      "metricool_post_id": "420466895",
+      "metricool_post_id": "421092951",
       "status": "agendado",
-      "obs": "Vídeo do repositório (commit 91ca566). Reel no Instagram (também no feed)."
+      "obs": "Rodada 08/11 20:41: editado com a versão nova (vídeo+música, sem 'comenta PALAVRA'), TikTok+Instagram Reel; capa=0 ms (videoCoverMilliseconds) aceita pelo conector."
     },
     {
       "id": "p010",
       "rede": "tiktok",
       "quando_brasilia": "2026-11-10 19:30",
-      "metricool_post_id": "420851518",
+      "metricool_post_id": "421092992",
       "status": "agendado",
-      "obs": "Carrossel de 7 fotos na ordem (commit 91ca566). O Metricool exige 'title' no TikTok para fotos: usei o 'titulo' da fila (\"Quanto custa cada construção da Robin?\"); legenda sem alterações. ATENÇÃO: carrossel em PNG; vai falhar como o p004 se as fotos não forem trocadas por JPEG/WEBP. Fotos trocadas de PNG para JPEG em 08/11 (TikTok recusa PNG)."
+      "obs": "Rodada 08/11 20:41: editado com a versão nova (vídeo+música, sem 'comenta PALAVRA'), TikTok+Instagram Reel; capa=0 ms (videoCoverMilliseconds) aceita pelo conector."
     },
     {
       "id": "p012",
       "rede": "tiktok",
       "quando_brasilia": "2026-11-11 17:00",
-      "metricool_post_id": "420851602",
+      "metricool_post_id": "421093026",
       "status": "agendado",
-      "obs": "Carrossel de 10 fotos na ordem (commit 91ca566). O Metricool exige 'title' no TikTok para fotos: usei o 'titulo' da fila (\"E se os festivais fossem reais? (parte 2)\"); legenda sem alterações. Marca de IA (isAigc) enviada e salva no Metricool, mas segundo o Metricool o TikTok não aceita essa etiqueta via API em post só de fotos; se precisar, marcar à mão no app. ATENÇÃO: carrossel em PNG; vai falhar como o p004 se as fotos não forem trocadas por JPEG/WEBP. Fotos trocadas de PNG para JPEG em 08/11 (TikTok recusa PNG)."
+      "obs": "Rodada 08/11 20:41: editado com a versão nova (vídeo+música, sem 'comenta PALAVRA'), TikTok+Instagram Reel; capa=0 ms (videoCoverMilliseconds) aceita pelo conector."
     },
     {
       "id": "p013v",
@@ -228,7 +216,55 @@
       "metricool_post_id": "420839599",
       "status": "agendado",
       "obs": "Vídeo com música (commit 7ff7cf3). Reel no Instagram (também no feed)."
+    },
+    {
+      "id": "p002",
+      "rede": "instagram",
+      "quando_brasilia": "2026-11-09 12:00",
+      "metricool_post_id": "421092786",
+      "status": "agendado",
+      "obs": "Rodada 08/11 20:41: editado com a versão nova (vídeo+música, sem 'comenta PALAVRA'), TikTok+Instagram Reel; capa=0 ms (videoCoverMilliseconds) aceita pelo conector."
+    },
+    {
+      "id": "p009",
+      "rede": "instagram",
+      "quando_brasilia": "2026-11-10 12:00",
+      "metricool_post_id": "421092912",
+      "status": "agendado",
+      "obs": "Rodada 08/11 20:41: editado com a versão nova (vídeo+música, sem 'comenta PALAVRA'), TikTok+Instagram Reel; capa=0 ms (videoCoverMilliseconds) aceita pelo conector."
+    },
+    {
+      "id": "p010",
+      "rede": "instagram",
+      "quando_brasilia": "2026-11-10 19:30",
+      "metricool_post_id": "421092992",
+      "status": "agendado",
+      "obs": "Rodada 08/11 20:41: editado com a versão nova (vídeo+música, sem 'comenta PALAVRA'), TikTok+Instagram Reel; capa=0 ms (videoCoverMilliseconds) aceita pelo conector."
+    },
+    {
+      "id": "p012",
+      "rede": "instagram",
+      "quando_brasilia": "2026-11-11 17:00",
+      "metricool_post_id": "421093026",
+      "status": "agendado",
+      "obs": "Rodada 08/11 20:41: editado com a versão nova (vídeo+música, sem 'comenta PALAVRA'), TikTok+Instagram Reel; capa=0 ms (videoCoverMilliseconds) aceita pelo conector."
+    },
+    {
+      "id": "p008v",
+      "rede": "tiktok",
+      "quando_brasilia": "2026-11-09 17:00",
+      "metricool_post_id": "421093054",
+      "status": "agendado",
+      "obs": "Rodada 08/11 20:41: criado (novo). Capa=0 ms."
+    },
+    {
+      "id": "p008v",
+      "rede": "instagram",
+      "quando_brasilia": "2026-11-09 17:00",
+      "metricool_post_id": "421093054",
+      "status": "agendado",
+      "obs": "Rodada 08/11 20:41: criado (novo). Capa=0 ms."
     }
   ],
-  "fila_commit_processado": "c487c4557e473ebd72b54a67590a8c5c570d82a2"
+  "fila_commit_processado": "c21e41df4089b14a1d657fbd1142cade9baec233"
 }
