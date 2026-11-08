@@ -56,6 +56,10 @@
 ## Instagram (08/11)
 - Criou conta nova; escreveu **@segredosdovelley** (confirmar se é "valley"). Kit em `branding/INSTAGRAM.md`. Só Reels, arquivo original do painel.
 
+## Agendamento (08/11)
+- Escolheu **Metricool** (TikTok + Instagram num lugar só). Vai criar a conta e avisar. Começar no plano grátis; se estourar, levantar preço antes de assinar.
+- Instagram: carrossel só como vídeo (Reels); ofereci converter os 4 carrosséis em Reels — aguardando resposta.
+
 ## Gosto: aprovado / negado (com o porquê)
 | Data | Ideia/roteiro | Decisão | Categoria | Porquê |
 |------|---------------|---------|-----------|--------|
