@@ -71,6 +71,8 @@
 
 - 08/11 · **Metricool conectado** (marca "Segredos do valley", TikTok + Instagram). Painel ganhou status "Agendado no Metricool".
 
+- 08/11 · Metricool é do Vitor (plano Starter não permite convidar usuário). Solução combinada: **caixa de correio no GitHub** — eu escrevo `metricool/fila.json` (só aprovados), a Claude do Vitor agenda e responde em `metricool/agendados.json` e `metricas.json`. Ver `metricool/LEIA-ME-CLAUDE-DO-VITOR.md`.
+
 ## Gosto: aprovado / negado (com o porquê)
 | Data | Ideia/roteiro | Decisão | Categoria | Porquê |
 |------|---------------|---------|-----------|--------|
