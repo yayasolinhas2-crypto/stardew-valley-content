@@ -62,6 +62,10 @@
 
 - 08/11 · Mandou referências que gosta (Instagram): guias de consulta em carrossel — erros de iniciante, costura, presentes ama/odeia, lago de peixes, custos de construção. Quer esses modelos no nosso estilo.
 
+- 08/11 · **REGRA: "sempre siga o nosso estilo que já criamos. Não copie."** Referências = só ideia de tema; visual, texto e dados sempre nossos e conferidos.
+- 08/11 · Quer versão em vídeo dos guias (009, 010) — agendado para depois do Ep. 2.
+- 08/11 · Metricool: o Vitor tem plano Starter; ideia de usar uma marca separada na conta dele (ela conecta as próprias redes, sem senha). Verificar nº de marcas e se o Starter tem API.
+
 ## Gosto: aprovado / negado (com o porquê)
 | Data | Ideia/roteiro | Decisão | Categoria | Porquê |
 |------|---------------|---------|-----------|--------|

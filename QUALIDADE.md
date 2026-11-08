@@ -3,6 +3,7 @@
 Criado em 07/11/2026 depois do feedback da Yasmin: "sem transição, áudio com chiado, voz sem emoção — seja mais criterioso".
 
 ## Conteúdo
+- [ ] **Nosso estilo, nunca cópia** (regra da Yasmin, 08/11): referência de outro perfil vira só tema; visual, texto e dados são nossos.
 - [ ] Todo fato com fonte na wiki oficial (EN + nomes oficiais em PT). Nada estimado.
 - [ ] Capa = gancho em pergunta/provocação (aprovado: "Você tá usando o barril errado?").
 - [ ] CTA "Comenta PALAVRA" no meio E no fim. Envio com pessoa nomeada ("manda pro amigo que…").
