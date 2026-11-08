@@ -18,6 +18,7 @@ for f in sorted(glob.glob(sys.argv[1]+'/*.json')):
   fila.append({'id':pid,'titulo':p['titulo'].replace(' (marcar como IA)','').replace(' · marcar como IA',''),'quando_brasilia':f"{p['data']} {p['hora']}",'fuso':'America/Sao_Paulo',
     'formato':'video' if video else 'carrossel_fotos','redes':['tiktok','instagram'] if video else ['tiktok'],
     'midia_no_repositorio':midia,'legenda':p['legenda'],'comentario_fixado':p['fixado'],'conteudo_gerado_por_ia':ia,'status':'pronto_para_agendar',
+    **({'capa':{'segundo_do_video':0.0,'imagem':(p['video_repo'].replace('.mp4','-capa.jpg') if p.get('video_repo') else f'posts/{base}/video-capa.jpg')}} if video else {}),
     **({'substituir_metricool_post_id':p['substitui_metricool'],'acao':'EDITAR o post agendado com esse id no Metricool (mesmo horário): trocar mídia, legenda, redes e título por esta versão nova'} if p.get('substitui_metricool') else {})})
 fila.sort(key=lambda x:x['quando_brasilia'])
 anterior=json.load(open('metricool/fila.json')) if os.path.exists('metricool/fila.json') else {}

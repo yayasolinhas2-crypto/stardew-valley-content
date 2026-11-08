@@ -45,6 +45,10 @@ Criado em 07/11/2026 depois do feedback da Yasmin: "sem transição, áudio com 
 - [ ] Texto/placas em português; revisar cada imagem (a IA pode inventar nomes ruins — refazer).
 - [ ] Marca "imagem gerada por IA" no slide + lembrar a Yasmin de ativar a etiqueta de IA no TikTok/Instagram.
 
+## Capa no perfil (08/11)
+- [ ] O PRIMEIRO QUADRO de todo vídeo é a capa completa (título grande). Pelo Metricool o TikTok usa o quadro 0 — capa vazia deixa o perfil feio (aconteceu com o barril).
+- [ ] Tudo que importa na capa fica no centro (recorte 3:4 da grade: y 240–1680).
+
 ## Música
 - [ ] Todo post sai com música (`tools/musica.py`): vídeo narrado = trilha baixinha que abaixa quando a voz fala; carrossel = vídeo de fotos com trilha. Nunca a trilha do jogo.
 - [ ] Variar a trilha entre posts seguidos (primavera/verão/outono/inverno conforme o tema).

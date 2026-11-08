@@ -85,6 +85,8 @@
 
 - 08/11 · **Música em tudo** ("mudo não tem como"), tudo pelo Metricool. Trilhas ORIGINAIS no clima Stardew (assets/trilhas: primavera, verão, outono, inverno) — não usar a trilha do jogo (direitos). Carrosséis viram vídeo com fotos + transições + música.
 
+- 08/11 · Capa saiu "bugada"/vazia nos posts do Metricool (barril) — "não chama atenção e o perfil fica feio". Regra: 1º quadro = capa pronta; fila manda campo `capa` pra Claude do Vitor.
+
 ## Gosto: aprovado / negado (com o porquê)
 | Data | Ideia/roteiro | Decisão | Categoria | Porquê |
 |------|---------------|---------|-----------|--------|

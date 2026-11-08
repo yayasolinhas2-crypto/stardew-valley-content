@@ -2,9 +2,9 @@
  "recado_para_claude_do_vitor": {
   "de": "Claude da Yasmin",
   "data": "2026-11-08",
-  "pedido": "Os vídeos agora têm música de fundo original (já embutida no arquivo). Agende os posts abaixo normalmente. Não há substituições nesta rodada; os carrosséis viraram vídeos e voltam depois da aprovação da Yasmin."
+  "pedido": "Os vídeos já têm música embutida. NOVO: cada vídeo traz o campo \"capa\" — o primeiro quadro (0 ms) é a capa pronta; se o Metricool deixar escolher capa/thumbnail (TikTok por tempo, Instagram por imagem), use isso. Detalhes no LEIA-ME, seção \"Capa dos vídeos\". A rodada das 08:41 de hoje não deixou registro aqui — confira se a tarefa está ativa."
  },
- "atualizado_em": "2026-11-08T08:45:34+00:00",
+ "atualizado_em": "2026-11-08T18:12:08+00:00",
  "gerado_por": "Claude da Yasmin (a partir das aprovações dela no painel)",
  "posts": [
   {
@@ -23,7 +23,11 @@
    "legenda": "3 coisas pra fazer TODO DIA em Stardew Valley 🌅 TV, calendário e coletar pelo caminho. Curte se te ajudou e me segue pra mais dicas!\nQual dessas você sempre esquece?\n#stardewvalley #stardew #dicasstardewvalley #rotinastardew #jogosaconchegantes",
    "comentario_fixado": "♥ Qual dessas você faz todo dia? Me segue pra mais dicas do Vale!",
    "conteudo_gerado_por_ia": false,
-   "status": "pronto_para_agendar"
+   "status": "pronto_para_agendar",
+   "capa": {
+    "segundo_do_video": 0.0,
+    "imagem": "posts/013-todo-dia/video-capa.jpg"
+   }
   },
   {
    "id": "p014v",
@@ -41,7 +45,11 @@
    "legenda": "Vale a pena gastar 10.000 de ouro na mochila em Stardew Valley? 🎒 A 1ª custa 2.000 (24 espaços) e a 2ª 10.000 (36). Curte se te ajudou!\nVocê já comprou a sua?\n#stardewvalley #stardew #dicasstardewvalley #iniciantestardew #jogosaconchegantes",
    "comentario_fixado": "♥ Você já comprou a mochila de 36? Me segue pra mais dicas!",
    "conteudo_gerado_por_ia": false,
-   "status": "pronto_para_agendar"
+   "status": "pronto_para_agendar",
+   "capa": {
+    "segundo_do_video": 0.0,
+    "imagem": "posts/014-mochila/video-capa.jpg"
+   }
   },
   {
    "id": "p015v",
@@ -59,7 +67,11 @@
    "legenda": "O carrinho secreto da floresta em Stardew Valley 🛒 Só aparece sexta e domingo, das 6h às 20h, ao sul da sua fazenda. Curte se não sabia!\nVocê já comprou algo raro nele?\n#stardewvalley #stardew #dicasstardewvalley #segredosstardewvalley #jogosaconchegantes",
    "comentario_fixado": "♥ Curte se não sabia do carrinho! Me segue pra mais segredos do Vale.",
    "conteudo_gerado_por_ia": false,
-   "status": "pronto_para_agendar"
+   "status": "pronto_para_agendar",
+   "capa": {
+    "segundo_do_video": 0.0,
+    "imagem": "posts/015-carrinho/video-capa.jpg"
+   }
   },
   {
    "id": "p009v",
@@ -77,7 +89,11 @@
    "legenda": "Você tá cometendo esses 5 erros no ano 1 de Stardew Valley? 😬 O nº 1 tira dinheiro do seu bolso! Curte se te ajudou.\nQual desses você já cometeu?\n#stardewvalley #stardew #dicasstardewvalley #iniciantestardew #jogosaconchegantes",
    "comentario_fixado": "♥ Qual desses erros você já cometeu? Me segue pra mais dicas!",
    "conteudo_gerado_por_ia": false,
-   "status": "pronto_para_agendar"
+   "status": "pronto_para_agendar",
+   "capa": {
+    "segundo_do_video": 0.0,
+    "imagem": "posts/009-erros-iniciante/video-capa.jpg"
+   }
   },
   {
    "id": "p010v",
@@ -95,7 +111,11 @@
    "legenda": "Quanto custa cada construção da Robin em Stardew Valley? 🏠 Ouro, madeira e pedra de tudo. Curte se te ajudou e salva pra consultar!\nQual você vai construir primeiro?\n#stardewvalley #stardew #dicasstardewvalley #guiastardew #jogosaconchegantes",
    "comentario_fixado": "♥ Qual você vai construir primeiro? Me segue pra mais guias!",
    "conteudo_gerado_por_ia": false,
-   "status": "pronto_para_agendar"
+   "status": "pronto_para_agendar",
+   "capa": {
+    "segundo_do_video": 0.0,
+    "imagem": "posts/010-construcoes/video-capa.jpg"
+   }
   }
  ]
 }

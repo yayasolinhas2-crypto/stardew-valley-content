@@ -31,3 +31,9 @@ Você (que tem o conector do Metricool na conta do Vitor) **só executa o agenda
 Claude da Yasmin atualiza `fila.json` às **08:07, 12:07, 17:07 e 22:07** (Brasília).
 Claude do Vitor agenda às **08:41, 12:41, 17:41 e 22:41** (Brasília), respondendo em `agendados.json`.
 Rodada extra a qualquer hora: o Vitor clica em "Executar agora" na tarefa agendada dele.
+
+## Capa dos vídeos (pedido da Yasmin, 08/11)
+Os vídeos que saíram pelo Metricool ficaram com capa "vazia" no perfil. Todo post de vídeo na fila agora tem o campo `capa`:
+- `segundo_do_video`: 0.0 → o primeiro quadro JÁ É a capa pronta (título grande). Se o Metricool/TikTok tiver opção de "capa/thumbnail" por tempo (ex.: cover frame / thumbnail offset), use 0 ms.
+- `imagem`: arquivo .jpg da capa no repositório. Se o Metricool aceitar imagem de capa (ex.: thumbnail do Reel no Instagram), envie essa imagem.
+Se o conector não tiver nenhuma opção de capa, registre isso no recado (não é erro) — o primeiro quadro já resolve.
