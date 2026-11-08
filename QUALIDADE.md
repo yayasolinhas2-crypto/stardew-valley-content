@@ -22,6 +22,13 @@ Criado em 07/11/2026 depois do feedback da Yasmin: "sem transição, áudio com 
 - [ ] Conferir quadros no meio das transições e em cada cena (`tools/video.js --quadros`) — ele agora avisa ⚠ quando algo vaza do quadro.
 - [ ] **Legenda sincronizada** (class `com-legenda` no #stage): palavra falada em dourado, palavra-chave em destaque, abaixo do quadro (quadro de vídeo com 1040 px de altura).
 
+## Vídeos com gameplay da Yasmin (`tools/gameplay.py`)
+- [ ] Gameplay recortada (centro, sem esticar, pixel nítido) dentro da moldura de madeira; fundo = a própria cena desfocada.
+- [ ] Título-gancho fixo no topo, selo por cena, legenda sincronizada, CTA "comenta PALAVRA" no meio, assinatura.
+- [ ] Som do jogo baixinho (12%) por baixo da voz; whoosh nas trocas.
+- [ ] Se a gravação acabar antes da fala, congela o último quadro (o script para se a duração da cena não bater).
+- [ ] Gravações brutas ficam em `gravacoes/bruto/` (fora do git, ~400 MB).
+
 ## Voz (Sulafat)
 - [ ] Modelo **gemini-2.5-pro-preview-tts** com instrução de interpretação por fala (`[emoção]` no `narracao.json`).
   - O 3.8 Flash pronuncia bem mas fica sem emoção e às vezes LÊ a marcação `[emoção]` em voz alta.
