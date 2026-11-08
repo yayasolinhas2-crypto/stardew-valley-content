@@ -1,1 +1,134 @@
-{"atualizado_em": null, "agendados": []}
+{
+ "atualizado_em": "2026-11-08T04:32:00+00:00",
+ "marca_metricool": "Segredos do valley (blogId 7951561)",
+ "agendados": [
+  {
+   "id": "p004",
+   "rede": "tiktok",
+   "quando_brasilia": "2026-11-08 09:00",
+   "metricool_post_id": "420464669",
+   "status": "agendado",
+   "obs": "Carrossel de 7 fotos na ordem (commit 91ca566). O Metricool exige 'title' no TikTok para fotos: usei o 'titulo' da fila (\"5 peixes lendários: onde e quando pegar\"); legenda sem alterações."
+  },
+  {
+   "id": "p003v",
+   "rede": "tiktok",
+   "quando_brasilia": "2026-11-08 13:00",
+   "metricool_post_id": "420465854",
+   "status": "agendado",
+   "obs": "Vídeo do repositório (commit 91ca566). No TikTok o campo 'title' (obrigatório no Metricool) recebeu a própria legenda, igual."
+  },
+  {
+   "id": "p003v",
+   "rede": "instagram",
+   "quando_brasilia": "2026-11-08 13:00",
+   "metricool_post_id": "420465854",
+   "status": "agendado",
+   "obs": "Vídeo do repositório (commit 91ca566). Reel no Instagram (também no feed)."
+  },
+  {
+   "id": "p011",
+   "rede": "tiktok",
+   "quando_brasilia": "2026-11-08 17:00",
+   "metricool_post_id": "420465966",
+   "status": "agendado",
+   "obs": "Carrossel de 10 fotos na ordem (commit 91ca566). O Metricool exige 'title' no TikTok para fotos: usei o 'titulo' da fila (\"Como seria Stardew Valley na vida real?\"); legenda sem alterações. Marca de IA (isAigc) enviada e salva no Metricool, mas segundo o Metricool o TikTok não aceita essa etiqueta via API em post só de fotos; se precisar, marcar à mão no app."
+  },
+  {
+   "id": "p002v",
+   "rede": "tiktok",
+   "quando_brasilia": "2026-11-08 20:30",
+   "metricool_post_id": "420466703",
+   "status": "agendado",
+   "obs": "Vídeo do repositório (commit 91ca566). No TikTok o campo 'title' (obrigatório no Metricool) recebeu a própria legenda, igual."
+  },
+  {
+   "id": "p002v",
+   "rede": "instagram",
+   "quando_brasilia": "2026-11-08 20:30",
+   "metricool_post_id": "420466703",
+   "status": "agendado",
+   "obs": "Vídeo do repositório (commit 91ca566). Reel no Instagram (também no feed)."
+  },
+  {
+   "id": "p007v",
+   "rede": "tiktok",
+   "quando_brasilia": "2026-11-09 06:00",
+   "metricool_post_id": "420466720",
+   "status": "agendado",
+   "obs": "Vídeo do repositório (commit 91ca566). No TikTok o campo 'title' (obrigatório no Metricool) recebeu a própria legenda, igual."
+  },
+  {
+   "id": "p007v",
+   "rede": "instagram",
+   "quando_brasilia": "2026-11-09 06:00",
+   "metricool_post_id": "420466720",
+   "status": "agendado",
+   "obs": "Vídeo do repositório (commit 91ca566). Reel no Instagram (também no feed)."
+  },
+  {
+   "id": "p002",
+   "rede": "tiktok",
+   "quando_brasilia": "2026-11-09 12:00",
+   "metricool_post_id": "420466731",
+   "status": "agendado",
+   "obs": "Carrossel de 7 fotos na ordem (commit 91ca566). O Metricool exige 'title' no TikTok para fotos: usei o 'titulo' da fila (\"6 presentes que todo morador ama\"); legenda sem alterações."
+  },
+  {
+   "id": "p006v",
+   "rede": "tiktok",
+   "quando_brasilia": "2026-11-09 19:30",
+   "metricool_post_id": "420466806",
+   "status": "agendado",
+   "obs": "Vídeo do repositório (commit 91ca566). No TikTok o campo 'title' (obrigatório no Metricool) recebeu a própria legenda, igual."
+  },
+  {
+   "id": "p006v",
+   "rede": "instagram",
+   "quando_brasilia": "2026-11-09 19:30",
+   "metricool_post_id": "420466806",
+   "status": "agendado",
+   "obs": "Vídeo do repositório (commit 91ca566). Reel no Instagram (também no feed)."
+  },
+  {
+   "id": "p009",
+   "rede": "tiktok",
+   "quando_brasilia": "2026-11-10 12:00",
+   "metricool_post_id": "420466840",
+   "status": "agendado",
+   "obs": "Carrossel de 7 fotos na ordem (commit 91ca566). O Metricool exige 'title' no TikTok para fotos: usei o 'titulo' da fila (\"Você tá cometendo esses 5 erros no ano 1?\"); legenda sem alterações."
+  },
+  {
+   "id": "p001v",
+   "rede": "tiktok",
+   "quando_brasilia": "2026-11-10 17:00",
+   "metricool_post_id": "420466895",
+   "status": "agendado",
+   "obs": "Vídeo do repositório (commit 91ca566). No TikTok o campo 'title' (obrigatório no Metricool) recebeu a própria legenda, igual."
+  },
+  {
+   "id": "p001v",
+   "rede": "instagram",
+   "quando_brasilia": "2026-11-10 17:00",
+   "metricool_post_id": "420466895",
+   "status": "agendado",
+   "obs": "Vídeo do repositório (commit 91ca566). Reel no Instagram (também no feed)."
+  },
+  {
+   "id": "p010",
+   "rede": "tiktok",
+   "quando_brasilia": "2026-11-10 19:30",
+   "metricool_post_id": "420466943",
+   "status": "agendado",
+   "obs": "Carrossel de 7 fotos na ordem (commit 91ca566). O Metricool exige 'title' no TikTok para fotos: usei o 'titulo' da fila (\"Quanto custa cada construção da Robin?\"); legenda sem alterações."
+  },
+  {
+   "id": "p012",
+   "rede": "tiktok",
+   "quando_brasilia": "2026-11-11 17:00",
+   "metricool_post_id": "420467007",
+   "status": "agendado",
+   "obs": "Carrossel de 10 fotos na ordem (commit 91ca566). O Metricool exige 'title' no TikTok para fotos: usei o 'titulo' da fila (\"E se os festivais fossem reais? (parte 2)\"); legenda sem alterações. Marca de IA (isAigc) enviada e salva no Metricool, mas segundo o Metricool o TikTok não aceita essa etiqueta via API em post só de fotos; se precisar, marcar à mão no app."
+  }
+ ]
+}
