@@ -75,6 +75,8 @@
 
 - 08/11 · Gemini: conta do Vitor é paga (Tier 1, ~2 centavos/vídeo); limite da voz Pro é 50/dia mesmo pago e dividido com ele → narração passou a ser em lote (1 pedido/vídeo). OK dividir a cota.
 
+- 08/11 · Claude do Vitor agendou os 11 posts aprovados no Metricool, sem erro. Carrossel com IA: etiqueta de IA no TikTok tem que ser marcada à mão (API não aceita em post de fotos).
+
 ## Gosto: aprovado / negado (com o porquê)
 | Data | Ideia/roteiro | Decisão | Categoria | Porquê |
 |------|---------------|---------|-----------|--------|
