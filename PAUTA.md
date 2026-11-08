@@ -75,3 +75,7 @@ Uma foto só, pra salvar. Placa de madeira com título-pergunta, passos numerado
 | G3 | Torneirinha em qual árvore? | 🟡 post 018, aguardando aprovação |
 | G4+ | ideias: Lago de Peixes (o que cada peixe dá), presentes dos solteiros (ama/odeia), livros/poderes, totens | ideia |
 Lições dos exemplos que a Yasmin mandou (08/11, sonniegaming/the_tanbear — só tema, nunca cópia): arte GRANDE, pouco texto, um tema só por imagem, dá pra entender olhando.
+
+## Regra de mix (Yasmin, 08/11)
+Nunca 2 formatos iguais seguidos. A cada 4 posts, pelo menos: 1 vídeo narrado (segredos/Recados/dicas), 1 vídeo com gameplay da Yasmin (série F), 1 guia de 1 página (série G) e 1 carrossel (guia em várias fotos ou "vida real", série E). Tudo com o visual novo e música.
+Próximo lote: F4 galpão fábrica de dinheiro (gameplay) · G4 Lago de Peixes (guia) · E3 casas dos moradores na vida real (carrossel IA) · A Recados ep. 3 (narrado) · F5 Fruta-estrela do cônjuge (gameplay) · G5 presentes dos solteiros (guia).
