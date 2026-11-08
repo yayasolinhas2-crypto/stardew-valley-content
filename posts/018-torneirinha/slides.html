@@ -1,0 +1,37 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="../../assets/guia.css">
+<style>
+.placa{padding:22px 30px 26px;background:repeating-linear-gradient(0deg,#4f8a3a 0 52px,#3f7330 52px 56px);box-shadow:0 0 0 8px #1f4418,0 0 0 14px #10260c,12px 16px 0 14px rgba(0,0,0,.25)}
+.placa h1{font-size:108px;text-shadow:0 7px 0 #10260c,6px 0 0 #10260c,-6px 0 0 #10260c,0 -6px 0 #10260c,6px 7px 0 #10260c,-6px 7px 0 #10260c,6px -6px 0 #10260c,-6px -6px 0 #10260c,0 14px 0 rgba(0,0,0,.3)}
+.fita{background:#8a4a1c;box-shadow:0 0 0 5px #10260c}
+.grade3{position:absolute;left:60px;width:890px;top:var(--y0);display:grid;grid-template-columns:repeat(4,1fr);gap:18px 16px;padding:20px 18px;
+  background:linear-gradient(#fff4e0,#f3d9b0);box-shadow:0 0 0 7px var(--wood),0 0 0 13px #6db84a,0 0 0 19px var(--wood),10px 14px 0 19px rgba(0,0,0,.25)}
+.tc{position:relative;background:linear-gradient(#cdeeff 0,#cdeeff 62%,#9fd47a 62%);box-shadow:inset 0 0 0 4px #8fc0dc,0 0 0 4px var(--wood);
+  display:flex;flex-direction:column;align-items:center;text-align:center;padding:10px 6px 10px;height:440px}
+.tc .arv{height:216px;display:flex;align-items:flex-end;justify-content:center}
+.tc .arv img{width:auto;image-rendering:pixelated}
+.tc .tn{font-family:Pix;font-size:40px;line-height:.9;color:var(--wood);margin-top:10px;height:72px;display:flex;align-items:center;text-transform:uppercase;text-shadow:2px 2px 0 rgba(255,255,255,.6)}
+.tc .prod{display:flex;align-items:center;gap:6px;background:var(--slot);box-shadow:inset 0 0 0 3px var(--slot2),0 0 0 3px var(--wood);padding:4px 8px 4px 4px;width:100%;height:68px}
+.tc .prod img{width:48px;height:48px;flex:none} .tc .prod span{font-size:21px;line-height:1.02;text-align:left}
+.tc .nums{display:flex;gap:6px;margin-top:10px;width:100%}
+.tc .nums b{flex:1;white-space:nowrap;font-family:Pix;font-weight:400;font-size:32px;line-height:1;color:#fff;background:var(--wood);padding:4px 2px 6px}
+.tc .nums b.g{background:#2f7d2a}
+.tc.melhor{background:linear-gradient(#e2d4ff 0,#e2d4ff 62%,#9fd47a 62%);box-shadow:inset 0 0 0 4px #e8b520,0 0 0 4px #8a5a00,0 0 20px 8px rgba(255,216,74,.9)}
+.tc.melhor .nums b.g{background:var(--red)}
+.tc.melhor:after{content:"A MELHOR";position:absolute;top:-18px;left:50%;transform:translateX(-50%) rotate(-4deg);font-family:Pix;font-size:32px;line-height:1;white-space:nowrap;
+  color:#2a1204;background:var(--gold);padding:3px 12px 5px;box-shadow:0 0 0 3px #2a1204}
+.tc.info{background:linear-gradient(var(--paper),var(--paper2));box-shadow:inset 0 0 0 4px var(--slot2),0 0 0 4px var(--wood);justify-content:center;gap:4px}
+.tc.info .tap{width:56px;height:112px} .tc.info .tap2{width:40px;height:80px;margin-top:6px}
+.tc.info .tn{height:auto;margin:6px 0 2px}
+.tc.info p{font-size:21px;line-height:1.1} .tc.info p b{color:var(--red)}
+.rodape .src{font-size:22px}.rodape{text-shadow:3px 3px 0 #1d3d14,-2px 0 0 #1d3d14,0 -2px 0 #1d3d14,2px 0 0 #1d3d14}
+</style></head><body>
+<section class="pg cen-campo" id="s1">
+ <div class="textura"></div><div class="sol" style="left:840px;top:40px"></div>
+ <div class="nuvem" style="left:70px;top:80px;width:120px"></div><div class="nuvem" style="left:450px;top:60px;width:90px"></div>
+ <div class="arvores"></div><div class="grama"></div><div class="cerca" style="top:1660px"></div>
+ <div class="flor" style="left:110px;top:1840px"></div><div class="flor r" style="left:380px;top:1860px"></div><div class="flor" style="left:660px;top:1830px"></div><div class="flor r" style="left:930px;top:1850px"></div>
+ <div class="placa" style="top:178px"><h1>Torneirinha em<br><em>qual árvore?</em></h1><div class="fita">o que cada árvore dá · <b>dias</b> · <b>preço</b></div></div>
+ <div class="selo" style="left:800px;top:128px;font-size:34px;z-index:5">salva<br>esse guia</div>
+ <div class="grade3"><div class="tc "><div class="arv"><img src="../../assets/icons/Arv_Acer.png" style="height:180px"></div><div class="tn">Ácer</div><div class="prod"><img src="../../assets/icons/Maple_Syrup.png"><span>Xarope de ácer</span></div><div class="nums"><b>9 dias</b><b class="g">200g</b></div></div><div class="tc "><div class="arv"><img src="../../assets/icons/Arv_Carvalho.png" style="height:184px"></div><div class="tn">Carvalho</div><div class="prod"><img src="../../assets/icons/Oak_Resin.png"><span>Resina de carvalho</span></div><div class="nums"><b>7 dias</b><b class="g">150g</b></div></div><div class="tc "><div class="arv"><img src="../../assets/icons/Arv_Pinheiro.png" style="height:180px"></div><div class="tn">Pinheiro</div><div class="prod"><img src="../../assets/icons/Pine_Tar.png"><span>Alcatrão de pinho</span></div><div class="nums"><b>5 dias</b><b class="g">100g</b></div></div><div class="tc "><div class="arv"><img src="../../assets/icons/Arv_Mogno.png" style="height:182px"></div><div class="tn">Mogno</div><div class="prod"><img src="../../assets/icons/Sap.png"><span>Seiva ×5 a 10</span></div><div class="nums"><b>1 dia</b><b class="g">2g</b></div></div><div class="tc "><div class="arv"><img src="../../assets/icons/Arv_Cogumelo.png" style="height:192px"></div><div class="tn">Cogumelo</div><div class="prod"><img src="../../assets/icons/Purple_Mushroom.png"><span>Cogumelos (até o roxo)</span></div><div class="nums"><b>varia</b><b class="g">≤ 250g</b></div></div><div class="tc "><div class="arv"><img src="../../assets/icons/Arv_ChuvaVerde.png" style="height:192px"></div><div class="tn">Chuva Verde</div><div class="prod"><img src="../../assets/icons/Fiddlehead_Fern.png"><span>Broto de samambaia</span></div><div class="nums"><b>2 dias</b><b class="g">90g</b></div></div><div class="tc melhor"><div class="arv"><img src="../../assets/icons/Arv_Mistica.png" style="height:192px"></div><div class="tn">Mística</div><div class="prod"><img src="../../assets/icons/Mystic_Syrup.png"><span>Xarope Místico</span></div><div class="nums"><b>7 dias</b><b class="g">1.000g</b></div></div><div class="tc info"><img src="../../assets/icons/Tapper.png" class="tap"><div class="tn">Torneirinha</div><p>Coleta nível 4<br><b>40 Madeira + 2 Barra de Cobre</b></p><img src="../../assets/icons/Heavy_Tapper.png" class="tap2"><p><b>Pesada:</b> 2× mais rápida</p></div></div>
+ <div class="rodape" style="top:1508px"><span class="sig">@segredosdovalley</span><span class="src">inverno: cogumelo e samambaia param · wiki</span></div>
+<script>document.fonts.ready.then(()=>{const pl=document.querySelector(".placa").getBoundingClientRect();document.querySelector(".grade3").style.setProperty("--y0",(pl.bottom+34)+"px")})</script></section></body></html>

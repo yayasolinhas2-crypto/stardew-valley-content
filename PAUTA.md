@@ -72,4 +72,6 @@ Regras: placas em PT; nada de nome ofensivo (refazer se a IA inventar); sempre "
 Uma foto só, pra salvar. Placa de madeira com título-pergunta, passos numerados, espaços de inventário do jogo, selo RARO dourado, cenário em pixel com cerca. CSS: `assets/guia.css`; render: `node tools/guia.js posts/0xx`. Vai como vídeo de 10 s com música (Metricool).
 | G1 | Seu pet te dá presente? (gato/cachorro/tartaruga, % da wiki) | 🟡 post 016, aguardando aprovação |
 | G2 | Tecido + 1 item vira chapéu? (máquina de costura) | 🟡 post 017, aguardando aprovação |
-| G3+ | ideias: Lago de Peixes, o que cada morador ama, livros/poderes, totens | ideia |
+| G3 | Torneirinha em qual árvore? | 🟡 post 018, aguardando aprovação |
+| G4+ | ideias: Lago de Peixes (o que cada peixe dá), presentes dos solteiros (ama/odeia), livros/poderes, totens | ideia |
+Lições dos exemplos que a Yasmin mandou (08/11, sonniegaming/the_tanbear — só tema, nunca cópia): arte GRANDE, pouco texto, um tema só por imagem, dá pra entender olhando.
