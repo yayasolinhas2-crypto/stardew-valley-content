@@ -102,3 +102,4 @@
 |------|------|-------|---------|-------------|--------|--------|---------|------------|
 - 08/11: achou o design "simples demais" olhando referências; quer algo mais incrementado. Pediu guias de UMA página (ex.: máquina de costura, presente dos pets) — "as pessoas querem salvar". Feito visual novo (`assets/guia.css`) em 016 e 017, aguardando aprovação.
 - 08/11 (noite): gostou muito dos guias de 1 página e do visual novo ("continua assim"). MAS guia não é o único formato: mesclar sempre vídeo narrado, guia de 1 página, carrossel de fotos, vídeos com a gameplay dela e outras ideias. Regra de mix na PAUTA.md.
+- 08/11: manter 009 e 010 nas duas versões (carrossel em vídeo + narrado). Próximo lote sem pressa ("não quero sobrecarregar você nem a IA do Vitor"): mandar em ritmo tranquilo, poucos de cada vez.
