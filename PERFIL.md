@@ -79,6 +79,10 @@
 
 - 08/11 · Vídeos com gameplay dela: "gostei de todos da lista… muito, muito bons" → produzir a lista F inteira. **Regra: sempre mandar os vídeos pra aprovação antes de qualquer coisa** (agendar/postar só depois do OK).
 
+- 08/11 · **CTA: NADA de "comenta PALAVRA"** ("fica meio aleatório"). Usar **"♥ curte se te ajudou/se não sabia"** no meio e **"me segue pra mais dicas"** no fim.
+- 08/11 · **Voz: gostou da voz do teste** (Sulafat no gemini-2.5-flash-preview-tts) — "o sotaque dela tá bem bom" → virou padrão.
+- 08/11 · Carrinho estava "travado" (telas paradas de menu/escurecer) e "falando coisas aleatórias" → vídeo mais curto, sem frase solta. **Todo vídeo precisa de capa** no começo (não começar "esquisito").
+
 ## Gosto: aprovado / negado (com o porquê)
 | Data | Ideia/roteiro | Decisão | Categoria | Porquê |
 |------|---------------|---------|-----------|--------|

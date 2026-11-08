@@ -1,8 +1,39 @@
-{"titulo":"Vale a pena a *mochila*?","voz":"Sulafat","velocidade":1.5,
- "cenas":[
-  {"src":"gravacoes/bruto/olhar calendário .mp4","ini":15.6,"selo":"Stardew Valley","fala":"[provocando, curiosa] Vale a pena gastar dez mil ouros na mochila em Stardew Valley?","min":2.5},
-  {"src":"gravacoes/bruto/comprar mochila.mp4","ini":0.5,"selo":"1ª mochila","fala":"[explicando] No Pierre, a primeira melhoria custa dois mil e vai pra vinte e quatro espaços."},
-  {"src":"gravacoes/bruto/olhar calendário .mp4","ini":15.2,"selo":"2ª mochila","fala":"[animada] A segunda custa dez mil e vai pra trinta e seis espaços. Comenta MOCHILA!","cta":"comenta MOCHILA"},
-  {"src":"gravacoes/bruto/dica-andar pela fazenda e coletar.mp4","ini":8.0,"selo":"Na prática","fala":"[animada] Com mais espaço, você coleta o dia inteiro sem voltar pra casa."},
-  {"src":"gravacoes/bruto/comprar mochila.mp4","ini":12.0,"selo":"E você?","fala":"[curiosa, divertida] Vale cada moeda. Você já comprou a sua?"}
- ]}
+{
+ "titulo": "Vale a pena a *mochila*?",
+ "voz": "Sulafat",
+ "velocidade": 1.5,
+ "cenas": [
+  {
+   "src": "gravacoes/bruto/olhar calendário .mp4",
+   "ini": 15.6,
+   "selo": "Stardew Valley",
+   "fala": "[provocando, curiosa] Vale a pena gastar dez mil ouros na mochila em Stardew Valley?",
+   "min": 2.5
+  },
+  {
+   "src": "gravacoes/bruto/comprar mochila.mp4",
+   "ini": 0.5,
+   "selo": "1ª mochila",
+   "fala": "[explicando] No Pierre, a primeira melhoria custa dois mil e vai pra vinte e quatro espaços."
+  },
+  {
+   "src": "gravacoes/bruto/olhar calendário .mp4",
+   "ini": 15.2,
+   "selo": "2ª mochila",
+   "fala": "[animada] A segunda custa dez mil e vai pra trinta e seis espaços.",
+   "cta": "♥ curte se te ajudou"
+  },
+  {
+   "src": "gravacoes/bruto/dica-andar pela fazenda e coletar.mp4",
+   "ini": 8.0,
+   "selo": "Na prática",
+   "fala": "[animada] Com mais espaço, você coleta o dia inteiro sem voltar pra casa."
+  },
+  {
+   "src": "gravacoes/bruto/comprar mochila.mp4",
+   "ini": 12.0,
+   "selo": "E você?",
+   "fala": "[curiosa, divertida] Vale cada moeda. Me segue pra mais dicas!"
+  }
+ ]
+}

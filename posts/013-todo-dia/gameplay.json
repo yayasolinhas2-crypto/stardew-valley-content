@@ -1,8 +1,39 @@
-{"titulo":"3 coisas pra fazer *todo dia*","voz":"Sulafat","velocidade":1.5,
- "cenas":[
-  {"src":"gravacoes/bruto/Dica-ver a tv todo dia.mp4","ini":21.0,"selo":"Stardew Valley","fala":"[provocando, curiosa] Você faz essas três coisas todo dia em Stardew Valley?","min":2.5},
-  {"src":"gravacoes/bruto/Dica-ver a tv todo dia.mp4","ini":23.5,"selo":"Nº 1 · Ver a TV","fala":"[animada] Um: ver a TV. Ela mostra o tempo, a sua sorte e até a época da amora."},
-  {"src":"gravacoes/bruto/olhar calendário .mp4","ini":0.3,"selo":"Nº 2 · Calendário e quadro","fala":"[explicando] Dois: olhar o calendário e o quadro de pedidos. Tem aniversário e recompensa. Comenta DIÁRIO!","cta":"comenta DIÁRIO"},
-  {"src":"gravacoes/bruto/dica-andar pela fazenda e coletar.mp4","ini":4.5,"selo":"Nº 3 · Andar e coletar","fala":"[animada] Três: andar e coletar. Cogumelo, amora e fibra aparecem de graça."},
-  {"src":"gravacoes/bruto/dica-andar pela fazenda e coletar.mp4","ini":22.0,"selo":"E você?","fala":"[curiosa, divertida] Qual dessas você sempre esquece?"}
- ]}
+{
+ "titulo": "3 coisas pra fazer *todo dia*",
+ "voz": "Sulafat",
+ "velocidade": 1.5,
+ "cenas": [
+  {
+   "src": "gravacoes/bruto/Dica-ver a tv todo dia.mp4",
+   "ini": 21.0,
+   "selo": "Stardew Valley",
+   "fala": "[provocando, curiosa] Você faz essas três coisas todo dia em Stardew Valley?",
+   "min": 2.5
+  },
+  {
+   "src": "gravacoes/bruto/Dica-ver a tv todo dia.mp4",
+   "ini": 23.5,
+   "selo": "Nº 1 · Ver a TV",
+   "fala": "[animada] Um: ver a TV. Ela mostra o tempo, a sua sorte e até a época da amora."
+  },
+  {
+   "src": "gravacoes/bruto/olhar calendário .mp4",
+   "ini": 0.3,
+   "selo": "Nº 2 · Calendário e quadro",
+   "fala": "[explicando] Dois: olhar o calendário e o quadro de pedidos. Tem aniversário e recompensa.",
+   "cta": "♥ curte se te ajudou"
+  },
+  {
+   "src": "gravacoes/bruto/dica-andar pela fazenda e coletar.mp4",
+   "ini": 4.5,
+   "selo": "Nº 3 · Andar e coletar",
+   "fala": "[animada] Três: andar e coletar. Cogumelo, amora e fibra aparecem de graça."
+  },
+  {
+   "src": "gravacoes/bruto/dica-andar pela fazenda e coletar.mp4",
+   "ini": 22.0,
+   "selo": "E você?",
+   "fala": "[curiosa, divertida] Qual dessas você esquece? Me segue pra mais dicas!"
+  }
+ ]
+}

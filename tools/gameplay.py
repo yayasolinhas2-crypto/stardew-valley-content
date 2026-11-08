@@ -24,12 +24,9 @@ def main(post):
         for i, c in enumerate(cenas): N.fala(c['fala'], nc['voz'], f'{post}/narracao/{i+1:02d}.wav', TMP)
     durs = [N.dur(f'{post}/narracao/{i+1:02d}.wav') for i in range(len(cenas))]
     # 2) cada cena: recorte da gameplay + fundo desfocado
-    partes, t0, tempos = [], 0.0, []
-    for i, c in enumerate(cenas):
-        L = max(c.get('min', 2.0), LEAD + durs[i] + TAIL)
+    def clipe(c, L, out, rotulo):
         z = c.get('zoom', 1.0); cw = int(GW / GH * 1080 / z) // 2 * 2; ch = int(1080 / z) // 2 * 2
         cx = min(max(c.get('cx', 960) - cw // 2, 0), 1920 - cw); cy = min(max(c.get('cy', 540) - ch // 2, 0), 1080 - ch)
-        out = f'{TMP}/cena{i}.mp4'
         fc = (f'[0:v]tpad=stop_mode=clone:stop_duration=60,split[a][b];'
               f'[a]scale=-2:1920,crop=1080:1920,boxblur=22:3,eq=brightness=-0.18:saturation=1.1[bg];'
               f'[b]crop={cw}:{ch}:{cx}:{cy},scale={GW}:{GH}:flags=neighbor,setsar=1[g];'
@@ -38,7 +35,14 @@ def main(post):
         run('ffmpeg', '-y', '-loglevel', 'error', '-ss', str(c['ini']), '-i', os.path.join(RAIZ, c['src']),
             '-filter_complex', fc, '-map', '[v]', '-map', '[ga]', '-t', f'{L:.3f}', '-c:v', 'libx264', '-crf', '18', '-c:a', 'pcm_s16le', '-ar', '48000', '-ac', '2', out)
         real = N.dur(out)
-        if abs(real - L) > 0.08: raise SystemExit(f'cena {i}: duração {real:.2f}s ≠ {L:.2f}s (dessincronizaria a legenda)')
+        if abs(real - L) > 0.08: raise SystemExit(f'{rotulo}: duração {real:.2f}s ≠ {L:.2f}s (dessincronizaria a legenda)')
+    # capa: ~1 s (0,7 s no vídeo final) com o título grande — vira o primeiro quadro e a capa do post
+    CAPA = float(cfg.get('capa_seg', 1.0))
+    clipe(cenas[0], CAPA, f'{TMP}/capa.mp4', 'capa')
+    partes, t0, tempos = [f'{TMP}/capa.mp4'], CAPA, []
+    for i, c in enumerate(cenas):
+        L = max(c.get('min', 2.0), LEAD + durs[i] + TAIL)
+        out = f'{TMP}/cena{i}.mp4'; clipe(c, L, out, f'cena {i}')
         partes.append(out); tempos.append({'S': t0, 'L': L, 'fala': t0 + LEAD, 'dur': durs[i]}); t0 += L
     total = t0
     lst = f'{TMP}/lista.txt'; open(lst, 'w').write(''.join(f"file '{p}'\n" for p in partes))
@@ -52,7 +56,7 @@ def main(post):
             bloco.append({'w': w, 't0': a, 't1': b})
             if len(' '.join(x['w'] for x in bloco)) >= 18 or w[-1] in '.!?…:' or k == len(ws) - 1:
                 leg.append({'ini': bloco[0]['t0'], 'fim': bloco[-1]['t1'] + 0.15, 'p': bloco}); bloco = []
-    dados = {'titulo': cfg['titulo'], 'cenas': [{**tempos[i], 'selo': c.get('selo', ''), 'cta': c.get('cta', '')} for i, c in enumerate(cenas)], 'leg': leg, 'total': total,
+    dados = {'titulo': cfg['titulo'], 'cenas': [{**tempos[i], 'selo': c.get('selo', ''), 'cta': c.get('cta', '')} for i, c in enumerate(cenas)], 'leg': leg, 'total': total, 'capa': CAPA,
              'gx': GX, 'gy': GY, 'gw': GW, 'gh': GH}
     json.dump(dados, open(f'{TMP}/dados.json', 'w'), ensure_ascii=False)
     shutil.rmtree(f'{TMP}/ov', ignore_errors=True); os.makedirs(f'{TMP}/ov')
@@ -71,7 +75,8 @@ def main(post):
     run('ffmpeg', '-y', '-loglevel', 'error', '-i', f'{post}/video-narrado.mp4', '-filter_complex', f'[0:v]setpts=PTS/{vel},fps={FPS}[v];[0:a]atempo={vel}[a]',
         '-map', '[v]', '-map', '[a]', '-c:v', 'libx264', '-crf', '18', '-pix_fmt', 'yuv420p', '-c:a', 'aac', '-b:a', '192k', '-movflags', '+faststart', f'{post}/video-15x.mp4')
     json.dump({'falas': [c['fala'] for c in cenas]}, open(f'{post}/narracao.json', 'w'), ensure_ascii=False, indent=1)
-    print(f'OK {post}/video-15x.mp4 · {total/vel:.1f}s')
+    run('ffmpeg', '-y', '-loglevel', 'error', '-ss', '0.3', '-i', f'{post}/video-15x.mp4', '-frames:v', '1', '-q:v', '3', f'{post}/video-capa.jpg')
+    print(f'OK {post}/video-15x.mp4 · {total/vel:.1f}s (capa em {post}/video-capa.jpg)')
 
 if __name__ == '__main__':
     main(sys.argv[1].rstrip('/'))

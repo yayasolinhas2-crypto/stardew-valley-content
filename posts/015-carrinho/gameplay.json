@@ -1,8 +1,32 @@
-{"titulo":"O carrinho *secreto* da floresta","voz":"Sulafat","velocidade":1.5,
- "cenas":[
-  {"src":"gravacoes/bruto/mercado da floresta.mp4","ini":18.0,"selo":"Stardew Valley","fala":"[curiosa, contando um segredo] Esse carrinho só aparece dois dias por semana em Stardew Valley.","min":2.5},
-  {"src":"gravacoes/bruto/mercado da floresta.mp4","ini":0.3,"selo":"Quando","fala":"[explicando] Toda sexta e todo domingo, das seis da manhã às oito da noite."},
-  {"src":"gravacoes/bruto/mercado da floresta.mp4","ini":10.0,"selo":"Onde","fala":"[animada] Ele fica na Floresta Cinzaseiva, logo ao sul da sua fazenda."},
-  {"src":"gravacoes/bruto/mercado da floresta.mp4","ini":21.6,"selo":"O que tem","fala":"[explicando] O estoque muda toda vez, e às vezes tem item fora de estação. Comenta CARRINHO!","cta":"comenta CARRINHO"},
-  {"src":"gravacoes/bruto/mercado da floresta.mp4","ini":25.5,"selo":"Curiosidade","fala":"[divertida, rindo] E quem puxa o carrinho é um porco de chapéu e óculos!"}
- ]}
+{
+ "titulo": "O carrinho *secreto* da floresta",
+ "voz": "Sulafat",
+ "velocidade": 1.5,
+ "cenas": [
+  {
+   "src": "gravacoes/bruto/mercado da floresta.mp4",
+   "ini": 16.3,
+   "selo": "Stardew Valley",
+   "fala": "[curiosa, contando um segredo] Esse carrinho só aparece dois dias por semana em Stardew Valley."
+  },
+  {
+   "src": "gravacoes/bruto/mercado da floresta.mp4",
+   "ini": 10.0,
+   "selo": "Quando",
+   "fala": "[explicando] Toda sexta e todo domingo, das seis da manhã às oito da noite.",
+   "cta": "♥ curte se não sabia"
+  },
+  {
+   "src": "gravacoes/bruto/mercado da floresta.mp4",
+   "ini": 0.3,
+   "selo": "Onde",
+   "fala": "[animada] Fica na Floresta Cinzaseiva, logo ao sul da sua fazenda."
+  },
+  {
+   "src": "gravacoes/bruto/mercado da floresta.mp4",
+   "ini": 21.8,
+   "selo": "Dica",
+   "fala": "[divertida] O estoque muda a cada visita. Me segue pra mais dicas!"
+  }
+ ]
+}

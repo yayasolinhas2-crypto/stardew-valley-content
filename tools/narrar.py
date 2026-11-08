@@ -6,7 +6,7 @@
 # A chave do Gemini NÃO fica aqui: o proxy do ambiente injeta o header x-goog-api-key.
 import json, base64, subprocess, sys, os, hashlib, re, unicodedata
 
-MODELO = os.environ.get('NARR_MODELO', 'gemini-2.5-pro-preview-tts')
+MODELO = os.environ.get('NARR_MODELO', 'gemini-2.5-flash-preview-tts')  # voz aprovada pela Yasmin em 08/11 ("o sotaque dela tá bem bom")
 # 2.5 Pro: aceita instrução de interpretação sem ler em voz alta e pronuncia "Stardew Valley" em inglês (testado 07/11).
 # 3.8 Flash: pronuncia bem, mas sem emoção, e quando recebe [emoção] às vezes LÊ a marcação. Cota grátis: 100 áudios/dia por modelo.
 def montar(texto):

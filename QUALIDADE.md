@@ -6,7 +6,7 @@ Criado em 07/11/2026 depois do feedback da Yasmin: "sem transição, áudio com 
 - [ ] **Nosso estilo, nunca cópia** (regra da Yasmin, 08/11): referência de outro perfil vira só tema; visual, texto e dados são nossos.
 - [ ] Todo fato com fonte na wiki oficial (EN + nomes oficiais em PT). Nada estimado.
 - [ ] Capa = gancho em pergunta/provocação (aprovado: "Você tá usando o barril errado?").
-- [ ] CTA "Comenta PALAVRA" no meio E no fim. Envio com pessoa nomeada ("manda pro amigo que…").
+- [ ] CTA (regra da Yasmin 08/11): **sem "comenta PALAVRA"**. Meio: "♥ curte se te ajudou". Fim: "me segue pra mais dicas".
 
 ## Imagem (automático: `tools/render.js`, `tools/video.js --quadros`)
 - [ ] Nada vazando do quadro; frase-ponte inteira; assinatura não encosta em nada.
@@ -23,6 +23,9 @@ Criado em 07/11/2026 depois do feedback da Yasmin: "sem transição, áudio com 
 - [ ] **Legenda sincronizada** (class `com-legenda` no #stage): palavra falada em dourado, palavra-chave em destaque, abaixo do quadro (quadro de vídeo com 1040 px de altura).
 
 ## Vídeos com gameplay da Yasmin (`tools/gameplay.py`)
+- [ ] **Capa** de ~0,7 s no começo (título grande); `video-capa.jpg` gerada junto.
+- [ ] Sem tela parada ou escura: rodar `freezedetect`/`blackdetect` e escolher trechos sem transição de mapa nem menu parado (menu só quando a fala é sobre ele).
+- [ ] Curto e sem frase solta: cada fala tem que dizer algo útil que a imagem mostra.
 - [ ] Gameplay recortada (centro, sem esticar, pixel nítido) dentro da moldura de madeira; fundo = a própria cena desfocada.
 - [ ] Título-gancho fixo no topo, selo por cena, legenda sincronizada, CTA "comenta PALAVRA" no meio, assinatura.
 - [ ] Som do jogo baixinho (12%) por baixo da voz; whoosh nas trocas.

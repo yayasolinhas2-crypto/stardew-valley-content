@@ -17,15 +17,20 @@ const {chromium}=require('playwright');const fs=require('fs');const path=require
  #leg b{color:var(--gold)}#leg em{font-style:normal;color:#ff8a65}
  .cta{position:absolute;right:150px;top:${D.gy+30}px;background:var(--red);color:#fff;font-family:Nun;font-weight:900;font-size:40px;padding:10px 18px;box-shadow:0 0 0 5px var(--wood);transform-origin:right top}
  .cta b{color:var(--gold)}
+ .capa{position:absolute;left:60px;right:60px;top:760px;display:flex;flex-direction:column;align-items:center;gap:22px}
+ .capa .ct{font-family:Pix;font-size:132px;line-height:.92;text-align:center;color:#fff3cf;background:var(--wood);padding:26px 34px 34px;text-transform:uppercase;box-shadow:0 0 0 10px var(--orange),0 0 0 18px var(--wood),14px 20px 0 18px rgba(0,0,0,.4)}
+ .capa .ct em{font-style:normal;color:var(--gold)}
+ .capa .cs{font-family:Pix;font-size:56px;color:var(--gold);background:var(--red);padding:8px 24px 12px;box-shadow:0 0 0 6px var(--wood);text-shadow:3px 3px 0 #000;transform:rotate(-3deg)}
  .sig{position:absolute;left:60px;top:${D.gy+D.gh+34}px;font-family:Nun;font-weight:900;font-size:30px;color:#fff;text-shadow:2px 2px 0 #000}
  </style></head><body><div id="st"><div class="moldura"></div><div class="topo"><span class="selo" id="selo"></span><span class="tit" id="tit"></span></div>
- <div id="leg"></div><div class="cta" id="cta" style="display:none"></div><div class="sig">@segredosdovalley</div></div></body></html>`;
+ <div class="capa" id="capa"><span class="ct" id="ct"></span><span class="cs">Stardew Valley</span></div><div id="leg"></div><div class="cta" id="cta" style="display:none"></div><div class="sig">@segredosdovalley</div></div></body></html>`;
  const b=await chromium.launch();const p=await b.newPage({viewport:{width:1080,height:1920}});
  const arq=path.join(raiz,'tools','_overlay.html');fs.writeFileSync(arq,html);await p.goto('file://'+arq);await p.evaluate(()=>document.fonts.ready);
  await p.evaluate(D=>{window.D=D;const esc=w=>w.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
   const ease=x=>1-Math.pow(1-Math.min(1,Math.max(0,x)),3);
-  document.getElementById('tit').innerHTML=esc(D.titulo).replace(/\*([^*]+)\*/g,'<em>$1</em>');
-  window.desenha=t=>{const c=D.cenas.find(x=>t>=x.S&&t<x.S+x.L)||D.cenas[D.cenas.length-1];
+  document.getElementById('tit').innerHTML=esc(D.titulo).replace(/\*([^*]+)\*/g,'<em>$1</em>');document.getElementById('ct').innerHTML=document.getElementById('tit').innerHTML;
+  window.desenha=t=>{const naCapa=t<(D.capa||0);document.getElementById('capa').style.display=naCapa?'flex':'none';document.querySelector('.topo').style.display=naCapa?'none':'flex';document.getElementById('leg').style.visibility=naCapa?'hidden':'visible';
+   const c=D.cenas.find(x=>t>=x.S&&t<x.S+x.L)||D.cenas[D.cenas.length-1];
    const s=document.getElementById('selo');s.textContent=c.selo||'Stardew Valley';const k=ease((t-c.S)/0.3);s.style.transform=`scale(${0.6+0.4*k})`;s.style.opacity=k;
    const ct=document.getElementById('cta');if(c.cta&&t>c.fala+c.dur*0.5){ct.style.display='block';ct.innerHTML=esc(c.cta).replace(/([A-ZÀ-Ú]{4,})/g,'<b>$1</b>');ct.style.transform=`scale(${ease((t-c.fala-c.dur*0.5)/0.25)})`}else ct.style.display='none';
    const L=D.leg.find(x=>t>=x.ini&&t<x.fim);document.getElementById('leg').innerHTML=L?'<span>'+L.p.map(x=>(t>=x.t0&&t<x.t1)?'<b>'+esc(x.w)+'</b>':(/^[A-ZÀ-Ú]{4,}[!?.,]*$/.test(x.w)?'<em>'+esc(x.w)+'</em>':esc(x.w))).join(' ')+'</span>':'';}},D);
