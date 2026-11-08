@@ -20,6 +20,11 @@ Nunca 2 posts da mesma categoria seguidos.
 | ter 10/11 | 17:00 | 001v · 5 segredos (vídeo) — veio de dom 17:00 | 📅 agendado no Metricool |
 | ter 10/11 | 19:30 | 010 · Construções da Robin (fotos) | 📅 agendado no Metricool |
 | qua 11/11 | 17:00 | 012 · Festivais na vida real, parte 2 (fotos IA — marcar IA) | 📅 agendado no Metricool |
+| qua 11/11 | 12:00 | 013v · 3 coisas pra fazer todo dia (gameplay) | aguardando aprovação |
+| qua 11/11 | 19:30 | 014v · Vale a pena a mochila? (gameplay) | aguardando aprovação |
+| qui 12/11 | 12:00 | 015v · O carrinho secreto da floresta (gameplay) | aguardando aprovação |
+| qui 12/11 | 19:30 | 009v · 5 erros no ano 1 (vídeo) | aguardando aprovação |
+| sex 13/11 | 12:00 | 010v · Construções da Robin (vídeo) | aguardando aprovação |
 
 ## Painel de aprovação
 https://claude.ai/artifact/VcfHJ9URGoLjqq9kzcaCX9 — banco `posts` (um documento por post: status aguardando/aprovado/negado/publicado, motivo, horário, legenda, fotos).

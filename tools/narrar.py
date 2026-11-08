@@ -20,10 +20,17 @@ MAX_PPS = 2.95                     # regra: no máximo 3,0 palavras por segundo
 API = 'https://generativelanguage.googleapis.com/v1beta/models/'
 
 def curl_json(url, body, tmp):
+    """Pede ao Gemini; se a resposta vier vazia ou quebrada (falha de rede), tenta de novo até 4 vezes."""
+    import time
     open(tmp, 'w').write(json.dumps(body))
-    r = subprocess.run(['curl', '-sS', '-H', 'x-goog-api-key: DUMMY', '-H', 'Content-Type: application/json',
-                        '-d', '@' + tmp, url], capture_output=True, text=True)
-    return json.loads(r.stdout)
+    for k in range(4):
+        r = subprocess.run(['curl', '-sS', '--max-time', '300', '-H', 'x-goog-api-key: DUMMY', '-H', 'Content-Type: application/json',
+                            '-d', '@' + tmp, url], capture_output=True, text=True)
+        try:
+            return json.loads(r.stdout)
+        except json.JSONDecodeError:
+            print('  resposta vazia/quebrada da rede, tentando de novo'); time.sleep(5 * (k + 1))
+    return {'error': {'message': 'sem resposta da rede'}}
 
 def dur(f):
     return float(subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', f],
