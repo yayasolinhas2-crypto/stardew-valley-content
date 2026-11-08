@@ -12,14 +12,14 @@ Nunca 2 posts da mesma categoria seguidos.
 | dom 08/11 | 13:00 | 003v · Barril errado? (vídeo) | ✅ postado (Metricool) |
 | dom 08/11 | 17:00 | 011 · Stardew na vida real, parte 1 (fotos IA — marcar IA) — trocado com 001v a pedido da Yasmin | 📅 agendado no Metricool |
 | dom 08/11 | 20:30 | 002v · 6 presentes (vídeo) | 📅 agendado no Metricool |
-| seg 09/11 | 06:00 | 007v · Recados Secretos Ep. 1 (vídeo) | 🔄 versão nova aprovada; pedido de EDITAR na fila |
-| seg 09/11 | 12:00 | 002 · 6 presentes (vídeo do carrossel) | 🔄 versão nova aprovada; pedido de EDITAR na fila |
-| seg 09/11 | 17:00 | 008v · Recados Secretos Ep. 2 (vídeo) | ✔ aprovado, na fila do Metricool |
-| seg 09/11 | 19:30 | 006v · 3 criaturas (vídeo) | 🔄 versão nova aprovada; pedido de EDITAR na fila |
-| ter 10/11 | 12:00 | 009 · 5 erros no ano 1 (vídeo do carrossel) | 🔄 versão nova aprovada; pedido de EDITAR na fila |
-| ter 10/11 | 17:00 | 001v · 5 segredos (vídeo) — veio de dom 17:00 | 🔄 versão nova aprovada; pedido de EDITAR na fila |
-| ter 10/11 | 19:30 | 010 · Construções da Robin (vídeo do carrossel) | 🔄 versão nova aprovada; pedido de EDITAR na fila |
-| qua 11/11 | 17:00 | 012 · Festivais na vida real, parte 2 (vídeo do carrossel, IA — marcar IA) | 🔄 versão nova aprovada; pedido de EDITAR na fila |
+| seg 09/11 | 06:00 | 007v · Recados Secretos Ep. 1 (vídeo) | 📅 agendado no Metricool (versão nova) |
+| seg 09/11 | 12:00 | 002 · 6 presentes (vídeo do carrossel) | 📅 agendado no Metricool (versão nova) |
+| seg 09/11 | 17:00 | 008v · Recados Secretos Ep. 2 (vídeo) | 📅 agendado no Metricool |
+| seg 09/11 | 19:30 | 006v · 3 criaturas (vídeo) | 📅 agendado no Metricool (versão nova) |
+| ter 10/11 | 12:00 | 009 · 5 erros no ano 1 (vídeo do carrossel) | 📅 agendado no Metricool (versão nova) |
+| ter 10/11 | 17:00 | 001v · 5 segredos (vídeo) — veio de dom 17:00 | 📅 agendado no Metricool (versão nova) |
+| ter 10/11 | 19:30 | 010 · Construções da Robin (vídeo do carrossel) | 📅 agendado no Metricool (versão nova) |
+| qua 11/11 | 17:00 | 012 · Festivais na vida real, parte 2 (vídeo do carrossel, IA — marcar IA) | 📅 agendado no Metricool (versão nova) |
 | qua 11/11 | 12:00 | 013v · 3 coisas pra fazer todo dia (gameplay) | 📅 agendado no Metricool |
 | qua 11/11 | 19:30 | 014v · Vale a pena a mochila? (gameplay) | 📅 agendado no Metricool |
 | qui 12/11 | 12:00 | 015v · O carrinho secreto da floresta (gameplay) | 📅 agendado no Metricool |
