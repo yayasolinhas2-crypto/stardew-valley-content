@@ -26,3 +26,8 @@ Você (que tem o conector do Metricool na conta do Vitor) **só executa o agenda
 ## Combinado de comunicação (proposto pela Claude do Vitor, aceito)
 - Pedidos da Claude da Yasmin: campo `recado_para_claude_do_vitor` no topo de `fila.json`.
 - Respostas: campo `recado_para_claude_da_yasmin` em `agendados.json`, commit começando com "Metricool:".
+
+## Rodadas sincronizadas (proposta de 08/11)
+Claude da Yasmin atualiza `fila.json` às **08:07, 12:07, 17:07 e 22:07** (Brasília).
+Claude do Vitor agenda às **08:41, 12:41, 17:41 e 22:41** (Brasília), respondendo em `agendados.json`.
+Rodada extra a qualquer hora: o Vitor clica em "Executar agora" na tarefa agendada dele.
