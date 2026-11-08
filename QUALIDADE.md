@@ -45,6 +45,11 @@ Criado em 07/11/2026 depois do feedback da Yasmin: "sem transição, áudio com 
 - [ ] Texto/placas em português; revisar cada imagem (a IA pode inventar nomes ruins — refazer).
 - [ ] Marca "imagem gerada por IA" no slide + lembrar a Yasmin de ativar a etiqueta de IA no TikTok/Instagram.
 
+## Música
+- [ ] Todo post sai com música (`tools/musica.py`): vídeo narrado = trilha baixinha que abaixa quando a voz fala; carrossel = vídeo de fotos com trilha. Nunca a trilha do jogo.
+- [ ] Variar a trilha entre posts seguidos (primavera/verão/outono/inverno conforme o tema).
+- [ ] Fotos de carrossel em vídeo: renderizar com `VIDEO=1` (sem "arrasta pro lado").
+
 ## Antes de mandar pra Yasmin
 - [ ] "Nada esquisito, sempre melhorando": cada lote tem que sair melhor que o anterior. Comparar com o último aprovado.
 - [ ] Testes do painel passando (`painel/teste/`), claro e escuro, iPhone.

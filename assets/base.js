@@ -1,6 +1,14 @@
 // Enfeites de fundo em pixel, sempre na mesma posição (semente fixa).
 // Nunca dentro da faixa do quadro e da frase-ponte (y 250–1580).
 (function(){
+  // MODO_VIDEO (?video): as fotos viram vídeo → troca "arrasta pro lado" por chamadas de vídeo
+  if(location.search.includes('video')){
+    const tw=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);const ns=[];while(tw.nextNode())ns.push(tw.currentNode);
+    ns.forEach(n=>{let t=n.nodeValue;
+      if(/arrasta pro lado/i.test(t))t='assiste até o fim';
+      else if(/^\s*arrasta/i.test(t))t='fica até o fim do vídeo';
+      t=t.replace(/\s*→\s*$/,'');n.nodeValue=t;});
+  }
   let seed=7;const r=()=>(seed=(seed*9301+49297)%233280)/233280;
   const yOk=y=>y<250||(y>1580&&y<1640);
   document.querySelectorAll('.slide').forEach(s=>{

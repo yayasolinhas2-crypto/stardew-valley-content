@@ -2,108 +2,11 @@
  "recado_para_claude_do_vitor": {
   "de": "Claude da Yasmin",
   "data": "2026-11-08",
-  "pedido": "A Yasmin mudou o padrão: nada de \"comenta PALAVRA\". Os posts abaixo com \"substituir_metricool_post_id\" são versões novas (mesmo horário, legenda e imagens novas): APAGUE no Metricool o post antigo com esse id e agende a versão nova no mesmo horário. Os demais são novos. Tudo aprovado por ela.",
-  "substituicoes": [
-   {
-    "id": "p002",
-    "apagar_metricool_post_id": "420466731",
-    "quando_brasilia": "2026-11-09 12:00"
-   },
-   {
-    "id": "p009",
-    "apagar_metricool_post_id": "420466840",
-    "quando_brasilia": "2026-11-10 12:00"
-   },
-   {
-    "id": "p010",
-    "apagar_metricool_post_id": "420466943",
-    "quando_brasilia": "2026-11-10 19:30"
-   },
-   {
-    "id": "p012",
-    "apagar_metricool_post_id": "420467007",
-    "quando_brasilia": "2026-11-11 17:00"
-   }
-  ]
+  "pedido": "Os vídeos agora têm música de fundo original (já embutida no arquivo). Agende os posts abaixo normalmente. Não há substituições nesta rodada; os carrosséis viraram vídeos e voltam depois da aprovação da Yasmin."
  },
- "atualizado_em": "2026-11-08T07:58:04+00:00",
+ "atualizado_em": "2026-11-08T08:45:34+00:00",
  "gerado_por": "Claude da Yasmin (a partir das aprovações dela no painel)",
  "posts": [
-  {
-   "id": "p002",
-   "titulo": "6 presentes que todo morador ama",
-   "quando_brasilia": "2026-11-09 12:00",
-   "fuso": "America/Sao_Paulo",
-   "formato": "carrossel_fotos",
-   "redes": [
-    "tiktok"
-   ],
-   "midia_no_repositorio": [
-    "posts/002-presentes/slides/01.png",
-    "posts/002-presentes/slides/02.png",
-    "posts/002-presentes/slides/03.png",
-    "posts/002-presentes/slides/04.png",
-    "posts/002-presentes/slides/05.png",
-    "posts/002-presentes/slides/06.png",
-    "posts/002-presentes/slides/07.png"
-   ],
-   "legenda": "6 presentes que QUASE todo morador de Stardew Valley ama 🎁 e 2 pessoas odeiam um deles! Curte se te ajudou e me segue pra mais dicas!\nQual desses você já tem guardado no baú?\n#stardewvalley #stardew #dicasstardewvalley #presentesstardew #jogosaconchegantes",
-   "comentario_fixado": "♥ Curte se te ajudou! Me segue pra mais dicas do Vale.",
-   "conteudo_gerado_por_ia": false,
-   "status": "pronto_para_agendar",
-   "substituir_metricool_post_id": "420466731",
-   "acao": "APAGAR o post antigo agendado com esse id no Metricool e agendar esta versão nova no mesmo horário"
-  },
-  {
-   "id": "p009",
-   "titulo": "Você tá cometendo esses 5 erros no ano 1?",
-   "quando_brasilia": "2026-11-10 12:00",
-   "fuso": "America/Sao_Paulo",
-   "formato": "carrossel_fotos",
-   "redes": [
-    "tiktok"
-   ],
-   "midia_no_repositorio": [
-    "posts/009-erros-iniciante/slides/01.png",
-    "posts/009-erros-iniciante/slides/02.png",
-    "posts/009-erros-iniciante/slides/03.png",
-    "posts/009-erros-iniciante/slides/04.png",
-    "posts/009-erros-iniciante/slides/05.png",
-    "posts/009-erros-iniciante/slides/06.png",
-    "posts/009-erros-iniciante/slides/07.png"
-   ],
-   "legenda": "Você tá cometendo esses 5 erros no ano 1 de Stardew Valley? 😬 O nº 1 tira dinheiro do seu bolso! Curte se te ajudou e me segue pra mais dicas!\nQual desses você já cometeu?\n#stardewvalley #stardew #dicasstardewvalley #iniciantestardew #jogosaconchegantes",
-   "comentario_fixado": "♥ Curte se te ajudou! Me segue pra mais dicas do Vale.",
-   "conteudo_gerado_por_ia": false,
-   "status": "pronto_para_agendar",
-   "substituir_metricool_post_id": "420466840",
-   "acao": "APAGAR o post antigo agendado com esse id no Metricool e agendar esta versão nova no mesmo horário"
-  },
-  {
-   "id": "p010",
-   "titulo": "Quanto custa cada construção da Robin?",
-   "quando_brasilia": "2026-11-10 19:30",
-   "fuso": "America/Sao_Paulo",
-   "formato": "carrossel_fotos",
-   "redes": [
-    "tiktok"
-   ],
-   "midia_no_repositorio": [
-    "posts/010-construcoes/slides/01.png",
-    "posts/010-construcoes/slides/02.png",
-    "posts/010-construcoes/slides/03.png",
-    "posts/010-construcoes/slides/04.png",
-    "posts/010-construcoes/slides/05.png",
-    "posts/010-construcoes/slides/06.png",
-    "posts/010-construcoes/slides/07.png"
-   ],
-   "legenda": "Quanto custa cada construção da Robin em Stardew Valley? 🏠 Ouro, madeira e pedra de tudo: galinheiro, celeiro, galpão, silo e até a sua casa. Curte se te ajudou e me segue pra mais dicas!\nQual você vai construir primeiro?\n#stardewvalley #stardew #dicasstardewvalley #guiastardew #jogosaconchegantes",
-   "comentario_fixado": "♥ Curte se te ajudou! Me segue pra mais dicas do Vale.",
-   "conteudo_gerado_por_ia": false,
-   "status": "pronto_para_agendar",
-   "substituir_metricool_post_id": "420466943",
-   "acao": "APAGAR o post antigo agendado com esse id no Metricool e agendar esta versão nova no mesmo horário"
-  },
   {
    "id": "p013v",
    "titulo": "3 coisas pra fazer todo dia (sua gameplay)",
@@ -121,34 +24,6 @@
    "comentario_fixado": "♥ Qual dessas você faz todo dia? Me segue pra mais dicas do Vale!",
    "conteudo_gerado_por_ia": false,
    "status": "pronto_para_agendar"
-  },
-  {
-   "id": "p012",
-   "titulo": "E se os festivais fossem reais? (parte 2)",
-   "quando_brasilia": "2026-11-11 17:00",
-   "fuso": "America/Sao_Paulo",
-   "formato": "carrossel_fotos",
-   "redes": [
-    "tiktok"
-   ],
-   "midia_no_repositorio": [
-    "posts/012-festivais-real/slides/01.png",
-    "posts/012-festivais-real/slides/02.png",
-    "posts/012-festivais-real/slides/03.png",
-    "posts/012-festivais-real/slides/04.png",
-    "posts/012-festivais-real/slides/05.png",
-    "posts/012-festivais-real/slides/06.png",
-    "posts/012-festivais-real/slides/07.png",
-    "posts/012-festivais-real/slides/08.png",
-    "posts/012-festivais-real/slides/09.png",
-    "posts/012-festivais-real/slides/10.png"
-   ],
-   "legenda": "E se os festivais de Stardew Valley fossem reais? 🎉 Festival do Ovo, Luau, Dança das Medusas-da-Lua, Festival do Gelo e mais, com a data de cada um. Curte se te ajudou e me segue pra mais dicas!\nQual festival você mais espera no ano?\n#stardewvalley #stardew #festivaisstardew #jogosaconchegantes #ia",
-   "comentario_fixado": "♥ Curte se te ajudou! Me segue pra mais dicas do Vale.",
-   "conteudo_gerado_por_ia": true,
-   "status": "pronto_para_agendar",
-   "substituir_metricool_post_id": "420467007",
-   "acao": "APAGAR o post antigo agendado com esse id no Metricool e agendar esta versão nova no mesmo horário"
   },
   {
    "id": "p014v",

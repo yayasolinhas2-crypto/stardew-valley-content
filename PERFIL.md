@@ -83,6 +83,8 @@
 - 08/11 · **Voz: gostou da voz do teste** (Sulafat no gemini-2.5-flash-preview-tts) — "o sotaque dela tá bem bom" → virou padrão.
 - 08/11 · Carrinho estava "travado" (telas paradas de menu/escurecer) e "falando coisas aleatórias" → vídeo mais curto, sem frase solta. **Todo vídeo precisa de capa** no começo (não começar "esquisito").
 
+- 08/11 · **Música em tudo** ("mudo não tem como"), tudo pelo Metricool. Trilhas ORIGINAIS no clima Stardew (assets/trilhas: primavera, verão, outono, inverno) — não usar a trilha do jogo (direitos). Carrosséis viram vídeo com fotos + transições + música.
+
 ## Gosto: aprovado / negado (com o porquê)
 | Data | Ideia/roteiro | Decisão | Categoria | Porquê |
 |------|---------------|---------|-----------|--------|

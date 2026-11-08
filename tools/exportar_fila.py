@@ -12,13 +12,13 @@ for f in sorted(glob.glob(sys.argv[1]+'/*.json')):
   quando=dt.datetime.fromisoformat(f"{p['data']}T{p['hora']}:00-03:00")
   if quando<agora:continue
   base=DIR[p['num'][:3]];video=bool(p.get('video'))
-  midia=[f'posts/{base}/video-15x.mp4'] if video else [f'posts/{base}/slides/{os.path.basename(s)}' for s in p['slides']]
+  midia=[p['video_repo']] if p.get('video_repo') else [f'posts/{base}/video-15x.mp4'] if video else [f'posts/{base}/slides/{os.path.basename(s)}' for s in p['slides']]
   for m in midia: assert os.path.exists(m),m
   ia='IA' in p.get('titulo','') or 'IA' in p.get('categoria','')
   fila.append({'id':pid,'titulo':p['titulo'].replace(' (marcar como IA)','').replace(' · marcar como IA',''),'quando_brasilia':f"{p['data']} {p['hora']}",'fuso':'America/Sao_Paulo',
     'formato':'video' if video else 'carrossel_fotos','redes':['tiktok','instagram'] if video else ['tiktok'],
     'midia_no_repositorio':midia,'legenda':p['legenda'],'comentario_fixado':p['fixado'],'conteudo_gerado_por_ia':ia,'status':'pronto_para_agendar',
-    **({'substituir_metricool_post_id':p['substitui_metricool'],'acao':'APAGAR o post antigo agendado com esse id no Metricool e agendar esta versão nova no mesmo horário'} if p.get('substitui_metricool') else {})})
+    **({'substituir_metricool_post_id':p['substitui_metricool'],'acao':'EDITAR o post agendado com esse id no Metricool (mesmo horário): trocar mídia, legenda, redes e título por esta versão nova'} if p.get('substitui_metricool') else {})})
 fila.sort(key=lambda x:x['quando_brasilia'])
 anterior=json.load(open('metricool/fila.json')) if os.path.exists('metricool/fila.json') else {}
 saida={'atualizado_em':agora.isoformat(timespec='seconds'),'gerado_por':'Claude da Yasmin (a partir das aprovações dela no painel)','posts':fila}

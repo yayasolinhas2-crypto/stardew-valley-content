@@ -2,11 +2,11 @@
 // Gera slides/01.png... (1080x1920) e confere: texto vazando do quadro, frase-ponte cortada e área segura.
 const {chromium}=require('playwright');const path=require('path');const fs=require('fs');
 (async()=>{const b=await chromium.launch();
-for(const arg of process.argv.slice(2)){const dir=path.resolve(arg);fs.mkdirSync(dir+'/slides',{recursive:true});
+for(const arg of process.argv.slice(2)){const VID=process.env.VIDEO==='1';const dir=path.resolve(arg);const sd=VID?'/slides-video':'/slides';fs.mkdirSync(dir+sd,{recursive:true});
  const p=await b.newPage({viewport:{width:1080,height:1920}});
- await p.goto('file://'+dir+'/slides.html');await p.evaluate(()=>document.fonts.ready);
+ await p.goto('file://'+dir+'/slides.html'+(VID?'?video=1':''));await p.evaluate(()=>document.fonts.ready);
  const ids=await p.$$eval('section.slide',s=>s.map(x=>x.id));
- for(const [i,id] of ids.entries()) await (await p.$('#'+id)).screenshot({path:`${dir}/slides/${String(i+1).padStart(2,'0')}.png`});
+ for(const [i,id] of ids.entries()) await (await p.$('#'+id)).screenshot({path:`${dir}${sd}/${String(i+1).padStart(2,'0')}.png`});
  const probs=await p.$$eval('section.slide',ss=>ss.flatMap(s=>{const o=s.getBoundingClientRect();const out=[];
   s.querySelectorAll('.card').forEach(c=>{if(c.scrollHeight>c.clientHeight+1)out.push(s.id+': texto vazando do quadro')});
   s.querySelectorAll('.bridge').forEach(e=>{if(e.scrollWidth>e.clientWidth+1)out.push(s.id+': frase-ponte cortada')});
