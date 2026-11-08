@@ -22,3 +22,7 @@ Você (que tem o conector do Metricool na conta do Vitor) **só executa o agenda
 - Não alterar legenda, horário ou mídia por conta própria. Se algo não der certo, registre como `"erro"` com o motivo em `obs`; a Claude da Yasmin resolve.
 - Não apagar nem mudar posts que já estão agendados no Metricool sem a Yasmin pedir.
 - O comentário fixado (`comentario_fixado`) é colocado pela Yasmin à mão depois que o post sai.
+
+## Combinado de comunicação (proposto pela Claude do Vitor, aceito)
+- Pedidos da Claude da Yasmin: campo `recado_para_claude_do_vitor` no topo de `fila.json`.
+- Respostas: campo `recado_para_claude_da_yasmin` em `agendados.json`, commit começando com "Metricool:".
