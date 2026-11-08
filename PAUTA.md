@@ -54,3 +54,16 @@ Observação: referências em inglês ou "AI content" têm erros; tudo nosso sai
 | E2 | Parte 2: os 8 festivais com data | ✅ post 012 |
 | E3 | Parte 3: casas e lojas dos moradores (Clínica, Museu, Torre do Mago, Rancho da Marnie…) | ideia |
 Regras: placas em PT; nada de nome ofensivo (refazer se a IA inventar); sempre "imagem gerada por IA" no slide e etiqueta de IA na plataforma.
+
+## Série F: Gravações da Yasmin (Drive, 08/11 — 13 de 20 recebidos; ficam em gravacoes/bruto, fora do git)
+| # | Vídeo(s) | Ideia de post | Status |
+|---|---|---|---|
+| F1 | ver a tv + olhar calendário + andar pela fazenda e coletar | "3 coisas pra fazer TODO DIA no Stardew" | proposta |
+| F2 | comprar mochila (10.000g, 36 espaços) | "Vale a pena comprar a mochila?" | proposta |
+| F3 | mercado da floresta | Carrinho de Viagem: onde, quando e o que comprar | proposta |
+| F4 | use o galpão + produtos que valem vender | "Transforme o galpão numa fábrica de dinheiro" | proposta |
+| F5 | casar com Harvey e ganhar fruta-estrela | a Fruta-estrela que o cônjuge te dá | proposta |
+| F6 | Pierre é arrogante + cena Pam no bar | "As frases mais polêmicas dos moradores" | proposta |
+| F7 | máquina de costura | o que dá pra costurar (guia D3) | proposta |
+| F8 | roubar broto de chá | o broto de chá da Caroline | proposta |
+| F9 | pedreira | minerar na pedreira | proposta |
