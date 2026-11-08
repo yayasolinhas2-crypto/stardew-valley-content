@@ -44,6 +44,7 @@ nav.tabs .n{position:absolute;top:-9px;right:-6px;font-family:var(--body);font-w
 .pill{font-size:12px;font-weight:900;letter-spacing:.05em;text-transform:uppercase;padding:2px 8px;border:2px solid currentColor;white-space:nowrap}
 .s-aguardando{color:var(--warn);background:var(--warnbg)} .s-aprovado{color:var(--ok);background:var(--okbg)}
 .s-negado{color:var(--bad);background:var(--badbg)} .s-publicado{color:var(--info);background:var(--infobg)}
+.s-agendado{color:var(--info);background:var(--infobg);border-style:dashed}
 .s-atrasado{color:var(--bad);background:var(--badbg)}
 .tag{font-size:12px;color:var(--muted);border:2px solid var(--line);padding:1px 7px}
 .when{font-family:var(--pix);font-size:26px;color:var(--wood2);font-variant-numeric:tabular-nums}
@@ -112,7 +113,7 @@ ul.src{margin:0;padding-left:18px;font-size:13px;overflow-wrap:anywhere} ul.src 
 
 <script>
 const $=s=>document.querySelector(s);
-const STATUS={aguardando:"Aguardando você",aprovado:"Aprovado",negado:"Negado",publicado:"Postado"};
+const STATUS={aguardando:"Aguardando você",aprovado:"Aprovado",agendado:"Agendado no Metricool",negado:"Negado",publicado:"Postado"};
 const MOTIVOS=["gancho fraco","erro no texto","visual feio","confuso","bobo","nichado demais","já existe","nada a ver comigo"];
 const DIAS=["dom","seg","ter","qua","qui","sex","sáb"];
 let vozes=[],vozEscolhida=null,posts=[],db=null,dl=null,writable=true,loaded=false,busy=false,negando=null,voltarLista="postar",voltarFotos="";
@@ -186,7 +187,7 @@ function passos(p){
     <li><div><b>Copie a legenda</b><button class="wide primary" data-copy="legenda" data-id="${esc(p.id)}">Copiar legenda</button><div class="txt">${esc(p.legenda)}</div></div></li>
     <li><div><b>Poste no TikTok</b><p class="muted">${p.video?`${p.narrado?`Toque em <b>+</b> → escolha o vídeo → em <b>Sons</b>, se quiser uma música em alta, abaixe o volume dela pra uns 10–15% (a narração já vem no vídeo) → cole a legenda → Publicar.`:`Toque em <b>+</b> → escolha o vídeo → <b>música em alta</b> (o vídeo vem sem som) → cole a legenda → Publicar.`}`:`Toque em <b>+</b> → <b>Fotos</b> → escolha as ${p.slides.length} na ordem (01 a ${String(p.slides.length).padStart(2,"0")}) → música em alta → cole a legenda → Publicar.`}</p></div></li>
     <li><div><b>Comente e fixe</b><button class="wide primary" data-copy="fixado" data-id="${esc(p.id)}">Copiar comentário</button><div class="txt">${esc(p.fixado)}</div><p class="muted">Cole como comentário no seu post, segure o dedo nele e toque em <b>Fixar</b>.</p></div></li>
-    <li><div><b>Pronto?</b>${p.status==="publicado"?`<span class="pill s-publicado">Postado</span>`:`<button class="wide ok" data-pub="${esc(p.id)}" ${writable?"":"disabled"}>Já postei ✓</button>`}</div></li>
+    <li><div><b>Pronto?</b>${p.status==="publicado"?`<span class="pill s-publicado">Postado</span>`:`<div class="grid2">${p.status!=="agendado"?`<button class="primary" data-agendar="${esc(p.id)}" ${writable?"":"disabled"}>Agendei no Metricool</button>`:`<span class="pill s-agendado" style="align-self:center">Agendado ✓</span>`}<button class="ok" data-pub="${esc(p.id)}" ${writable?"":"disabled"}>Já postei ✓</button></div><p class="muted">No Metricool: Planejamento → horário de Brasília (São Paulo) → TikTok e Instagram juntos.</p>`}</div></li>
   </ol>`;
 }
 function slot(p){return `<div class="slot"><span class="t">${esc(p.hora)}</span><a href="#post-${esc(p.id)}"><span class="row">${pill(p)}</span><b>#${esc(p.num)} · ${esc(p.titulo)}</b></a></div>`}
@@ -304,6 +305,7 @@ document.addEventListener("click",e=>{
     if(!ms.length&&!tx){toast("Marque um motivo ou escreva o que mudar");return}
     negando=null;salvar(id,{status:"negado",motivo:[...ms,tx].filter(Boolean).join(" · ")},"Recusado. O Claude vai refazer.")}
   else if(d.voz){if(!db)return;vozEscolhida=d.voz;render();db.collection("config").doc("voz").set({escolhida:d.voz,em:new Date().toISOString()}).then(()=>toast("Voz escolhida! O Claude vai usar essa nos vídeos"),()=>toast("Não salvou. Tente de novo."))}
+  else if(d.agendar){salvar(d.agendar,{status:"agendado"},"Marcado como agendado no Metricool")}
   else if(d.pub){salvar(d.pub,{status:"publicado"},"Marcado como postado 🎉")}
   else if(d.volta){salvar(d.volta,{status:"aguardando"},"Voltou pra aguardando")}
 });

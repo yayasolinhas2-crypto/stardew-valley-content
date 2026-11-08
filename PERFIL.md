@@ -69,6 +69,8 @@
 
 - 08/11 · Adorou "Stardew na vida real" (011): "pode postar mais sobre isso quando der" → série fixa (parte 2 = festivais, 012).
 
+- 08/11 · **Metricool conectado** (marca "Segredos do valley", TikTok + Instagram). Painel ganhou status "Agendado no Metricool".
+
 ## Gosto: aprovado / negado (com o porquê)
 | Data | Ideia/roteiro | Decisão | Categoria | Porquê |
 |------|---------------|---------|-----------|--------|
