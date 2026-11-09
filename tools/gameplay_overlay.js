@@ -8,9 +8,9 @@ const {chromium}=require('playwright');const fs=require('fs');const path=require
  <style>html,body{background:transparent!important;margin:0}
  #st{width:1080px;height:1920px;position:relative;overflow:hidden}
  .moldura{position:absolute;left:${D.gx-14}px;top:${D.gy-14}px;width:${D.gw+28}px;height:${D.gh+28}px;box-sizing:border-box;border:8px solid var(--wood);box-shadow:0 0 0 6px var(--orange),0 0 0 12px var(--wood),10px 14px 0 12px rgba(0,0,0,.35)}
- .topo{position:absolute;left:60px;right:150px;top:300px;display:flex;flex-direction:column;align-items:flex-start;gap:12px}
+ .topo{position:absolute;left:60px;right:150px;top:276px;display:flex;flex-direction:column;align-items:flex-start;gap:12px}
  .selo{font-family:Pix;font-size:58px;color:var(--gold);background:var(--wood);padding:6px 22px 10px;box-shadow:0 0 0 5px var(--orange);text-shadow:3px 3px 0 #000;text-transform:uppercase}
- .tit{font-family:Pix;font-size:84px;line-height:.95;color:#fff3cf;background:var(--wood);padding:12px 26px 16px;text-transform:uppercase;box-shadow:0 0 0 8px var(--orange),0 0 0 14px var(--wood)}
+ .tit{font-family:Pix;font-size:${D.titulo.length>22?70:84}px;line-height:.95;color:#fff3cf;background:var(--wood);padding:12px 26px 16px;text-transform:uppercase;box-shadow:0 0 0 8px var(--orange),0 0 0 14px var(--wood)}
  .tit em{font-style:normal;color:var(--gold)}
  #leg{position:absolute;left:40px;right:130px;top:${D.gy+D.gh+30}px;display:flex;justify-content:center}
  #leg span{background:rgba(20,10,4,.88);color:#fff;font-family:Nun;font-weight:900;font-size:50px;line-height:1.12;padding:8px 20px 12px;box-shadow:0 0 0 5px var(--gold);text-align:center}
@@ -37,7 +37,7 @@ const {chromium}=require('playwright');const fs=require('fs');const path=require
  .nativo .capa .ct em{color:#ffd84a}
  .nativo .capa .cs{display:none}
  .nativo .cta{font-size:46px;padding:12px 24px;margin-left:-230px}
- </style></head><body><div id="st" class="${D.estilo||''}"><div class="moldura"></div><div class="topo"><span class="selo" id="selo"></span><span class="tit" id="tit"></span></div>
+ </style></head><body><div id="st" class="${D.estilo==='nativo'?'nativo':''}"><div class="moldura"></div><div class="topo"><span class="selo" id="selo"></span><span class="tit" id="tit"></span></div>
  <div class="capa" id="capa"><span class="ct" id="ct"></span><span class="cs">Stardew Valley</span></div><div id="leg"></div><div class="cta" id="cta" style="display:none"></div><div class="imgs" id="imgs"></div><div class="sig">@segredosdovalley</div></div></body></html>`;
  const b=await chromium.launch();const p=await b.newPage({viewport:{width:1080,height:1920}});
  const arq=path.join(raiz,'tools','_overlay.html');fs.writeFileSync(arq,html);await p.goto('file://'+arq);await p.evaluate(()=>document.fonts.ready);
