@@ -10,7 +10,7 @@ RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 spec = importlib.util.spec_from_file_location('narrar', os.path.join(RAIZ, 'tools/narrar.py')); N = importlib.util.module_from_spec(spec); spec.loader.exec_module(N)
 TMP = '/tmp/claude-0/-home-user-stardew-valley-content/390e979c-f63f-5f31-9eff-bd01428cedcb/scratchpad/gameplay'
 LEAD, TAIL, FPS = 0.25, 0.4, 30
-GX, GY, GW, GH = 40, 650, 1000, 800          # janela da gameplay (título em cima, legenda dentro, assinatura embaixo; tudo até y=1500)
+GX, GY, GW, GH = 40, 560, 1000, 800          # janela da gameplay (título em cima; legenda EMBAIXO da janela pra não tampar o diálogo do jogo; tudo até y=1500)
 
 def run(*a): subprocess.run(list(a), check=True)
 
@@ -19,9 +19,13 @@ def main(post):
     os.makedirs(f'{post}/narracao', exist_ok=True); os.makedirs(TMP, exist_ok=True)
     # 1) narração em lote (1 pedido) — mesmas regras do narrar.py
     nc = {'voz': cfg.get('voz', 'Sulafat'), 'falas': [c['fala'] for c in cenas]}
-    if not N.lote(nc, post, TMP):
+    marca = f'{post}/narracao/falas.json'   # reaproveita a narração se as falas não mudaram (economiza cota)
+    if os.path.exists(marca) and json.load(open(marca)) == nc and all(os.path.exists(f'{post}/narracao/{i+1:02d}.wav') for i in range(len(cenas))):
+        print('narração reaproveitada')
+    elif not N.lote(nc, post, TMP):
         print('lote falhou — fala a fala')
         for i, c in enumerate(cenas): N.fala(c['fala'], nc['voz'], f'{post}/narracao/{i+1:02d}.wav', TMP)
+    json.dump(nc, open(marca, 'w'), ensure_ascii=False)
     durs = [N.dur(f'{post}/narracao/{i+1:02d}.wav') for i in range(len(cenas))]
     # 2) cada cena: recorte da gameplay + fundo desfocado
     def clipe(c, L, out, rotulo):

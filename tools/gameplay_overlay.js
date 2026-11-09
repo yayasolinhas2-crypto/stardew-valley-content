@@ -12,8 +12,8 @@ const {chromium}=require('playwright');const fs=require('fs');const path=require
  .selo{font-family:Pix;font-size:58px;color:var(--gold);background:var(--wood);padding:6px 22px 10px;box-shadow:0 0 0 5px var(--orange);text-shadow:3px 3px 0 #000;text-transform:uppercase}
  .tit{font-family:Pix;font-size:84px;line-height:.95;color:#fff3cf;background:var(--wood);padding:12px 26px 16px;text-transform:uppercase;box-shadow:0 0 0 8px var(--orange),0 0 0 14px var(--wood)}
  .tit em{font-style:normal;color:var(--gold)}
- #leg{position:absolute;left:70px;right:150px;top:${D.gy+D.gh-150}px;display:flex;justify-content:center}
- #leg span{background:rgba(20,10,4,.88);color:#fff;font-family:Nun;font-weight:900;font-size:56px;line-height:1.15;padding:10px 22px 14px;box-shadow:0 0 0 5px var(--gold);text-align:center}
+ #leg{position:absolute;left:40px;right:130px;top:${D.gy+D.gh+30}px;display:flex;justify-content:center}
+ #leg span{background:rgba(20,10,4,.88);color:#fff;font-family:Nun;font-weight:900;font-size:50px;line-height:1.12;padding:8px 20px 12px;box-shadow:0 0 0 5px var(--gold);text-align:center}
  #leg b{color:var(--gold)}#leg em{font-style:normal;color:#ff8a65}
  .cta{position:absolute;right:150px;top:${D.gy+30}px;background:var(--red);color:#fff;font-family:Nun;font-weight:900;font-size:40px;padding:10px 18px;box-shadow:0 0 0 5px var(--wood);transform-origin:right top}
  .cta b{color:var(--gold)}
@@ -21,7 +21,7 @@ const {chromium}=require('playwright');const fs=require('fs');const path=require
  .capa .ct{font-family:Pix;font-size:132px;line-height:.92;text-align:center;color:#fff3cf;background:var(--wood);padding:26px 34px 34px;text-transform:uppercase;box-shadow:0 0 0 10px var(--orange),0 0 0 18px var(--wood),14px 20px 0 18px rgba(0,0,0,.4)}
  .capa .ct em{font-style:normal;color:var(--gold)}
  .capa .cs{font-family:Pix;font-size:56px;color:var(--gold);background:var(--red);padding:8px 24px 12px;box-shadow:0 0 0 6px var(--wood);text-shadow:3px 3px 0 #000;transform:rotate(-3deg)}
- .sig{position:absolute;left:60px;top:${D.gy+D.gh+34}px;font-family:Nun;font-weight:900;font-size:30px;color:#fff;text-shadow:2px 2px 0 #000}
+ .sig{position:absolute;left:${D.gx+14}px;top:${D.gy+10}px;font-family:Nun;font-weight:900;font-size:26px;opacity:.9;color:#fff;text-shadow:2px 2px 0 #000}
  </style></head><body><div id="st"><div class="moldura"></div><div class="topo"><span class="selo" id="selo"></span><span class="tit" id="tit"></span></div>
  <div class="capa" id="capa"><span class="ct" id="ct"></span><span class="cs">Stardew Valley</span></div><div id="leg"></div><div class="cta" id="cta" style="display:none"></div><div class="sig">@segredosdovalley</div></div></body></html>`;
  const b=await chromium.launch();const p=await b.newPage({viewport:{width:1080,height:1920}});
