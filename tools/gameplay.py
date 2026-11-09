@@ -71,7 +71,7 @@ def main(post):
     # 3) camada de texto (título, selos, legenda, moldura) desenhada no navegador, quadro a quadro, com fundo transparente
     leg = []
     # legenda: mostra número como número ("um ponto sete" → 1.7) e não separa "Stardew Valley"
-    TROCA = [('dois mil e vinte e sete', '2027'), ('um ponto sete', '1.7'), ('doze corações e meio', '12,5 corações'), ('três vezes', '3 vezes'), ('quinze mil', '15 mil'), ('Stardew Valley', 'Stardew\u00a0Valley')]
+    TROCA = [('dois mil e vinte e sete', '2027'), ('dez mil', '10.000'), ('dois mil', '2.000'), ('vinte e quatro', '24'), ('trinta e seis', '36'), ('doze', '12'), ('um ponto sete', '1.7'), ('doze corações e meio', '12,5 corações'), ('três vezes', '3 vezes'), ('quinze mil', '15 mil'), ('Stardew Valley', 'Stardew\u00a0Valley')]
     for i, c in enumerate(cenas):
         txt = N.re.sub(r'\[[^\]]*\]', '', c['fala']).strip()
         cru = txt.split(); pesos_cru = [len(N.re.sub(r'[^\wÀ-ú]', '', w)) + 2 for w in cru]
