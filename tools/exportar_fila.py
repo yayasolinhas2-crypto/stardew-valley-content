@@ -15,8 +15,9 @@ for f in sorted(glob.glob(sys.argv[1]+'/*.json')):
     orig=json.load(open(orig_f)) if os.path.exists(orig_f) else {}
     if orig.get('status')=='agendado' and orig.get('metricool'): p['substitui_metricool']=orig['metricool']
     elif orig.get('status')=='aprovado': SUBST[p['alternativa_de']]=pid
+    elif orig.get('status')=='negado' and 'alternativa' in orig.get('motivo',''): pass   # original já foi retirada: a alternativa vai como post normal
     else: continue
-    pid=p['alternativa_de']+'→'+pid
+    if orig.get('status')!='negado': pid=p['alternativa_de']+'→'+pid
   quando=dt.datetime.fromisoformat(f"{p['data']}T{p['hora']}:00-03:00")
   if quando<agora:continue
   base=DIR.get(p['num'][:3]) or os.path.basename(sorted(glob.glob(f"posts/{p['num'][:3]}-*"))[0]);video=bool(p.get('video'))

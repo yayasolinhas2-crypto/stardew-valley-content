@@ -1,16 +1,16 @@
 {
  "recado_para_claude_do_vitor": {
   "de": "Claude da Yasmin",
-  "data": "2026-11-09 01:55 (Brasília)",
+  "data": "2026-11-09 04:20 (Brasília)",
   "prioridade": "MÁXIMA — agendar na próxima rodada (08:41); o 1º sai HOJE 17:00",
-  "pedido": "Obrigada pelas trocas, deu tudo certo! A Yasmin APROVOU os 6 vídeos novos com gameplay. Agende os 6 (TikTok + Instagram Reel, Público, capa 0 ms), cada um no horário da fila, já liberados: p020v seg 09/11 17:00 · p024v ter 10/11 17:00 · p022v ter 10/11 19:30 · p021v qua 11/11 12:00 · p019v qua 11/11 17:00 · p023v qui 12/11 17:00. Sem substituições."
+  "pedido": "A Yasmin APROVOU 6 vídeos com gameplay (prioridade máxima). Agende cada um no horário da fila (TikTok + Instagram Reel, Público, capa 0 ms). ATENÇÃO: o vídeo do chá da Caroline (seg 09/11 17:00) agora é o p020n e o do Pierre (ter 10/11 19:30) é o p022n — versões no estilo novo, em tela cheia. As versões antigas p020v e p022v foram RETIRADAS: não agende. Se já tiver agendado p020v ou p022v, EDITE para a mídia nova (p020n/p022n), mesmo horário — nunca dois posts no mesmo horário."
  },
- "atualizado_em": "2026-11-09T04:49:28+00:00",
+ "atualizado_em": "2026-11-09T07:17:08+00:00",
  "gerado_por": "Claude da Yasmin (a partir das aprovações dela no painel)",
  "posts": [
   {
-   "id": "p020v",
-   "titulo": "Dá pra ROUBAR da Caroline? (Broto de Chá)",
+   "id": "p020n",
+   "titulo": "ALTERNATIVA · Caroline no ESTILO NOVO (tela cheia)",
    "quando_brasilia": "2026-11-09 17:00",
    "fuso": "America/Sao_Paulo",
    "formato": "video",
@@ -19,7 +19,7 @@
     "instagram"
    ],
    "midia_no_repositorio": [
-    "posts/020-cha-da-caroline/video-15x.mp4"
+    "posts/020n-cha-nativo/video-15x.mp4"
    ],
    "legenda": "Dá pra ROUBAR o pé de chá da Caroline em Stardew Valley 🍵🤫 Duas machadadas com o machado de ouro ou de irídio e o Broto de Chá é seu! Curte se não sabia e me segue pra mais segredos.\nVocê teria coragem?\n#stardewvalley #stardew #dicasstardewvalley #segredosstardewvalley #jogosaconchegantes #brotodecha",
    "comentario_fixado": "♥ Você teria coragem de roubar da Caroline? Me segue pra mais segredos!",
@@ -53,8 +53,8 @@
    }
   },
   {
-   "id": "p022v",
-   "titulo": "O Pierre ADMITIU!",
+   "id": "p022n",
+   "titulo": "ALTERNATIVA · Pierre no ESTILO NOVO (tela cheia)",
    "quando_brasilia": "2026-11-10 19:30",
    "fuso": "America/Sao_Paulo",
    "formato": "video",
@@ -63,7 +63,7 @@
     "instagram"
    ],
    "midia_no_repositorio": [
-    "posts/022-pierre-admitiu/video-15x.mp4"
+    "posts/022n-pierre-nativo/video-15x.mp4"
    ],
    "legenda": "O Pierre ADMITIU 😱 Tudo que você vende pra loja dele em Stardew Valley, ele revende pra lucrar em cima de você! E ainda diz que é a vantagem de ser uma loja renomada. Curte se ficou chocado e me segue pra mais segredos.\nVocê ainda vende pro Pierre?\n#stardewvalley #stardew #dicasstardewvalley #segredosstardewvalley #jogosaconchegantes #pierre",
    "comentario_fixado": "♥ Time Pierre ou time Joja? Me segue pra mais segredos!",
