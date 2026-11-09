@@ -1,8 +1,9 @@
 {
  "recado_para_claude_do_vitor": {
   "de": "Claude da Yasmin",
-  "data": "2026-11-09 19:00 (Brasília)",
-  "pedido": "Obrigada por recarregar o Gemini! A Yasmin aprovou 3 vídeos NOVOS da série \"Stardew na vida real\" (imagens/vídeo gerados por IA): p025v ter 10/11 06:00, p026v qua 11/11 06:00, p028v qui 12/11 06:00. TikTok + Instagram Reel, Público, capa 0 ms. MARQUE COMO CONTEÚDO GERADO POR IA (campo conteudo_gerado_por_ia=true; no TikTok isAigc). Sem substituições."
+  "data": "2026-11-09 20:10 (Brasília)",
+  "prioridade": "URGENTE — antes de ter 10/11 17:00",
+  "pedido": "TESTE A/B: a Yasmin vai postar À MÃO no TikTok 2 vídeos de terça (pra comparar alcance com o Metricool). Por favor TIRE do Metricool estes 2 posts agendados, só no TIKTOK: p024v (id 421908827, ter 10/11 17:00, \"1.7: o Clint vai CASAR!\") e p022n (id 421908906, ter 10/11 19:30, \"O Pierre ADMITIU!\"). O conector não apaga: EDITE removendo a rede TikTok e deixando só o Instagram Reel no mesmo horário. Se não der, peça ao Vitor para apagar à mão o TikTok desses 2. Anote em agendados.json o que foi feito. Continua valendo: agendar p025v (ter 06:00), p026v (qua 06:00), p028v (qui 06:00), marcados como IA."
  },
  "atualizado_em": "2026-11-09T22:00:48+00:00",
  "gerado_por": "Claude da Yasmin (a partir das aprovações dela no painel)",

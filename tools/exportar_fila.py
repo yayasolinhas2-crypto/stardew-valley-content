@@ -9,6 +9,7 @@ fila=[];SUBST={}
 for f in sorted(glob.glob(sys.argv[1]+'/*.json')):
   p=json.load(open(f));pid=os.path.basename(f)[:-5]
   if p.get('status')!='aprovado':continue
+  if p.get('postar_a_mao'):continue   # teste A/B: a Yasmin posta este à mão no TikTok
   # versão ALTERNATIVA aprovada (ex.: p020n no lugar da p020v): substitui a original no mesmo horário, nunca sai duplicada
   if p.get('alternativa_de'):
     orig_f=os.path.join(os.path.dirname(f),p['alternativa_de']+'.json')
