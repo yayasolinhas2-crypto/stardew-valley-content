@@ -5,6 +5,8 @@ Tudo aqui vem dela, palavra por palavra no espírito: "a gente precisa correr, f
 
 ## O que o público quer (Yasmin, 09/11)
 **GAMEPLAY: ver a pessoa jogando.** Os vídeos animados de cartão não são o que o público quer. Os posts estão públicos (não é restrição); o problema é o formato. A partir de agora:
+- **90% dos vídeos com gameplay real** gravada pela Yasmin (10% podem ser outros formatos: guia, vida real, notícia).
+- Material da wiki pode ser usado (ícones, retratos, dados), dando crédito "fonte: wiki oficial"; o texto da wiki é CC BY-NC-SA e a arte é do jogo (uso de fã, sem fingir ser oficial).
 - A base de TODO vídeo é gameplay real gravada pela Yasmin. Cartão animado só como detalhe (título, selo, número), nunca como o vídeo inteiro.
 - Objetivo de cada vídeo: a pessoa olhar e pensar "caraca, eu quero seguir essa página".
 - Pedir à Yasmin sessões longas de gameplay (15–30 min, sem cortar) — eu acho os momentos e corto vários vídeos de uma sessão só.
