@@ -33,6 +33,7 @@ Criado em 07/11/2026 depois do feedback da Yasmin: "sem transição, áudio com 
 - [ ] Gravações brutas ficam em `gravacoes/bruto/` (fora do git, ~400 MB).
 
 ## Voz (Sulafat)
+- [ ] Voz Sulafat (Gemini). Nada de cochicho/sussurro: emoção animada, empolgada, chocada. (Clone ElevenLabs testado e recusado em 09/11.)
 - [ ] Modelo **gemini-2.5-pro-preview-tts** com instrução de interpretação por fala (`[emoção]` no `narracao.json`).
   - O 3.8 Flash pronuncia bem mas fica sem emoção e às vezes LÊ a marcação `[emoção]` em voz alta.
   - O 2.5 Flash fala "Istárdiu" (feio).
