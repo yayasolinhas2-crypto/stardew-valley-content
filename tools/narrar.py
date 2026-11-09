@@ -67,7 +67,7 @@ def gerar(texto, voz, destino, tmpdir):
             "contents": [{"parts": [{"text": texto}]}],
             "generationConfig": {"responseModalities": ["AUDIO"],
                                  "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": voz}}}}}, tmpdir + '/r.json')
-        if 'candidates' in d: break
+        if 'candidates' in d and d['candidates'][0].get('content', {}).get('parts'): break   # às vezes vem candidato sem áudio: tenta de novo
         print('  tentativa', tentativa + 1, 'falhou:', str(d)[:160])
         import time; time.sleep(35)  # limite por minuto do plano gratuito (erro 429): espera e tenta de novo
     pcm = base64.b64decode(d['candidates'][0]['content']['parts'][0]['inlineData']['data'])
