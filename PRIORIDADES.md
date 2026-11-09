@@ -1,6 +1,7 @@
 # Prioridades da Yasmin (atualizado 09/11/2026)
 
-**Meta: viralizar o @segredosdovalley em 1 mês (até 09/12/2026).**
+**Meta: 10.000 seguidores em 30 dias (até 09/12/2026).** "Faça o que tiver que fazer." Hoje: 0 seguidores (09/11).
+**Sempre conferir e corrigir:** fila do Metricool com mídia e capa certas a cada rodada; nenhum erro pode chegar até ela.
 Tudo aqui vem dela, palavra por palavra no espírito: "a gente precisa correr, fazer coisas novas, usar ferramentas, pensar fora da caixa".
 
 ## O que o público quer (Yasmin, 09/11)
@@ -44,6 +45,9 @@ Tudo aqui vem dela, palavra por palavra no espírito: "a gente precisa correr, f
 - **Fofoca do Vale** (série): o que os moradores escondem (Pierre revende, Pam devendo, Shane, Clint…), com cena gravada dela.
 - **"Testei por 7 dias"**: ela grava um experimento (ex.: dar o presente favorito pra mesma pessoa todo dia, ou só pescar por 1 semana) e a gente mostra o resultado.
 - **Contagem regressiva com mistério** (formato campeão): "5 coisas que você pode ROUBAR em Stardew".
+
+## Equipamento
+- Stardew só no Nintendo (sem PC com o jogo). Switch grava 30 s → ela manda clipes em lote pelo microSD/Drive. Opção de placa de captura em avaliação (mora nos EUA).
 
 ## Gravações que eu vou pedir pra ela (curtas, 20–30 s cada)
 1. Krobus nos esgotos (loja secreta) · 2. Pegando o Lendário ou outro peixe raro · 3. Dando presente que o morador ODEIA (reação) · 4. A caverna do Mestre Cannoli / Bosque Secreto · 5. O Mago e a Tinta da Bruxa · 6. Chegando no deserto/ônibus · 7. Uma noite no Mercado Noturno · 8. A cena do cachorro/gato de Marnie · 9. Festival (qualquer) · 10. A tela de "você casou".
