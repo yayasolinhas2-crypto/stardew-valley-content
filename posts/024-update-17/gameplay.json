@@ -1,0 +1,42 @@
+{
+ "titulo": "1.7: o Clint vai *CASAR*!",
+ "voz": "Sulafat",
+ "velocidade": 1.5,
+ "cenas": [
+  {
+   "src": "gravacoes/bruto/use o galpao para suas maquinas.mp4",
+   "ini": 0.5,
+   "selo": "Stardew Valley 1.7",
+   "fala": "[empolgada, urgente] A maior atualização da história de Stardew Valley tá chegando: a um ponto sete!"
+  },
+  {
+   "src": "gravacoes/bruto/cena pam no bar.mp4",
+   "ini": 0.0,
+   "selo": "Casamento",
+   "fala": "[fofoqueira, chocada] E o Clint e a Sandy finalmente vão poder casar com você!",
+   "img": [
+    "assets/icons/Clint.png",
+    "assets/icons/Sandy.png"
+   ]
+  },
+  {
+   "src": "gravacoes/bruto/use o galpao para suas maquinas.mp4",
+   "ini": 5.0,
+   "selo": "Fazenda nova",
+   "fala": "[animada] Também vem um tipo novo de fazenda.",
+   "cta": "♥ curte se tá ansioso"
+  },
+  {
+   "src": "gravacoes/bruto/pierre é arrogante.mp4",
+   "ini": 0.5,
+   "selo": "Quando?",
+   "fala": "[contando um segredo] O criador disse que ela deve sair em dois mil e vinte e sete."
+  },
+  {
+   "src": "gravacoes/bruto/casar com harvey e ganhar feuta estrela.mp4",
+   "ini": 0.3,
+   "selo": "Fica ligado",
+   "fala": "[divertida] Me segue pra não perder nenhuma novidade da um ponto sete!"
+  }
+ ]
+}

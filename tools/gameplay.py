@@ -60,7 +60,7 @@ def main(post):
             bloco.append({'w': w, 't0': a, 't1': b})
             if len(' '.join(x['w'] for x in bloco)) >= 18 or w[-1] in '.!?…:' or k == len(ws) - 1:
                 leg.append({'ini': bloco[0]['t0'], 'fim': bloco[-1]['t1'] + 0.15, 'p': bloco}); bloco = []
-    dados = {'titulo': cfg['titulo'], 'cenas': [{**tempos[i], 'selo': c.get('selo', ''), 'cta': c.get('cta', '')} for i, c in enumerate(cenas)], 'leg': leg, 'total': total, 'capa': CAPA,
+    dados = {'titulo': cfg['titulo'], 'cenas': [{**tempos[i], 'selo': c.get('selo', ''), 'cta': c.get('cta', ''), 'img': [os.path.join(RAIZ, x) for x in c.get('img', [])]} for i, c in enumerate(cenas)], 'leg': leg, 'total': total, 'capa': CAPA,
              'gx': GX, 'gy': GY, 'gw': GW, 'gh': GH}
     json.dump(dados, open(f'{TMP}/dados.json', 'w'), ensure_ascii=False)
     shutil.rmtree(f'{TMP}/ov', ignore_errors=True); os.makedirs(f'{TMP}/ov')
