@@ -27,18 +27,16 @@ def textos(cfg, post):
     def em(t): return html.escape(t).replace('*', '\x00').split('\x00')
     def fmt(t):
         p = em(t); return ''.join(f'<em>{x}</em>' if i % 2 else x for i, x in enumerate(p))
-    from playwright.sync_api import sync_playwright
-    with sync_playwright() as pw:
-        b = pw.chromium.launch(); pg = b.new_page(viewport={'width': 1080, 'height': 1920})
+    _fila = []
+    if True:
         def shot(corpo, out):
-            open(f'{TMP}/t.html', 'w').write(pag(corpo)); pg.goto(f'file://{TMP}/t.html'); pg.evaluate('document.fonts.ready')
-            pg.screenshot(path=out, omit_background=True)
+            _fila.append({'html': pag(corpo), 'out': out})
         shot(f'<div class="t" style="top:820px;font-size:112px">{fmt(cfg["titulo"])}</div><div class="rot" style="top:1150px">jogo × vida real</div><div class="ia">imagem gerada por IA · @segredosdovalley</div>', f'{TMP}/capa.png')
         for i, c in enumerate(cfg['cenas']):
             corpo = f'<div class="t" style="top:1180px;font-size:92px">{fmt(c["nome"])}</div><div class="ia">imagem gerada por IA · @segredosdovalley</div>'
             shot(corpo, f'{TMP}/rot{i}.png')
             if c.get('cta'): shot(corpo + f'<div class="cta">{html.escape(c["cta"])}</div>', f'{TMP}/rotcta{i}.png')
-        b.close()
+        open(f'{TMP}/textos.json', 'w').write(json.dumps(_fila)); run('node', os.path.join(RAIZ, 'tools/texto_png.js'), f'{TMP}/textos.json')
 
 def main(post):
     cfg = json.load(open(f'{post}/vida_real.json')); cenas = cfg['cenas']; vel = cfg.get('velocidade', 1.5)

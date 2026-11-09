@@ -20,17 +20,15 @@ def main(post):
       .t{{position:absolute;left:50px;right:130px;text-align:center;font-family:N;font-weight:900;color:#fff;-webkit-text-stroke:16px #111;paint-order:stroke fill;text-shadow:0 10px 0 rgba(0,0,0,.45);text-transform:uppercase;line-height:1.02}}
       .t em{{font-style:normal;color:#ffd84a}}.ia{{position:absolute;left:40px;top:1440px;font-family:N;font-weight:900;font-size:26px;color:#fff;text-shadow:2px 2px 0 #000}}
       .cta{{position:absolute;left:50%;transform:translateX(-50%);top:300px;background:#b8300f;color:#fff;font-family:N;font-weight:900;font-size:44px;padding:12px 26px;box-shadow:0 0 0 6px #5b2a0c;white-space:nowrap}}'''
-    from playwright.sync_api import sync_playwright
-    with sync_playwright() as pw:
-        b = pw.chromium.launch(); pg = b.new_page(viewport={'width': 1080, 'height': 1920})
+    _fila = []
+    if True:
         def shot(corpo, out):
-            open(f'{TMP}/t.html', 'w').write(f'<!doctype html><html><head><meta charset="utf-8"><style>{css}</style></head><body><div id="s">{corpo}</div></body></html>')
-            pg.goto(f'file://{TMP}/t.html'); pg.evaluate('document.fonts.ready'); pg.screenshot(path=out, omit_background=True)
+            _fila.append({'html': f'<!doctype html><html><head><meta charset="utf-8"><style>{css}</style></head><body><div id="s">{corpo}</div></body></html>', 'out': out})
         ia = '<div class="ia">vídeo gerado por IA · @segredosdovalley</div>'
         shot(f'<div class="t" style="top:700px;font-size:118px">{fmt(cfg["titulo"])}</div>' + ia, f'{TMP}/capa.png')
         for i, t in enumerate(tr):
             shot(f'<div class="t" style="top:1180px;font-size:88px">{fmt(t["nome"])}</div>' + (f'<div class="cta">{html.escape(t["cta"])}</div>' if t.get('cta') else '') + ia, f'{TMP}/r{i}.png')
-        b.close()
+        open(f'{TMP}/textos.json', 'w').write(json.dumps(_fila)); run('node', os.path.join(RAIZ, 'tools/texto_png.js'), f'{TMP}/textos.json')
     dur = float(subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', f'{post}/{cfg["bruto"]}'], capture_output=True, text=True).stdout)
     CAPA = 1.6
     ins = ['-i', f'{post}/{cfg["bruto"]}', '-loop', '1', '-i', f'{TMP}/capa.png'] ; f = ['[0:v]scale=1080:1920:flags=lanczos,setsar=1,fps=30[b]', f'[b][1:v]overlay=0:0:enable=\'lt(t,{CAPA})\'[v0]']; last = 'v0'
