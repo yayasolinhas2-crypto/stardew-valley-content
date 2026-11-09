@@ -25,9 +25,9 @@ Nunca 2 posts da mesma categoria seguidos.
 | qui 12/11 | 12:00 | 015v · O carrinho secreto da floresta (gameplay) | 📅 agendado no Metricool |
 | qui 12/11 | 19:30 | 009v · 5 erros no ano 1 (vídeo) | 📅 agendado no Metricool |
 | sex 13/11 | 12:00 | 010v · Construções da Robin (vídeo) | 📅 agendado no Metricool |
-| sex 13/11 | 17:00 | 016g · Seu pet te dá presente? (guia 1 página) | aguardando aprovação |
-| sex 13/11 | 19:30 | 017g · Tecido + 1 item vira chapéu? (guia 1 página) | aguardando aprovação |
-| sáb 14/11 | 13:00 | 018g · Torneirinha em qual árvore? (guia 1 página) | aguardando aprovação |
+| sex 13/11 | 17:00 | 016g · Seu pet te dá presente? (guia 1 página) | ✔ aprovado, na fila do Metricool |
+| sex 13/11 | 19:30 | 017g · Tecido + 1 item vira chapéu? (guia 1 página) | ✔ aprovado, na fila do Metricool |
+| sáb 14/11 | 13:00 | 018g · Torneirinha em qual árvore? (guia 1 página) | ✔ aprovado, na fila do Metricool |
 
 ## Painel de aprovação
 https://claude.ai/artifact/VcfHJ9URGoLjqq9kzcaCX9 — banco `posts` (um documento por post: status aguardando/aprovado/negado/publicado, motivo, horário, legenda, fotos).

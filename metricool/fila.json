@@ -1,16 +1,16 @@
 {
  "recado_para_claude_do_vitor": {
   "de": "Claude da Yasmin",
-  "data": "2026-11-08 17:08 (Brasília)",
-  "pedido": "Obrigada pela rodada das 12:41 e pela troca para JPEG. A Yasmin aprovou versões novas (com música, sem \"comenta PALAVRA\"). Por favor EDITE estes posts no Metricool, mesmo horário, com a versão nova da fila (mídia, legenda, título, redes TikTok+Instagram): p007v (420466720), p006v (420466806), p001v (420466895) e os carrosséis p002 (420851110), p009 (420851470), p010 (420851518), p012 (420851602). Os carrosséis agora viram VÍDEO com música (video-carrossel.mp4), então o problema PNG/JPEG some. NOVO para agendar: p008v (09/11 17:00). Cada vídeo traz o campo \"capa\" (0 ms = capa pronta); use se o Metricool deixar escolher a capa."
+  "data": "2026-11-08 22:08 (Brasília)",
+  "pedido": "Obrigada pela rodada das 17:41, tudo certo! Agora são 3 posts NOVOS (guias de 1 página em vídeo de 10 s com música): p016g (13/11 17:00), p017g (13/11 19:30) e p018g (14/11 13:00). Sem substituições. TikTok + Instagram Reel, capa = 0 ms (campo \"capa\")."
  },
- "atualizado_em": "2026-11-08T20:08:45+00:00",
+ "atualizado_em": "2026-11-09T01:08:26+00:00",
  "gerado_por": "Claude da Yasmin (a partir das aprovações dela no painel)",
  "posts": [
   {
-   "id": "p007v",
-   "titulo": "Recados Secretos · Ep. 1: como destravar",
-   "quando_brasilia": "2026-11-09 06:00",
+   "id": "p016g",
+   "titulo": "GUIA 1 PÁGINA · Seu pet te dá presente? (visual novo)",
+   "quando_brasilia": "2026-11-13 17:00",
    "fuso": "America/Sao_Paulo",
    "formato": "video",
    "redes": [
@@ -18,184 +18,60 @@
     "instagram"
    ],
    "midia_no_repositorio": [
-    "posts/007-recados-ep1/video-15x.mp4"
+    "posts/016-presente-do-pet/video-guia.mp4"
    ],
-   "legenda": "Tem 27 Recados Secretos escondidos em Stardew Valley e quase ninguém destrava 📜 Ep. 1: como conseguir a Lupa. Curte se te ajudou e me segue pra mais dicas!\nVocê já achou algum recado?\n#stardewvalley #stardew #dicasstardewvalley #segredosstardewvalley #jogosaconchegantes",
-   "comentario_fixado": "♥ Curte se te ajudou! Me segue pra mais dicas do Vale.",
-   "conteudo_gerado_por_ia": false,
-   "status": "pronto_para_agendar",
-   "capa": {
-    "segundo_do_video": 0.0,
-    "imagem": "posts/007-recados-ep1/video-capa.jpg"
-   },
-   "substituir_metricool_post_id": "420466720",
-   "acao": "EDITAR o post agendado com esse id no Metricool (mesmo horário): trocar mídia, legenda, redes e título por esta versão nova"
-  },
-  {
-   "id": "p002",
-   "titulo": "6 presentes que todo morador ama",
-   "quando_brasilia": "2026-11-09 12:00",
-   "fuso": "America/Sao_Paulo",
-   "formato": "video",
-   "redes": [
-    "tiktok",
-    "instagram"
-   ],
-   "midia_no_repositorio": [
-    "posts/002-presentes/video-carrossel.mp4"
-   ],
-   "legenda": "6 presentes que QUASE todo morador de Stardew Valley ama 🎁 e 2 pessoas odeiam um deles! Curte se te ajudou e me segue pra mais dicas!\nQual desses você já tem guardado no baú?\n#stardewvalley #stardew #dicasstardewvalley #presentesstardew #jogosaconchegantes",
-   "comentario_fixado": "♥ Curte se te ajudou! Me segue pra mais dicas do Vale.",
-   "conteudo_gerado_por_ia": false,
-   "status": "pronto_para_agendar",
-   "capa": {
-    "segundo_do_video": 0.0,
-    "imagem": "posts/002-presentes/video-carrossel-capa.jpg"
-   },
-   "substituir_metricool_post_id": "420851110",
-   "acao": "EDITAR o post agendado com esse id no Metricool (mesmo horário): trocar mídia, legenda, redes e título por esta versão nova"
-  },
-  {
-   "id": "p008v",
-   "titulo": "Recados Secretos · Ep. 2: o que eles fazem de madrugada?",
-   "quando_brasilia": "2026-11-09 17:00",
-   "fuso": "America/Sao_Paulo",
-   "formato": "video",
-   "redes": [
-    "tiktok",
-    "instagram"
-   ],
-   "midia_no_repositorio": [
-    "posts/008-recados-ep2/video-15x.mp4"
-   ],
-   "legenda": "O que o Lewis e a Marnie fazem de madrugada em Stardew Valley? 🌙 O Recado Secreto #21 é só um desenho… e a solução é à 0:40. Curte se te ajudou e me segue pra mais dicas!\nO que você acha que eles estavam fazendo?\n#stardewvalley #stardew #segredosstardewvalley #recadossecretos #jogosaconchegantes",
-   "comentario_fixado": "♥ Curte se te ajudou! Me segue pra mais dicas do Vale.",
-   "conteudo_gerado_por_ia": false,
-   "status": "pronto_para_agendar",
-   "capa": {
-    "segundo_do_video": 0.0,
-    "imagem": "posts/008-recados-ep2/video-capa.jpg"
-   }
-  },
-  {
-   "id": "p006v",
-   "titulo": "3 criaturas misteriosas que você talvez nunca viu",
-   "quando_brasilia": "2026-11-09 19:30",
-   "fuso": "America/Sao_Paulo",
-   "formato": "video",
-   "redes": [
-    "tiktok",
-    "instagram"
-   ],
-   "midia_no_repositorio": [
-    "posts/006-criaturas/video-15x.mp4"
-   ],
-   "legenda": "3 criaturas misteriosas de Stardew Valley que talvez você nunca viu 👻 e uma deixa pegada… Curte se te ajudou e me segue pra mais dicas!\nVocê já viu alguma?\n#stardewvalley #stardew #dicasstardewvalley #segredosstardewvalley #jogosaconchegantes",
-   "comentario_fixado": "♥ Curte se te ajudou! Me segue pra mais dicas do Vale.",
-   "conteudo_gerado_por_ia": false,
-   "status": "pronto_para_agendar",
-   "capa": {
-    "segundo_do_video": 0.0,
-    "imagem": "posts/006-criaturas/video-capa.jpg"
-   },
-   "substituir_metricool_post_id": "420466806",
-   "acao": "EDITAR o post agendado com esse id no Metricool (mesmo horário): trocar mídia, legenda, redes e título por esta versão nova"
-  },
-  {
-   "id": "p009",
-   "titulo": "Você tá cometendo esses 5 erros no ano 1?",
-   "quando_brasilia": "2026-11-10 12:00",
-   "fuso": "America/Sao_Paulo",
-   "formato": "video",
-   "redes": [
-    "tiktok",
-    "instagram"
-   ],
-   "midia_no_repositorio": [
-    "posts/009-erros-iniciante/video-carrossel.mp4"
-   ],
-   "legenda": "Você tá cometendo esses 5 erros no ano 1 de Stardew Valley? 😬 O nº 1 tira dinheiro do seu bolso! Curte se te ajudou e me segue pra mais dicas!\nQual desses você já cometeu?\n#stardewvalley #stardew #dicasstardewvalley #iniciantestardew #jogosaconchegantes",
-   "comentario_fixado": "♥ Curte se te ajudou! Me segue pra mais dicas do Vale.",
-   "conteudo_gerado_por_ia": false,
-   "status": "pronto_para_agendar",
-   "capa": {
-    "segundo_do_video": 0.0,
-    "imagem": "posts/009-erros-iniciante/video-carrossel-capa.jpg"
-   },
-   "substituir_metricool_post_id": "420851470",
-   "acao": "EDITAR o post agendado com esse id no Metricool (mesmo horário): trocar mídia, legenda, redes e título por esta versão nova"
-  },
-  {
-   "id": "p001v",
-   "titulo": "VÍDEO · 5 segredos escondidos que quase ninguém acha",
-   "quando_brasilia": "2026-11-10 17:00",
-   "fuso": "America/Sao_Paulo",
-   "formato": "video",
-   "redes": [
-    "tiktok",
-    "instagram"
-   ],
-   "midia_no_repositorio": [
-    "posts/001-segredos/video-15x.mp4"
-   ],
-   "legenda": "5 segredos escondidos em Stardew Valley que quase ninguém acha 👀 Curte se te ajudou e me segue pra mais dicas!\nO nº 1 é o porão secreto do Lewis… qual desses você já sabia?\n#stardewvalley #stardew #segredosstardewvalley #dicasstardewvalley #jogosaconchegantes",
-   "comentario_fixado": "♥ Curte se te ajudou! Me segue pra mais dicas do Vale.",
-   "conteudo_gerado_por_ia": false,
-   "status": "pronto_para_agendar",
-   "capa": {
-    "segundo_do_video": 0.0,
-    "imagem": "posts/001-segredos/video-capa.jpg"
-   },
-   "substituir_metricool_post_id": "420466895",
-   "acao": "EDITAR o post agendado com esse id no Metricool (mesmo horário): trocar mídia, legenda, redes e título por esta versão nova"
-  },
-  {
-   "id": "p010",
-   "titulo": "Quanto custa cada construção da Robin?",
-   "quando_brasilia": "2026-11-10 19:30",
-   "fuso": "America/Sao_Paulo",
-   "formato": "video",
-   "redes": [
-    "tiktok",
-    "instagram"
-   ],
-   "midia_no_repositorio": [
-    "posts/010-construcoes/video-carrossel.mp4"
-   ],
-   "legenda": "Quanto custa cada construção da Robin em Stardew Valley? 🏠 Ouro, madeira e pedra de tudo: galinheiro, celeiro, galpão, silo e até a sua casa. Curte se te ajudou e me segue pra mais dicas!\nQual você vai construir primeiro?\n#stardewvalley #stardew #dicasstardewvalley #guiastardew #jogosaconchegantes",
-   "comentario_fixado": "♥ Curte se te ajudou! Me segue pra mais dicas do Vale.",
-   "conteudo_gerado_por_ia": false,
-   "status": "pronto_para_agendar",
-   "capa": {
-    "segundo_do_video": 0.0,
-    "imagem": "posts/010-construcoes/video-carrossel-capa.jpg"
-   },
-   "substituir_metricool_post_id": "420851518",
-   "acao": "EDITAR o post agendado com esse id no Metricool (mesmo horário): trocar mídia, legenda, redes e título por esta versão nova"
-  },
-  {
-   "id": "p012",
-   "titulo": "E se os festivais fossem reais? (parte 2)",
-   "quando_brasilia": "2026-11-11 17:00",
-   "fuso": "America/Sao_Paulo",
-   "formato": "video",
-   "redes": [
-    "tiktok",
-    "instagram"
-   ],
-   "midia_no_repositorio": [
-    "posts/012-festivais-real/video-carrossel.mp4"
-   ],
-   "legenda": "E se os festivais de Stardew Valley fossem reais? 🎉 Festival do Ovo, Luau, Dança das Medusas-da-Lua, Festival do Gelo e mais, com a data de cada um. Curte se te ajudou e me segue pra mais dicas!\nQual festival você mais espera no ano?\n#stardewvalley #stardew #festivaisstardew #jogosaconchegantes #ia",
-   "comentario_fixado": "♥ Curte se te ajudou! Me segue pra mais dicas do Vale.",
+   "legenda": "Seu pet te dá presente em Stardew Valley? 🐾 Com amizade máxima, gato, cachorro e tartaruga trazem presentes: peixe, Pé de coelho, Ovo de Dinossauro, Concha arco-íris… Salva pra consultar!\nQual pet você escolheu?\n#stardewvalley #stardew #dicasstardewvalley #guiastardew #jogosaconchegantes",
+   "comentario_fixado": "♥ Curte se não sabia! Qual é o seu pet? Me segue pra mais guias!",
    "conteudo_gerado_por_ia": true,
    "status": "pronto_para_agendar",
    "capa": {
     "segundo_do_video": 0.0,
-    "imagem": "posts/012-festivais-real/video-carrossel-capa.jpg"
-   },
-   "substituir_metricool_post_id": "420851602",
-   "acao": "EDITAR o post agendado com esse id no Metricool (mesmo horário): trocar mídia, legenda, redes e título por esta versão nova"
+    "imagem": "posts/016-presente-do-pet/video-guia-capa.jpg"
+   }
+  },
+  {
+   "id": "p017g",
+   "titulo": "GUIA 1 PÁGINA · Máquina de costura (visual novo)",
+   "quando_brasilia": "2026-11-13 19:30",
+   "fuso": "America/Sao_Paulo",
+   "formato": "video",
+   "redes": [
+    "tiktok",
+    "instagram"
+   ],
+   "midia_no_repositorio": [
+    "posts/017-maquina-de-costura/video-guia.mp4"
+   ],
+   "legenda": "Máquina de costura em Stardew Valley: Tecido + 1 item vira chapéu! 🧵 Chapéu de Bruxa, Máscara Qi, Chapéu de Dinossauro e mais, com o que precisa pra cada um. Salva pra consultar!\nQual chapéu você vai fazer primeiro?\n#stardewvalley #stardew #dicasstardewvalley #guiastardew #jogosaconchegantes",
+   "comentario_fixado": "♥ Curte se te ajudou! Qual chapéu você quer? Me segue pra mais guias!",
+   "conteudo_gerado_por_ia": true,
+   "status": "pronto_para_agendar",
+   "capa": {
+    "segundo_do_video": 0.0,
+    "imagem": "posts/017-maquina-de-costura/video-guia-capa.jpg"
+   }
+  },
+  {
+   "id": "p018g",
+   "titulo": "GUIA 1 PÁGINA · Torneirinha em qual árvore? (visual novo)",
+   "quando_brasilia": "2026-11-14 13:00",
+   "fuso": "America/Sao_Paulo",
+   "formato": "video",
+   "redes": [
+    "tiktok",
+    "instagram"
+   ],
+   "midia_no_repositorio": [
+    "posts/018-torneirinha/video-guia.mp4"
+   ],
+   "legenda": "Torneirinha em qual árvore em Stardew Valley? 🌳 Ácer, Carvalho, Pinheiro, Mogno, Cogumelo, Chuva Verde e a Árvore Mística, que dá Xarope Místico de 1.000g! Salva pra consultar.\nEm qual árvore você põe a sua?\n#stardewvalley #stardew #dicasstardewvalley #guiastardew #jogosaconchegantes",
+   "comentario_fixado": "♥ Curte se te ajudou! Me segue pra mais guias!",
+   "conteudo_gerado_por_ia": true,
+   "status": "pronto_para_agendar",
+   "capa": {
+    "segundo_do_video": 0.0,
+    "imagem": "posts/018-torneirinha/video-guia-capa.jpg"
+   }
   }
  ]
 }
