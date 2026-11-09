@@ -107,3 +107,4 @@
 - 09/11: META = viralizar em 1 mês. Pediu: sensacionalismo nos ganchos ("roubar", "admitiu", "raríssimo" — fato sempre verdadeiro), vídeo/Reels acima de carrossel (carrossel não pega no Instagram), gravações dela com prioridade, coisas novas/fora da caixa, explorar mais "vida real" em vídeo. Tudo em PRIORIDADES.md (ler antes de cada lote).
 - 09/11: posts do Metricool com 0 views no TikTok; os postados à mão tiveram 130–215. Capa vazia do 002v = versão antiga agendada antes da correção.
 - 09/11: confirmou que os posts estão PÚBLICOS. Diagnóstico dela: o público quer GAMEPLAY (ver a pessoa jogando), não cartão animado. Gameplay vira a base de todo vídeo; aprovar os 5 novos e mandar pra IA do Vitor com prioridade máxima.
+- 09/11: gostou dos 6 vídeos de gameplay narrados no tom sensacionalista (019v–024v): "os vídeos ficaram bons, dá pra aproveitar bastante". Esse é o padrão a seguir e melhorar. Vai gravar mais.
