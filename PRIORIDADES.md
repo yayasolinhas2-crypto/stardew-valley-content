@@ -19,6 +19,7 @@ Tudo aqui vem dela, palavra por palavra no espírito: "a gente precisa correr, f
 
 ## Regras que ela deu (valem pra tudo)
 0. **Tudo pra aprovação vai pro PAINEL** (aba Aprovar), nunca só no chat.
+0b. **Sempre falar com a IA do Vitor**: toda mudança de horário, troca de versão ou prioridade vai na hora pro `recado_para_claude_do_vitor` (metricool/fila.json), com commit "Metricool:".
 1. **Vídeo/Reels em primeiro lugar.** Carrossel de foto quase não pega (pouco no TikTok, nada no Instagram). Foto só vira post se for em vídeo.
 2. **Gancho sensacionalista, sem medo das palavras.** "Você pode ROUBAR…", "O Pierre ADMITIU…", "item RARÍSSIMO". O exagero fica no enquadramento, nunca no fato: tudo continua com fonte na wiki.
 3. **Gravações dela têm prioridade na fila.** São o gancho mais forte (prova real, conteúdo original). Narração animada e sensacionalista.
