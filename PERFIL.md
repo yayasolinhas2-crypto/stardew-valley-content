@@ -114,3 +114,4 @@
 - 09/11: NÃO gostou do clone da própria voz (ElevenLabs "yaya") → manter Sulafat (Gemini). Não gostou do COCHICHO no vídeo da Caroline: emoção sim, animada sim, mas nada de [cochichando]/sussurro. Aprovados vão como estão.
 - 09/11: REGRA: tudo que for pra aprovação vai pro PAINEL (aba Aprovar), não só pro chat. Versões alternativas entram com campo alternativa_de e substituem a original se aprovadas.
 - 09/11: AMOU a série 'vida real' — aprovou do 1 ao 7 (Pelican Town, solteiros, receitas, peixes, flores, festa de aniversário, filhos). Aprovou custo de imagens (<US$0,50/vídeo) e 1 teste de vídeo IA (Gemini Omni, ~US$1,50). Amanhã manda gameplay (inclusive cenas com o marido no jogo e as cenas pedidas: Lewis, atalhos, pesca, começo de save).
+- 09/11: topou o TESTE A/B — postar à mão 2 vídeos por dia (ter 10/11: p024v 17:00 e p022n 19:30 BRT = 12:00 e 14:30 no horário dela), com som em alta baixinho; comparar com os do Metricool em 24 h.
