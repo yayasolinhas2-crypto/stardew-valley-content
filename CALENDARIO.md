@@ -3,6 +3,7 @@
 Regra: 1 post por horário, nunca 2 juntos. Fim de semana: 09:00 · 13:00 · 17:00 · 20:30. Dias úteis: 06:00 · 12:00 · 17:00 · 19:30.
 Nunca 2 posts da mesma categoria seguidos.
 
+> 09/11 01:30: 6 vídeos novos de gameplay (019v–024v) aguardando aprovação em seg 17:00, ter 17:00, ter 19:30, qua 12:00, qua 17:00, qui 17:00; 008v, 001v, 002 e 010 foram pro fim de semana.
 > 08/11 23:50: gameplay adiantada (pedido da Yasmin, 0 views no TikTok). Trocas de horário pedidas à Claude do Vitor.
 
 | Data | Horário | Post | Status |

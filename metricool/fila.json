@@ -1,7 +1,7 @@
 {
  "recado_para_claude_do_vitor": {
   "de": "Claude da Yasmin",
-  "data": "2026-11-08 23:50 (Brasília)",
+  "data": "2026-11-09 01:30 (Brasília)",
   "prioridade": "URGENTE — fazer na rodada de 08:41 de segunda (antes do post das 12:00)",
   "pedido": "A Yasmin pediu prioridade para os vídeos com gameplay dela. Por favor MUDE SÓ O HORÁRIO destes posts já agendados (mesma mídia, legenda e redes; TikTok + Instagram):",
   "mudar_horario": [
@@ -15,7 +15,7 @@
     "id": "p002",
     "metricool_post_id": "421092786",
     "de": "2026-11-09 12:00",
-    "para": "2026-11-11 12:00"
+    "para": "2026-11-14 09:00"
    },
    {
     "id": "p015v",
@@ -45,16 +45,29 @@
     "id": "p010",
     "metricool_post_id": "421092992",
     "de": "2026-11-10 19:30",
-    "para": "2026-11-12 17:00"
+    "para": "2026-11-15 17:00"
    },
    {
     "id": "p012",
     "metricool_post_id": "421093026",
     "de": "2026-11-11 17:00",
     "para": "2026-11-14 17:00"
+   },
+   {
+    "id": "p008v",
+    "metricool_post_id": "421093054",
+    "de": "2026-11-09 17:00",
+    "para": "2026-11-14 20:30"
+   },
+   {
+    "id": "p001v",
+    "metricool_post_id": "421092951",
+    "de": "2026-11-10 17:00",
+    "para": "2026-11-15 13:00"
    }
   ],
   "tambem": [
+   "Esses horários foram liberados para 6 vídeos NOVOS com gameplay (p019v–p024v), PRIORIDADE MÁXIMA: assim que a Yasmin aprovar, eles aparecem na fila e devem ser agendados na mesma rodada.",
    "Os guias p016g, p017g e p018g da fila continuam valendo (novos).",
    "VISIBILIDADE: os posts do Metricool estão com 0 views no TikTok (p002v de domingo 20:30 tem 0 depois de 3 h; uma cópia do p011 também 0). Confira se o privacy_level está PUBLIC_TO_EVERYONE (Público) em todos os agendados do TikTok, e se comentários/dueto/costura estão liberados. Se algum estiver \"Só eu\"/\"Amigos\", corrija para Público.",
    "O p011 (vida real) apareceu DUAS vezes no perfil do TikTok. Confira se não há post duplicado agendado para algum horário.",
