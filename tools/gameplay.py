@@ -18,7 +18,7 @@ def main(post):
     cfg = json.load(open(f'{post}/gameplay.json')); cenas = cfg['cenas']
     os.makedirs(f'{post}/narracao', exist_ok=True); os.makedirs(TMP, exist_ok=True)
     # 1) narração em lote (1 pedido) — mesmas regras do narrar.py
-    nc = {'voz': cfg.get('voz', 'Sulafat'), 'falas': [c['fala'] for c in cenas]}
+    nc = {'voz': cfg.get('voz', 'el:yaya'), 'falas': [c['fala'] for c in cenas]}
     marca = f'{post}/narracao/falas.json'   # reaproveita a narração se as falas não mudaram (economiza cota)
     if os.path.exists(marca) and json.load(open(marca)) == nc and all(os.path.exists(f'{post}/narracao/{i+1:02d}.wav') for i in range(len(cenas))):
         print('narração reaproveitada')
