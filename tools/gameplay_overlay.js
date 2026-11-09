@@ -37,7 +37,7 @@ const {chromium}=require('playwright');const fs=require('fs');const path=require
    const ct=document.getElementById('cta');if(c.cta&&t>c.fala+c.dur*0.5){ct.style.display='block';ct.innerHTML=esc(c.cta).replace(/([A-ZÀ-Ú]{4,})/g,'<b>$1</b>');ct.style.transform=`scale(${ease((t-c.fala-c.dur*0.5)/0.25)})`}else ct.style.display='none';
    const im=document.getElementById('imgs');const key=(c.img||[]).join('|');if(im.dataset.k!==key){im.dataset.k=key;im.innerHTML=(c.img||[]).map(u=>'<img src="file://'+u+'">').join('')}
    [...im.children].forEach((x,i)=>{const kk=ease((t-c.S-0.15-i*0.25)/0.3);x.style.transform=`scale(${kk})`;});
-   const L=D.leg.find(x=>t>=x.ini&&t<x.fim);document.getElementById('leg').innerHTML=L?'<span>'+L.p.map(x=>(t>=x.t0&&t<x.t1)?'<b>'+esc(x.w)+'</b>':(/^[A-ZÀ-Ú]{4,}[!?.,]*$/.test(x.w)?'<em>'+esc(x.w)+'</em>':esc(x.w))).join(' ')+'</span>':'';}},D);
+   const L=[...D.leg].reverse().find(x=>t>=x.ini&&t<x.fim);document.getElementById('leg').innerHTML=L?'<span>'+L.p.map(x=>(t>=x.t0&&t<x.t1)?'<b>'+esc(x.w)+'</b>':(/^[A-ZÀ-Ú]{4,}[!?.,]*$/.test(x.w)?'<em>'+esc(x.w)+'</em>':esc(x.w))).join(' ')+'</span>':'';}},D);
  const n=Math.ceil(D.total*fps);
  for(let f=0;f<n;f++){await p.evaluate(async t=>{desenha(t);await Promise.all([...document.images].map(i=>i.complete?0:new Promise(r=>{i.onload=i.onerror=r})))},f/fps);await p.screenshot({path:`${out}/${String(f).padStart(5,'0')}.png`,omitBackground:true})}
  await b.close();console.log('camada',n,'quadros');

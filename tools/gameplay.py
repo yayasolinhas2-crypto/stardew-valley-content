@@ -53,12 +53,32 @@ def main(post):
     run('ffmpeg', '-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0', '-i', lst, '-c:v', 'copy', '-c:a', 'pcm_s16le', f'{TMP}/base.mkv')
     # 3) camada de texto (título, selos, legenda, moldura) desenhada no navegador, quadro a quadro, com fundo transparente
     leg = []
+    # legenda: mostra número como número ("um ponto sete" → 1.7) e não separa "Stardew Valley"
+    TROCA = [('dois mil e vinte e sete', '2027'), ('um ponto sete', '1.7'), ('doze corações e meio', '12,5 corações'), ('três vezes', '3 vezes'), ('quinze mil', '15 mil'), ('Stardew Valley', 'Stardew\u00a0Valley')]
     for i, c in enumerate(cenas):
-        ws = N.re.sub(r'\[[^\]]*\]', '', c['fala']).split(); pesos = [len(N.re.sub(r'[^\wÀ-ú]', '', w)) + 2 for w in ws]; tot = sum(pesos); acc = 0; bloco = []
+        txt = N.re.sub(r'\[[^\]]*\]', '', c['fala']).strip()
+        cru = txt.split(); pesos_cru = [len(N.re.sub(r'[^\wÀ-ú]', '', w)) + 2 for w in cru]
+        # junta as palavras das trocas num token só (o peso é a soma, então o tempo continua batendo com a fala)
+        ws, pesos, k = [], [], 0
+        while k < len(cru):
+            for de, para in TROCA:
+                n = len(de.split())
+                if [x.strip('.,!?:').lower() for x in cru[k:k + n]] == de.lower().split():
+                    ws.append(para + (cru[k + n - 1][len(cru[k + n - 1].rstrip('.,!?:')):])); pesos.append(sum(pesos_cru[k:k + n])); k += n; break
+            else:
+                ws.append(cru[k]); pesos.append(pesos_cru[k]); k += 1
+        tot = sum(pesos); acc = 0; bloco = []
         for k, w in enumerate(ws):
             a = tempos[i]['fala'] + durs[i] * acc / tot; acc += pesos[k]; b = tempos[i]['fala'] + durs[i] * acc / tot
             bloco.append({'w': w, 't0': a, 't1': b})
-            if len(' '.join(x['w'] for x in bloco)) >= 18 or w[-1] in '.!?…:' or k == len(ws) - 1:
+            fim_frase = w[-1] in '.!?…:' or k == len(ws) - 1
+            # quantas palavras faltam até o fim da frase: nunca deixa 1 palavra sozinha ("dela!", "seu!", "Valley?")
+            falta = 0
+            for x in ws[k + 1:]:
+                falta += 1
+                if x[-1] in '.!?…:': break
+            cheio = len(' '.join(x['w'] for x in bloco)) >= 18 and falta != 1
+            if cheio or fim_frase:
                 leg.append({'ini': bloco[0]['t0'], 'fim': bloco[-1]['t1'] + 0.15, 'p': bloco}); bloco = []
     dados = {'titulo': cfg['titulo'], 'cenas': [{**tempos[i], 'selo': c.get('selo', ''), 'cta': c.get('cta', ''), 'img': [os.path.join(RAIZ, x) for x in c.get('img', [])]} for i, c in enumerate(cenas)], 'leg': leg, 'total': total, 'capa': CAPA,
              'gx': GX, 'gy': GY, 'gw': GW, 'gh': GH}
