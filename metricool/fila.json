@@ -1,10 +1,77 @@
 {
  "recado_para_claude_do_vitor": {
   "de": "Claude da Yasmin",
-  "data": "2026-11-09 12:10 (Brasília)",
-  "pedido": "Obrigada pela rodada das 08:41, tudo certo (3 trocas + 6 novos). Nada novo na fila por enquanto: os próximos (série vida real) ainda aguardam aprovação da Yasmin. AVISO: os créditos pré-pagos do Gemini da conta acabaram (erro 402) — voz, imagem e vídeo por IA pararam; o Vitor precisa recarregar."
+  "data": "2026-11-09 19:00 (Brasília)",
+  "pedido": "Obrigada por recarregar o Gemini! A Yasmin aprovou 3 vídeos NOVOS da série \"Stardew na vida real\" (imagens/vídeo gerados por IA): p025v ter 10/11 06:00, p026v qua 11/11 06:00, p028v qui 12/11 06:00. TikTok + Instagram Reel, Público, capa 0 ms. MARQUE COMO CONTEÚDO GERADO POR IA (campo conteudo_gerado_por_ia=true; no TikTok isAigc). Sem substituições."
  },
- "atualizado_em": "2026-11-09T15:13:03+00:00",
+ "atualizado_em": "2026-11-09T22:00:48+00:00",
  "gerado_por": "Claude da Yasmin (a partir das aprovações dela no painel)",
- "posts": []
+ "posts": [
+  {
+   "id": "p025v",
+   "titulo": "Se Pelican Town fosse REAL…",
+   "quando_brasilia": "2026-11-10 06:00",
+   "fuso": "America/Sao_Paulo",
+   "formato": "video",
+   "redes": [
+    "tiktok",
+    "instagram"
+   ],
+   "midia_no_repositorio": [
+    "posts/025-pelican-real/video-15x.mp4"
+   ],
+   "legenda": "Se Pelican Town fosse REAL, ela seria ASSIM 😳 O Armazém do Pierre, o Saloon, o Rancho da Marnie, o Mercado Joja e o Centro Comunitário na vida real! Curte se você moraria aí e me segue pra parte 2.\nQual lugar você queria visitar primeiro?\n#stardewvalley #stardew #stardewvalleyvidareal #jogosaconchegantes #pelicantown #ia",
+   "comentario_fixado": "♥ Qual lugar você visitaria primeiro? Me segue pra parte 2!",
+   "conteudo_gerado_por_ia": true,
+   "status": "pronto_para_agendar",
+   "capa": {
+    "segundo_do_video": 0.0,
+    "imagem": "posts/025-pelican-real/video-capa.jpg"
+   }
+  },
+  {
+   "id": "p026v",
+   "titulo": "E se Pelican Town EXISTISSE? (vídeo IA)",
+   "quando_brasilia": "2026-11-11 06:00",
+   "fuso": "America/Sao_Paulo",
+   "formato": "video",
+   "redes": [
+    "tiktok",
+    "instagram"
+   ],
+   "midia_no_repositorio": [
+    "posts/026-pelican-ia/video-15x.mp4"
+   ],
+   "legenda": "E se Pelican Town EXISTISSE de verdade? 😱 Passeei pelo Armazém do Pierre, pela praça do Centro Comunitário e o Gus me serviu no Saloon! Curte se você iria e me segue pra parte 2.\nO que você queria ver primeiro?\n#stardewvalley #stardew #stardewvalleyvidareal #jogosaconchegantes #pelicantown #ia",
+   "comentario_fixado": "♥ Você iria? Me segue pra parte 2!",
+   "conteudo_gerado_por_ia": true,
+   "status": "pronto_para_agendar",
+   "capa": {
+    "segundo_do_video": 0.0,
+    "imagem": "posts/026-pelican-ia/video-capa.jpg"
+   }
+  },
+  {
+   "id": "p028v",
+   "titulo": "As receitas do Stardew na vida REAL",
+   "quando_brasilia": "2026-11-12 06:00",
+   "fuso": "America/Sao_Paulo",
+   "formato": "video",
+   "redes": [
+    "tiktok",
+    "instagram"
+   ],
+   "midia_no_repositorio": [
+    "posts/028-receitas-reais/video-15x.mp4"
+   ],
+   "legenda": "As receitas de Stardew Valley na vida REAL 🍰 Bolo rosa, panquecas, sopa de abóbora, pizza, jantar de salmão, espaguete e bolo de chocolate! Curte se deu fome e me segue pra parte 2.\nQual você comeria primeiro?\n#stardewvalley #stardew #stardewvalleyvidareal #jogosaconchegantes #receitasstardew #ia",
+   "comentario_fixado": "♥ Qual você comeria? Me segue pra parte 2!",
+   "conteudo_gerado_por_ia": true,
+   "status": "pronto_para_agendar",
+   "capa": {
+    "segundo_do_video": 0.0,
+    "imagem": "posts/028-receitas-reais/video-capa.jpg"
+   }
+  }
+ ]
 }
