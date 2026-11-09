@@ -3,6 +3,12 @@
 **Meta: viralizar o @segredosdovalley em 1 mês (até 09/12/2026).**
 Tudo aqui vem dela, palavra por palavra no espírito: "a gente precisa correr, fazer coisas novas, usar ferramentas, pensar fora da caixa".
 
+## O que o público quer (Yasmin, 09/11)
+**GAMEPLAY: ver a pessoa jogando.** Os vídeos animados de cartão não são o que o público quer. Os posts estão públicos (não é restrição); o problema é o formato. A partir de agora:
+- A base de TODO vídeo é gameplay real gravada pela Yasmin. Cartão animado só como detalhe (título, selo, número), nunca como o vídeo inteiro.
+- Objetivo de cada vídeo: a pessoa olhar e pensar "caraca, eu quero seguir essa página".
+- Pedir à Yasmin sessões longas de gameplay (15–30 min, sem cortar) — eu acho os momentos e corto vários vídeos de uma sessão só.
+
 ## Regras que ela deu (valem pra tudo)
 1. **Vídeo/Reels em primeiro lugar.** Carrossel de foto quase não pega (pouco no TikTok, nada no Instagram). Foto só vira post se for em vídeo.
 2. **Gancho sensacionalista, sem medo das palavras.** "Você pode ROUBAR…", "O Pierre ADMITIU…", "item RARÍSSIMO". O exagero fica no enquadramento, nunca no fato: tudo continua com fonte na wiki.

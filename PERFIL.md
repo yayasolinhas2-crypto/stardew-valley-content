@@ -106,3 +106,4 @@
 - 08/11: achou o painel "meio infantil" → refeito com visual de site profissional (fonte Inter, cartões brancos, menu lateral no computador, abas embaixo no iPhone, resumo com números). Manter esse padrão no painel.
 - 09/11: META = viralizar em 1 mês. Pediu: sensacionalismo nos ganchos ("roubar", "admitiu", "raríssimo" — fato sempre verdadeiro), vídeo/Reels acima de carrossel (carrossel não pega no Instagram), gravações dela com prioridade, coisas novas/fora da caixa, explorar mais "vida real" em vídeo. Tudo em PRIORIDADES.md (ler antes de cada lote).
 - 09/11: posts do Metricool com 0 views no TikTok; os postados à mão tiveram 130–215. Capa vazia do 002v = versão antiga agendada antes da correção.
+- 09/11: confirmou que os posts estão PÚBLICOS. Diagnóstico dela: o público quer GAMEPLAY (ver a pessoa jogando), não cartão animado. Gameplay vira a base de todo vídeo; aprovar os 5 novos e mandar pra IA do Vitor com prioridade máxima.
