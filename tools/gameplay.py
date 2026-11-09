@@ -28,7 +28,24 @@ def main(post):
     json.dump(nc, open(marca, 'w'), ensure_ascii=False)
     durs = [N.dur(f'{post}/narracao/{i+1:02d}.wav') for i in range(len(cenas))]
     # 2) cada cena: recorte da gameplay + fundo desfocado
+    NATIVO = cfg.get('estilo') == 'nativo'   # estilo das referências que bombam (09/11): gameplay em TELA CHEIA, zoom no personagem, sem moldura
     def clipe(c, L, out, rotulo):
+        if NATIVO:
+            z = c.get('zoom', 1.5); ch = int(1080 / z) // 2 * 2; cw = int(ch * 9 / 16) // 2 * 2
+            cx = min(max(c.get('cx', 960) - cw // 2, 0), 1920 - cw); cy = min(max(c.get('cy', 540) - ch // 2, 0), 1080 - ch)
+            r = c.get('recorte')   # [x,y,w,h] do quadro original (ex.: só a caixa de diálogo, pra ler grande)
+            rec = f'crop={r[2]}:{r[3]}:{r[0]}:{r[1]},scale=1080:-2:flags=neighbor' if r else 'scale=1080:608:flags=neighbor'
+            oy = int(780 - (1080 * r[3] / r[2]) / 2) if r else 380
+            if c.get('inteiro') or r:   # cena com diálogo/menu: mostra o quadro inteiro (a prova) em cima da própria cena ampliada e escurecida
+                fc = (f'[0:v]tpad=stop_mode=clone:stop_duration=60,split[a][b];[a]crop={cw}:{ch}:{cx}:{cy},scale=1080:1920:flags=neighbor,boxblur=18:2,eq=brightness=-0.25[bg];'
+                      f'[b]{rec}[g];[bg][g]overlay=0:{oy},setsar=1,fps={FPS},format=yuv420p[v];')
+            else: fc = (f'[0:v]tpad=stop_mode=clone:stop_duration=60,crop={cw}:{ch}:{cx}:{cy},scale=1080:1920:flags=neighbor,setsar=1,fps={FPS},format=yuv420p[v];')
+            fc += '[0:a]volume=0.12,aresample=48000,apad[ga]'
+            run('ffmpeg', '-y', '-loglevel', 'error', '-ss', str(c['ini']), '-i', os.path.join(RAIZ, c['src']),
+                '-filter_complex', fc, '-map', '[v]', '-map', '[ga]', '-t', f'{L:.3f}', '-c:v', 'libx264', '-crf', '18', '-c:a', 'pcm_s16le', '-ar', '48000', '-ac', '2', out)
+            real = N.dur(out)
+            if abs(real - L) > 0.08: raise SystemExit(f'{rotulo}: duração {real:.2f}s ≠ {L:.2f}s (dessincronizaria a legenda)')
+            return
         z = c.get('zoom', 1.0); cw = int(GW / GH * 1080 / z) // 2 * 2; ch = int(1080 / z) // 2 * 2
         cx = min(max(c.get('cx', 960) - cw // 2, 0), 1920 - cw); cy = min(max(c.get('cy', 540) - ch // 2, 0), 1080 - ch)
         fc = (f'[0:v]tpad=stop_mode=clone:stop_duration=60,split[a][b];'
@@ -77,11 +94,11 @@ def main(post):
             for x in ws[k + 1:]:
                 falta += 1
                 if x[-1] in '.!?…:': break
-            cheio = len(' '.join(x['w'] for x in bloco)) >= 18 and falta != 1
+            cheio = (len(' '.join(x['w'] for x in bloco)) >= (9 if NATIVO else 18)) and (NATIVO or falta != 1)
             if cheio or fim_frase:
                 leg.append({'ini': bloco[0]['t0'], 'fim': bloco[-1]['t1'] + 0.15, 'p': bloco}); bloco = []
     dados = {'titulo': cfg['titulo'], 'cenas': [{**tempos[i], 'selo': c.get('selo', ''), 'cta': c.get('cta', ''), 'img': [os.path.join(RAIZ, x) for x in c.get('img', [])]} for i, c in enumerate(cenas)], 'leg': leg, 'total': total, 'capa': CAPA,
-             'gx': GX, 'gy': GY, 'gw': GW, 'gh': GH}
+             'gx': GX, 'gy': GY, 'gw': GW, 'gh': GH, 'estilo': cfg.get('estilo', 'moldura')}
     json.dump(dados, open(f'{TMP}/dados.json', 'w'), ensure_ascii=False)
     shutil.rmtree(f'{TMP}/ov', ignore_errors=True); os.makedirs(f'{TMP}/ov')
     run('node', os.path.join(RAIZ, 'tools/gameplay_overlay.js'), f'{TMP}/dados.json', f'{TMP}/ov', str(FPS))

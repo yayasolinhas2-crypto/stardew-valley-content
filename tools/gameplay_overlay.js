@@ -24,7 +24,20 @@ const {chromium}=require('playwright');const fs=require('fs');const path=require
  .imgs{position:absolute;right:${1080-D.gx-D.gw+24}px;top:${D.gy+D.gh-330}px;display:flex;gap:18px;align-items:flex-end}
  .imgs img{height:300px;image-rendering:pixelated;filter:drop-shadow(6px 8px 0 rgba(0,0,0,.45));transform-origin:center bottom}
  .sig{position:absolute;left:${D.gx+14}px;top:${D.gy+10}px;font-family:Nun;font-weight:900;font-size:26px;opacity:.9;color:#fff;text-shadow:2px 2px 0 #000}
- </style></head><body><div id="st"><div class="moldura"></div><div class="topo"><span class="selo" id="selo"></span><span class="tit" id="tit"></span></div>
+ .nativo .moldura,.nativo .topo{display:none!important}
+ .nativo #leg{left:40px;right:130px;top:1170px}
+ .nativo #leg span{background:none;box-shadow:none;padding:0;font-size:96px;line-height:1.02;color:#fff;letter-spacing:.5px;
+   -webkit-text-stroke:14px #111;paint-order:stroke fill;text-shadow:0 8px 0 rgba(0,0,0,.45);text-transform:uppercase}
+ .nativo #leg b{color:#ffd84a}.nativo #leg em{color:#ffd84a}
+ .nativo .imgs{right:auto;left:50%;transform:translateX(-50%);top:430px}.nativo .imgs img{height:380px}
+ .nativo .cta{right:auto;left:50%;transform-origin:center top;top:300px;margin-left:-180px}
+ .nativo .sig{left:40px;top:1450px;font-size:30px}
+ .nativo .capa{top:330px;left:40px;right:130px}
+ .nativo .capa .ct{background:none;box-shadow:none;padding:0;font-family:Nun;font-weight:900;font-size:118px;line-height:1.0;color:#fff;-webkit-text-stroke:18px #111;paint-order:stroke fill;text-shadow:0 10px 0 rgba(0,0,0,.45)}
+ .nativo .capa .ct em{color:#ffd84a}
+ .nativo .capa .cs{display:none}
+ .nativo .cta{font-size:46px;padding:12px 24px;margin-left:-230px}
+ </style></head><body><div id="st" class="${D.estilo||''}"><div class="moldura"></div><div class="topo"><span class="selo" id="selo"></span><span class="tit" id="tit"></span></div>
  <div class="capa" id="capa"><span class="ct" id="ct"></span><span class="cs">Stardew Valley</span></div><div id="leg"></div><div class="cta" id="cta" style="display:none"></div><div class="imgs" id="imgs"></div><div class="sig">@segredosdovalley</div></div></body></html>`;
  const b=await chromium.launch();const p=await b.newPage({viewport:{width:1080,height:1920}});
  const arq=path.join(raiz,'tools','_overlay.html');fs.writeFileSync(arq,html);await p.goto('file://'+arq);await p.evaluate(()=>document.fonts.ready);

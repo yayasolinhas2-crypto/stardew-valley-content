@@ -32,3 +32,20 @@ As skills foram LIDAS como referência (não instaladas nem executadas). Fontes 
 ## Fontes
 - Skills: github.com/nateherkai/herk-edit-kit (short-form-edit, short-form-video, video-storytelling) · github.com/social-media-skills/skills (tiktok-growth, content-recycling, caption-writer, hashtag-strategy, thumbnail-design) · github.com/zenstory-ai/video-recap-skills (narração em cima de vídeo) · github.com/ScrapeCreators/social-media-research-skills (achar posts fora da curva; precisa da API paga da ScrapeCreators — não usar sem OK)
 - Tendências: páginas de descoberta do TikTok (stardew-valley-purple-shorts, stardew-shortcuts, stardew-valley-glitches-2026), consultadas em 09/11/2026.
+
+## Referências da Yasmin (pasta do Drive, 09/11) — "faça o mais parecido possível"
+**Vídeos (4 gravações):** Junimo B (1.7, 26,8 mil curtidas), Daily Cozy Games (1.7, 14 mil), Duda Gaspar (PT, "5 piores eventos aleatórios", 6,2 mil), Alex ("Ultimate Artisan Guide", 69 mil).
+- Gameplay em **TELA CHEIA, com zoom no personagem**, pixel nítido. Nada de moldura, caixa de título ou fundo desfocado.
+- Legenda **grande, 1–2 palavras por vez**, branca com contorno preto (Duda) ou na **caixa de diálogo do próprio jogo** (Alex).
+- **Item/personagem aparece GRANDE no meio da tela** quando é citado.
+- Corte a cada 1–2 s; voz de gente falando, animada.
+- Notícia (1.7) intercala gameplay com print do Discord / foto do ConcernedApe.
+→ Virou o estilo `"estilo": "nativo"` no `tools/gameplay.py` (cena com diálogo usa `"recorte"` pra mostrar a caixa de diálogo grande).
+
+**Carrosséis de foto (30 prints) — no TikTok bombam:** elyslin "tips and tricks" (123 mil curtidas, 94 mil salvos), Graze Junimo "Secret Items" (85 mil, 62 mil salvos), mochiebubbles (11,5 mil), aalaeex "Beginner tips" (8 mil). Formatos:
+- **Print da gameplay + 1 dica em caixa branca** ("Foraging always resets on Saturdays", "Pierre's is closed on Wednesdays").
+- **Item secreto:** ícone em pixel + nome + Local + Como (✔) + print do lugar.
+- **Tabelas no estilo do menu do jogo** (checklist do ano 1, melhores plantações com preço no barril/jarra).
+- Guias claros com ícones grandes e setas (Sonniegaming, mochiebubbles, VAL&MADZ).
+→ No TikTok, carrossel de foto (Modo Foto) pode render muito; no Instagram, não. Fazer carrossel SÓ pro TikTok nesses estilos.
+Regra: copiar o FORMATO (enquadramento, ritmo, tipo de legenda), nunca o texto, a arte nem a marca de outro perfil.

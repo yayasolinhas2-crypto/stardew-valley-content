@@ -1,0 +1,45 @@
+{
+ "titulo": "Dá pra *ROUBAR* da Caroline?",
+ "voz": "Sulafat",
+ "velocidade": 1.5,
+ "cenas": [
+  {
+   "src": "gravacoes/bruto/roubar broto de cha.mp4",
+   "ini": 20.0,
+   "selo": "Stardew Valley",
+   "fala": "[empolgada, chocada, falando rápido] Você pode roubar o pé de chá da Caroline, bem debaixo do nariz dela!",
+   "zoom": 1.6,
+   "cx": 930,
+   "cy": 470
+  },
+  {
+   "src": "gravacoes/bruto/roubar broto de cha.mp4",
+   "ini": 1.0,
+   "selo": "Onde",
+   "fala": "[explicando, rápida] Entre no solário da casa dela, lá na vila.",
+   "zoom": 1.3,
+   "cx": 930,
+   "cy": 470
+  },
+  {
+   "src": "gravacoes/bruto/roubar broto de cha.mp4",
+   "ini": 12.0,
+   "selo": "Como",
+   "fala": "[animada] Bata duas vezes com o machado de ouro ou de irídio.",
+   "cta": "♥ curte se não sabia",
+   "zoom": 1.6,
+   "cx": 930,
+   "cy": 470
+  },
+  {
+   "src": "gravacoes/bruto/roubar broto de cha.mp4",
+   "ini": 26.3,
+   "selo": "Resultado",
+   "fala": "[rindo] E pronto: o Broto de Chá é todo seu! Me segue pra mais segredos!",
+   "zoom": 1.4,
+   "cx": 930,
+   "cy": 470
+  }
+ ],
+ "estilo": "nativo"
+}
