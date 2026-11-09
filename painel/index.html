@@ -304,9 +304,9 @@ function telaPostar(){
     <a class="kpi" href="#todos"><span>Já postados</span><b>${pub}</b></a></div>`;
   const prox=ag[0];
   const h=hoje();
-  const doDia=posts.filter(p=>p.data===h).sort(byTime);
+  const doDia=posts.filter(p=>p.data===h&&p.status!=="negado").sort(byTime);
   const amanha=new Date(new Date(h+"T12:00:00-03:00").getTime()+864e5).toISOString().slice(0,10);
-  const doAmanha=posts.filter(p=>p.data===amanha).sort(byTime);
+  const doAmanha=posts.filter(p=>p.data===amanha&&p.status!=="negado").sort(byTime);
   const aviso=vozes.length&&!vozEscolhida?`<a class="btn wide" href="#vozes">Teste de voz: escolha a narração dos vídeos →</a>`:"";
   return `${aviso}${kpis}${prox?`<section class="frame hl"><div class="sect"><span class="lbl">Próximo post</span>${pill(prox)}</div>
       <div class="prox"><div style="display:grid;gap:10px">${strip(prox)}</div>
@@ -327,7 +327,7 @@ function telaSemana(){
     const d=new Date(new Date(h+"T12:00:00-03:00").getTime()+i*864e5).toISOString().slice(0,10);
     const wd=new Date(d+"T12:00:00-03:00").getUTCDay(),fds=wd===0||wd===6;
     const base=fds?["09:00","13:00","17:00","20:30"]:["06:00","12:00","17:00","19:30"];
-    const doDia=posts.filter(p=>p.data===d);
+    const doDia=posts.filter(p=>p.data===d&&p.status!=="negado");
     const horas=[...new Set([...base,...doDia.map(p=>p.hora)])].sort();
     out+=`<section class="frame"><h3>${diaLongo(d)}${i===0?`<span class="hoje-tag">hoje</span>`:""}</h3><div>${horas.map(t=>{const ps=doDia.filter(p=>p.hora===t);
       return ps.length?ps.map(slot).join(""):`<div class="slot"><span class="t">${t}</span><span class="vago">Horário livre</span></div>`}).join("")}</div></section>`;
