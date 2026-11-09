@@ -112,3 +112,4 @@
 - 09/11: tem notebook Windows e Nintendo Switch 2. Plano de gravação: placa de captura USB + OBS salvando direto numa pasta do Google Drive para computador (sobe sozinho); eu confiro a pasta nas rodadas.
 - 09/11: ElevenLabs do Vitor conectado (chave no ambiente, nunca no chat). Já existe voz clonada "yaya". Teste no vídeo do chá (posts/020b). "Stardew Valley" precisa ser escrito "Stardiu Véli" pra sair em inglês. Plano Starter: 40 mil caracteres/mês divididos com o Vitor (~300 por vídeo).
 - 09/11: NÃO gostou do clone da própria voz (ElevenLabs "yaya") → manter Sulafat (Gemini). Não gostou do COCHICHO no vídeo da Caroline: emoção sim, animada sim, mas nada de [cochichando]/sussurro. Aprovados vão como estão.
+- 09/11: REGRA: tudo que for pra aprovação vai pro PAINEL (aba Aprovar), não só pro chat. Versões alternativas entram com campo alternativa_de e substituem a original se aprovadas.
