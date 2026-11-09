@@ -31,7 +31,7 @@ def textos(cfg, post):
     if True:
         def shot(corpo, out):
             _fila.append({'html': pag(corpo), 'out': out})
-        shot(f'<div class="t" style="top:820px;font-size:112px">{fmt(cfg["titulo"])}</div><div class="rot" style="top:1150px">jogo × vida real</div><div class="ia">imagem gerada por IA · @segredosdovalley</div>', f'{TMP}/capa.png')
+        shot(f'<div class="t" style="top:{760 if len(cfg["titulo"])>24 else 820}px;font-size:{88 if len(cfg["titulo"])>24 else 112}px">{fmt(cfg["titulo"])}</div><div class="rot" style="top:1180px">jogo × vida real</div><div class="ia">imagem gerada por IA · @segredosdovalley</div>', f'{TMP}/capa.png')
         for i, c in enumerate(cfg['cenas']):
             corpo = f'<div class="t" style="top:1180px;font-size:92px">{fmt(c["nome"])}</div><div class="ia">imagem gerada por IA · @segredosdovalley</div>'
             shot(corpo, f'{TMP}/rot{i}.png')
