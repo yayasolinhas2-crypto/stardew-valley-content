@@ -49,3 +49,11 @@ As skills foram LIDAS como referência (não instaladas nem executadas). Fontes 
 - Guias claros com ícones grandes e setas (Sonniegaming, mochiebubbles, VAL&MADZ).
 → No TikTok, carrossel de foto (Modo Foto) pode render muito; no Instagram, não. Fazer carrossel SÓ pro TikTok nesses estilos.
 Regra: copiar o FORMATO (enquadramento, ritmo, tipo de legenda), nunca o texto, a arte nem a marca de outro perfil.
+
+## Referências novas (09/11, 2ª leva — "vida real")
+- **realcartoons.ai "I FOUND STARDEW VALLEY IN REAL LIFE"** — 118,9 mil curtidas, 8,5 mil salvos, 31,7 mil envios. VÍDEO de IA em 1ª pessoa, como um parque temático: Pelican Town com gente andando, Gus servindo cerveja, pelúcia Junimo, JojaMart, Pierre's, os calções roxos do Lewis na sopa do Luau. Cortes de 1–2 s. → formato mais forte de todos (vídeo gerado por IA; tem custo).
+- **RYoung "If Stardew characters were real (Bachelors)"** — retrato em pixel do jogo → pessoa real (vídeo de IA com movimento leve). Série por solteiro(a).
+- **"the poke cards girl" — Personagens na vida real** — retratos realistas (Lewis, Marnie, Gus, Clint, Pam, Harvey) no cenário de cada um.
+- **"my farm" — Peixes do Stardew x na vida real** (2,1 mil curtidas) — tela dividida: pixel à esquerda, foto real à direita, "parte 2".
+- **Yas cozy games (PT!)** — infográficos de IA "Tudo sobre o deserto" (273 salvos). Concorrente em PT fazendo guia em carrossel.
+- Ideias da Yasmin (09/11): festa de aniversário tema Stardew, receitas na vida real, peixes na vida real, flores na vida real, "você sabia que dá pra ter filhos?".
