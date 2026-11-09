@@ -57,3 +57,9 @@ Regra: copiar o FORMATO (enquadramento, ritmo, tipo de legenda), nunca o texto, 
 - **"my farm" — Peixes do Stardew x na vida real** (2,1 mil curtidas) — tela dividida: pixel à esquerda, foto real à direita, "parte 2".
 - **Yas cozy games (PT!)** — infográficos de IA "Tudo sobre o deserto" (273 salvos). Concorrente em PT fazendo guia em carrossel.
 - Ideias da Yasmin (09/11): festa de aniversário tema Stardew, receitas na vida real, peixes na vida real, flores na vida real, "você sabia que dá pra ter filhos?".
+
+## Rodada diária 09/11 (15:14 BRT)
+- Auditoria: 22 vídeos da agenda ok (capa, 1080×1920, áudio, ≤35 s, volume), 1 post por horário, painel = Metricool. Bloqueio: crédito do Gemini do Vitor esgotado (402) — sem voz/imagem/vídeo IA até recarregar.
+- Referências: nenhuma nova na pasta desde a 2ª leva.
+- Notícias: Switch 2 recebeu upgrade grátis do Stardew (confirmar detalhes antes de usar); ConcernedApe desmentiu boatos do Haunted Chocolatier; 1.7 segue sem data (provável 2027).
+- Skills GitHub: busca semanal feita hoje cedo (ver seção acima).
