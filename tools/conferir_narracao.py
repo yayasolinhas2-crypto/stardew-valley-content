@@ -3,7 +3,9 @@
 import json,base64,subprocess,sys
 post=sys.argv[1].rstrip('/');T='/tmp/claude-0/-home-user-stardew-valley-content/390e979c-f63f-5f31-9eff-bd01428cedcb/scratchpad/'
 import re
-roteiro=re.sub(r'\[[^\]]*\]\s*','',' '.join(json.load(open(f'{post}/narracao.json'))['falas']))
+import os
+falas=json.load(open(f'{post}/narracao.json'))['falas'] if os.path.exists(f'{post}/narracao.json') else [c['fala'] for c in json.load(open(f'{post}/gameplay.json'))['cenas']]
+roteiro=re.sub(r'\[[^\]]*\]\s*','',' '.join(falas))
 ARQ=sys.argv[2] if len(sys.argv)>2 else 'video-narrado.mp4'
 subprocess.run(['ffmpeg','-y','-loglevel','error','-i',f'{post}/{ARQ}','-vn','-ac','1','-ar','16000',T+'conf.wav'],check=True)
 b64=base64.b64encode(open(T+'conf.wav','rb').read()).decode()
