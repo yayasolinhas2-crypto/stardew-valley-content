@@ -109,3 +109,4 @@
 - 09/11: confirmou que os posts estão PÚBLICOS. Diagnóstico dela: o público quer GAMEPLAY (ver a pessoa jogando), não cartão animado. Gameplay vira a base de todo vídeo; aprovar os 5 novos e mandar pra IA do Vitor com prioridade máxima.
 - 09/11: gostou dos 6 vídeos de gameplay narrados no tom sensacionalista (019v–024v): "os vídeos ficaram bons, dá pra aproveitar bastante". Esse é o padrão a seguir e melhorar. Vai gravar mais.
 - 09/11: meta agora é 10.000 seguidores em 30 dias. Mora nos EUA. Stardew só no Nintendo (não tem no PC). Pediu: "corrigir sempre e prestar atenção".
+- 09/11: tem notebook Windows e Nintendo Switch 2. Plano de gravação: placa de captura USB + OBS salvando direto numa pasta do Google Drive para computador (sobe sozinho); eu confiro a pasta nas rodadas.
