@@ -26,6 +26,9 @@ Tudo aqui vem dela, palavra por palavra no espírito: "a gente precisa correr, f
 6. **Mesclar formatos** (nunca 2 iguais seguidos), mas com peso maior em vídeo.
 7. Se precisar dela (gravar, testar, aprovar, pagar algo), **avisar na hora**.
 
+## Checklist novo (APRENDIZADOS.md, 09/11)
+Teste dos 3 s · laço aberto fechado antes do CTA · 3 aberturas comparadas · tripla menção da palavra-chave (fala + tela + legenda) · gatilho de loop · série/parte 2 · reaproveitar trocando 1 variável.
+
 ## Fila de prioridade
 | # | O quê | Status |
 |---|---|---|
