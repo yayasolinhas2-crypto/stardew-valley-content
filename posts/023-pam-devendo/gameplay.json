@@ -1,0 +1,32 @@
+{
+ "titulo": "A Pam tá *DEVENDO* no bar!",
+ "voz": "Sulafat",
+ "velocidade": 1.5,
+ "cenas": [
+  {
+   "src": "gravacoes/bruto/cena pam no bar.mp4",
+   "ini": 2.0,
+   "selo": "Stardew Valley",
+   "fala": "[fofoqueira, chocada] A Pam tá com a conta atrasada no bar do Gus!"
+  },
+  {
+   "src": "gravacoes/bruto/cena pam no bar.mp4",
+   "ini": 9.0,
+   "selo": "Sua escolha",
+   "fala": "[suspense] E é você que decide o que falar pra ela."
+  },
+  {
+   "src": "gravacoes/bruto/cena pam no bar.mp4",
+   "ini": 13.0,
+   "selo": "Cuidado",
+   "fala": "[alertando] Se cobrar na cara, a Pam perde amizade com você.",
+   "cta": "♥ curte se não sabia"
+  },
+  {
+   "src": "gravacoes/bruto/cena pam no bar.mp4",
+   "ini": 20.0,
+   "selo": "O jeito certo",
+   "fala": "[aliviada] Diga que o bar tá mal e ela paga. Me segue pra mais segredos!"
+  }
+ ]
+}

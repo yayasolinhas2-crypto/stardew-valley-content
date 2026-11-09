@@ -1,0 +1,32 @@
+{
+ "titulo": "O Pierre *ADMITIU*!",
+ "voz": "Sulafat",
+ "velocidade": 1.5,
+ "cenas": [
+  {
+   "src": "gravacoes/bruto/pierre é arrogante.mp4",
+   "ini": 22.0,
+   "selo": "Stardew Valley",
+   "fala": "[chocada] O Pierre admitiu o que ele faz com o que você vende pra ele!"
+  },
+  {
+   "src": "gravacoes/bruto/pierre é arrogante.mp4",
+   "ini": 1.0,
+   "selo": "A loja",
+   "fala": "[contando fofoca] Você vende suas coisas na loja dele, né?"
+  },
+  {
+   "src": "gravacoes/bruto/pierre é arrogante.mp4",
+   "ini": 22.5,
+   "selo": "A confissão",
+   "fala": "[indignada] Ele revende tudo pra lucrar em cima de você!",
+   "cta": "♥ curte se ficou chocado"
+  },
+  {
+   "src": "gravacoes/bruto/pierre é arrogante.mp4",
+   "ini": 26.0,
+   "selo": "E ainda",
+   "fala": "[irônica] E diz que é a vantagem de ser uma loja renomada. Me segue pra mais segredos!"
+  }
+ ]
+}
