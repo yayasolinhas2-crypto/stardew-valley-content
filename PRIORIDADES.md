@@ -42,6 +42,7 @@ Teste dos 3 s · laço aberto fechado antes do CTA · 3 aberturas comparadas · 
 | 3 | Descobrir por que posts do Metricool dão 0 views (privacidade? duplicado? API) e, enquanto isso, postar os ganchos fortes À MÃO | pedido à Claude do Vitor + Yasmin |
 | 4 | Stardew na vida real em VÍDEO (formato novo, ver ideias) | próximo |
 | 2b | **Versão 1.7** (gancho do momento): 024 "1.7: o Clint vai CASAR!" — confirmado: Clint e Sandy casáveis, tipo novo de fazenda, "provavelmente 2027" (sem data oficial). Série: cada novidade confirmada vira vídeo no dia. | produzindo |
+| 2c | **Série "Stardew na vida real"** (aprovada 09/11, 1 a 7): 025 Pelican Town · 026 vídeo IA (teste Gemini Omni ~US$1,50) · 027 solteiras · 028 receitas · 029 peixes · 030 flores · 031 festa de aniversário · 032 filhos (espera gravação dela com o marido) | produzindo |
 | 5 | Pedreira e máquina de costura (gravações restantes) | depois do 2 |
 | 6 | Pedir gravações novas pra Yasmin (lista abaixo) | enviar |
 

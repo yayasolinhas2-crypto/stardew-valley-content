@@ -1,0 +1,45 @@
+{
+ "titulo": "Festa de aniversário *STARDEW*",
+ "trilha": "primavera",
+ "velocidade": 1.5,
+ "voz": "Sulafat",
+ "cenas": [
+  {
+   "icone": "assets/icons/vr/Pink_Cake.png",
+   "real": "real/01.jpg",
+   "nome": "*Bolo*",
+   "fala": "[empolgada] Festa de aniversário tema Stardew Valley! O bolo."
+  },
+  {
+   "icone": "assets/icons/Junimo_Plush.png",
+   "real": "real/02.jpg",
+   "nome": "*Cupcakes* Junimo",
+   "fala": "[encantada] Cupcakes de Junimo."
+  },
+  {
+   "icone": "assets/icons/vr/Stardrop.png",
+   "real": "real/03.jpg",
+   "nome": "*Doces* Fruta-estrela",
+   "fala": "[animada] Doces de Fruta-estrela."
+  },
+  {
+   "icone": "assets/icons/vr/Sunflower.png",
+   "real": "real/04.jpg",
+   "nome": "*Decoração*",
+   "fala": "[animada] Decoração de fazenda.",
+   "cta": "♥ curte se você faria"
+  },
+  {
+   "icone": "assets/icons/Juice.png",
+   "real": "real/05.jpg",
+   "nome": "*Bebidas*",
+   "fala": "[divertida] Sucos com cara de barril."
+  },
+  {
+   "icone": "assets/icons/vr/Fairy_Rose.png",
+   "real": "real/06.jpg",
+   "nome": "*Lembrancinha*",
+   "fala": "[doce] E lembrancinha de sementes. Manda pra amiga que ama Stardew!"
+  }
+ ]
+}

@@ -1,0 +1,51 @@
+{
+ "titulo": "Os peixes na vida *REAL*",
+ "trilha": "verao",
+ "velocidade": 1.5,
+ "voz": "Sulafat",
+ "cenas": [
+  {
+   "icone": "assets/icons/vr/Pufferfish.png",
+   "real": "real/01.jpg",
+   "nome": "*Baiacu*",
+   "fala": "[chocada, empolgada] Os peixes de Stardew Valley na vida real! O baiacu."
+  },
+  {
+   "icone": "assets/icons/vr/Lionfish.png",
+   "real": "real/02.jpg",
+   "nome": "*Peixe-Leão*",
+   "fala": "[animada] O peixe-leão."
+  },
+  {
+   "icone": "assets/icons/vr/Octopus.png",
+   "real": "real/03.jpg",
+   "nome": "*Polvo*",
+   "fala": "[impressionada] O polvo."
+  },
+  {
+   "icone": "assets/icons/vr/Sturgeon.png",
+   "real": "real/04.jpg",
+   "nome": "*Esturjão*",
+   "fala": "[animada] O esturjão.",
+   "cta": "♥ curte se você pesca tudo"
+  },
+  {
+   "icone": "assets/icons/vr/Squid.png",
+   "real": "real/05.jpg",
+   "nome": "*Lula*",
+   "fala": "[misteriosa] A lula."
+  },
+  {
+   "icone": "assets/icons/vr/Catfish.png",
+   "real": "real/06.jpg",
+   "nome": "*Bagre*",
+   "fala": "[divertida] O bagre."
+  },
+  {
+   "icone": "assets/icons/vr/Tuna.png",
+   "real": "real/07.jpg",
+   "nome": "*Atum*",
+   "fala": "[empolgada] E o atum. Qual você já pescou? Me segue pra parte dois!"
+  }
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "titulo": "Se as solteiras fossem *REAIS*…",
+ "trilha": "primavera",
+ "velocidade": 1.5,
+ "voz": "Sulafat",
+ "cenas": [
+  {
+   "icone": "assets/icons/vr/Abigail.png",
+   "real": "real/01.jpg",
+   "nome": "*Abigail*",
+   "fala": "[chocada, empolgada] Se as solteiras de Stardew Valley fossem reais, seriam assim! A Abigail."
+  },
+  {
+   "icone": "assets/icons/vr/Haley.png",
+   "real": "real/02.jpg",
+   "nome": "*Haley*",
+   "fala": "[animada] A Haley."
+  },
+  {
+   "icone": "assets/icons/vr/Leah.png",
+   "real": "real/03.jpg",
+   "nome": "*Leah*",
+   "fala": "[encantada] A Leah."
+  },
+  {
+   "icone": "assets/icons/vr/Maru.png",
+   "real": "real/04.jpg",
+   "nome": "*Maru*",
+   "fala": "[animada] A Maru.",
+   "cta": "♥ curte se você casaria"
+  },
+  {
+   "icone": "assets/icons/vr/Penny.png",
+   "real": "real/05.jpg",
+   "nome": "*Penny*",
+   "fala": "[doce] A Penny."
+  },
+  {
+   "icone": "assets/icons/vr/Emily.png",
+   "real": "real/06.jpg",
+   "nome": "*Emily*",
+   "fala": "[empolgada] E a Emily. Qual é a sua favorita? Me segue pra ver os solteiros!"
+  }
+ ]
+}

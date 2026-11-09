@@ -1,0 +1,51 @@
+{
+ "titulo": "As receitas na vida *REAL*",
+ "trilha": "verao",
+ "velocidade": 1.5,
+ "voz": "Sulafat",
+ "cenas": [
+  {
+   "icone": "assets/icons/vr/Pink_Cake.png",
+   "real": "real/01.jpg",
+   "nome": "*Bolo* rosa",
+   "fala": "[chocada, empolgada] As receitas de Stardew Valley na vida real! O bolo rosa."
+  },
+  {
+   "icone": "assets/icons/vr/Pancakes.png",
+   "real": "real/02.jpg",
+   "nome": "*Panquecas*",
+   "fala": "[animada] As panquecas."
+  },
+  {
+   "icone": "assets/icons/vr/Pumpkin_Soup.png",
+   "real": "real/03.jpg",
+   "nome": "*Sopa* de abóbora",
+   "fala": "[encantada] A sopa de abóbora."
+  },
+  {
+   "icone": "assets/icons/vr/Pizza.png",
+   "real": "real/04.jpg",
+   "nome": "*Pizza*",
+   "fala": "[animada] A pizza.",
+   "cta": "♥ curte se deu fome"
+  },
+  {
+   "icone": "assets/icons/vr/Salmon_Dinner.png",
+   "real": "real/05.jpg",
+   "nome": "*Jantar* de salmão",
+   "fala": "[animada] O jantar de salmão."
+  },
+  {
+   "icone": "assets/icons/vr/Spaghetti.png",
+   "real": "real/06.jpg",
+   "nome": "*Espaguete*",
+   "fala": "[divertida] O espaguete."
+  },
+  {
+   "icone": "assets/icons/vr/Chocolate_Cake.png",
+   "real": "real/07.jpg",
+   "nome": "*Bolo* de chocolate",
+   "fala": "[empolgada] E o bolo de chocolate. Qual você comeria? Me segue pra parte dois!"
+  }
+ ]
+}

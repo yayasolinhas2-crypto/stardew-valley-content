@@ -1,0 +1,51 @@
+{
+ "titulo": "As flores na vida *REAL*",
+ "trilha": "primavera",
+ "velocidade": 1.5,
+ "voz": "Sulafat",
+ "cenas": [
+  {
+   "icone": "assets/icons/vr/Tulip.png",
+   "real": "real/01.jpg",
+   "nome": "*Tulipa*",
+   "fala": "[encantada] As flores de Stardew Valley na vida real! A tulipa."
+  },
+  {
+   "icone": "assets/icons/vr/Blue_Jazz.png",
+   "real": "real/02.jpg",
+   "nome": "*Jasmim-Azul*",
+   "fala": "[encantada] O jasmim-azul."
+  },
+  {
+   "icone": "assets/icons/vr/Sunflower.png",
+   "real": "real/03.jpg",
+   "nome": "*Girassol*",
+   "fala": "[animada] O girassol."
+  },
+  {
+   "icone": "assets/icons/vr/Poppy.png",
+   "real": "real/04.jpg",
+   "nome": "*Papoula*",
+   "fala": "[encantada] A papoula.",
+   "cta": "♥ curte se você ama flores"
+  },
+  {
+   "icone": "assets/icons/vr/Summer_Spangle.png",
+   "real": "real/05.jpg",
+   "nome": "*Flor-Miçanga*",
+   "fala": "[animada] A flor-miçanga."
+  },
+  {
+   "icone": "assets/icons/vr/Fairy_Rose.png",
+   "real": "real/06.jpg",
+   "nome": "*Rosa-de-fada*",
+   "fala": "[sonhadora] A rosa-de-fada."
+  },
+  {
+   "icone": "assets/icons/vr/Crocus.png",
+   "real": "real/07.jpg",
+   "nome": "*Flor* de açafrão",
+   "fala": "[encantada] E a flor de açafrão. Qual é a sua favorita? Me segue pra mais!"
+  }
+ ]
+}

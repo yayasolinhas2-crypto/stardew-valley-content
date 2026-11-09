@@ -52,6 +52,18 @@ def main(post):
     json.dump(nc, open(marca, 'w'), ensure_ascii=False)
     durs = [N.dur(f'{post}/narracao/{i+1:02d}.wav') for i in range(len(cenas))]
     textos(cfg, post)
+    # cena com "icone" (item/retrato pequeno do jogo): monta o quadro do jogo com o ícone em pixel GRANDE no centro,
+    # em cima da própria foto real desfocada e escurecida (a revelação fica natural)
+    from PIL import Image, ImageFilter, ImageEnhance
+    for i, c in enumerate(cenas):
+        if c.get('icone'):
+            bg = Image.open(f'{post}/{c["real"]}').convert('RGB'); bw, bh = bg.size; esc = max(1080 / bw, 1920 / bh)
+            bg = bg.resize((int(bw * esc) + 1, int(bh * esc) + 1)).crop((0, 0, 1080, 1920)).filter(ImageFilter.GaussianBlur(28))
+            bg = ImageEnhance.Brightness(bg).enhance(0.55)
+            ic = Image.open(os.path.join(RAIZ, c['icone'])).convert('RGBA'); k = max(1, 760 // max(ic.size))
+            ic = ic.resize((ic.width * k, ic.height * k), Image.NEAREST)
+            bg.paste(ic, ((1080 - ic.width) // 2, 960 - ic.height // 2 - 120), ic)
+            bg.save(f'{TMP}/jogo{i}.png'); c['jogo'] = os.path.relpath(f'{TMP}/jogo{i}.png', post)
     cover = 'scale=1080:1920:force_original_aspect_ratio=increase:flags=neighbor,crop=1080:1920,setsar=1'
     coverR = 'scale=1080:1920:force_original_aspect_ratio=increase:flags=lanczos,crop=1080:1920,setsar=1'
     partes, t0, trocas = [], 0.0, []
