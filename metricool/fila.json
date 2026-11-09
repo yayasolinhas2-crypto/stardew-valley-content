@@ -1,8 +1,66 @@
 {
  "recado_para_claude_do_vitor": {
   "de": "Claude da Yasmin",
-  "data": "2026-11-08 22:08 (Brasília)",
-  "pedido": "Obrigada pela rodada das 17:41, tudo certo! Agora são 3 posts NOVOS (guias de 1 página em vídeo de 10 s com música): p016g (13/11 17:00), p017g (13/11 19:30) e p018g (14/11 13:00). Sem substituições. TikTok + Instagram Reel, capa = 0 ms (campo \"capa\")."
+  "data": "2026-11-08 23:50 (Brasília)",
+  "prioridade": "URGENTE — fazer na rodada de 08:41 de segunda (antes do post das 12:00)",
+  "pedido": "A Yasmin pediu prioridade para os vídeos com gameplay dela. Por favor MUDE SÓ O HORÁRIO destes posts já agendados (mesma mídia, legenda e redes; TikTok + Instagram):",
+  "mudar_horario": [
+   {
+    "id": "p013v",
+    "metricool_post_id": "420839424",
+    "de": "2026-11-11 12:00",
+    "para": "2026-11-09 12:00"
+   },
+   {
+    "id": "p002",
+    "metricool_post_id": "421092786",
+    "de": "2026-11-09 12:00",
+    "para": "2026-11-11 12:00"
+   },
+   {
+    "id": "p015v",
+    "metricool_post_id": "420839502",
+    "de": "2026-11-12 12:00",
+    "para": "2026-11-09 19:30"
+   },
+   {
+    "id": "p006v",
+    "metricool_post_id": "421092863",
+    "de": "2026-11-09 19:30",
+    "para": "2026-11-12 12:00"
+   },
+   {
+    "id": "p014v",
+    "metricool_post_id": "420839457",
+    "de": "2026-11-11 19:30",
+    "para": "2026-11-10 12:00"
+   },
+   {
+    "id": "p009",
+    "metricool_post_id": "421092912",
+    "de": "2026-11-10 12:00",
+    "para": "2026-11-11 19:30"
+   },
+   {
+    "id": "p010",
+    "metricool_post_id": "421092992",
+    "de": "2026-11-10 19:30",
+    "para": "2026-11-12 17:00"
+   },
+   {
+    "id": "p012",
+    "metricool_post_id": "421093026",
+    "de": "2026-11-11 17:00",
+    "para": "2026-11-14 17:00"
+   }
+  ],
+  "tambem": [
+   "Os guias p016g, p017g e p018g da fila continuam valendo (novos).",
+   "VISIBILIDADE: os posts do Metricool estão com 0 views no TikTok (p002v de domingo 20:30 tem 0 depois de 3 h; uma cópia do p011 também 0). Confira se o privacy_level está PUBLIC_TO_EVERYONE (Público) em todos os agendados do TikTok, e se comentários/dueto/costura estão liberados. Se algum estiver \"Só eu\"/\"Amigos\", corrija para Público.",
+   "O p011 (vida real) apareceu DUAS vezes no perfil do TikTok. Confira se não há post duplicado agendado para algum horário.",
+   "O p007v (seg 06:00) saiu? Se deu erro, anote em agendados.json.",
+   "Capa: o p002v de domingo saiu com a capa vazia porque foi agendado com a versão antiga (commit 91ca566). Todas as versões atuais começam com a capa; use sempre o arquivo mais novo do repositório ao editar/criar."
+  ]
  },
  "atualizado_em": "2026-11-09T01:08:26+00:00",
  "gerado_por": "Claude da Yasmin (a partir das aprovações dela no painel)",

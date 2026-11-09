@@ -1,0 +1,32 @@
+{
+ "titulo": "O galpão que *dá dinheiro*",
+ "voz": "Sulafat",
+ "velocidade": 1.5,
+ "cenas": [
+  {
+   "src": "gravacoes/bruto/use o galpao para suas maquinas.mp4",
+   "ini": 13.0,
+   "selo": "Stardew Valley",
+   "fala": "[confiante] O jeito mais fácil de ganhar dinheiro em Stardew Valley é este."
+  },
+  {
+   "src": "gravacoes/bruto/use o galpao para suas maquinas.mp4",
+   "ini": 18.0,
+   "selo": "Como",
+   "fala": "[explicando] Encha o galpão de barris e jarras de conserva."
+  },
+  {
+   "src": "gravacoes/bruto/produtos q valem vwnder.mp4",
+   "ini": 12.0,
+   "selo": "Barril",
+   "fala": "[animada] O barril vira fruta em vinho, que vale três vezes mais.",
+   "cta": "♥ curte se te ajudou"
+  },
+  {
+   "src": "gravacoes/bruto/use o galpao para suas maquinas.mp4",
+   "ini": 22.5,
+   "selo": "Galpão",
+   "fala": "[divertida] O galpão custa quinze mil de ouro na Robin. Me segue pra mais dicas!"
+  }
+ ]
+}

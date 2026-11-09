@@ -1,0 +1,32 @@
+{
+ "titulo": "Dá pra *levar* o chá da Caroline",
+ "voz": "Sulafat",
+ "velocidade": 1.5,
+ "cenas": [
+  {
+   "src": "gravacoes/bruto/roubar broto de cha.mp4",
+   "ini": 20.0,
+   "selo": "Stardew Valley",
+   "fala": "[cochichando, travessa] Dá pra levar o pé de chá da Caroline pra sua fazenda."
+  },
+  {
+   "src": "gravacoes/bruto/roubar broto de cha.mp4",
+   "ini": 1.0,
+   "selo": "Onde",
+   "fala": "[explicando] Ele fica no solário da casa dela, lá na vila."
+  },
+  {
+   "src": "gravacoes/bruto/roubar broto de cha.mp4",
+   "ini": 12.0,
+   "selo": "Como",
+   "fala": "[animada] Bata duas vezes com o machado de ouro ou de irídio.",
+   "cta": "♥ curte se não sabia"
+  },
+  {
+   "src": "gravacoes/bruto/roubar broto de cha.mp4",
+   "ini": 26.3,
+   "selo": "Resultado",
+   "fala": "[divertida] Ele vira um Broto de Chá pra plantar. Me segue pra mais dicas!"
+  }
+ ]
+}

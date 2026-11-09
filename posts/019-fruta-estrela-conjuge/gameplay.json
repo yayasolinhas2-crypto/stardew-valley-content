@@ -1,0 +1,32 @@
+{
+ "titulo": "Seu cônjuge te dá uma *Fruta-estrela*",
+ "voz": "Sulafat",
+ "velocidade": 1.5,
+ "cenas": [
+  {
+   "src": "gravacoes/bruto/casar com harvey e ganhar feuta estrela.mp4",
+   "ini": 26.0,
+   "selo": "Stardew Valley",
+   "fala": "[surpresa, encantada] Sabia que quem você casa te dá uma Fruta-estrela em Stardew Valley?"
+  },
+  {
+   "src": "gravacoes/bruto/casar com harvey e ganhar feuta estrela.mp4",
+   "ini": 0.3,
+   "selo": "Quando",
+   "fala": "[explicando] Acontece quando a amizade chega a doze corações e meio."
+  },
+  {
+   "src": "gravacoes/bruto/casar com harvey e ganhar feuta estrela.mp4",
+   "ini": 23.0,
+   "selo": "O que faz",
+   "fala": "[animada] E ela aumenta a sua energia máxima pra sempre.",
+   "cta": "♥ curte se não sabia"
+  },
+  {
+   "src": "gravacoes/bruto/casar com harvey e ganhar feuta estrela.mp4",
+   "ini": 3.5,
+   "selo": "Atenção",
+   "fala": "[divertida] Mas é uma só, mesmo se casar de novo. Me segue pra mais dicas!"
+  }
+ ]
+}
