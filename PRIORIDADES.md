@@ -9,6 +9,11 @@ Tudo aqui vem dela, palavra por palavra no espírito: "a gente precisa correr, f
 - Objetivo de cada vídeo: a pessoa olhar e pensar "caraca, eu quero seguir essa página".
 - Pedir à Yasmin sessões longas de gameplay (15–30 min, sem cortar) — eu acho os momentos e corto vários vídeos de uma sessão só.
 
+## Pesquisar fora (Yasmin, 09/11)
+- Ver o que bomba em INGLÊS e ainda não existe em PT (TikTok/Shorts/Reels). Achados de 09/11: mods em alta, novidades da 1.6 (minhoca verde, bênção da borboleta, Krobus), vídeos de "glitch/truque" e "boato desmentido", histórias escondidas dos moradores (ex.: o romance do Clint). Tudo conferido na wiki antes de virar vídeo.
+- **Reaproveitar a mesma gravação até 5 vezes**, com ângulos e falas diferentes. Ex.: gravação do Harvey → (1) a Fruta-estrela do cônjuge, (2) por que casar com o Harvey, (3) o que o cônjuge faz de manhã, (4) POV: você casou com o Harvey, (5) quiz "quem te dá Fruta-estrela?".
+- **Cada vídeo melhor que o anterior.** Comparar com o último antes de mandar.
+
 ## Regras que ela deu (valem pra tudo)
 1. **Vídeo/Reels em primeiro lugar.** Carrossel de foto quase não pega (pouco no TikTok, nada no Instagram). Foto só vira post se for em vídeo.
 2. **Gancho sensacionalista, sem medo das palavras.** "Você pode ROUBAR…", "O Pierre ADMITIU…", "item RARÍSSIMO". O exagero fica no enquadramento, nunca no fato: tudo continua com fonte na wiki.
