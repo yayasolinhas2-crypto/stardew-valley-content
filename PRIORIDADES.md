@@ -4,6 +4,16 @@
 **Sempre conferir e corrigir:** fila do Metricool com mídia e capa certas a cada rodada; nenhum erro pode chegar até ela.
 Tudo aqui vem dela, palavra por palavra no espírito: "a gente precisa correr, fazer coisas novas, usar ferramentas, pensar fora da caixa".
 
+## Plano contra o alcance baixo (09/11 noite)
+Diagnóstico: posts à mão tiveram 130–215 views; pelo Metricool 0–23 (mesmo público/visibilidade). Hipótese mais forte: post via API sai sem som em alta e é distribuído pior. Ações:
+1. **Teste A/B por 3 dias:** os 2 vídeos mais fortes do dia a Yasmin posta À MÃO no TikTok (som em alta a 5–10%), o resto vai pelo Metricool. Comparar views em 24 h.
+2. **Gancho em movimento no 1º segundo** (nada de quadro parado): capa já com gameplay andando; testar capa de 0,5 s.
+3. **Perfil que converte:** fixar os 3 melhores vídeos; bio "Segredos e dicas de Stardew Valley 🌾 todo dia"; foto ok.
+4. **Responder todo comentário na 1ª hora** (Yasmin) — sinal forte pro TikTok.
+5. **Busca do TikTok:** palavra-chave falada + na tela + 1ª linha da legenda (já fazemos) e 3–5 hashtags específicas.
+6. **Séries com parte 2** (vida real, fofoca, 1.7) e ganchos de notícia confirmada (ex.: segredo que ninguém achou em 10 anos).
+7. **Medir:** prints das estatísticas a cada 2–3 dias (views, % que assistiu inteiro, seguidores por vídeo).
+
 ## O que o público quer (Yasmin, 09/11)
 **GAMEPLAY: ver a pessoa jogando.** Os vídeos animados de cartão não são o que o público quer. Os posts estão públicos (não é restrição); o problema é o formato. A partir de agora:
 - **90% dos vídeos com gameplay real** gravada pela Yasmin (10% podem ser outros formatos: guia, vida real, notícia).

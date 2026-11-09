@@ -63,3 +63,10 @@ Regra: copiar o FORMATO (enquadramento, ritmo, tipo de legenda), nunca o texto, 
 - Referências: nenhuma nova na pasta desde a 2ª leva.
 - Notícias: Switch 2 recebeu upgrade grátis do Stardew (confirmar detalhes antes de usar); ConcernedApe desmentiu boatos do Haunted Chocolatier; 1.7 segue sem data (provável 2027).
 - Skills GitHub: busca semanal feita hoje cedo (ver seção acima).
+
+## Pesquisa 09/11 noite (inglês)
+- **Segredo que ninguém achou:** ConcernedApe (entrevista IGN dos 10 anos, fev/2026) disse que há uma mensagem secreta que ninguém achou, impossível de achar por datamining, e que "revela algo que nem é mais verdade". Fontes: PC Gamer, GamesRadar, OpenCritic. → vídeo 033.
+- **Arroz vira Vinagre no barril** (Reddit viral fev/2026; wiki: 1 Arroz → 2 Vinagre em 10 h). → precisa gravação do barril com arroz.
+- **Robin manda a receita da Sopa de abóbora com 7 corações** (wiki confirma). → dá pra juntar com a série receitas.
+- **Criador que recria todas as receitas na vida real** tem 88 mil seguidores no TikTok (GamesRadar) → nossa série de receitas tem demanda comprovada.
+- Crescimento (guias 2026): ficar num jogo só (✔), gancho no pico da ação, fixar 3 melhores vídeos, responder comentários na 1ª hora, 3–5 hashtags específicas, julgar por % de quem assiste até o fim e não por views.

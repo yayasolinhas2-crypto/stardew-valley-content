@@ -1,0 +1,42 @@
+{
+ "titulo": "O segredo que *NINGUÉM* achou",
+ "voz": "Sulafat",
+ "velocidade": 1.5,
+ "estilo": "nativo",
+ "cenas": [
+  {
+   "src": "gravacoes/bruto/mercado da floresta.mp4",
+   "ini": 0.3,
+   "zoom": 1.4,
+   "selo": "",
+   "fala": "[chocada, misteriosa] O criador de Stardew Valley confirmou: tem um segredo que ninguém achou em dez anos."
+  },
+  {
+   "src": "gravacoes/bruto/roubar broto de cha.mp4",
+   "ini": 1.0,
+   "zoom": 1.5,
+   "cx": 930,
+   "cy": 470,
+   "fala": "[contando um segredo] É uma mensagem escondida dentro do jogo."
+  },
+  {
+   "src": "gravacoes/bruto/use o galpao para suas maquinas.mp4",
+   "ini": 0.5,
+   "zoom": 1.4,
+   "fala": "[suspense] E não dá pra achar fuçando nos arquivos do jogo.",
+   "cta": "♥ curte se você vai procurar"
+  },
+  {
+   "src": "gravacoes/bruto/mercado da floresta.mp4",
+   "ini": 16.3,
+   "zoom": 1.4,
+   "fala": "[intrigada] Ele disse que ela revela algo que nem é mais verdade."
+  },
+  {
+   "src": "gravacoes/bruto/casar com harvey e ganhar feuta estrela.mp4",
+   "ini": 0.3,
+   "zoom": 1.4,
+   "fala": "[desafiando, animada] Você acha que consegue achar? Me segue pra mais segredos!"
+  }
+ ]
+}
