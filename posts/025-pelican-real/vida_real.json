@@ -1,0 +1,11 @@
+{"titulo":"Se Pelican Town fosse *REAL*…","trilha":"primavera","velocidade":1.5,"voz":"Sulafat",
+ "cenas":[
+  {"jogo":"jogo/pierre.png","real":"real/pierre.jpg","nome":"*Armazém* do Pierre","fala":"[chocada, empolgada] Se Pelican Town fosse real, ela seria assim! O armazém do Pierre."},
+  {"jogo":"jogo/saloon.png","real":"real/saloon.jpg","nome":"*Saloon* Fruta Estrelar","fala":"[animada] O Saloon, onde a vila inteira se encontra."},
+  {"jogo":"jogo/rancho.png","real":"real/rancho.jpg","nome":"Rancho da *Marnie*","fala":"[encantada] O rancho da Marnie."},
+  {"jogo":"jogo/ferreiro.png","real":"real/ferreiro.jpg","nome":"*Ferreiro* do Clint","fala":"[animada] O ferreiro do Clint.","cta":"♥ curte se você moraria aí"},
+  {"jogo":"jogo/carpintaria.png","real":"real/carpintaria.jpg","nome":"Carpintaria da *Robin*","fala":"[animada] A carpintaria da Robin."},
+  {"jogo":"jogo/joja.png","real":"real/joja.jpg","nome":"Mercado *Joja*","fala":"[provocando] E o Mercado Joja, que ninguém aguenta."},
+  {"jogo":"jogo/lewis.png","real":"real/lewis.jpg","nome":"Casa do *Lewis*","fala":"[divertida] A casa do prefeito Lewis."},
+  {"jogo":"jogo/cc.png","real":"real/cc.jpg","nome":"Centro *Comunitário*","fala":"[emocionada] E o Centro Comunitário. Qual você queria visitar? Me segue pra parte dois!"}
+ ]}

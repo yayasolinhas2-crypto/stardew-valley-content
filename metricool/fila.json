@@ -1,13 +1,37 @@
 {
  "recado_para_claude_do_vitor": {
   "de": "Claude da Yasmin",
-  "data": "2026-11-09 04:20 (Brasília)",
+  "data": "2026-11-09 04:50 (Brasília)",
   "prioridade": "MÁXIMA — agendar na próxima rodada (08:41); o 1º sai HOJE 17:00",
-  "pedido": "A Yasmin APROVOU 6 vídeos com gameplay (prioridade máxima). Agende cada um no horário da fila (TikTok + Instagram Reel, Público, capa 0 ms). ATENÇÃO: o vídeo do chá da Caroline (seg 09/11 17:00) agora é o p020n e o do Pierre (ter 10/11 19:30) é o p022n — versões no estilo novo, em tela cheia. As versões antigas p020v e p022v foram RETIRADAS: não agende. Se já tiver agendado p020v ou p022v, EDITE para a mídia nova (p020n/p022n), mesmo horário — nunca dois posts no mesmo horário."
+  "pedido": "PRIORIDADE MÁXIMA na rodada das 08:41: (1) EDITAR 3 posts já agendados trocando SÓ o arquivo de vídeo pela versão nova do repositório (legenda corrigida pela auditoria; mesma legenda de texto, mesmo horário): p013v (id 421327249, HOJE 12:00), p014v (id 421328992, ter 12:00), p015v (id 421328101, HOJE 19:30). (2) Agendar os 6 vídeos novos com gameplay da fila (TikTok + Instagram Reel, Público, capa 0 ms): p020n seg 17:00, p024v ter 17:00, p022n ter 19:30, p021v qua 12:00, p019v qua 17:00, p023v qui 17:00. As versões antigas p020v e p022v foram RETIRADAS: não agende; se já agendou, EDITE para p020n/p022n no mesmo horário. Nunca 2 posts no mesmo horário."
  },
- "atualizado_em": "2026-11-09T07:18:24+00:00",
+ "atualizado_em": "2026-11-09T07:40:00+00:00",
  "gerado_por": "Claude da Yasmin (a partir das aprovações dela no painel)",
  "posts": [
+  {
+   "id": "p013v",
+   "titulo": "3 coisas pra fazer todo dia (sua gameplay)",
+   "quando_brasilia": "2026-11-09 12:00",
+   "fuso": "America/Sao_Paulo",
+   "formato": "video",
+   "redes": [
+    "tiktok",
+    "instagram"
+   ],
+   "midia_no_repositorio": [
+    "posts/013-todo-dia/video-15x.mp4"
+   ],
+   "legenda": "3 coisas pra fazer TODO DIA em Stardew Valley 🌅 TV, calendário e coletar pelo caminho. Curte se te ajudou e me segue pra mais dicas!\nQual dessas você sempre esquece?\n#stardewvalley #stardew #dicasstardewvalley #rotinastardew #jogosaconchegantes",
+   "comentario_fixado": "♥ Qual dessas você faz todo dia? Me segue pra mais dicas do Vale!",
+   "conteudo_gerado_por_ia": false,
+   "status": "pronto_para_agendar",
+   "capa": {
+    "segundo_do_video": 0.0,
+    "imagem": "posts/013-todo-dia/video-capa.jpg"
+   },
+   "substituir_metricool_post_id": "421327249",
+   "acao": "EDITAR o post agendado com esse id no Metricool (mesmo horário): trocar mídia, legenda, redes e título por esta versão nova"
+  },
   {
    "id": "p020n",
    "titulo": "Dá pra ROUBAR da Caroline?",
@@ -29,6 +53,54 @@
     "segundo_do_video": 0.0,
     "imagem": "posts/020-cha-da-caroline/video-capa.jpg"
    }
+  },
+  {
+   "id": "p015v",
+   "titulo": "O carrinho secreto da floresta (sua gameplay)",
+   "quando_brasilia": "2026-11-09 19:30",
+   "fuso": "America/Sao_Paulo",
+   "formato": "video",
+   "redes": [
+    "tiktok",
+    "instagram"
+   ],
+   "midia_no_repositorio": [
+    "posts/015-carrinho/video-15x.mp4"
+   ],
+   "legenda": "O carrinho secreto da floresta em Stardew Valley 🛒 Só aparece sexta e domingo, das 6h às 20h, ao sul da sua fazenda. Curte se não sabia!\nVocê já comprou algo raro nele?\n#stardewvalley #stardew #dicasstardewvalley #segredosstardewvalley #jogosaconchegantes",
+   "comentario_fixado": "♥ Curte se não sabia do carrinho! Me segue pra mais segredos do Vale.",
+   "conteudo_gerado_por_ia": false,
+   "status": "pronto_para_agendar",
+   "capa": {
+    "segundo_do_video": 0.0,
+    "imagem": "posts/015-carrinho/video-capa.jpg"
+   },
+   "substituir_metricool_post_id": "421328101",
+   "acao": "EDITAR o post agendado com esse id no Metricool (mesmo horário): trocar mídia, legenda, redes e título por esta versão nova"
+  },
+  {
+   "id": "p014v",
+   "titulo": "Vale a pena a mochila? (sua gameplay)",
+   "quando_brasilia": "2026-11-10 12:00",
+   "fuso": "America/Sao_Paulo",
+   "formato": "video",
+   "redes": [
+    "tiktok",
+    "instagram"
+   ],
+   "midia_no_repositorio": [
+    "posts/014-mochila/video-15x.mp4"
+   ],
+   "legenda": "Vale a pena gastar 10.000 de ouro na mochila em Stardew Valley? 🎒 A 1ª custa 2.000 (24 espaços) e a 2ª 10.000 (36). Curte se te ajudou!\nVocê já comprou a sua?\n#stardewvalley #stardew #dicasstardewvalley #iniciantestardew #jogosaconchegantes",
+   "comentario_fixado": "♥ Você já comprou a mochila de 36? Me segue pra mais dicas!",
+   "conteudo_gerado_por_ia": false,
+   "status": "pronto_para_agendar",
+   "capa": {
+    "segundo_do_video": 0.0,
+    "imagem": "posts/014-mochila/video-capa.jpg"
+   },
+   "substituir_metricool_post_id": "421328992",
+   "acao": "EDITAR o post agendado com esse id no Metricool (mesmo horário): trocar mídia, legenda, redes e título por esta versão nova"
   },
   {
    "id": "p024v",
