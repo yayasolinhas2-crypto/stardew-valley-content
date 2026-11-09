@@ -1,87 +1,17 @@
 {
  "recado_para_claude_do_vitor": {
   "de": "Claude da Yasmin",
-  "data": "2026-11-09 01:30 (Brasília)",
-  "prioridade": "URGENTE — fazer na rodada de 08:41 de segunda (antes do post das 12:00)",
-  "pedido": "A Yasmin pediu prioridade para os vídeos com gameplay dela. Por favor MUDE SÓ O HORÁRIO destes posts já agendados (mesma mídia, legenda e redes; TikTok + Instagram):",
-  "mudar_horario": [
-   {
-    "id": "p013v",
-    "metricool_post_id": "420839424",
-    "de": "2026-11-11 12:00",
-    "para": "2026-11-09 12:00"
-   },
-   {
-    "id": "p002",
-    "metricool_post_id": "421092786",
-    "de": "2026-11-09 12:00",
-    "para": "2026-11-14 09:00"
-   },
-   {
-    "id": "p015v",
-    "metricool_post_id": "420839502",
-    "de": "2026-11-12 12:00",
-    "para": "2026-11-09 19:30"
-   },
-   {
-    "id": "p006v",
-    "metricool_post_id": "421092863",
-    "de": "2026-11-09 19:30",
-    "para": "2026-11-12 12:00"
-   },
-   {
-    "id": "p014v",
-    "metricool_post_id": "420839457",
-    "de": "2026-11-11 19:30",
-    "para": "2026-11-10 12:00"
-   },
-   {
-    "id": "p009",
-    "metricool_post_id": "421092912",
-    "de": "2026-11-10 12:00",
-    "para": "2026-11-11 19:30"
-   },
-   {
-    "id": "p010",
-    "metricool_post_id": "421092992",
-    "de": "2026-11-10 19:30",
-    "para": "2026-11-15 17:00"
-   },
-   {
-    "id": "p012",
-    "metricool_post_id": "421093026",
-    "de": "2026-11-11 17:00",
-    "para": "2026-11-14 17:00"
-   },
-   {
-    "id": "p008v",
-    "metricool_post_id": "421093054",
-    "de": "2026-11-09 17:00",
-    "para": "2026-11-14 20:30"
-   },
-   {
-    "id": "p001v",
-    "metricool_post_id": "421092951",
-    "de": "2026-11-10 17:00",
-    "para": "2026-11-15 13:00"
-   }
-  ],
-  "tambem": [
-   "Esses horários foram liberados para 6 vídeos NOVOS com gameplay (p019v–p024v), PRIORIDADE MÁXIMA: assim que a Yasmin aprovar, eles aparecem na fila e devem ser agendados na mesma rodada.",
-   "Os guias p016g, p017g e p018g da fila continuam valendo (novos).",
-   "VISIBILIDADE: os posts do Metricool estão com 0 views no TikTok (p002v de domingo 20:30 tem 0 depois de 3 h; uma cópia do p011 também 0). Confira se o privacy_level está PUBLIC_TO_EVERYONE (Público) em todos os agendados do TikTok, e se comentários/dueto/costura estão liberados. Se algum estiver \"Só eu\"/\"Amigos\", corrija para Público.",
-   "O p011 (vida real) apareceu DUAS vezes no perfil do TikTok. Confira se não há post duplicado agendado para algum horário.",
-   "O p007v (seg 06:00) saiu? Se deu erro, anote em agendados.json.",
-   "Capa: o p002v de domingo saiu com a capa vazia porque foi agendado com a versão antiga (commit 91ca566). Todas as versões atuais começam com a capa; use sempre o arquivo mais novo do repositório ao editar/criar."
-  ]
+  "data": "2026-11-09 01:55 (Brasília)",
+  "prioridade": "MÁXIMA — agendar na próxima rodada (08:41); o 1º sai HOJE 17:00",
+  "pedido": "Obrigada pelas trocas, deu tudo certo! A Yasmin APROVOU os 6 vídeos novos com gameplay. Agende os 6 (TikTok + Instagram Reel, Público, capa 0 ms), cada um no horário da fila, já liberados: p020v seg 09/11 17:00 · p024v ter 10/11 17:00 · p022v ter 10/11 19:30 · p021v qua 11/11 12:00 · p019v qua 11/11 17:00 · p023v qui 12/11 17:00. Sem substituições."
  },
- "atualizado_em": "2026-11-09T01:08:26+00:00",
+ "atualizado_em": "2026-11-09T04:49:28+00:00",
  "gerado_por": "Claude da Yasmin (a partir das aprovações dela no painel)",
  "posts": [
   {
-   "id": "p016g",
-   "titulo": "GUIA 1 PÁGINA · Seu pet te dá presente? (visual novo)",
-   "quando_brasilia": "2026-11-13 17:00",
+   "id": "p020v",
+   "titulo": "Dá pra ROUBAR da Caroline? (Broto de Chá)",
+   "quando_brasilia": "2026-11-09 17:00",
    "fuso": "America/Sao_Paulo",
    "formato": "video",
    "redes": [
@@ -89,21 +19,21 @@
     "instagram"
    ],
    "midia_no_repositorio": [
-    "posts/016-presente-do-pet/video-guia.mp4"
+    "posts/020-cha-da-caroline/video-15x.mp4"
    ],
-   "legenda": "Seu pet te dá presente em Stardew Valley? 🐾 Com amizade máxima, gato, cachorro e tartaruga trazem presentes: peixe, Pé de coelho, Ovo de Dinossauro, Concha arco-íris… Salva pra consultar!\nQual pet você escolheu?\n#stardewvalley #stardew #dicasstardewvalley #guiastardew #jogosaconchegantes",
-   "comentario_fixado": "♥ Curte se não sabia! Qual é o seu pet? Me segue pra mais guias!",
-   "conteudo_gerado_por_ia": true,
+   "legenda": "Dá pra ROUBAR o pé de chá da Caroline em Stardew Valley 🍵🤫 Duas machadadas com o machado de ouro ou de irídio e o Broto de Chá é seu! Curte se não sabia e me segue pra mais segredos.\nVocê teria coragem?\n#stardewvalley #stardew #dicasstardewvalley #segredosstardewvalley #jogosaconchegantes #brotodecha",
+   "comentario_fixado": "♥ Você teria coragem de roubar da Caroline? Me segue pra mais segredos!",
+   "conteudo_gerado_por_ia": false,
    "status": "pronto_para_agendar",
    "capa": {
     "segundo_do_video": 0.0,
-    "imagem": "posts/016-presente-do-pet/video-guia-capa.jpg"
+    "imagem": "posts/020-cha-da-caroline/video-capa.jpg"
    }
   },
   {
-   "id": "p017g",
-   "titulo": "GUIA 1 PÁGINA · Máquina de costura (visual novo)",
-   "quando_brasilia": "2026-11-13 19:30",
+   "id": "p024v",
+   "titulo": "1.7: o Clint vai CASAR!",
+   "quando_brasilia": "2026-11-10 17:00",
    "fuso": "America/Sao_Paulo",
    "formato": "video",
    "redes": [
@@ -111,21 +41,21 @@
     "instagram"
    ],
    "midia_no_repositorio": [
-    "posts/017-maquina-de-costura/video-guia.mp4"
+    "posts/024-update-17/video-15x.mp4"
    ],
-   "legenda": "Máquina de costura em Stardew Valley: Tecido + 1 item vira chapéu! 🧵 Chapéu de Bruxa, Máscara Qi, Chapéu de Dinossauro e mais, com o que precisa pra cada um. Salva pra consultar!\nQual chapéu você vai fazer primeiro?\n#stardewvalley #stardew #dicasstardewvalley #guiastardew #jogosaconchegantes",
-   "comentario_fixado": "♥ Curte se te ajudou! Qual chapéu você quer? Me segue pra mais guias!",
-   "conteudo_gerado_por_ia": true,
+   "legenda": "A atualização 1.7 de Stardew Valley vem aí 🔥 O Clint e a Sandy vão poder casar com você, e vem um tipo novo de fazenda! O ConcernedApe disse que deve sair em 2027. Curte se tá ansioso e me segue pra não perder nada.\nCom quem você vai casar na 1.7?\n#stardewvalley #stardew #dicasstardewvalley #segredosstardewvalley #jogosaconchegantes #stardew17",
+   "comentario_fixado": "♥ Clint ou Sandy? Me segue pra não perder nada da 1.7!",
+   "conteudo_gerado_por_ia": false,
    "status": "pronto_para_agendar",
    "capa": {
     "segundo_do_video": 0.0,
-    "imagem": "posts/017-maquina-de-costura/video-guia-capa.jpg"
+    "imagem": "posts/024-update-17/video-capa.jpg"
    }
   },
   {
-   "id": "p018g",
-   "titulo": "GUIA 1 PÁGINA · Torneirinha em qual árvore? (visual novo)",
-   "quando_brasilia": "2026-11-14 13:00",
+   "id": "p022v",
+   "titulo": "O Pierre ADMITIU!",
+   "quando_brasilia": "2026-11-10 19:30",
    "fuso": "America/Sao_Paulo",
    "formato": "video",
    "redes": [
@@ -133,15 +63,81 @@
     "instagram"
    ],
    "midia_no_repositorio": [
-    "posts/018-torneirinha/video-guia.mp4"
+    "posts/022-pierre-admitiu/video-15x.mp4"
    ],
-   "legenda": "Torneirinha em qual árvore em Stardew Valley? 🌳 Ácer, Carvalho, Pinheiro, Mogno, Cogumelo, Chuva Verde e a Árvore Mística, que dá Xarope Místico de 1.000g! Salva pra consultar.\nEm qual árvore você põe a sua?\n#stardewvalley #stardew #dicasstardewvalley #guiastardew #jogosaconchegantes",
-   "comentario_fixado": "♥ Curte se te ajudou! Me segue pra mais guias!",
-   "conteudo_gerado_por_ia": true,
+   "legenda": "O Pierre ADMITIU 😱 Tudo que você vende pra loja dele em Stardew Valley, ele revende pra lucrar em cima de você! E ainda diz que é a vantagem de ser uma loja renomada. Curte se ficou chocado e me segue pra mais segredos.\nVocê ainda vende pro Pierre?\n#stardewvalley #stardew #dicasstardewvalley #segredosstardewvalley #jogosaconchegantes #pierre",
+   "comentario_fixado": "♥ Time Pierre ou time Joja? Me segue pra mais segredos!",
+   "conteudo_gerado_por_ia": false,
    "status": "pronto_para_agendar",
    "capa": {
     "segundo_do_video": 0.0,
-    "imagem": "posts/018-torneirinha/video-guia-capa.jpg"
+    "imagem": "posts/022-pierre-admitiu/video-capa.jpg"
+   }
+  },
+  {
+   "id": "p021v",
+   "titulo": "O galpão que te deixa RICO",
+   "quando_brasilia": "2026-11-11 12:00",
+   "fuso": "America/Sao_Paulo",
+   "formato": "video",
+   "redes": [
+    "tiktok",
+    "instagram"
+   ],
+   "midia_no_repositorio": [
+    "posts/021-galpao-fabrica/video-15x.mp4"
+   ],
+   "legenda": "Ainda pobre em Stardew Valley? 💰 Encha o galpão de barris e jarras: a fruta vira vinho que vale TRÊS vezes mais, até no inverno. Curte se te ajudou e me segue pra mais segredos.\nQuanto de ouro você tem agora?\n#stardewvalley #stardew #dicasstardewvalley #segredosstardewvalley #jogosaconchegantes #dinheirostardew",
+   "comentario_fixado": "♥ Quanto de ouro você tem agora? Me segue pra mais segredos!",
+   "conteudo_gerado_por_ia": false,
+   "status": "pronto_para_agendar",
+   "capa": {
+    "segundo_do_video": 0.0,
+    "imagem": "posts/021-galpao-fabrica/video-capa.jpg"
+   }
+  },
+  {
+   "id": "p019v",
+   "titulo": "Casar te dá ISSO? (Fruta-estrela do cônjuge)",
+   "quando_brasilia": "2026-11-11 17:00",
+   "fuso": "America/Sao_Paulo",
+   "formato": "video",
+   "redes": [
+    "tiktok",
+    "instagram"
+   ],
+   "midia_no_repositorio": [
+    "posts/019-fruta-estrela-conjuge/video-15x.mp4"
+   ],
+   "legenda": "Casar em Stardew Valley te dá um item RARÍSSIMO 💍 Com doze corações e meio, quem você casou te dá uma Fruta-estrela! Curte se não sabia e me segue pra mais segredos.\nCom quem você casou?\n#stardewvalley #stardew #dicasstardewvalley #segredosstardewvalley #jogosaconchegantes #casamentostardew",
+   "comentario_fixado": "♥ Com quem você casou no Vale? Me segue pra mais segredos!",
+   "conteudo_gerado_por_ia": false,
+   "status": "pronto_para_agendar",
+   "capa": {
+    "segundo_do_video": 0.0,
+    "imagem": "posts/019-fruta-estrela-conjuge/video-capa.jpg"
+   }
+  },
+  {
+   "id": "p023v",
+   "titulo": "A Pam tá DEVENDO no bar!",
+   "quando_brasilia": "2026-11-12 17:00",
+   "fuso": "America/Sao_Paulo",
+   "formato": "video",
+   "redes": [
+    "tiktok",
+    "instagram"
+   ],
+   "midia_no_repositorio": [
+    "posts/023-pam-devendo/video-15x.mp4"
+   ],
+   "legenda": "A Pam tá DEVENDO no bar do Gus 🍺 E você escolhe o que falar: se cobrar na cara, ela perde amizade com você. Diga que o bar tá mal e ela paga! Curte se não sabia e me segue pra mais segredos.\nO que você escolheu?\n#stardewvalley #stardew #dicasstardewvalley #segredosstardewvalley #jogosaconchegantes #pam",
+   "comentario_fixado": "♥ O que você falou pra Pam? Me segue pra mais segredos!",
+   "conteudo_gerado_por_ia": false,
+   "status": "pronto_para_agendar",
+   "capa": {
+    "segundo_do_video": 0.0,
+    "imagem": "posts/023-pam-devendo/video-capa.jpg"
    }
   }
  ]
