@@ -22,7 +22,7 @@ def main(post):
     marca = f'{post}/narracao/falas.json'   # reaproveita a narração se as falas não mudaram (economiza cota)
     if os.path.exists(marca) and json.load(open(marca)) == nc and all(os.path.exists(f'{post}/narracao/{i+1:02d}.wav') for i in range(len(cenas))):
         print('narração reaproveitada')
-    elif not N.lote(nc, post, TMP):
+    elif nc['voz'].startswith('el:') or not N.lote(nc, post, TMP):
         print('lote falhou — fala a fala')
         for i, c in enumerate(cenas): N.fala(c['fala'], nc['voz'], f'{post}/narracao/{i+1:02d}.wav', TMP)
     json.dump(nc, open(marca, 'w'), ensure_ascii=False)

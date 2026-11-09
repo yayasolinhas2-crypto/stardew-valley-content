@@ -41,7 +41,27 @@ def palavras(t):
     t = ''.join(c for c in unicodedata.normalize('NFD', t) if unicodedata.category(c) != 'Mn')  # sem acento: "óvni" = "ovni"
     return re.findall(r"[a-z0-9]+", t)
 
+# Voz da ElevenLabs (clone da Yasmin): voz = "el:<voice_id>". Chave no ambiente (o proxy injeta o cabeçalho xi-api-key).
+EL_VOZES = {'yaya': 'y3CZa15ewsdFzr1xrpt2'}
+def gerar_el(texto, voz, destino, tmpdir):
+    vid = EL_VOZES.get(voz[3:], voz[3:])
+    if 'no começo: ' in texto: texto = texto.split('no começo: ', 1)[1]   # tira a instrução que o montar() põe pro Gemini
+    tx = re.sub(r'\[[^\]]*\]\s*', '', re.sub(r'^\([^)]*\)\s*', '', texto)).strip()
+    tx = re.sub(r'Stardew Valley', 'Stardiu Véli', tx)  # testado 09/11: assim sai em inglês (nota 10); escrito normal vira "Valêi"
+    body = {"text": tx, "model_id": "eleven_multilingual_v2", "language_code": "pt",
+            "voice_settings": {"stability": 0.45, "similarity_boost": 0.85, "style": 0.35}}
+    open(tmpdir + '/el.json', 'w').write(json.dumps(body))
+    for t in range(4):
+        r = subprocess.run(['curl', '-sS', '-o', tmpdir + '/el.mp3', '-w', '%{http_code}', '-H', 'xi-api-key: proxy-injected', '-H', 'Content-Type: application/json',
+                            '-X', 'POST', f'https://api.elevenlabs.io/v1/text-to-speech/{vid}?output_format=mp3_44100_128', '--data-binary', '@' + tmpdir + '/el.json'], capture_output=True, text=True).stdout
+        if r == '200': break
+        print('  elevenlabs falhou:', r); import time; time.sleep(10)
+    subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', tmpdir + '/el.mp3',
+                    '-af', 'volume=-2dB,highpass=f=80,lowpass=f=12000,silenceremove=start_periods=1:start_threshold=-45dB,areverse,silenceremove=start_periods=1:start_threshold=-45dB,areverse',
+                    '-ac', '1', '-ar', '48000', '-c:a', 'pcm_s16le', destino], check=True)
+
 def gerar(texto, voz, destino, tmpdir):
+    if voz.startswith('el:'): return gerar_el(texto, voz, destino, tmpdir)
     for tentativa in range(5):
         d = curl_json(API + MODELO + ':generateContent', {
             "contents": [{"parts": [{"text": texto}]}],
