@@ -18,13 +18,19 @@ Nunca 2 posts da mesma categoria seguidos.
 | seg 09/11 | 06:00 | 007v · Recados Secretos Ep. 1 (vídeo) | 📅 agendado no Metricool (versão nova) |
 | seg 09/11 | 12:00 | 013v · 3 coisas pra fazer todo dia (gameplay) | 📅 agendado · horário novo ✓ |
 | seg 09/11 | 17:00 | 008v · Recados Secretos Ep. 2 (vídeo) | 📅 agendado no Metricool |
+| seg 09/11 | 17:00 | 020n · Dá pra ROUBAR da Caroline? (gameplay, estilo novo) | ✔ aprovado, na fila (prioridade) |
 | seg 09/11 | 19:30 | 015v · O carrinho secreto da floresta (gameplay) | 📅 agendado · horário novo ✓ |
 | ter 10/11 | 12:00 | 014v · Vale a pena a mochila? (gameplay) | 📅 agendado · horário novo ✓ |
 | ter 10/11 | 17:00 | 001v · 5 segredos (vídeo) — veio de dom 17:00 | 📅 agendado no Metricool (versão nova) |
+| ter 10/11 | 17:00 | 024v · 1.7: o Clint vai CASAR! (gameplay) | ✔ aprovado, na fila (prioridade) |
+| ter 10/11 | 19:30 | 022n · O Pierre ADMITIU! (gameplay, estilo novo) | ✔ aprovado, na fila (prioridade) |
 | qua 11/11 | 12:00 | 002 · 6 presentes (vídeo do carrossel) | 📅 agendado · horário novo ✓ |
+| qua 11/11 | 12:00 | 021v · O galpão que te deixa RICO (gameplay) | ✔ aprovado, na fila (prioridade) |
+| qua 11/11 | 17:00 | 019v · Casar te dá ISSO? (gameplay) | ✔ aprovado, na fila (prioridade) |
 | qua 11/11 | 19:30 | 009 · 5 erros no ano 1 (vídeo do carrossel) | 📅 agendado · horário novo ✓ |
 | qui 12/11 | 12:00 | 006v · 3 criaturas (vídeo) | 📅 agendado · horário novo ✓ |
 | qui 12/11 | 17:00 | 010 · Construções da Robin (vídeo do carrossel) | 📅 agendado · horário novo ✓ |
+| qui 12/11 | 17:00 | 023v · A Pam tá DEVENDO no bar! (gameplay) | ✔ aprovado, na fila (prioridade) |
 | qui 12/11 | 19:30 | 009v · 5 erros no ano 1 (vídeo) | 📅 agendado no Metricool |
 | sex 13/11 | 12:00 | 010v · Construções da Robin (vídeo) | 📅 agendado no Metricool |
 | sex 13/11 | 17:00 | 016g · Seu pet te dá presente? (guia 1 página) | 📅 agendado |
