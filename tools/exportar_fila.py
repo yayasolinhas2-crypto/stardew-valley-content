@@ -1,6 +1,6 @@
 # Gera metricool/fila.json (os posts que a Yasmin APROVOU no painel e ainda não saíram) a partir de um dump do banco do painel.
 # Uso: python3 tools/exportar_fila.py <pasta_dump>/posts
-import json,glob,os,sys,datetime as dt
+import json,glob,os,sys,re,datetime as dt
 DIR={'001':'001-segredos','002':'002-presentes','003':'003-barril-ou-jarra','004':'004-peixes-lendarios','005':'005-tela-fim-do-dia','006':'006-criaturas',
      '007':'007-recados-ep1','008':'008-recados-ep2','009':'009-erros-iniciante','010':'010-construcoes','011':'011-vila-real','012':'012-festivais-real',
      '013':'013-todo-dia','014':'014-mochila','015':'015-carrinho','016':'016-presente-do-pet','017':'017-maquina-de-costura','018':'018-torneirinha'}
@@ -24,7 +24,7 @@ for f in sorted(glob.glob(sys.argv[1]+'/*.json')):
   midia=[p['video_repo']] if p.get('video_repo') else [f'posts/{base}/video-15x.mp4'] if video else [f'posts/{base}/slides/{os.path.basename(s)}' for s in p['slides']]
   for m in midia: assert os.path.exists(m),m
   ia='IA' in p.get('titulo','') or 'IA' in p.get('categoria','')
-  fila.append({'id':pid,'titulo':p['titulo'].replace(' (marcar como IA)','').replace(' · marcar como IA',''),'quando_brasilia':f"{p['data']} {p['hora']}",'fuso':'America/Sao_Paulo',
+  fila.append({'id':pid,'titulo':re.sub(r'^ALTERNATIVA · |\s*\((tela cheia|estilo novo|estilo antigo)\)','',p['titulo']).replace(' (marcar como IA)','').replace(' · marcar como IA',''),'quando_brasilia':f"{p['data']} {p['hora']}",'fuso':'America/Sao_Paulo',
     'formato':'video' if video else 'carrossel_fotos','redes':['tiktok','instagram'] if video else ['tiktok'],
     'midia_no_repositorio':midia,'legenda':p['legenda'],'comentario_fixado':p['fixado'],'conteudo_gerado_por_ia':ia,'status':'pronto_para_agendar',
     **({'capa':{'segundo_do_video':0.0,'imagem':(p['video_repo'].replace('.mp4','-capa.jpg') if p.get('video_repo') and os.path.exists(p['video_repo'].replace('.mp4','-capa.jpg')) else f'posts/{base}/video-capa.jpg')}} if video else {}),

@@ -5,12 +5,12 @@
   "prioridade": "MÁXIMA — agendar na próxima rodada (08:41); o 1º sai HOJE 17:00",
   "pedido": "A Yasmin APROVOU 6 vídeos com gameplay (prioridade máxima). Agende cada um no horário da fila (TikTok + Instagram Reel, Público, capa 0 ms). ATENÇÃO: o vídeo do chá da Caroline (seg 09/11 17:00) agora é o p020n e o do Pierre (ter 10/11 19:30) é o p022n — versões no estilo novo, em tela cheia. As versões antigas p020v e p022v foram RETIRADAS: não agende. Se já tiver agendado p020v ou p022v, EDITE para a mídia nova (p020n/p022n), mesmo horário — nunca dois posts no mesmo horário."
  },
- "atualizado_em": "2026-11-09T07:17:08+00:00",
+ "atualizado_em": "2026-11-09T07:18:24+00:00",
  "gerado_por": "Claude da Yasmin (a partir das aprovações dela no painel)",
  "posts": [
   {
    "id": "p020n",
-   "titulo": "ALTERNATIVA · Caroline no ESTILO NOVO (tela cheia)",
+   "titulo": "Dá pra ROUBAR da Caroline?",
    "quando_brasilia": "2026-11-09 17:00",
    "fuso": "America/Sao_Paulo",
    "formato": "video",
@@ -54,7 +54,7 @@
   },
   {
    "id": "p022n",
-   "titulo": "ALTERNATIVA · Pierre no ESTILO NOVO (tela cheia)",
+   "titulo": "O Pierre ADMITIU!",
    "quando_brasilia": "2026-11-10 19:30",
    "fuso": "America/Sao_Paulo",
    "formato": "video",
