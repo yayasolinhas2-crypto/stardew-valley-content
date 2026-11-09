@@ -16,27 +16,27 @@ Nunca 2 posts da mesma categoria seguidos.
 | dom 08/11 | 17:00 | 011 · Stardew na vida real, parte 1 (fotos IA — marcar IA) — trocado com 001v a pedido da Yasmin | 📅 agendado no Metricool |
 | dom 08/11 | 20:30 | 002v · 6 presentes (vídeo) | ✅ postado (capa vazia: versão antiga) |
 | seg 09/11 | 06:00 | 007v · Recados Secretos Ep. 1 (vídeo) | 📅 agendado no Metricool (versão nova) |
-| seg 09/11 | 12:00 | 013v · 3 coisas pra fazer todo dia (gameplay) | 📅 agendado · horário novo ✓ |
+| seg 09/11 | 12:00 | 013v · 3 coisas pra fazer todo dia (gameplay) | 📅 agendado |
 | seg 09/11 | 17:00 | 008v · Recados Secretos Ep. 2 (vídeo) | 📅 agendado no Metricool |
-| seg 09/11 | 17:00 | 020n · Dá pra ROUBAR da Caroline? (gameplay, estilo novo) | ✔ aprovado, na fila (prioridade) |
-| seg 09/11 | 19:30 | 015v · O carrinho secreto da floresta (gameplay) | 📅 agendado · horário novo ✓ |
-| ter 10/11 | 12:00 | 014v · Vale a pena a mochila? (gameplay) | 📅 agendado · horário novo ✓ |
+| seg 09/11 | 17:00 | 020n · Dá pra ROUBAR da Caroline? (gameplay, estilo novo) | 📅 agendado |
+| seg 09/11 | 19:30 | 015v · O carrinho secreto da floresta (gameplay) | 📅 agendado |
+| ter 10/11 | 12:00 | 014v · Vale a pena a mochila? (gameplay) | 📅 agendado |
 | ter 10/11 | 17:00 | 001v · 5 segredos (vídeo) — veio de dom 17:00 | 📅 agendado no Metricool (versão nova) |
-| ter 10/11 | 17:00 | 024v · 1.7: o Clint vai CASAR! (gameplay) | ✔ aprovado, na fila (prioridade) |
-| ter 10/11 | 19:30 | 022n · O Pierre ADMITIU! (gameplay, estilo novo) | ✔ aprovado, na fila (prioridade) |
-| qua 11/11 | 12:00 | 002 · 6 presentes (vídeo do carrossel) | 📅 agendado · horário novo ✓ |
-| qua 11/11 | 12:00 | 021v · O galpão que te deixa RICO (gameplay) | ✔ aprovado, na fila (prioridade) |
-| qua 11/11 | 17:00 | 019v · Casar te dá ISSO? (gameplay) | ✔ aprovado, na fila (prioridade) |
-| qua 11/11 | 19:30 | 009 · 5 erros no ano 1 (vídeo do carrossel) | 📅 agendado · horário novo ✓ |
-| qui 12/11 | 12:00 | 006v · 3 criaturas (vídeo) | 📅 agendado · horário novo ✓ |
-| qui 12/11 | 17:00 | 010 · Construções da Robin (vídeo do carrossel) | 📅 agendado · horário novo ✓ |
-| qui 12/11 | 17:00 | 023v · A Pam tá DEVENDO no bar! (gameplay) | ✔ aprovado, na fila (prioridade) |
+| ter 10/11 | 17:00 | 024v · 1.7: o Clint vai CASAR! (gameplay) | 📅 agendado |
+| ter 10/11 | 19:30 | 022n · O Pierre ADMITIU! (gameplay, estilo novo) | 📅 agendado |
+| qua 11/11 | 12:00 | 002 · 6 presentes (vídeo do carrossel) | 📅 agendado |
+| qua 11/11 | 12:00 | 021v · O galpão que te deixa RICO (gameplay) | 📅 agendado |
+| qua 11/11 | 17:00 | 019v · Casar te dá ISSO? (gameplay) | 📅 agendado |
+| qua 11/11 | 19:30 | 009 · 5 erros no ano 1 (vídeo do carrossel) | 📅 agendado |
+| qui 12/11 | 12:00 | 006v · 3 criaturas (vídeo) | 📅 agendado |
+| qui 12/11 | 17:00 | 010 · Construções da Robin (vídeo do carrossel) | 📅 agendado |
+| qui 12/11 | 17:00 | 023v · A Pam tá DEVENDO no bar! (gameplay) | 📅 agendado |
 | qui 12/11 | 19:30 | 009v · 5 erros no ano 1 (vídeo) | 📅 agendado no Metricool |
 | sex 13/11 | 12:00 | 010v · Construções da Robin (vídeo) | 📅 agendado no Metricool |
 | sex 13/11 | 17:00 | 016g · Seu pet te dá presente? (guia 1 página) | 📅 agendado |
 | sex 13/11 | 19:30 | 017g · Tecido + 1 item vira chapéu? (guia 1 página) | 📅 agendado |
 | sáb 14/11 | 13:00 | 018g · Torneirinha em qual árvore? (guia 1 página) | 📅 agendado |
-| sáb 14/11 | 17:00 | 012 · Festivais na vida real, parte 2 (vídeo do carrossel, IA — marcar IA) | 📅 agendado · horário novo ✓ |
+| sáb 14/11 | 17:00 | 012 · Festivais na vida real, parte 2 (vídeo do carrossel, IA — marcar IA) | 📅 agendado |
 
 ## Painel de aprovação
 https://claude.ai/artifact/VcfHJ9URGoLjqq9kzcaCX9 — banco `posts` (um documento por post: status aguardando/aprovado/negado/publicado, motivo, horário, legenda, fotos).
