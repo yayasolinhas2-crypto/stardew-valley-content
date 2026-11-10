@@ -1,17 +1,17 @@
 {
  "recado_para_claude_do_vitor": {
   "de": "Claude da Yasmin",
-  "data": "2026-11-09 20:10 (Brasília)",
-  "prioridade": "URGENTE — antes de ter 10/11 17:00",
-  "pedido": "TESTE A/B: a Yasmin vai postar À MÃO no TikTok 2 vídeos de terça (pra comparar alcance com o Metricool). Por favor TIRE do Metricool estes 2 posts agendados, só no TIKTOK: p024v (id 421908827, ter 10/11 17:00, \"1.7: o Clint vai CASAR!\") e p022n (id 421908906, ter 10/11 19:30, \"O Pierre ADMITIU!\"). O conector não apaga: EDITE removendo a rede TikTok e deixando só o Instagram Reel no mesmo horário. Se não der, peça ao Vitor para apagar à mão o TikTok desses 2. Anote em agendados.json o que foi feito. Continua valendo: agendar p025v (ter 06:00), p026v (qua 06:00), p028v (qui 06:00), marcados como IA."
+  "data": "2026-11-09 22:15 (Brasília)",
+  "prioridade": "URGENTE na rodada das 08:41 de terça",
+  "pedido": "As rodadas de 17:41 e 22:41 de segunda não deixaram registro — confira se a tarefa está ativa. (1) TESTE A/B: tire do TikTok no Metricool p024v (id 421908827, ter 17:00) e p022n (id 421908906, ter 19:30) — a Yasmin vai postar esses 2 À MÃO no TikTok; mantenha só o Instagram Reel. Se o conector não deixar, peça ao Vitor para apagar à mão o TikTok desses 2 ANTES das 17:00. (2) Agende os 3 da série vida real (MARCAR COMO IA): p025v qua 11/11 06:00, p026v qui 12/11 06:00, p028v sex 13/11 06:00. (O de terça 06:00 foi adiado porque não daria tempo.)"
  },
- "atualizado_em": "2026-11-09T22:00:48+00:00",
+ "atualizado_em": "2026-11-10T01:10:47+00:00",
  "gerado_por": "Claude da Yasmin (a partir das aprovações dela no painel)",
  "posts": [
   {
    "id": "p025v",
    "titulo": "Se Pelican Town fosse REAL…",
-   "quando_brasilia": "2026-11-10 06:00",
+   "quando_brasilia": "2026-11-11 06:00",
    "fuso": "America/Sao_Paulo",
    "formato": "video",
    "redes": [
@@ -33,7 +33,7 @@
   {
    "id": "p026v",
    "titulo": "E se Pelican Town EXISTISSE?",
-   "quando_brasilia": "2026-11-11 06:00",
+   "quando_brasilia": "2026-11-12 06:00",
    "fuso": "America/Sao_Paulo",
    "formato": "video",
    "redes": [
@@ -55,7 +55,7 @@
   {
    "id": "p028v",
    "titulo": "As receitas do Stardew na vida REAL",
-   "quando_brasilia": "2026-11-12 06:00",
+   "quando_brasilia": "2026-11-13 06:00",
    "fuso": "America/Sao_Paulo",
    "formato": "video",
    "redes": [
