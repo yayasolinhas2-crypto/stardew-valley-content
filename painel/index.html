@@ -308,7 +308,9 @@ function telaPostar(){
   const amanha=new Date(new Date(h+"T12:00:00-03:00").getTime()+864e5).toISOString().slice(0,10);
   const doAmanha=posts.filter(p=>p.data===amanha&&p.status!=="negado").sort(byTime);
   const aviso=vozes.length&&!vozEscolhida?`<a class="btn wide" href="#vozes">Teste de voz: escolha a narração dos vídeos →</a>`:"";
-  return `${aviso}${kpis}${prox?`<section class="frame hl"><div class="sect"><span class="lbl">Próximo post</span>${pill(prox)}</div>
+  const mao=posts.filter(p=>p.postar_a_mao&&p.status!=="publicado"&&when(p)>=agora-12*36e5).sort(byTime);
+  const blocoMao=mao.length?`<section class="frame hl"><div class="sect"><h3>✋ Você posta à mão</h3><span class="tag">teste A/B</span></div><p class="muted">Estes não vão pelo Metricool no TikTok. Abra, baixe o vídeo e poste no horário com um som em alta baixinho (5–10%).</p>${mao.map(slot).join("")}</section>`:"";
+  return `${aviso}${kpis}${blocoMao}${prox?`<section class="frame hl"><div class="sect"><span class="lbl">Próximo post</span>${pill(prox)}</div>
       <div class="prox"><div style="display:grid;gap:10px">${strip(prox)}</div>
       <div style="display:grid;gap:14px;align-content:start"><div style="display:grid;gap:6px"><span class="when">${ICO.relogio}${quando(prox)}</span><h2>${tit(prox)}</h2><div class="row"><span class="tag">#${esc(prox.num)}</span><span class="tag">${tipo(prox)}</span></div></div>${passos(prox)}</div></div></section>`
     :vazio("Nada na fila","Nenhum post aprovado esperando. Veja a aba Aprovar.")}
