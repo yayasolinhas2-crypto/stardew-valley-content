@@ -1,0 +1,49 @@
+{
+ "titulo": "O truque da *ROLETA* da Feira",
+ "voz": "Sulafat",
+ "velocidade": 1.5,
+ "estilo": "nativo",
+ "cenas": [
+  {
+   "src": "gravacoes/bruto/novas/feira-roda-da-sorte-aposta.mp4",
+   "ini": 15.0,
+   "zoom": 1.3,
+   "fala": "[chocada, empolgada] A roleta da Feira de Stardew Valley tem um truque que quase ninguém sabe!"
+  },
+  {
+   "src": "gravacoes/bruto/novas/feira-roda-da-sorte-aposta-2.mp4",
+   "ini": 18.0,
+   "zoom": 1.3,
+   "fala": "[contando um segredo] Ela cai no verde setenta e três por cento das vezes."
+  },
+  {
+   "src": "gravacoes/bruto/novas/feira-roda-da-sorte-aposta.mp4",
+   "ini": 5.0,
+   "recorte": [
+    560,
+    620,
+    800,
+    330
+   ],
+   "fala": "[explicando] Então aposte sempre no verde, e só uma parte das suas fichas.",
+   "cta": "♥ curte se não sabia"
+  },
+  {
+   "src": "gravacoes/bruto/novas/feira-trocando-fichas-por-premios.mp4",
+   "ini": 25.0,
+   "recorte": [
+    620,
+    180,
+    700,
+    560
+   ],
+   "fala": "[animada] Com as fichas, você troca por prêmios, e até pela Fruta-estrela!"
+  },
+  {
+   "src": "gravacoes/bruto/novas/feira-andando-perto-da-roda.mp4",
+   "ini": 20.0,
+   "zoom": 1.3,
+   "fala": "[divertida] Me segue pra mais segredos da Feira!"
+  }
+ ]
+}

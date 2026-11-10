@@ -1,0 +1,49 @@
+{
+ "titulo": "Como ganhar o *1º LUGAR* na Feira",
+ "voz": "Sulafat",
+ "velocidade": 1.5,
+ "estilo": "nativo",
+ "cenas": [
+  {
+   "src": "gravacoes/bruto/novas/feira-lewis-anuncia-1o-lugar.mp4",
+   "ini": 3.0,
+   "recorte": [
+    290,
+    600,
+    1280,
+    460
+   ],
+   "fala": "[empolgada] Eu ganhei o primeiro lugar na Feira de Stardew Valley, e te conto como!"
+  },
+  {
+   "src": "gravacoes/bruto/novas/feira-montando-a-exposicao-2.mp4",
+   "ini": 3.0,
+   "zoom": 1.4,
+   "fala": "[explicando] Coloque até nove itens na sua exposição."
+  },
+  {
+   "src": "gravacoes/bruto/novas/feira-exposicao-sendo-avaliada.mp4",
+   "ini": 9.0,
+   "zoom": 1.2,
+   "fala": "[explicando] O Lewis julga a qualidade e a variedade dos itens.",
+   "cta": "♥ curte se te ajudou"
+  },
+  {
+   "src": "gravacoes/bruto/novas/feira-lewis-1o-lugar-premio-1000-fichas.mp4",
+   "ini": 3.0,
+   "recorte": [
+    290,
+    600,
+    1280,
+    460
+   ],
+   "fala": "[animada] E o primeiro lugar dá mil fichas-estrela!"
+  },
+  {
+   "src": "gravacoes/bruto/novas/feira-montando-a-exposicao-1.mp4",
+   "ini": 20.0,
+   "zoom": 1.3,
+   "fala": "[divertida] Depois é só pegar seus itens de volta. Me segue pra mais dicas!"
+  }
+ ]
+}
