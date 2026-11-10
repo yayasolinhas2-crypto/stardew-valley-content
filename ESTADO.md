@@ -8,7 +8,7 @@ Atualizado: 10/11/2026 (madrugada, Brasília).
 - Ler SEMPRE antes de agir: `CLAUDE.md`, `PERFIL.md` (gosto dela), `PRIORIDADES.md` (ordem e regras), `APRENDIZADOS.md` (o que funciona), `QUALIDADE.md`, `CALENDARIO.md`.
 
 ## Ferramentas
-- Painel de aprovação: https://claude.ai/artifact/VcfHJ9URGoLjqq9kzcaCX9 (collection `posts`). Tudo pra aprovar vai pro painel, nunca só no chat.
+- Painel de aprovação: https://claude.ai/artifact/VcfHJ9URGoLjqq9kzcaCX9 (collection `posts`). Tudo pra aprovar vai pro painel, nunca só no chat. Seção "Agendamento no Metricool" (Início) lê a pasta do Drive "Stardew - Para agendar": status.txt (linha "Ultima execucao: AAAA-MM-DD HH:MM", linhas "ERRO <nome-da-subpasta>: <motivo>") e a subpasta "Agendados".
 - Agendamento: Metricool do Vitor via a Claude dele (arquivo `metricool/fila.json` com `recado_para_claude_do_vitor`; resposta em `metricool/agendados.json`). Rodadas da Claude do Vitor: 08:41/12:41/17:41/22:41 BRT (às vezes falha — conferir).
 - Gemini (voz Sulafat, imagem, vídeo Omni) na conta paga do Vitor; cota diária: TTS flash 100, pro 50 (divididas com o Vitor). Se der 429, usar o outro modelo ou esperar 05:00 BRT.
 - ElevenLabs conectado (voz "yaya" = clone da Yasmin) — ela NÃO gostou; usar só Sulafat.

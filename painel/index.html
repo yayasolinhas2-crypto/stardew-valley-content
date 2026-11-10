@@ -94,6 +94,13 @@ nav.tabs .n{position:absolute;top:2px;left:calc(50% + 6px);font-size:10px;font-w
 .kpi span{font-size:12.5px;color:var(--muted);font-weight:500}
 .kpi b{font-size:26px;font-weight:700;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
 .kpi.alerta b{color:var(--warn)}
+.mc-aviso{display:block;padding:14px 16px;border-radius:12px;background:var(--badbg);color:var(--bad);font-weight:800;font-size:17px;border:2px solid var(--bad);margin:0 0 10px}
+.mc-linha{display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center;padding:9px 0;border-top:1px solid var(--line)}
+.mc-linha .t{font-variant-numeric:tabular-nums;font-weight:700}
+.mc-linha small{display:block;color:var(--muted);font-weight:500}
+.mc-erro{color:var(--bad)} .mc-erro b{color:var(--bad)}
+.mc-pend{color:var(--warn);background:var(--warnbg)}
+
 /* botões */
 button,.btn{font:inherit;font-size:14px;font-weight:600;cursor:pointer;border:1px solid var(--line2);background:var(--surface);color:var(--ink);padding:10px 16px;border-radius:10px;
   text-align:center;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;-webkit-tap-highlight-color:transparent;transition:background .15s,border-color .15s,transform .05s}
@@ -287,6 +294,80 @@ function formNegar(p){
 }
 const vazio=(t,m,ico=ICO.ok)=>`<section class="frame empty"><span class="ico">${ico}</span><h2>${t}</h2><p class="muted">${m}</p></section>`;
 
+
+/* ---------- Agendamento no Metricool (lê a pasta do Drive) ---------- */
+const DRIVE="Google Drive",PASTA_AG="15NSbgqH7wwM5fTf02_hNEXu0KDm8k5vn";
+let mcp=null,mc={fase:"carregando"};
+const diaCA=(ms)=>new Intl.DateTimeFormat("en-CA",{timeZone:"America/Los_Angeles",year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date(ms));
+const norm=t=>(t||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().trim();
+function textoDe(pl){if(typeof pl==="string")return pl;if(!pl||typeof pl!=="object")return "";
+  for(const k of ["content","text","textContent","body","data"])if(typeof pl[k]==="string")return pl[k];
+  for(const v of Object.values(pl)){const t=textoDe(v);if(t)return t}return ""}
+async function listar(pai,refresh){let out=[],tok;
+  for(let i=0;i<5;i++){const inp={query:`parentId = '${pai}' and trashed = false`,excludeContentSnippets:true,pageSize:100};if(tok)inp.pageToken=tok;
+    const r=await mcp.callTool(DRIVE,"search_files",inp,{cache:{staleTime:6e4,gcTime:3e5,refresh:!!refresh}});
+    const pl=r.payload||{};out=out.concat(pl.files||[]);tok=pl.nextPageToken;if(!tok||!(pl.files||[]).length)break}
+  return out}
+const EH_PASTA=f=>f.mimeType==="application/vnd.google-apps.folder";
+const NOME=/^(\d{4}-\d{2}-\d{2})_(\d{2})(\d{2})_?(.*)$/;
+async function carregarMc(refresh){
+  if(!mcp){mc={fase:"sem"};render();return}
+  mc={...mc,fase:mc.fase==="ok"?"ok":"carregando",atualizando:true};render();
+  try{
+    const raiz=await listar(PASTA_AG,refresh);
+    const pastaAg=raiz.find(f=>EH_PASTA(f)&&norm(f.title)==="agendados");
+    const arqStatus=raiz.find(f=>!EH_PASTA(f)&&norm(f.title)==="status.txt")||raiz.find(f=>!EH_PASTA(f)&&norm(f.title).startsWith("status"));
+    const dentro=pastaAg?await listar(pastaAg.id,refresh):[];
+    let txt="";
+    if(arqStatus){const r=await mcp.callTool(DRIVE,"read_file_content",{fileId:arqStatus.id},{cache:{staleTime:6e4,gcTime:3e5,refresh:!!refresh}});txt=textoDe(r.payload)}
+    const linhas=txt.split(/\r?\n/).map(l=>l.trim()).filter(Boolean);
+    const m1=linhas.map(l=>l.match(/(?:[uú]ltima|ultima|last)[^0-9]*(\d{4}-\d{2}-\d{2}[ T]\d{2}:\d{2}(?::\d{2})?)/i)).find(Boolean)
+           ||linhas.map(l=>l.match(/(\d{4}-\d{2}-\d{2}[ T]\d{2}:\d{2}(?::\d{2})?)/)).find(Boolean);
+    const erros=linhas.filter(l=>/\bERRO\b/i.test(l));
+    const hojeCA=diaCA(Date.now()),amanhaCA=diaCA(Date.now()+864e5);
+    const item=(f,ag)=>{const m=(f.title||"").match(NOME);if(!m)return null;
+      const e=!ag&&erros.find(l=>l.includes(f.title));
+      let motivo="";if(e){motivo=e.slice(e.indexOf(f.title)+f.title.length).replace(/^[\s:\-–—|]+/,"").trim()||e}
+      return {nome:f.title,data:m[1],hora:m[2]+":"+m[3],titulo:(m[4]||"").replace(/[_-]+/g," ").trim(),estado:ag?"agendado":e?"erro":"pendente",motivo,url:f.viewUrl}};
+    const todos=[...dentro.filter(EH_PASTA).map(f=>item(f,true)),...raiz.filter(f=>EH_PASTA(f)&&f!==pastaAg).map(f=>item(f,false))].filter(Boolean);
+    const conhecidos=todos.map(x=>x.nome);
+    mc={fase:"ok",em:Date.now(),temStatus:!!arqStatus,statusUrl:arqStatus&&arqStatus.viewUrl,
+      ultima:m1?m1[1].replace("T"," "):null,statusMod:arqStatus&&arqStatus.modifiedTime,temPastaAg:!!pastaAg,
+      errosSoltos:erros.filter(l=>!conhecidos.some(n=>l.includes(n))),
+      hoje:todos.filter(x=>x.data===hojeCA).sort((a,b)=>a.hora.localeCompare(b.hora)),
+      amanha:todos.filter(x=>x.data===amanhaCA).sort((a,b)=>a.hora.localeCompare(b.hora)),hojeCA,amanhaCA};
+  }catch(err){mc={fase:"erro",code:(err&&err.code)||"upstream_error",retry:!!(err&&err.retryable),antes:mc.fase==="ok"?mc:null}}
+  render();
+}
+const brt=h=>{const [a,b]=h.split(":").map(Number);return String((a+5)%24).padStart(2,"0")+":"+String(b).padStart(2,"0")};
+const diaCurto=d=>new Date(d+"T12:00:00Z").toLocaleDateString("pt-BR",{weekday:"short",day:"2-digit",month:"2-digit",timeZone:"UTC"});
+function blocoMc(){
+  const cab=`<div class="sect"><h3>Agendamento no Metricool</h3><button class="small" data-mc="1"${mc.atualizando?" disabled":""}>${mc.atualizando?"Lendo o Drive…":"Atualizar"}</button></div>`;
+  if(mc.fase==="sem")return `<section class="frame">${cab}<p class="muted">Abra o painel pelo claude.ai pra ver o que já foi agendado.</p></section>`;
+  if(mc.fase==="carregando")return `<section class="frame">${cab}<p class="muted">Lendo a pasta "Stardew - Para agendar" no Drive…</p></section>`;
+  if(mc.fase==="erro"){const c=mc.code;
+    const msg=c==="server_not_connected"||c==="needs_reauth"||c==="selection_required"?`Conecte o Google Drive em claude.ai → Configurações → Conectores e toque em Atualizar.`
+      :c==="approval_required"||c==="consent_required"?`O painel precisa da sua permissão pra ler o Drive.`
+      :c==="not_in_manifest"||c==="blocked_by_policy"||c==="not_granted"||c==="capability_disabled"?`O acesso ao Drive está desligado neste painel. Ligue no menu Permissões do painel.`
+      :c==="server_unavailable"?`O Google Drive não respondeu agora. Tente de novo em instantes.`
+      :`Não deu pra ler a pasta do Drive (${esc(c)}).`;
+    const bt=c==="approval_required"||c==="consent_required"?`<button class="primary" data-mc="1">Permitir leitura do Drive</button>`
+      :c==="not_in_manifest"||c==="not_granted"?`<button data-perm="1">Abrir Permissões</button>`:"";
+    return `<section class="frame">${cab}<p class="mc-erro">${msg}</p>${bt}</section>`}
+  const linha=x=>`<div class="mc-linha${x.estado==="erro"?" mc-erro":""}"><span class="t">${esc(x.hora)}<small>BRT ${brt(x.hora)}</small></span>
+    <a href="${esc(x.url||"#")}" target="_blank" rel="noopener"><b>${esc(x.titulo||x.nome)}</b>${x.estado==="erro"?`<small class="mc-erro">ERRO: ${esc(x.motivo)}</small>`:""}</a>
+    <span class="pill ${x.estado==="agendado"?"s-agendado":x.estado==="erro"?"s-negado":"mc-pend"}">${x.estado==="agendado"?"Agendado":x.estado==="erro"?"Erro":"Pendente"}</span></div>`;
+  const lista=(nome,d,xs)=>`<div><span class="lbl">${nome} · ${diaCurto(d)} (Califórnia)</span>${xs.length?xs.map(linha).join(""):`<p class="muted">Nenhum post na pasta pra ${nome.toLowerCase()}.</p>`}</div>`;
+  const pendAm=mc.amanha.filter(x=>x.estado!=="agendado").length;
+  const ult=mc.ultima?`<b>${esc(mc.ultima)}</b>`:mc.temStatus?`<b>${new Date(mc.statusMod).toLocaleString("pt-BR",{dateStyle:"short",timeStyle:"short"})}</b> <span class="muted">(hora em que o arquivo mudou)</span>`:`<span class="mc-erro">ainda não rodou (sem status.txt na pasta)</span>`;
+  return `<section class="frame${pendAm?" hl":""}">${cab}
+    ${pendAm?`<div class="mc-aviso">⚠️ Ligar o PC do Vitor para agendar<br><small style="font-weight:600">${pendAm} post${pendAm>1?"s":""} de amanhã ainda fora da pasta Agendados</small></div>`:""}
+    <p>Última execução no PC do Vitor: ${ult}${mc.statusUrl?` · <a href="${esc(mc.statusUrl)}" target="_blank" rel="noopener">ver status.txt</a>`:""}</p>
+    ${mc.errosSoltos.length?`<div class="mc-erro">${mc.errosSoltos.map(l=>`<p>${esc(l)}</p>`).join("")}</div>`:""}
+    <div class="two">${lista("Hoje",mc.hojeCA,mc.hoje)}${lista("Amanhã",mc.amanhaCA,mc.amanha)}</div>
+    <p class="muted" style="font-size:12px">Lido do Drive às ${new Date(mc.em).toLocaleTimeString("pt-BR",{hour:"2-digit",minute:"2-digit"})}. Horário da Califórnia, com Brasília embaixo.</p></section>`;
+}
+
 /* ---------- telas ---------- */
 const TITULOS={postar:["Início","Resumo do perfil e o próximo post"],aprovar:["Aprovar","Posts esperando a sua decisão"],semana:["Agenda","Os próximos 7 dias, horário de Brasília"],todos:["Todos os posts","Tudo o que já foi feito, em ordem de data"],
   post:["Post",""],fotos:["Fotos",""],vozes:["Teste de voz","Escolha a narração dos vídeos"]};
@@ -310,7 +391,7 @@ function telaPostar(){
   const aviso=vozes.length&&!vozEscolhida?`<a class="btn wide" href="#vozes">Teste de voz: escolha a narração dos vídeos →</a>`:"";
   const mao=posts.filter(p=>p.postar_a_mao&&p.status!=="publicado"&&when(p)>=agora-12*36e5).sort(byTime);
   const blocoMao=mao.length?`<section class="frame hl"><div class="sect"><h3>✋ Você posta à mão</h3><span class="tag">teste A/B</span></div><p class="muted">Estes não vão pelo Metricool no TikTok. Abra, baixe o vídeo e poste no horário com um som em alta baixinho (5–10%).</p>${mao.map(slot).join("")}</section>`:"";
-  return `${aviso}${kpis}${blocoMao}${prox?`<section class="frame hl"><div class="sect"><span class="lbl">Próximo post</span>${pill(prox)}</div>
+  return `${aviso}${kpis}${blocoMc()}${blocoMao}${prox?`<section class="frame hl"><div class="sect"><span class="lbl">Próximo post</span>${pill(prox)}</div>
       <div class="prox"><div style="display:grid;gap:10px">${strip(prox)}</div>
       <div style="display:grid;gap:14px;align-content:start"><div style="display:grid;gap:6px"><span class="when">${ICO.relogio}${quando(prox)}</span><h2>${tit(prox)}</h2><div class="row"><span class="tag">#${esc(prox.num)}</span><span class="tag">${tipo(prox)}</span></div></div>${passos(prox)}</div></div></section>`
     :vazio("Nada na fila","Nenhum post aprovado esperando. Veja a aba Aprovar.")}
@@ -403,6 +484,8 @@ document.addEventListener("click",e=>{
     if(!ms.length&&!tx){toast("Marque um motivo ou escreva o que mudar");return}
     negando=null;salvar(id,{status:"negado",motivo:[...ms,tx].filter(Boolean).join(" · ")},"Recusado. O Claude vai refazer.")}
   else if(d.voz){if(!db)return;vozEscolhida=d.voz;render();db.collection("config").doc("voz").set({escolhida:d.voz,em:new Date().toISOString()}).then(()=>toast("Voz escolhida! O Claude vai usar essa nos vídeos"),()=>toast("Não salvou. Tente de novo."))}
+  else if(d.mc){carregarMc(true)}
+  else if(d.perm){claude.use("permissions").then(p=>p&&p.manage()).catch(()=>toast("Abra o menu Permissões do painel"))}
   else if(d.agendar){salvar(d.agendar,{status:"agendado"},"Marcado como agendado no Metricool")}
   else if(d.pub){salvar(d.pub,{status:"publicado"},"Marcado como postado 🎉")}
   else if(d.volta){salvar(d.volta,{status:"aguardando"},"Voltou pra aguardando")}
@@ -416,6 +499,7 @@ addEventListener("hashchange",e=>{negando=null;
 (async()=>{
   render();
   claude.use("downloads").then(x=>{dl=x;if(loaded)render()}).catch(()=>{});
+  claude.use("mcp").then(x=>{mcp=x;carregarMc(false)}).catch(()=>{mc={fase:"sem"};render()});
   db=await claude.use("db").catch(()=>null);
   if(!db){$("#view").innerHTML=vazio("Entre na sua conta","Abra este painel logada no claude.ai pra ver e aprovar os posts.");return}
   const timer=setTimeout(()=>{if(!loaded)$("#view").innerHTML=`<section class="frame empty muted">Ainda conectando… confira a internet.</section>`},10000);
