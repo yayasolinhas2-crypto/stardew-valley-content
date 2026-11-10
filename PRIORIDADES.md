@@ -70,3 +70,10 @@ Teste dos 3 s · laço aberto fechado antes do CTA · 3 aberturas comparadas · 
 
 ## Gravações que eu vou pedir pra ela (curtas, 20–30 s cada)
 1. Krobus nos esgotos (loja secreta) · 2. Pegando o Lendário ou outro peixe raro · 3. Dando presente que o morador ODEIA (reação) · 4. A caverna do Mestre Cannoli / Bosque Secreto · 5. O Mago e a Tinta da Bruxa · 6. Chegando no deserto/ônibus · 7. Uma noite no Mercado Noturno · 8. A cena do cachorro/gato de Marnie · 9. Festival (qualquer) · 10. A tela de "você casou".
+
+## Entrega no Google Drive (regra da Yasmin, 10/11)
+Todo post de Instagram TERMINADO vai pro Drive, pasta **"Stardew - Para agendar"** (criar se não existir; compartilhar como EDITOR com a conta Google do Vitor).
+- Uma subpasta por post: `AAAA-MM-DD_HHMM_titulo` — data e hora de publicação no **horário da Califórnia** (PST = Brasília − 5 h até mar/2027).
+- Dentro: a imagem ou o vídeo do post + `legenda.txt` (1ª linha: Feed, Reels, Carrossel ou Story; depois legenda e hashtags).
+- Só criar a subpasta quando o post estiver COMPLETO (aprovado no painel). Depois de criada, NÃO mexer nela.
+- Pendente: conector Google Drive conectado no claude.ai + e-mail Google do Vitor.
