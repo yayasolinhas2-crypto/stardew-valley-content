@@ -65,7 +65,7 @@ for pid, p in saem.items():
     if p['status']=='agendado' and pid in ids_ag and ids_ag[pid]['quando_brasilia'] != f"{p['data']} {p['hora']}": P(f'{pid}: horário diferente painel {p["data"]} {p["hora"]} x Metricool {ids_ag[pid]["quando_brasilia"]}')
 fila_ids = {x['id'].split('→')[-1] for x in fila['posts']}
 for pid, p in saem.items():
-    if p['status']=='aprovado' and pid not in fila_ids: P(f'{pid}: aprovado mas fora da fila')
+    if p['status']=='aprovado' and pid not in fila_ids and not p.get('postar_a_mao'): P(f'{pid}: aprovado mas fora da fila')
 for r in ag.get('agendados', []):
     pid = r['id'].split('→')[-1]
     if r.get('status')=='agendado' and r['quando_brasilia'] > (agora - dt.timedelta(hours=3)).strftime('%Y-%m-%d %H:%M'):
