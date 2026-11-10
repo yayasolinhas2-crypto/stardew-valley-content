@@ -24,4 +24,4 @@ Atualizado: 10/11/2026 (madrugada, Brasília).
 - Teste A/B ter 10/11: ela posta À MÃO p024v (17:00 BRT) e p022n (19:30 BRT); pedir print de views em 24 h e comparar com o p014v (Metricool, 12:00).
 - Montar e mandar pro painel: 031 festa, 033 segredo dos 10 anos, 034 roleta da Feira, 035 1º lugar na Feira (tarefas agendadas 05:10 e 05:40 BRT de 10/11).
 - Série vida real: 025–030 aprovados e na fila; 032 filhos espera gravação dela com o marido.
-- Pendências dela: conectar Google Drive no claude.ai (regra da pasta "Stardew - Para agendar", compartilhar com lanceseternos.edit@gmail.com); decidir com o Vitor Metricool próprio x upgrade; gravar: casa do Lewis, atalhos, pesca, arroz no barril, começo de save, Clint, Sandy.
+- Pendências dela: conectar Google Drive no claude.ai (regra da pasta "Stardew - Para agendar", compartilhar com lanceseternos.edits@gmail.com); decidir com o Vitor Metricool próprio x upgrade; gravar: casa do Lewis, atalhos, pesca, arroz no barril, começo de save, Clint, Sandy.
