@@ -76,4 +76,5 @@ Todo post de Instagram TERMINADO vai pro Drive, pasta **"Stardew - Para agendar"
 - Uma subpasta por post: `AAAA-MM-DD_HHMM_titulo` — data e hora de publicação no **horário da Califórnia** (PST = Brasília − 5 h até mar/2027).
 - Dentro: a imagem ou o vídeo do post + `legenda.txt` (1ª linha: Feed, Reels, Carrossel ou Story; depois legenda e hashtags).
 - Só criar a subpasta quando o post estiver COMPLETO (aprovado no painel). Depois de criada, NÃO mexer nela.
-- Pendente: conector Google Drive conectado no claude.ai + e-mail Google do Vitor.
+- Conta Google do Vitor (compartilhar como editor): lanceseternos.edit@gmail.com
+- Pendente: conector Google Drive conectado no claude.ai.
