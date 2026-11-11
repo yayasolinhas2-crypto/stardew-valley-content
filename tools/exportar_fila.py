@@ -29,6 +29,7 @@ for f in sorted(glob.glob(sys.argv[1]+'/*.json')):
     'formato':'video' if video else 'carrossel_fotos','redes':['tiktok','instagram'] if video else ['tiktok'],
     'midia_no_repositorio':midia,'legenda':p['legenda'],'comentario_fixado':p['fixado'],'conteudo_gerado_por_ia':ia,'status':'pronto_para_agendar',
     **({'capa':{'segundo_do_video':0.0,'imagem':(p['video_repo'].replace('.mp4','-capa.jpg') if p.get('video_repo') and os.path.exists(p['video_repo'].replace('.mp4','-capa.jpg')) else f'posts/{base}/video-capa.jpg')}} if video else {}),
+    **({'drive_pasta':p['drive_pasta'],'instagram':'também entregue na pasta do Drive "Stardew - Para agendar" (subpasta drive_pasta). Agende o Instagram por aqui só se o PC do Vitor NÃO for agendar esse post (sem duplicar).'} if p.get('drive_pasta') else {}),
     **({'substituir_metricool_post_id':p['substitui_metricool'],'acao':'EDITAR o post agendado com esse id no Metricool (mesmo horário): trocar mídia, legenda, redes e título por esta versão nova'} if p.get('substitui_metricool') else {})})
 # original ainda não agendada e com alternativa aprovada: sai só a alternativa
 fila=[x for x in fila if x['id'] not in SUBST]
