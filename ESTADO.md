@@ -20,7 +20,7 @@ Erro de 10/11: as rotinas abriam chat novo SEM o repositório e não faziam nada
 - "Stardew Valley · bom dia (chat do dia)" trig_015bipBqC9ysMHNzm3UTSJrB, 6:47 PST, no chat session_019zpqkZFfQZKhZX8KiqVa34.
 - "Fila do Metricool (4x/dia)" trig_01DD1xSsWhKuBhhHaQoJxxbD, 08:07/12:07/17:07/22:07 BRT, no chat session_019zpqka7WYUMdRAR3G3Jkw9 (silenciosa).
 - Antigas trig_01YbYmoCs56ZWREsPZkHiRWh e trig_011wFxqfPRbBto1aMxDXJGVQ desligadas. Não usar "chat novo a cada disparo": não tem repositório.
-- Claude do Vitor NÃO roda sozinha: só quando o Vitor abre a sessão dele (agendados.json, 10/11). Ela também não lê a pasta do Drive; status.txt precisa ser configurado pelo Vitor.
+- Claude do Vitor RODA SOZINHA 4x/dia (08:41/12:41/17:41/22:41 BRT; confirmado por print do Vitor em 11/11). Rodada 'sem mudança' não gera commit, então falta de commit NÃO é falha. Ela não lê a pasta do Drive; status.txt é do PC do Vitor.
 
 ## Em andamento
 - Teste A/B ter 10/11: ela posta À MÃO p024v (17:00 BRT) e p022n (19:30 BRT); pedir print de views em 24 h e comparar com o p014v (Metricool, 12:00).
