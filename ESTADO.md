@@ -25,6 +25,7 @@ Erro de 10/11: as rotinas abriam chat novo SEM o repositório e não faziam nada
 - "Stardew · pauta da gringa + anti-repetição (diária)" trig_013AkYWhJMKpEFVbBTQSrhdz, 10:23 PST, no chat do bom dia: confere repetidos, pesquisa o que bomba lá fora (com prova), produz 2 vídeos/dia. Pedido da Yasmin 11/11, foco na meta de 10 mil.
 
 ## Em andamento
+- 11/11: Yasmin vai gravar HOJE a pesca (Esgoto e/ou píer leste) pro vídeo-resposta "Pegou o lendário de primeira? Sorte ou truque?" (comentários de Davi e Klebson). Quando aparecer na pasta de gravações do Drive: baixar, montar com tools/gameplay.py e mandar pro painel (postar_a_mao, resposta a comentário). Fatos já conferidos: Carpa Mutante = Esgoto, qualquer estação, dificuldade 80, 1.000g; Peixe-Carmesim = fim do píer leste da praia, verão, pesca nível 5, dificuldade 95, 1.500g; lançar mais longe da margem aumenta a chance (wiki Fishing); 1 por save (exceto Isca de Desafio).
 - Auditoria 11/11: tudo ok. Agenda aprovada e agendada até 15/11; 16/11 só tem 06:00 (p027v).
 - HOJE 11/11 (A/B remarcado): Yasmin posta À MÃO no TikTok p024v 14:00 BRT (09:00 PST) e p022n 20:30 BRT (15:30 PST); Instagram deles já saiu 10/11. Pedir print de views em 24 h e comparar com p021v/p019v (Metricool).
 - Aguardando aprovação no painel: 031v festa (16/11 17:00), 033v segredo dos 10 anos (16/11 12:00), 034v roleta (16/11 19:30), 035v 1º lugar Feira (17/11 12:00).
