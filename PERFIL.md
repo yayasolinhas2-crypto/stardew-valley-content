@@ -92,10 +92,43 @@
 |------|---------------|---------|-----------|--------|
 | 07/11 | 002, 003, 004 | ✅ aprovados ("tá muito bom", "gostei bastante") | guias / dinheiro | **O título da capa tem que ser gancho, como "Você tá usando o barril errado?"**. Pede melhoria constante |
 | 07/11 | 001 · 5 segredos escondidos | ✅ aprovado | segredos / contagem | "tá bem bonito". Pediu revisão de erros de escrita e coisa fora do quadro |
+| 11/11 | Repetidos (fotos + vídeo do mesmo tema; Pierre e Clint 2x) | ❌ "não faz o menor sentido… não quero nada repetido. Nada." | **já existe** | **REGRA FIXA: 1 tema = 1 post, para sempre (não só 14 dias).** Nada de versão em fotos E em vídeo do mesmo tema, nem "parte 2" que repete o mesmo assunto. Antes de criar qualquer post, conferir a tabela "Temas usados" abaixo. |
 
-## Temas usados (não repetir por 14 dias)
-| Data | Tema | Pilar | Categoria |
-|------|------|-------|-----------|
+## Temas usados (NUNCA repetir — regra da Yasmin, 11/11)
+| Tema | Post que vale | Removidos por repetir |
+|------|---------------|-----------------------|
+| 5 segredos escondidos | p001 (07/11) | p001v |
+| 6 presentes que todo morador ama | p002v (08/11) | p002 |
+| Barril ou jarra | p003 / p003v (07–08/11) | — |
+| 5 peixes lendários | p004 (08/11) | — |
+| Tela do fim do dia | p005v | — |
+| 3 criaturas misteriosas | p006v (12/11) | — |
+| Recados secretos ep. 1 e 2 | p007v, p008v | — |
+| 5 erros no ano 1 | p009 (11/11) | p009v |
+| Construções da Robin | p010v (13/11) | p010 |
+| Stardew na vida real (geral) | p011 (08/11) | — |
+| Festivais na vida real | p012 (14/11) | — |
+| 3 coisas pra fazer todo dia | p013v | — |
+| Mochila vale a pena? | p014v | — |
+| Carrinho secreto da floresta | p015v | — |
+| Pet dá presente | p016g | — |
+| Máquina de costura | p017g | — |
+| Torneirinha | p018g | — |
+| Fruta-estrela do cônjuge | p019v | — |
+| Roubar da Caroline (chá) | p020n | p020v, p020c |
+| Galpão que te deixa rico | p021v | — |
+| Pierre admitiu | p022n (já postado) | p022v |
+| Pam devendo no bar | p023v | — |
+| 1.7: Clint vai casar | p024v (já postado) | — |
+| Pelican Town real | p025v (11/11) | p026v |
+| Solteiras reais | p027v | — |
+| Receitas na vida real | p028v | — |
+| Peixes na vida real | p029v | — |
+| Flores na vida real | p030v | — |
+| Festa de aniversário Stardew | p031v | — |
+| Segredo de 10 anos | p033v | — |
+| Roleta da Feira | p034v | — |
+| 1º lugar na Feira | p035v | — |
 
 ## Números por post
 | Data | Post | Views | Ret. 3s | Tempo médio | Envios | Salvos | Coment. | Seguidores |

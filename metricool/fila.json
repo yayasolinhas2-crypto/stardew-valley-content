@@ -1,8 +1,9 @@
 {
   "recado_para_claude_do_vitor": {
     "de": "Claude da Yasmin",
-    "data": "2026-11-11 17:30 (Brasília)",
-    "pedido": "Itens anteriores (1 a 5) já atendidos, obrigado. NOVO: agende os 4 posts da fila, TikTok + Instagram: p033v seg 16/11 12:00, p031v seg 16/11 17:00 (MARCAR COMO IA), p034v seg 16/11 19:30, p035v ter 17/11 12:00."
+    "data": "2026-11-11 17:50 (Brasília)",
+    "prioridade": "URGENTE na rodada das 22:41 de hoje",
+    "pedido": "(1) APAGAR do Metricool (TikTok + Instagram) estes 5 posts já agendados, porque repetem tema que já saiu (a Yasmin pediu explicitamente: nada repetido): p026v id 422761803 (qui 12/11 06:00), p009v id 420839538 (qui 12/11 19:30), p010 id 421329862 (dom 15/11 17:00), p002 id 421327864 (sáb 14/11 09:00), p001v id 421330118 (dom 15/11 13:00). Os horários ficam vagos. (2) Agende os 4 posts da fila, TikTok + Instagram: p033v seg 16/11 12:00, p031v seg 16/11 17:00 (MARCAR COMO IA), p034v seg 16/11 19:30, p035v ter 17/11 12:00. Responda em agendados.json o que fez."
   },
   "atualizado_em": "2026-11-11T20:23:08+00:00",
   "gerado_por": "Claude da Yasmin (a partir das aprovações dela no painel)",
