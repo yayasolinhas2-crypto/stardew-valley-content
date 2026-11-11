@@ -70,3 +70,9 @@ Regra: copiar o FORMATO (enquadramento, ritmo, tipo de legenda), nunca o texto, 
 - **Robin manda a receita da Sopa de abóbora com 7 corações** (wiki confirma). → dá pra juntar com a série receitas.
 - **Criador que recria todas as receitas na vida real** tem 88 mil seguidores no TikTok (GamesRadar) → nossa série de receitas tem demanda comprovada.
 - Crescimento (guias 2026): ficar num jogo só (✔), gancho no pico da ação, fixar 3 melhores vídeos, responder comentários na 1ª hora, 3–5 hashtags específicas, julgar por % de quem assiste até o fim e não por views.
+
+## Rodada diária 11/11 (06:48 PST)
+- Auditoria: 23 vídeos da agenda ok (capa, duração, volume), painel = Metricool até 15/11, nenhum horário duplicado. Rotinas rodando (bom dia + fila 4x/dia). Pasta "Para agendar": só "Agendados", sem status.txt (esperado: é só cópia).
+- Referências: nenhuma nova na pasta do Drive desde 09/11.
+- Notícia (GamesRadar 03/11 + Gameluster + Xboxygen): no show "Symphony of Seasons" em Red Rocks, o ConcernedApe disse que a 1.7 vai ser a MAIOR atualização da história do jogo, provavelmente em 2027; e Clint e Sandy não serão as únicas novidades. → parte 2 do 024v ("1.7: o Clint vai casar").
+- Reddit viral (comicbook/destructoid, datas incertas): dá pra "cobrir" pelúcias na cama; segredo no porão do Lewis (1.6). → precisam gravação dela; conferir na wiki antes.
