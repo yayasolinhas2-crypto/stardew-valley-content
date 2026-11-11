@@ -15,13 +15,15 @@ Atualizado: 10/11/2026 (madrugada, Brasília).
 - Montadores: `tools/gameplay.py` (gameplay dela; `"estilo":"nativo"` = tela cheia, aprovado), `tools/vida_real.py` (jogo × vida real), `tools/video_ia.py` (vídeo IA), `tools/auditoria.py`, `tools/exportar_fila.py`.
 - Gravações dela: pasta do Drive https://drive.google.com/drive/folders/1s03hdm7bwQFwLvH_fmWJ8iviBai2dpGc (catálogo em `gravacoes/CATALOGO.md`). Referências: https://drive.google.com/drive/folders/1TrVmAiokyeqNUQ3El77jJnivn3CtEl_I
 
-## Rotinas automáticas (todas em chat novo, pra gastar menos)
-- "Stardew Valley · chat do dia" — 6:47 PST todo dia: bom dia + auditoria + pesquisa; é o chat de trabalho do dia.
-- "Fila do Metricool (4x/dia, chat leve)" — 08:07/12:07/17:07/22:07 BRT, silenciosa (só avisa se der erro).
-- "Montar vídeos pendentes" — uma vez, 10/11 05:15 BRT (031, 033, 034, 035).
+## Rotinas automáticas (corrigido 11/11)
+Erro de 10/11: as rotinas abriam chat novo SEM o repositório e não faziam nada (o "bom dia" e a montagem de 031/033/034/035 falharam). Agora disparam em 2 chats fixos que já têm o repositório:
+- "Stardew Valley · bom dia (chat do dia)" trig_015bipBqC9ysMHNzm3UTSJrB, 6:47 PST, no chat session_019zpqkZFfQZKhZX8KiqVa34.
+- "Fila do Metricool (4x/dia)" trig_01DD1xSsWhKuBhhHaQoJxxbD, 08:07/12:07/17:07/22:07 BRT, no chat session_019zpqka7WYUMdRAR3G3Jkw9 (silenciosa).
+- Antigas trig_01YbYmoCs56ZWREsPZkHiRWh e trig_011wFxqfPRbBto1aMxDXJGVQ desligadas. Não usar "chat novo a cada disparo": não tem repositório.
+- Claude do Vitor NÃO roda sozinha: só quando o Vitor abre a sessão dele (agendados.json, 10/11). Ela também não lê a pasta do Drive; status.txt precisa ser configurado pelo Vitor.
 
 ## Em andamento
 - Teste A/B ter 10/11: ela posta À MÃO p024v (17:00 BRT) e p022n (19:30 BRT); pedir print de views em 24 h e comparar com o p014v (Metricool, 12:00).
-- Montar e mandar pro painel: 031 festa, 033 segredo dos 10 anos, 034 roleta da Feira, 035 1º lugar na Feira (tarefas agendadas 05:10 e 05:40 BRT de 10/11).
+- Montar e mandar pro painel: 031 festa, 033 segredo dos 10 anos, 034 roleta da Feira, 035 1º lugar na Feira (NÃO montados: a rotina de 10/11 falhou; fazer à mão).
 - Série vida real: 025–030 aprovados e na fila; 032 filhos espera gravação dela com o marido.
 - Pendências dela: conectar Google Drive no claude.ai (regra da pasta "Stardew - Para agendar", compartilhar com lanceseternos.edits@gmail.com); decidir com o Vitor Metricool próprio x upgrade; gravar: casa do Lewis, atalhos, pesca, arroz no barril, começo de save, Clint, Sandy.
