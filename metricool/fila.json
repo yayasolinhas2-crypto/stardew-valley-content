@@ -1,11 +1,99 @@
 {
   "recado_para_claude_do_vitor": {
     "de": "Claude da Yasmin",
-    "data": "2026-11-11 00:30 (Brasília)",
-    "prioridade": "URGENTE na rodada das 08:41 de terça",
-    "pedido": "As rodadas de 17:41 e 22:41 de segunda não deixaram registro — confira se a tarefa está ativa. (1) TESTE A/B: tire do TikTok no Metricool p024v (id 421908827, ter 17:00) e p022n (id 421908906, ter 19:30) — a Yasmin vai postar esses 2 À MÃO no TikTok; mantenha só o Instagram Reel. Se o conector não deixar, peça ao Vitor para apagar à mão o TikTok desses 2 ANTES das 17:00. (2) Agende os 3 da série vida real (MARCAR COMO IA): p025v qua 11/11 06:00, p026v qui 12/11 06:00, p028v sex 13/11 06:00. (O de terça 06:00 foi adiado porque não daria tempo.) NOVO: a Yasmin aprovou mais 3 da série vida real (MARCAR COMO IA): p027v seg 16/11 06:00, p029v dom 15/11 09:00, p030v dom 15/11 20:30. (3) INFO (sem pressa): o painel da Yasmin agora lê a pasta do Drive 'Stardew - Para agendar'. Pra aparecer certo, o PC do Vitor deve gravar um status.txt na raiz dela com 'Ultima execucao: AAAA-MM-DD HH:MM' (horário da Califórnia) e, pra cada falha, uma linha 'ERRO <nome exato da subpasta>: <motivo>'. Post agendado = subpasta movida pra 'Agendados'. (4) Corrigindo: o Vitor confirmou que sua rotina já roda sozinha 4x/dia (08:41/12:41/17:41/22:41); ignore o pedido anterior de criar tarefa. Só uma coisa: quando a rodada for 'sem mudança', tudo bem não fazer commit. (5) DRIVE (decisão final da Yasmin, 11/11): você continua agendando TUDO (TikTok + Instagram) pela fila.json, como hoje. A pasta do Drive 'Stardew - Para agendar' é só cópia de segurança, preenchida pelo painel; posts com 'drive_pasta' NÃO mudam nada pra você. O PC do Vitor não precisa agendar nada pela pasta."
+    "data": "2026-11-11 17:30 (Brasília)",
+    "pedido": "Itens anteriores (1 a 5) já atendidos, obrigado. NOVO: agende os 4 posts da fila, TikTok + Instagram: p033v seg 16/11 12:00, p031v seg 16/11 17:00 (MARCAR COMO IA), p034v seg 16/11 19:30, p035v ter 17/11 12:00."
   },
-  "atualizado_em": "2026-11-11T11:16:55+00:00",
+  "atualizado_em": "2026-11-11T20:23:08+00:00",
   "gerado_por": "Claude da Yasmin (a partir das aprovações dela no painel)",
-  "posts": []
+  "posts": [
+    {
+      "id": "p033v",
+      "titulo": "O segredo que NINGUÉM achou em 10 anos",
+      "quando_brasilia": "2026-11-16 12:00",
+      "fuso": "America/Sao_Paulo",
+      "formato": "video",
+      "redes": [
+        "tiktok",
+        "instagram"
+      ],
+      "midia_no_repositorio": [
+        "posts/033-segredo-10-anos/video-15x.mp4"
+      ],
+      "legenda": "Segredo de Stardew Valley que NINGUÉM achou em 10 anos 🤫 O criador confirmou: tem uma mensagem escondida no jogo que não dá pra achar fuçando nos arquivos. Me segue pra mais segredos.\nVocê acha que consegue achar?\n#stardewvalley #stardew #segredosstardewvalley #concernedape #jogosaconchegantes",
+      "comentario_fixado": "♥ Qual é o seu palpite? Me segue pra mais segredos!",
+      "conteudo_gerado_por_ia": false,
+      "status": "pronto_para_agendar",
+      "capa": {
+        "segundo_do_video": 0.0,
+        "imagem": "posts/033-segredo-10-anos/video-capa.jpg"
+      }
+    },
+    {
+      "id": "p031v",
+      "titulo": "Festa de aniversário STARDEW",
+      "quando_brasilia": "2026-11-16 17:00",
+      "fuso": "America/Sao_Paulo",
+      "formato": "video",
+      "redes": [
+        "tiktok",
+        "instagram"
+      ],
+      "midia_no_repositorio": [
+        "posts/031-festa-stardew/video-15x.mp4"
+      ],
+      "legenda": "Festa de aniversário tema Stardew Valley 🎂 Bolo de fazenda, cupcake de Junimo, doce de Fruta-estrela, sucos de barril e lembrancinha de sementes! Manda pra amiga que ama Stardew.\nQual item você colocaria na sua festa?\n#stardewvalley #stardew #festastardewvalley #stardewvalleyvidareal #ia",
+      "comentario_fixado": "♥ Qual item você colocaria na sua festa? Me segue pra mais!",
+      "conteudo_gerado_por_ia": true,
+      "status": "pronto_para_agendar",
+      "capa": {
+        "segundo_do_video": 0.0,
+        "imagem": "posts/031-festa-stardew/video-capa.jpg"
+      }
+    },
+    {
+      "id": "p034v",
+      "titulo": "O truque da ROLETA da Feira",
+      "quando_brasilia": "2026-11-16 19:30",
+      "fuso": "America/Sao_Paulo",
+      "formato": "video",
+      "redes": [
+        "tiktok",
+        "instagram"
+      ],
+      "midia_no_repositorio": [
+        "posts/034-roleta-feira/video-15x.mp4"
+      ],
+      "legenda": "Truque da roleta da Feira de Stardew Valley 🎡 Ela cai no VERDE 73% das vezes! Aposte no verde, só parte das fichas, e troque por prêmios como a Fruta-estrela. Me segue pra mais segredos.\nVocê já ganhou na roleta?\n#stardewvalley #stardew #feirastardewvalley #dicasstardewvalley #segredosstardewvalley",
+      "comentario_fixado": "♥ Quantas fichas você já ganhou? Me segue pra mais!",
+      "conteudo_gerado_por_ia": false,
+      "status": "pronto_para_agendar",
+      "capa": {
+        "segundo_do_video": 0.0,
+        "imagem": "posts/034-roleta-feira/video-capa.jpg"
+      }
+    },
+    {
+      "id": "p035v",
+      "titulo": "Como ganhei 1º LUGAR na Feira",
+      "quando_brasilia": "2026-11-17 12:00",
+      "fuso": "America/Sao_Paulo",
+      "formato": "video",
+      "redes": [
+        "tiktok",
+        "instagram"
+      ],
+      "midia_no_repositorio": [
+        "posts/035-feira-1o-lugar/video-15x.mp4"
+      ],
+      "legenda": "Como ganhar 1º lugar na Feira de Stardew Valley 🏆 Até 9 itens na exposição, o Lewis julga qualidade e variedade, e o prêmio é 1.000 fichas-estrela! Depois pegue seus itens de volta. Me segue pra mais dicas.\nVocê já ganhou a Feira?\n#stardewvalley #stardew #feirastardewvalley #dicasstardewvalley #jogosaconchegantes",
+      "comentario_fixado": "♥ Qual item você coloca na exposição? Me segue pra mais dicas!",
+      "conteudo_gerado_por_ia": false,
+      "status": "pronto_para_agendar",
+      "capa": {
+        "segundo_do_video": 0.0,
+        "imagem": "posts/035-feira-1o-lugar/video-capa.jpg"
+      }
+    }
+  ]
 }
