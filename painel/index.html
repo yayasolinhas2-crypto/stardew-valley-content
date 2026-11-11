@@ -368,6 +368,39 @@ function blocoMc(){
     <p class="muted" style="font-size:12px">Lido do Drive às ${new Date(mc.em).toLocaleTimeString("pt-BR",{hour:"2-digit",minute:"2-digit"})}. Horário da Califórnia, com Brasília embaixo.</p></section>`;
 }
 
+
+/* ---------- entrega automática no Drive ao aprovar ---------- */
+const RAW="https://raw.githubusercontent.com/yayasolinhas2-crypto/stardew-valley-content/claude/new-session-05qpg7/";
+function slugT(t){return (t||"").replace(/✋.*?·/,"").replace(/·\s*marcar como IA|\(tela cheia\)|ALTERNATIVA\s*·/gi,"").normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"").slice(0,40).replace(/-$/,"")||"post"}
+function nomePasta(p){const d=new Date(`${p.data}T${p.hora}:00-03:00`);
+  const f=new Intl.DateTimeFormat("en-CA",{timeZone:"America/Los_Angeles",year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",hourCycle:"h23"}).formatToParts(d);
+  const g=k=>f.find(x=>x.type===k).value;return `${g("year")}-${g("month")}-${g("day")}_${g("hour")}${g("minute")}_${slugT(p.titulo)}`}
+async function entregarDrive(p){
+  if(!mcp||!p.video||p.drive_pasta||p.postar_a_mao||p.metricool||!p.data||!p.hora||when(p)<Date.now())return;
+  const pasta=nomePasta(p);
+  try{
+    const lt=await mcp.listTools().catch(()=>({}));
+    const cf=(input)=>mcp.callTool(DRIVE,"create_file",input).then(r=>r.payload||{});
+    const dir=await cf({title:pasta,contentMimeType:"application/vnd.google-apps.folder",parentId:PASTA_AG});
+    const id=dir.id||(dir.file&&dir.file.id);if(!id)throw {code:"sem_id"};
+    let leg=`Reels\n${(p.legenda||"").trim()}\n`;if(p.conteudo_gerado_por_ia||/IA/.test(p.categoria||""))leg+="\n[Marcar como conteúdo gerado por IA]\n";
+    await cf({title:"legenda.txt",textContent:leg,contentMimeType:"text/plain",disableConversionToGoogleType:true,parentId:id});
+    let comVideo=false;
+    if(lt&&lt.fileArgs){
+      const b=await fetch(p.video).then(r=>{if(!r.ok)throw 0;return r.blob()});
+      await cf({title:pasta+".mp4",base64Content:{$file:{data:b,name:pasta+".mp4",type:"video/mp4"}},contentMimeType:"video/mp4",disableConversionToGoogleType:true,parentId:id});
+      comVideo=true;
+      if(p.capa){const c=await fetch(p.capa).then(r=>r.ok?r.blob():null).catch(()=>null);
+        if(c)await cf({title:"capa.jpg",base64Content:{$file:{data:c,name:"capa.jpg",type:"image/jpeg"}},contentMimeType:"image/jpeg",disableConversionToGoogleType:true,parentId:id}).catch(()=>{})}
+    }
+    if(!comVideo&&p.video_repo)await cf({title:"video-link.txt",textContent:RAW+p.video_repo+"\n",contentMimeType:"text/plain",disableConversionToGoogleType:true,parentId:id});
+    await db.collection("posts").doc(p.id).update({drive_pasta:pasta,drive_id:id});
+    toast("Entregue no Drive ✓");
+  }catch(e){const c=e&&e.code;
+    if(c==="approval_required"||c==="consent_required")toast("Permita o Google Drive no painel pra entregar o post");
+    else toast("Não entregou no Drive agora; a rotina tenta de novo sozinha");}
+}
+
 /* ---------- telas ---------- */
 const TITULOS={postar:["Início","Resumo do perfil e o próximo post"],aprovar:["Aprovar","Posts esperando a sua decisão"],semana:["Agenda","Os próximos 7 dias, horário de Brasília"],todos:["Todos os posts","Tudo o que já foi feito, em ordem de data"],
   post:["Post",""],fotos:["Fotos",""],vozes:["Teste de voz","Escolha a narração dos vídeos"]};
@@ -476,7 +509,7 @@ document.addEventListener("click",e=>{
   else if(d.zip){baixarZip(get(d.zip),t)}
   else if(d.vid){baixarVideo(get(d.vid),t)}
   else if(d.uma){baixarUma(get(d.uma),+d.i,t)}
-  else if(d.aprovar){negando=null;salvar(d.aprovar,{status:"aprovado",motivo:""},"Aprovado ✓")}
+  else if(d.aprovar){negando=null;const pid=d.aprovar;salvar(pid,{status:"aprovado",motivo:""},"Aprovado ✓").then(()=>{const p=get(pid);if(p)entregarDrive({...p,status:"aprovado"})})}
   else if(d.negarAbrir){negando=d.negarAbrir;render()}
   else if(d.negarCancelar){negando=null;render()}
   else if(d.negar){
