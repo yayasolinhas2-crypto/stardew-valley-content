@@ -328,7 +328,8 @@ async function carregarMc(refresh){
     const item=(f,ag)=>{const m=(f.title||"").match(NOME);if(!m)return null;
       const e=!ag&&erros.find(l=>l.includes(f.title));
       let motivo="";if(e){motivo=e.slice(e.indexOf(f.title)+f.title.length).replace(/^[\s:\-–—|]+/,"").trim()||e}
-      return {nome:f.title,data:m[1],hora:m[2]+":"+m[3],titulo:(m[4]||"").replace(/[_-]+/g," ").trim(),estado:ag?"agendado":e?"erro":"pendente",motivo,url:f.viewUrl}};
+      const noMetricool=posts.some(p=>p.drive_pasta===f.title&&(p.status==="agendado"||p.status==="publicado"));
+      return {nome:f.title,data:m[1],hora:m[2]+":"+m[3],titulo:(m[4]||"").replace(/[_-]+/g," ").trim(),estado:(ag||noMetricool)?"agendado":e?"erro":"pendente",motivo,url:f.viewUrl}};
     const todos=[...dentro.filter(EH_PASTA).map(f=>item(f,true)),...raiz.filter(f=>EH_PASTA(f)&&f!==pastaAg).map(f=>item(f,false))].filter(Boolean);
     const conhecidos=todos.map(x=>x.nome);
     mc={fase:"ok",em:Date.now(),temStatus:!!arqStatus,statusUrl:arqStatus&&arqStatus.viewUrl,
@@ -361,8 +362,8 @@ function blocoMc(){
   const pendAm=mc.amanha.filter(x=>x.estado!=="agendado").length;
   const ult=mc.ultima?`<b>${esc(mc.ultima)}</b>`:mc.temStatus?`<b>${new Date(mc.statusMod).toLocaleString("pt-BR",{dateStyle:"short",timeStyle:"short"})}</b> <span class="muted">(hora em que o arquivo mudou)</span>`:`<span class="mc-erro">ainda não rodou (sem status.txt na pasta)</span>`;
   return `<section class="frame${pendAm?" hl":""}">${cab}
-    ${pendAm?`<div class="mc-aviso">⚠️ Ligar o PC do Vitor para agendar<br><small style="font-weight:600">${pendAm} post${pendAm>1?"s":""} de amanhã ainda fora da pasta Agendados</small></div>`:""}
-    <p>Última execução no PC do Vitor: ${ult}${mc.statusUrl?` · <a href="${esc(mc.statusUrl)}" target="_blank" rel="noopener">ver status.txt</a>`:""}</p>
+    ${pendAm?`<div class="mc-aviso" style="background:var(--warnbg);color:var(--warn);border-color:var(--warn)">⏳ ${pendAm} post${pendAm>1?"s":""} de amanhã ainda não agendado${pendAm>1?"s":""}<br><small style="font-weight:600">A Claude do Vitor agenda sozinha na próxima rodada (08:41, 12:41, 17:41 ou 22:41 de Brasília). Você não precisa fazer nada.</small></div>`:""}
+    ${mc.temStatus?`<p>Última execução no PC do Vitor: ${ult}${mc.statusUrl?` · <a href="${esc(mc.statusUrl)}" target="_blank" rel="noopener">ver status.txt</a>`:""}</p>`:`<p class="muted">Quem agenda: a Claude do Vitor, sozinha, 4x por dia. Esta pasta do Drive é a cópia de cada post aprovado.</p>`}
     ${mc.errosSoltos.length?`<div class="mc-erro">${mc.errosSoltos.map(l=>`<p>${esc(l)}</p>`).join("")}</div>`:""}
     <div class="two">${lista("Hoje",mc.hojeCA,mc.hoje)}${lista("Amanhã",mc.amanhaCA,mc.amanha)}</div>
     <p class="muted" style="font-size:12px">Lido do Drive às ${new Date(mc.em).toLocaleTimeString("pt-BR",{hour:"2-digit",minute:"2-digit"})}. Horário da Califórnia, com Brasília embaixo.</p></section>`;
