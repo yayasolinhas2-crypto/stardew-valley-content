@@ -92,13 +92,13 @@
 |------|---------------|---------|-----------|--------|
 | 07/11 | 002, 003, 004 | ✅ aprovados ("tá muito bom", "gostei bastante") | guias / dinheiro | **O título da capa tem que ser gancho, como "Você tá usando o barril errado?"**. Pede melhoria constante |
 | 07/11 | 001 · 5 segredos escondidos | ✅ aprovado | segredos / contagem | "tá bem bonito". Pediu revisão de erros de escrita e coisa fora do quadro |
-| 11/11 | Repetidos (fotos + vídeo do mesmo tema; Pierre e Clint 2x) | ❌ "não faz o menor sentido… não quero nada repetido. Nada." | **já existe** | **REGRA FIXA: 1 tema = 1 post, para sempre (não só 14 dias).** Nada de versão em fotos E em vídeo do mesmo tema, nem "parte 2" que repete o mesmo assunto. Antes de criar qualquer post, conferir a tabela "Temas usados" abaixo. |
+| 11/11 | Repetidos (fotos + vídeo do mesmo tema; Pierre e Clint 2x) | ❌ "não faz o menor sentido… não quero nada repetido. Nada." | **já existe** | **REGRA FIXA (esclarecida por ela no mesmo dia):** pode repetir TEMA, clipe e música; NUNCA o mesmo título, a mesma capa, o mesmo gancho/1ª frase ou o mesmo conteúdo. Dentro de um tema, explorar ângulos novos e vários assuntos no mesmo vídeo ("é fácil fazer isso"). Nada de versão em fotos E em vídeo do mesmo post. Conferir a tabela "Temas usados" antes de criar. |
 
 ## Pedidos dos seguidores (Yasmin, 11/11)
 - Sempre que ela mandar print de comentários, **criar vídeo-resposta** pro que pediram (TikTok: "responder com vídeo", ela posta à mão; Instagram pelo Metricool). Só se trouxer informação NOVA (não repetir tema já usado).
 - 036 qualidade do vinho (T_Angel) · lendário de primeira (Davi/Klebson) espera gravação dela pescando.
 
-## Temas usados (NUNCA repetir — regra da Yasmin, 11/11)
+## Temas usados (tema pode voltar com ângulo novo; título, capa e conteúdo nunca)
 | Tema | Post que vale | Removidos por repetir |
 |------|---------------|-----------------------|
 | 5 segredos escondidos | p001 (07/11) | p001v |

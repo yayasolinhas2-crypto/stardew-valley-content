@@ -22,6 +22,8 @@ Erro de 10/11: as rotinas abriam chat novo SEM o repositório e não faziam nada
 - Antigas trig_01YbYmoCs56ZWREsPZkHiRWh e trig_011wFxqfPRbBto1aMxDXJGVQ desligadas. Não usar "chat novo a cada disparo": não tem repositório.
 - Claude do Vitor RODA SOZINHA 4x/dia (08:41/12:41/17:41/22:41 BRT; confirmado por print do Vitor em 11/11). Rodada 'sem mudança' não gera commit, então falta de commit NÃO é falha. Ela não lê a pasta do Drive; status.txt é do PC do Vitor.
 
+- "Stardew · pauta da gringa + anti-repetição (diária)" trig_013AkYWhJMKpEFVbBTQSrhdz, 10:23 PST, no chat do bom dia: confere repetidos, pesquisa o que bomba lá fora (com prova), produz 2 vídeos/dia. Pedido da Yasmin 11/11, foco na meta de 10 mil.
+
 ## Em andamento
 - Auditoria 11/11: tudo ok. Agenda aprovada e agendada até 15/11; 16/11 só tem 06:00 (p027v).
 - HOJE 11/11 (A/B remarcado): Yasmin posta À MÃO no TikTok p024v 14:00 BRT (09:00 PST) e p022n 20:30 BRT (15:30 PST); Instagram deles já saiu 10/11. Pedir print de views em 24 h e comparar com p021v/p019v (Metricool).
