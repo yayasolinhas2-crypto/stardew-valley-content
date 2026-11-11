@@ -9,7 +9,8 @@ fila=[];SUBST={}
 for f in sorted(glob.glob(sys.argv[1]+'/*.json')):
   p=json.load(open(f));pid=os.path.basename(f)[:-5]
   if p.get('status')!='aprovado':continue
-  if p.get('postar_a_mao'):continue   # teste A/B: a Yasmin posta este à mão no TikTok
+  mao=bool(p.get('postar_a_mao'))   # a Yasmin posta à mão no TikTok (teste A/B ou resposta a comentário): vai pela fila SÓ no Instagram
+  if mao and not p.get('video'):continue
   # versão ALTERNATIVA aprovada (ex.: p020n no lugar da p020v): substitui a original no mesmo horário, nunca sai duplicada
   if p.get('alternativa_de'):
     orig_f=os.path.join(os.path.dirname(f),p['alternativa_de']+'.json')
@@ -25,10 +26,11 @@ for f in sorted(glob.glob(sys.argv[1]+'/*.json')):
   midia=[p['video_repo']] if p.get('video_repo') else [f'posts/{base}/video-15x.mp4'] if video else [f'posts/{base}/slides/{os.path.basename(s)}' for s in p['slides']]
   for m in midia: assert os.path.exists(m),m
   ia='IA' in p.get('titulo','') or 'IA' in p.get('categoria','')
-  fila.append({'id':pid,'titulo':re.sub(r'^ALTERNATIVA · |\s*\((tela cheia|estilo novo|estilo antigo)\)','',p['titulo']).replace(' (marcar como IA)','').replace(' · marcar como IA',''),'quando_brasilia':f"{p['data']} {p['hora']}",'fuso':'America/Sao_Paulo',
-    'formato':'video' if video else 'carrossel_fotos','redes':['tiktok','instagram'] if video else ['tiktok'],
+  fila.append({'id':pid,'titulo':re.sub(r'^✋[^·]*·\s*|^ALTERNATIVA · |\s*\((tela cheia|estilo novo|estilo antigo)\)','',p['titulo']).replace(' (marcar como IA)','').replace(' · marcar como IA',''),'quando_brasilia':f"{p['data']} {p['hora']}",'fuso':'America/Sao_Paulo',
+    'formato':'video' if video else 'carrossel_fotos','redes':['instagram'] if mao else ['tiktok','instagram'] if video else ['tiktok'],
     'midia_no_repositorio':midia,'legenda':p['legenda'],'comentario_fixado':p['fixado'],'conteudo_gerado_por_ia':ia,'status':'pronto_para_agendar',
     **({'capa':{'segundo_do_video':0.0,'imagem':(p['video_repo'].replace('.mp4','-capa.jpg') if p.get('video_repo') and os.path.exists(p['video_repo'].replace('.mp4','-capa.jpg')) else f'posts/{base}/video-capa.jpg')}} if video else {}),
+    **({'obs':'Só Instagram. No TikTok a Yasmin posta à mão.'} if mao else {}),
     **({'drive_pasta':p['drive_pasta'],'obs_drive':'cópia do post na pasta do Drive (subpasta drive_pasta). Só cópia: agende TikTok e Instagram normalmente por aqui.'} if p.get('drive_pasta') else {}),
     **({'substituir_metricool_post_id':p['substitui_metricool'],'acao':'EDITAR o post agendado com esse id no Metricool (mesmo horário): trocar mídia, legenda, redes e título por esta versão nova'} if p.get('substitui_metricool') else {})})
 # original ainda não agendada e com alternativa aprovada: sai só a alternativa
