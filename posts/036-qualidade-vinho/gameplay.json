@@ -1,0 +1,18 @@
+{
+ "titulo": "Fruta OURO deixa o vinho *melhor*?",
+ "voz": "Sulafat",
+ "velocidade": 1.5,
+ "estilo": "nativo",
+ "cenas": [
+  {"src": "gravacoes/bruto/produtos q valem vwnder.mp4", "ini": 10.0, "cx": 960, "cy": 560, "zoom": 1.5, "selo": "Stardew Valley",
+   "fala": "[provocando] Você põe fruta de OURO no barril achando que o vinho fica melhor? Errado!"},
+  {"src": "gravacoes/bruto/use o galpao para suas maquinas.mp4", "ini": 13.0, "cx": 960, "cy": 520, "zoom": 1.5, "selo": "Barril",
+   "fala": "[explicando] O vinho vale três vezes o preço BASE da fruta. A estrela não conta nada.", "cta": "comenta VINHO"},
+  {"src": "gravacoes/bruto/use o galpao para suas maquinas.mp4", "ini": 22.0, "cx": 960, "cy": 600, "zoom": 1.5, "selo": "Jarra de Conserva",
+   "fala": "[animada] Na jarra é igual: a wiki diz que a qualidade não faz diferença."},
+  {"src": "gravacoes/bruto/produtos q valem vwnder.mp4", "ini": 20.0, "cx": 960, "cy": 520, "zoom": 1.5, "selo": "Barril de Madeira",
+   "fala": "[revelando] Quer vinho de irídio? Só envelhecendo no Barril de Madeira, na adega: cinquenta e seis dias."},
+  {"src": "gravacoes/bruto/use o galpao para suas maquinas.mp4", "ini": 26.0, "cx": 960, "cy": 560, "zoom": 1.5, "selo": "Pergunta de vocês",
+   "fala": "[empolgada] Comenta VINHO que eu te mando a lista do que rende mais. E manda a sua dúvida!", "cta": "comenta VINHO"}
+ ]
+}
