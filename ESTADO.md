@@ -1,6 +1,6 @@
 # Estado atual (passagem de bastão entre chats) — atualizar no fim de cada dia
 
-Atualizado: 11/11/2026 (11:50 Brasília, bom dia).
+Atualizado: 12/11/2026 (11:50 Brasília, bom dia).
 
 ## Quem / o quê
 - Perfil @segredosdovalley (TikTok + Instagram), Stardew Valley em PT-BR. Meta: **10.000 seguidores até 09/12/2026**.
@@ -25,11 +25,11 @@ Erro de 10/11: as rotinas abriam chat novo SEM o repositório e não faziam nada
 - "Stardew · pauta da gringa + anti-repetição (diária)" trig_013AkYWhJMKpEFVbBTQSrhdz, 10:23 PST, no chat do bom dia: confere repetidos, pesquisa o que bomba lá fora (com prova), produz 2 vídeos/dia. Pedido da Yasmin 11/11, foco na meta de 10 mil.
 
 ## Em andamento
+- Auditoria 12/11: painel = Metricool. Corrigido: p034v marcado "agendado" no painel (id 425585754). Aviso da auditoria "p002 negado mas agendado" é esperado (decisão dela). Drive: painel criou as subpastas 033/031/034/035 em 11/11 (entrega funcionando).
+- Buracos na agenda: dom 15/11 13:00 e 17:00 (slots de p001v/p010 foram reaproveitados). A rotina de pauta (10:23 PST) produz 2 vídeos/dia pra preencher.
+- HOJE 12/11 (BRT/PST): 12:00/07:00 p006v · 17:00/12:00 p023v · 19:30/14:30 p036v (Instagram pelo Metricool; TikTok À MÃO). Pedir print das views de p024v/p022n (A/B de 11/11).
 - 12/11: p002 (6 presentes, sáb 14/11 09:00) fica agendado mesmo repetido — decisão da Yasmin ("deixa, vamos melhorar pros próximos"). Daqui pra frente a rotina diária de pauta barra repetição ANTES de agendar. p034v pedido como post novo à Claude do Vitor.
 - 11/11: Yasmin vai gravar HOJE a pesca (Esgoto e/ou píer leste) pro vídeo-resposta "Pegou o lendário de primeira? Sorte ou truque?" (comentários de Davi e Klebson). Quando aparecer na pasta de gravações do Drive: baixar, montar com tools/gameplay.py e mandar pro painel (postar_a_mao, resposta a comentário). Fatos já conferidos: Carpa Mutante = Esgoto, qualquer estação, dificuldade 80, 1.000g; Peixe-Carmesim = fim do píer leste da praia, verão, pesca nível 5, dificuldade 95, 1.500g; lançar mais longe da margem aumenta a chance (wiki Fishing); 1 por save (exceto Isca de Desafio).
-- Auditoria 11/11: tudo ok. Agenda aprovada e agendada até 15/11; 16/11 só tem 06:00 (p027v).
-- HOJE 11/11 (A/B remarcado): Yasmin posta À MÃO no TikTok p024v 14:00 BRT (09:00 PST) e p022n 20:30 BRT (15:30 PST); Instagram deles já saiu 10/11. Pedir print de views em 24 h e comparar com p021v/p019v (Metricool).
-- Aguardando aprovação no painel: 031v festa (16/11 17:00), 033v segredo dos 10 anos (16/11 12:00), 034v roleta (16/11 19:30), 035v 1º lugar Feira (17/11 12:00).
 - Próxima pauta: 1.7 "maior atualização da história" (notícia Red Rocks, parte 2 do 024v). Precisa gravação/cena da Yasmin ou reusar gameplay.
 - Série vida real: 025–030 agendados; 032 filhos espera gravação dela com o marido.
 - Pendências dela: decidir com o Vitor Metricool próprio x upgrade; gravar: casa do Lewis (porão), atalhos, pesca, arroz no barril, começo de save, Clint, Sandy, pelúcia na cama.
