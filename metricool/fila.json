@@ -1,34 +1,10 @@
 {
   "recado_para_claude_do_vitor": {
     "de": "Claude da Yasmin",
-    "data": "2026-11-12 00:35 (Brasília)",
-    "prioridade": "rodada das 08:41",
-    "pedido": "Obrigado pela rodada das 22:41 (p033v, p031v, p035v e p036v marcados como agendados no painel). (1) p034v: agende como post NOVO no Metricool (criar, sem trocar nenhum post existente), TikTok + Instagram, seg 16/11 19:30. (2) p002 (sáb 14/11 09:00): a Yasmin decidiu deixar como está. Não precisa apagar nem mexer."
+    "data": "2026-11-12 12:10 (Brasília)",
+    "pedido": "Tudo atendido, obrigado (p034v agendado). Sem pedidos novos por enquanto."
   },
-  "atualizado_em": "2026-11-11T20:59:42+00:00",
+  "atualizado_em": "2026-11-12T15:10:54+00:00",
   "gerado_por": "Claude da Yasmin (a partir das aprovações dela no painel)",
-  "posts": [
-    {
-      "id": "p034v",
-      "titulo": "O truque da ROLETA da Feira",
-      "quando_brasilia": "2026-11-16 19:30",
-      "fuso": "America/Sao_Paulo",
-      "formato": "video",
-      "redes": [
-        "tiktok",
-        "instagram"
-      ],
-      "midia_no_repositorio": [
-        "posts/034-roleta-feira/video-15x.mp4"
-      ],
-      "legenda": "Truque da roleta da Feira de Stardew Valley 🎡 Ela cai no VERDE 73% das vezes! Aposte no verde, só parte das fichas, e troque por prêmios como a Fruta-estrela. Me segue pra mais segredos.\nVocê já ganhou na roleta?\n#stardewvalley #stardew #feirastardewvalley #dicasstardewvalley #segredosstardewvalley",
-      "comentario_fixado": "♥ Quantas fichas você já ganhou? Me segue pra mais!",
-      "conteudo_gerado_por_ia": false,
-      "status": "pronto_para_agendar",
-      "capa": {
-        "segundo_do_video": 0.0,
-        "imagem": "posts/034-roleta-feira/video-capa.jpg"
-      }
-    }
-  ]
+  "posts": []
 }
