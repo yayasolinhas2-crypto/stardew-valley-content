@@ -76,3 +76,9 @@ Regra: copiar o FORMATO (enquadramento, ritmo, tipo de legenda), nunca o texto, 
 - Referências: nenhuma nova na pasta do Drive desde 09/11.
 - Notícia (GamesRadar 03/11 + Gameluster + Xboxygen): no show "Symphony of Seasons" em Red Rocks, o ConcernedApe disse que a 1.7 vai ser a MAIOR atualização da história do jogo, provavelmente em 2027; e Clint e Sandy não serão as únicas novidades. → parte 2 do 024v ("1.7: o Clint vai casar").
 - Reddit viral (comicbook/destructoid, datas incertas): dá pra "cobrir" pelúcias na cama; segredo no porão do Lewis (1.6). → precisam gravação dela; conferir na wiki antes.
+
+## Pauta 12/11 (rotina diária, 10:23 PST)
+- Gringa (sem prova forte nos últimos 7 dias): a busca não trouxe post datado desta semana. Ranking mensal do r/StardewValley (leadhoot.com/r/stardewvalley, sem data confirmada): xarope de bordo/resina/alcatrão na vida real (~38 mil votos), pedido de casamento com Pingente de Sereia (~23 mil), ConcernedApe e Haunted Chocolatier (~19 mil), info da 1.7 (~17 mil). → reforça a série "vida real" (itens de produção do jogo na vida real) e o gancho da 1.7.
+- 3 ideias mais fortes: (1) "Xarope de bordo, resina e alcatrão na VIDA REAL" (série vida real, parte nova); (2) "1.7: a MAIOR atualização da história" (notícia Red Rocks, parte 2 do 024v); (3) "Pedido de casamento com o Pingente de Sereia" (POV, precisa gravação).
+- Fato forte achado na wiki: cueca roxa do Lewis na exposição da Feira = desclassificada, mas ele paga 750 fichas (2º lugar = 500). Virou o 037v.
+- Download das gravações do Drive funciona por curl direto (sem conector): drive.usercontent.google.com/download?id=<id>&export=download&confirm=t.

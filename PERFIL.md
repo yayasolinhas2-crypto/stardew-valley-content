@@ -134,6 +134,8 @@
 | Roleta da Feira | p034v | — |
 | 1º lugar na Feira | p035v | — |
 | Qualidade da fruta no vinho/jarra (resposta T_Angel) | p036v | — |
+| Cueca do Lewis na exposição (750 fichas) + martelo + cartomante | p037v (aguardando) | — |
+| Pedreira: minério todo dia | p038v (aguardando) | — |
 
 ## Números por post
 | Data | Post | Views | Ret. 3s | Tempo médio | Envios | Salvos | Coment. | Seguidores |

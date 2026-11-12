@@ -1,0 +1,20 @@
+{
+ "titulo": "Minério *TODO DIA* de graça",
+ "voz": "Sulafat",
+ "velocidade": 1.5,
+ "estilo": "nativo",
+ "cenas": [
+  {"src": "gravacoes/bruto/pedreira.mp4", "ini": 0.5, "cx": 900, "cy": 520, "zoom": 1.5, "selo": "Stardew Valley",
+   "fala": "[empolgada] Esse lugar te dá minério de graça, todo santo dia!"},
+  {"src": "gravacoes/bruto/pedreira.mp4", "ini": 4.5, "cx": 900, "cy": 540, "zoom": 1.5, "selo": "Pedreira",
+   "fala": "[explicando] É a Pedreira. Abre com os pacotes de artesanato do Centro Comunitário."},
+  {"src": "gravacoes/bruto/pedreira.mp4", "ini": 10.0, "cx": 900, "cy": 540, "zoom": 1.5, "selo": "Cobre · Ferro · Ouro",
+   "fala": "[contando] Todo dia nascem pedras novas: cobre, ferro, ouro e até pedras preciosas.", "cta": "comenta PEDREIRA"},
+  {"src": "gravacoes/bruto/pedreira.mp4", "ini": 15.5, "cx": 900, "cy": 560, "zoom": 1.5, "selo": "Dica",
+   "fala": "[revelando] Mas pedra velha bloqueia as novas. Então limpa tudo, sempre!"},
+  {"src": "gravacoes/bruto/pedreira.mp4", "ini": 20.5, "cx": 900, "cy": 560, "zoom": 1.5, "selo": "7 → 16",
+   "fala": "[animada] No ano um são sete por dia. Sobe dois por ano, até dezesseis."},
+  {"src": "gravacoes/bruto/pedreira.mp4", "ini": 25.0, "cx": 900, "cy": 540, "zoom": 1.5, "selo": "Comenta PEDREIRA",
+   "fala": "[divertida] Comenta PEDREIRA e manda pra amiga que vive sem minério!", "cta": "comenta PEDREIRA"}
+ ]
+}

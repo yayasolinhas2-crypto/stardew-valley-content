@@ -1,0 +1,20 @@
+{
+ "titulo": "A CUECA do Lewis vale *750 fichas*",
+ "voz": "Sulafat",
+ "velocidade": 1.5,
+ "estilo": "nativo",
+ "cenas": [
+  {"src": "gravacoes/bruto/novas/feira-chegando-lewis-explica-exposicao.mp4", "ini": 23.0, "inteiro": true, "selo": "Feira do Vale",
+   "fala": "[chocada] A cueca do Lewis na exposição te dá MAIS fichas que o segundo lugar!"},
+  {"src": "gravacoes/bruto/novas/feira-loja-de-premios-e-exposicao-pronta.mp4", "ini": 21.0, "inteiro": true, "selo": "Exposição",
+   "fala": "[contando um segredo] Você é desclassificada, mas o Lewis te paga setecentas e cinquenta fichas pra ficar quieta."},
+  {"src": "gravacoes/bruto/novas/feira-loja-de-premios-e-exposicao-pronta.mp4", "ini": 6.0, "inteiro": true, "selo": "750 × 500",
+   "fala": "[provocando] O segundo lugar só dá quinhentas. Comenta CUECA se você já fez isso!", "cta": "comenta CUECA"},
+  {"src": "gravacoes/bruto/novas/feira-teste-de-forca-martelo.mp4", "ini": 4.0, "cx": 1000, "cy": 560, "zoom": 1.5, "selo": "Martelo",
+   "fala": "[animada] E o martelo é de graça: acertou no tempo certo, ganhou ficha."},
+  {"src": "gravacoes/bruto/novas/feira-comprar-fichas-e-cartomante.mp4", "ini": 26.0, "inteiro": true, "selo": "Cartomante",
+   "fala": "[intrigada] Por cem ouros, a cartomante prevê o futuro dos dois primeiros da sua lista de amizade."},
+  {"src": "gravacoes/bruto/novas/feira-exposicao-sendo-avaliada.mp4", "ini": 2.0, "cx": 960, "cy": 540, "zoom": 1.5, "selo": "Pra Feira",
+   "fala": "[divertida] Manda pra amiga que vai na Feira! Me segue pra mais segredos."}
+ ]
+}
