@@ -38,6 +38,9 @@ Diagnóstico: posts à mão tiveram 130–215 views; pelo Metricool 0–23 (mesm
 6. **Mesclar formatos** (nunca 2 iguais seguidos), mas com peso maior em vídeo.
 7. Se precisar dela (gravar, testar, aprovar, pagar algo), **avisar na hora**.
 
+## Números no painel (pedido da Yasmin, 13/11)
+Toda semana ela manda prints (TikTok e Instagram). Eu coloco na aba **Números** do painel: coleção `metricas` (1 doc por rede e semana, id `AAAA-MM-DD_rede` com a data final do período; campos titulo, periodo, data_fim, ordem, kpis[{nome,valor,obs,alerta}], secoes[{titulo,unid,itens[{nome,valor}]}], fonte) e atualizo o doc `resumo` (leitura, acoes, voce, falta). Semanas antigas aparecem sozinhas no histórico. Também guardo em metricool/metricas.json e os prints em metricool/prints/.
+
 ## Rotina de melhoria contínua
 Todo dia às 15:13 (Brasília) uma tarefa agendada olha a pasta de referências do Drive, pesquisa o que bomba em inglês e (às segundas) procura skills novas no GitHub; atualiza APRENDIZADOS.md e só avisa a Yasmin quando tiver novidade útil. Lista do que já foi visto: APRENDIZADOS-referencias-vistas.json.
 
