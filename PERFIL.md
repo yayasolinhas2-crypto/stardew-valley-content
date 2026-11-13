@@ -94,6 +94,10 @@
 | 07/11 | 001 · 5 segredos escondidos | ✅ aprovado | segredos / contagem | "tá bem bonito". Pediu revisão de erros de escrita e coisa fora do quadro |
 | 11/11 | Repetidos (fotos + vídeo do mesmo tema; Pierre e Clint 2x) | ❌ "não faz o menor sentido… não quero nada repetido. Nada." | **já existe** | **REGRA FIXA (esclarecida por ela no mesmo dia):** pode repetir TEMA, clipe e música; NUNCA o mesmo título, a mesma capa, o mesmo gancho/1ª frase ou o mesmo conteúdo. Dentro de um tema, explorar ângulos novos e vários assuntos no mesmo vídeo ("é fácil fazer isso"). Nada de versão em fotos E em vídeo do mesmo post. Conferir a tabela "Temas usados" antes de criar. |
 
+## Aprovações recentes (13/11)
+- ✅ 037v "A CUECA do Lewis vale 750 fichas" e 038v "Minério TODO DIA: a Pedreira": aprovados na hora. Padrão: fato surpreendente com número no gancho + gravação dela que ainda não tinha sido usada.
+- 13/11: "isso mesmo! sempre atualize a sua base de dados pra alcançarmos a meta e faça qualquer mudança necessária" → autonomia pra ajustar rotinas, painel e processo sem perguntar (custo continua precisando de OK).
+
 ## Pedidos dos seguidores (Yasmin, 11/11)
 - Sempre que ela mandar print de comentários, **criar vídeo-resposta** pro que pediram (TikTok: "responder com vídeo", ela posta à mão; Instagram pelo Metricool). Só se trouxer informação NOVA (não repetir tema já usado).
 - 036 qualidade do vinho (T_Angel) · lendário de primeira (Davi/Klebson) espera gravação dela pescando.
