@@ -101,6 +101,9 @@
 ## Pedidos dos seguidores (Yasmin, 11/11)
 - Sempre que ela mandar print de comentários, **criar vídeo-resposta** pro que pediram (TikTok: "responder com vídeo", ela posta à mão; Instagram pelo Metricool). Só se trouxer informação NOVA (não repetir tema já usado).
 - 036 qualidade do vinho (T_Angel) · lendário de primeira (Davi/Klebson) espera gravação dela pescando.
+- Comentários TikTok (print 14/11): "5 peixes lendários" (p004) é o que mais gera conversa (Gaby Silva "vendi o meu carmim kkkk", Kathlen marcando amiga, davio "carpa mutante peguei de primeira"); "1.7: Clint vai casar" (Gabby: "a gente quer a Robin, aceitamos trisal"); barril (dias "BARRIL", Giovanna "não sabia disso", ellen "esse link tem TUDO").
+  - Ideia de vídeo-resposta (Gaby Silva): "Vendeu o Peixe-Carmesim? Ele tem um FILHO!" — pedido especial do Qi "Família Estendida" (Extended Family): 5 parentes dos lendários (Filho do Carmesim, Senhora Pescadora, Lenda II, Carpa Radioativa, Peixe-Glacial Jr.), 3 dias pra pegar, prêmio 20 Gemas Qi; precisa da sala do Qi (100 Nozes Douradas, Ilha Gengibre) e pesca nível 10. Fonte: wiki Quests. Nomes PT a conferir na wiki PT. Precisa gravação de pesca.
+  - Robin não é casável (casada com o Demetrius, wiki Robin) → só resposta escrita, não vídeo.
 
 ## Temas usados (tema pode voltar com ângulo novo; título, capa e conteúdo nunca)
 | Tema | Post que vale | Removidos por repetir |
