@@ -172,6 +172,11 @@ ul.src{margin:0;padding-left:18px;font-size:13px;overflow-wrap:anywhere} ul.src 
 .empty .ico{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent)}
 .toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(84px + env(safe-area-inset-bottom,0px));z-index:20;background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:10px;font-size:14px;font-weight:500;max-width:calc(100% - 32px);text-align:center;box-shadow:0 8px 24px rgba(0,0,0,.2)}
 @media (min-width:960px){.toast{bottom:24px}}
+.grav{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:start;padding:12px 0;border-top:1px solid var(--line)}
+.grav:first-child{border-top:0}
+.grav .ok{width:44px;height:44px;padding:0;border-radius:12px}
+.grav.feito{align-items:center;color:var(--muted);font-size:13.5px}
+details summary{cursor:pointer;padding:6px 0;list-style-position:inside}
 .bar{display:grid;gap:4px;font-size:13.5px}
 .bar .trk{display:block;height:8px;border-radius:99px;background:var(--line)}
 .bar .trk i{display:block;height:100%;border-radius:99px;background:var(--accent)}
@@ -203,7 +208,7 @@ const DIAS=["dom","seg","ter","qua","qui","sex","sáb"];
 const DIAS_L=["domingo","segunda","terça","quarta","quinta","sexta","sábado"];
 const ICO={relogio:`<svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>`,
   ok:`<svg class="i" viewBox="0 0 24 24"><path d="m5 12 5 5 9-10"/></svg>`,cal:`<svg class="i" viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="16.5" rx="3"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg>`};
-let metricas=[],vozes=[],vozEscolhida=null,posts=[],db=null,dl=null,writable=true,loaded=false,busy=false,negando=null,voltarLista="postar",voltarFotos="";
+let gravar=[],metricas=[],vozes=[],vozEscolhida=null,posts=[],db=null,dl=null,writable=true,loaded=false,busy=false,negando=null,voltarLista="postar",voltarFotos="";
 
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const when=p=>new Date(`${p.data}T${p.hora||"00:00"}:00-03:00`).getTime();
@@ -431,7 +436,7 @@ function telaPostar(){
   const aviso=vozes.length&&!vozEscolhida?`<a class="btn wide" href="#vozes">Teste de voz: escolha a narração dos vídeos →</a>`:"";
   const mao=maoPend();
   const blocoMao=mao.length?`<section class="frame hl"><div class="sect"><h3>✋ Você posta à mão</h3><a class="btn small" href="#mao">Ver todos (${mao.length})</a></div><p class="muted">Estes não vão pelo Metricool no TikTok. Abra, baixe o vídeo e poste no horário com um som em alta baixinho (5–10%).</p>${mao.slice(0,3).map(slot).join("")}</section>`:"";
-  return `${aviso}${kpis}${blocoMc()}${blocoMao}${prox?`<section class="frame hl"><div class="sect"><span class="lbl">Próximo post</span>${pill(prox)}</div>
+  return `${aviso}${kpis}${blocoGravar()}${blocoMc()}${blocoMao}${prox?`<section class="frame hl"><div class="sect"><span class="lbl">Próximo post</span>${pill(prox)}</div>
       <div class="prox"><div style="display:grid;gap:10px">${strip(prox)}</div>
       <div style="display:grid;gap:14px;align-content:start"><div style="display:grid;gap:6px"><span class="when">${ICO.relogio}${quando(prox)}</span><h2>${tit(prox)}</h2><div class="row"><span class="tag">#${esc(prox.num)}</span><span class="tag">${tipo(prox)}</span></div></div>${passos(prox)}</div></div></section>`
     :vazio("Nada na fila","Nenhum post aprovado esperando. Veja a aba Aprovar.")}
@@ -508,6 +513,16 @@ function telaVozes(){
     ${vozEscolhida===v.id?"":`<button class="primary" data-voz="${esc(v.id)}" ${writable?"":"disabled"}>Escolher esta voz</button>`}</section>`;
   return `${fx.length?`<h3>Femininas</h3><div class="cards2">${fx.map(card).join("")}</div>`:""}${mx.length?`<h3>Masculinas</h3><div class="cards2">${mx.map(card).join("")}</div>`:""}`;
 }
+/* ---------- Pra gravar (coleção gravar: titulo, como, pra, ordem, feito, feitoEm) ---------- */
+function blocoGravar(){
+  const pend=gravar.filter(g=>!g.feito).sort((a,b)=>(a.ordem||0)-(b.ordem||0));
+  const feitos=gravar.filter(g=>g.feito).sort((a,b)=>(b.feitoEm||"").localeCompare(a.feitoEm||""));
+  if(!pend.length&&!feitos.length)return "";
+  const item=g=>`<div class="grav"><button class="ok" data-gravei="${esc(g.id)}" ${writable?"":"disabled"} aria-label="Marcar como gravado: ${esc(g.titulo)}">${ICO.ok}</button><div style="display:grid;gap:3px"><b>${esc(g.titulo)}</b>${g.como?`<p class="muted">${esc(g.como)}</p>`:""}${g.pra?`<p class="muted" style="font-size:12.5px">Pra quê: ${esc(g.pra)}</p>`:""}</div></div>`;
+  return `<section class="frame${pend.length?" hl":""}"><div class="sect"><h3>🎥 Pra gravar</h3><span class="tag">${pend.length?pend.length+" faltando":"tudo gravado"}</span></div>
+    ${pend.length?`<p class="muted">Gravou? Toque no ✓ e ele sai da lista. Mande as gravações pra pasta de gravações do Drive.</p><div>${pend.map(item).join("")}</div>`:`<p class="muted">Tudo gravado! 🎉 Quando eu precisar de mais, aparece aqui.</p>`}
+    ${feitos.length?`<details><summary class="muted">${feitos.length} já gravado${feitos.length>1?"s":""}</summary>${feitos.map(g=>`<div class="grav feito"><button class="small" data-desgravei="${esc(g.id)}" ${writable?"":"disabled"}>Desfazer</button><span>${esc(g.titulo)}</span></div>`).join("")}</details>`:""}</section>`;
+}
 /* ---------- Números (coleção metricas: 1 doc por rede e semana + doc 'resumo') ---------- */
 const fmt=n=>typeof n==="number"?n.toLocaleString("pt-BR"):esc(n);
 function barras(lista,unid){const max=Math.max(...lista.map(x=>+x.valor||0),1);
@@ -556,6 +571,8 @@ document.addEventListener("click",e=>{
     if(!ms.length&&!tx){toast("Marque um motivo ou escreva o que mudar");return}
     negando=null;salvar(id,{status:"negado",motivo:[...ms,tx].filter(Boolean).join(" · ")},"Recusado. O Claude vai refazer.")}
   else if(d.voz){if(!db)return;vozEscolhida=d.voz;render();db.collection("config").doc("voz").set({escolhida:d.voz,em:new Date().toISOString()}).then(()=>toast("Voz escolhida! O Claude vai usar essa nos vídeos"),()=>toast("Não salvou. Tente de novo."))}
+  else if(d.gravei){if(!db||!writable)return;db.collection("gravar").doc(d.gravei).update({feito:true,feitoEm:new Date().toISOString()}).then(()=>toast("Boa! Saiu da lista ✓"),()=>toast("Não salvou. Tente de novo."))}
+  else if(d.desgravei){if(!db||!writable)return;db.collection("gravar").doc(d.desgravei).update({feito:false}).then(()=>toast("Voltou pra lista"),()=>toast("Não salvou. Tente de novo."))}
   else if(d.mc){carregarMc(true)}
   else if(d.perm){claude.use("permissions").then(p=>p&&p.manage()).catch(()=>toast("Abra o menu Permissões do painel"))}
   else if(d.agendar){salvar(d.agendar,{status:"agendado"},"Marcado como agendado no Metricool")}
@@ -575,6 +592,7 @@ addEventListener("hashchange",e=>{negando=null;
   db=await claude.use("db").catch(()=>null);
   if(!db){$("#view").innerHTML=vazio("Entre na sua conta","Abra este painel logada no claude.ai pra ver e aprovar os posts.");return}
   const timer=setTimeout(()=>{if(!loaded)$("#view").innerHTML=`<section class="frame empty muted">Ainda conectando… confira a internet.</section>`},10000);
+  db.collection("gravar").onSnapshot(sn=>{gravar=sn.docs.map(d=>({id:d.id,...d.data()}));render()},()=>{});
   db.collection("metricas").onSnapshot(sn=>{metricas=sn.docs.map(d=>({id:d.id,...d.data()}));render()},()=>{});
   db.collection("vozes").onSnapshot(sn=>{vozes=sn.docs.map(d=>({id:d.id,...d.data()})).sort((a,b)=>(a.ordem||0)-(b.ordem||0));render()},()=>{});
   db.collection("config").doc("voz").onSnapshot(sn=>{vozEscolhida=sn.exists?sn.data().escolhida:null;render()},()=>{});
