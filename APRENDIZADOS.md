@@ -88,3 +88,8 @@ Regra: copiar o FORMATO (enquadramento, ritmo, tipo de legenda), nunca o texto, 
 - 96,5% vem do Para Você → o algoritmo está distribuindo. Problema é CONVERSÃO: quase ninguém abre o perfil (diagnóstico nº 4 do CLAUDE.md: "tem views, mas ninguém segue").
 - Busca (2%) pede: **"onde pescar"**, **"pescando peixe lenda"**, **"como liberar o porão"**. → prioridade: vídeo de pesca/lendário (gravação dela) e "como liberar o porão" (wiki Cellar: 3ª reforma da casa com a Robin, 100.000g, 3 dias, vem com 33 barris e cabe até 189).
 - Ações: série com "parte 2 no perfil" e fala final "me segue pra parte 2"; capa/título com a palavra que a pessoa busca; fixar 3 melhores vídeos; bio clara.
+
+## Números Instagram (30 dias até 12/11, print da Yasmin 13/11)
+- 2.914 views · 1.916 contas · **22 seguidores** · 93% das views de NÃO seguidores · 68 visitas ao perfil (3,5% de quem viu, 7x melhor que no TikTok) · 1 toque no link da bio.
+- **Reels 2,8 mil × posts de foto 108 (26x)**; interações: Reels 111, fotos 15. Confirma a regra: só vídeo. Carrossel de foto no Instagram não vale a pena.
+- TikTok tem 3,7x mais alcance (10,8 mil/semana), mas converte pior em visita ao perfil (0,5%). Foco do TikTok: CTA de perfil/série ("parte 2 no perfil").

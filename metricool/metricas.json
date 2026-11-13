@@ -34,6 +34,29 @@
     "stardew"
    ],
    "falta": "seguidores ganhos, views por vídeo (aba Conteúdo), % que assistiu até o fim, Instagram"
+  },
+  {
+   "rede": "instagram",
+   "periodo": "30 dias até 2026-11-12 (conta começou ~07/11)",
+   "fonte": "prints da Yasmin (Your dashboard), 13/11",
+   "views": 2914,
+   "viewers": 1916,
+   "views_seguidores": 201,
+   "views_nao_seguidores": 2713,
+   "seguidores": 22,
+   "views_por_tipo": {
+    "reels": 2800,
+    "posts": 108,
+    "stories": 14
+   },
+   "interacoes_por_tipo": {
+    "reels": 111,
+    "posts": 15,
+    "stories": 3
+   },
+   "visitas_perfil": 68,
+   "toques_link_bio": 1,
+   "pico_diario_aprox": "~650–680 views/dia (gráfico)"
   }
  ]
 }
