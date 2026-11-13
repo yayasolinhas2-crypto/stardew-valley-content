@@ -1,6 +1,6 @@
 # Estado atual (passagem de bastão entre chats) — atualizar no fim de cada dia
 
-Atualizado: 12/11/2026 (11:50 Brasília, bom dia).
+Atualizado: 13/11/2026 (12:45 Brasília, bom dia).
 
 ## Quem / o quê
 - Perfil @segredosdovalley (TikTok + Instagram), Stardew Valley em PT-BR. Meta: **10.000 seguidores até 09/12/2026**.
@@ -25,6 +25,7 @@ Erro de 10/11: as rotinas abriam chat novo SEM o repositório e não faziam nada
 - "Stardew · pauta da gringa + anti-repetição (diária)" trig_013AkYWhJMKpEFVbBTQSrhdz, 10:23 PST, no chat do bom dia: confere repetidos, pesquisa o que bomba lá fora (com prova), produz 2 vídeos/dia. Pedido da Yasmin 11/11, foco na meta de 10 mil.
 
 ## Em andamento
+- Auditoria 13/11: tudo ok até 17/11. Corrigido: alarme falso do p002 — campo `manter_no_metricool: true` no painel e tools/auditoria.py ignora esses. 037v e 038v (dom 15/11) ainda AGUARDANDO a Yasmin; se não aprovar até sáb, domingo fica com 2 buracos. Nenhuma gravação nova no Drive (pesca ainda não chegou).
 - Pauta 12/11 (rotina 10:23 PST): 037v "A CUECA do Lewis vale 750 fichas" (dom 15/11 17:00) e 038v "Minério TODO DIA: a Pedreira" (dom 15/11 13:00) no painel como AGUARDANDO — preenchem os buracos de domingo. Gravações baixadas do Drive por curl (drive.usercontent.google.com/download?id=...&confirm=t, funciona sem conector). metricool/metricas.json está VAZIO: sem números não dá pra fechar o ciclo; pedir prints.
 - Auditoria 12/11: painel = Metricool. Corrigido: p034v marcado "agendado" no painel (id 425585754). Aviso da auditoria "p002 negado mas agendado" é esperado (decisão dela). Drive: painel criou as subpastas 033/031/034/035 em 11/11 (entrega funcionando).
 - Buracos na agenda: dom 15/11 13:00 e 17:00 (slots de p001v/p010 foram reaproveitados). A rotina de pauta (10:23 PST) produz 2 vídeos/dia pra preencher.

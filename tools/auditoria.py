@@ -69,5 +69,5 @@ for pid, p in saem.items():
 for r in ag.get('agendados', []):
     pid = r['id'].split('→')[-1]
     if r.get('status')=='agendado' and r['quando_brasilia'] > (agora - dt.timedelta(hours=3)).strftime('%Y-%m-%d %H:%M'):
-        if posts.get(pid,{}).get('status') == 'negado': P(f'METRICOOL: {pid} está NEGADO no painel mas agendado no Metricool ({r["quando_brasilia"]})')
+        if posts.get(pid,{}).get('status') == 'negado' and not posts.get(pid,{}).get('manter_no_metricool'): P(f'METRICOOL: {pid} está NEGADO no painel mas agendado no Metricool ({r["quando_brasilia"]})')
 print('\n'.join(ok)); print('\nPROBLEMAS:' if prob else '\nNenhum problema.'); print('\n'.join(prob))
