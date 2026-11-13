@@ -1,1 +1,39 @@
-{"atualizado_em": null, "posts": []}
+{
+ "atualizado_em": "2026-11-13",
+ "posts": [],
+ "conta": [
+  {
+   "rede": "tiktok",
+   "periodo": "2026-11-06 a 2026-11-12",
+   "fonte": "print da Yasmin (Análise > Visão geral, 7 dias), 13/11",
+   "visualizacoes_publicacoes": 10800,
+   "visualizacoes_perfil": 57,
+   "curtidas": 671,
+   "comentarios": 13,
+   "compartilhamentos": 103,
+   "views_por_dia_aprox_lido_do_grafico": {
+    "07/11": "~0,1 mil",
+    "08/11": "~0,9 mil",
+    "09/11": "~3,3 mil (pico)",
+    "10/11": "~2,7 mil",
+    "11/11": "~2,2 mil",
+    "12/11": "~1,6 mil"
+   },
+   "origem_trafego": {
+    "para_voce": 96.5,
+    "pesquisar": 2.0,
+    "perfil": 1.5,
+    "seguindo": 0.0,
+    "som": 0.0
+   },
+   "termos_pesquisados": [
+    "onde pescar no stardew valley",
+    "como liberar o porao stardew valley",
+    "pescando peixe lenda stardew valley",
+    "stardew valley dicas",
+    "stardew"
+   ],
+   "falta": "seguidores ganhos, views por vídeo (aba Conteúdo), % que assistiu até o fim, Instagram"
+  }
+ ]
+}

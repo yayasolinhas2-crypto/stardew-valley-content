@@ -82,3 +82,9 @@ Regra: copiar o FORMATO (enquadramento, ritmo, tipo de legenda), nunca o texto, 
 - 3 ideias mais fortes: (1) "Xarope de bordo, resina e alcatrão na VIDA REAL" (série vida real, parte nova); (2) "1.7: a MAIOR atualização da história" (notícia Red Rocks, parte 2 do 024v); (3) "Pedido de casamento com o Pingente de Sereia" (POV, precisa gravação).
 - Fato forte achado na wiki: cueca roxa do Lewis na exposição da Feira = desclassificada, mas ele paga 750 fichas (2º lugar = 500). Virou o 037v.
 - Download das gravações do Drive funciona por curl direto (sem conector): drive.usercontent.google.com/download?id=<id>&export=download&confirm=t.
+
+## Números TikTok 06–12/11 (print da Yasmin, 13/11)
+- 10,8 mil views · 671 curtidas (6,2%) · 103 compartilhamentos (~1%) · 13 comentários · só **57 visitas ao perfil (0,5%)**. Pico ~3,3 mil em 09/11, caindo até ~1,6 mil em 12/11 (lido do gráfico).
+- 96,5% vem do Para Você → o algoritmo está distribuindo. Problema é CONVERSÃO: quase ninguém abre o perfil (diagnóstico nº 4 do CLAUDE.md: "tem views, mas ninguém segue").
+- Busca (2%) pede: **"onde pescar"**, **"pescando peixe lenda"**, **"como liberar o porão"**. → prioridade: vídeo de pesca/lendário (gravação dela) e "como liberar o porão" (wiki Cellar: 3ª reforma da casa com a Robin, 100.000g, 3 dias, vem com 33 barris e cabe até 189).
+- Ações: série com "parte 2 no perfil" e fala final "me segue pra parte 2"; capa/título com a palavra que a pessoa busca; fixar 3 melhores vídeos; bio clara.
