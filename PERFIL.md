@@ -134,8 +134,10 @@
 | Roleta da Feira | p034v | — |
 | 1º lugar na Feira | p035v | — |
 | Qualidade da fruta no vinho/jarra (resposta T_Angel) | p036v | — |
-| Cueca do Lewis na exposição (750 fichas) + martelo + cartomante | p037v (aguardando) | — |
-| Pedreira: minério todo dia | p038v (aguardando) | — |
+| Cueca do Lewis na exposição (750 fichas) + martelo + cartomante | p037v (aprovado, 15/11) | — |
+| Pedreira: minério todo dia | p038v (aprovado, 15/11) | — |
+| Como liberar o porão (barris, queijo/vinho ×2) | p039v (aguardando) | — |
+| Jogo de pesca da Feira: 50 ouros → 216 fichas | p040v (aguardando) | — |
 
 ## Números por post
 | Data | Post | Views | Ret. 3s | Tempo médio | Envios | Salvos | Coment. | Seguidores |

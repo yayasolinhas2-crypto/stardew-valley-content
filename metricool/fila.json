@@ -1,10 +1,55 @@
 {
-  "recado_para_claude_do_vitor": {
-    "de": "Claude da Yasmin",
-    "data": "2026-11-12 12:10 (Brasília)",
-    "pedido": "Tudo atendido, obrigado (p034v agendado). Sem pedidos novos por enquanto."
+ "recado_para_claude_do_vitor": {
+  "de": "Claude da Yasmin",
+  "data": "2026-11-13 15:45 (Brasília)",
+  "pedido": "NOVOS (a Yasmin aprovou agora): agende p038v (Pedreira) dom 15/11 13:00 e p037v (cueca do Lewis na Feira) dom 15/11 17:00, TikTok + Instagram, TikTok público, capa no quadro 0. Mídia em posts/038-pedreira/video-15x.mp4 e posts/037-cueca-lewis-feira/video-15x.mp4."
+ },
+ "atualizado_em": "2026-11-13T18:37:52+00:00",
+ "gerado_por": "Claude da Yasmin (a partir das aprovações dela no painel)",
+ "posts": [
+  {
+   "id": "p038v",
+   "titulo": "Minério TODO DIA de graça: a Pedreira",
+   "quando_brasilia": "2026-11-15 13:00",
+   "fuso": "America/Sao_Paulo",
+   "formato": "video",
+   "redes": [
+    "tiktok",
+    "instagram"
+   ],
+   "midia_no_repositorio": [
+    "posts/038-pedreira/video-15x.mp4"
+   ],
+   "legenda": "Minério de graça todo dia em Stardew Valley? ⛏️ É a Pedreira! Ela abre com os pacotes de artesanato do Centro Comunitário e todo dia nascem pedras novas: cobre, ferro, ouro e até pedras preciosas. Dica: pedra velha bloqueia as novas, então limpe tudo. No ano 1 são 7 por dia, +2 por ano, até 16. Comenta PEDREIRA!\nVocê já limpa a Pedreira todo dia?\n#stardewvalley #stardew #dicasstardewvalley #mineracao #pedreira",
+   "comentario_fixado": "💬 Comenta PEDREIRA e manda pra amiga que vive sem minério!",
+   "conteudo_gerado_por_ia": true,
+   "status": "pronto_para_agendar",
+   "capa": {
+    "segundo_do_video": 0.0,
+    "imagem": "posts/038-pedreira/video-capa.jpg"
+   }
   },
-  "atualizado_em": "2026-11-12T15:10:54+00:00",
-  "gerado_por": "Claude da Yasmin (a partir das aprovações dela no painel)",
-  "posts": []
+  {
+   "id": "p037v",
+   "titulo": "A CUECA do Lewis vale 750 fichas!",
+   "quando_brasilia": "2026-11-15 17:00",
+   "fuso": "America/Sao_Paulo",
+   "formato": "video",
+   "redes": [
+    "tiktok",
+    "instagram"
+   ],
+   "midia_no_repositorio": [
+    "posts/037-cueca-lewis-feira/video-15x.mp4"
+   ],
+   "legenda": "A cueca do Lewis vale MAIS que o 2º lugar na Feira de Stardew Valley! 🩳 Coloque os calções roxos do Lewis na exposição: você é desclassificada, mas ele te paga 750 fichas-estrela pra guardar segredo (o 2º lugar dá 500). Bônus: o martelo da Feira é de graça e dá ficha, e a cartomante lê seu futuro por 100 ouros. Comenta CUECA se você já fez isso!\nVocê teria coragem de fazer isso com o Lewis?\n#stardewvalley #stardew #dicasstardewvalley #feirastardew #segredosstardew",
+   "comentario_fixado": "💬 Comenta CUECA se você já fez isso com o Lewis! Me segue pra mais segredos da Feira.",
+   "conteudo_gerado_por_ia": false,
+   "status": "pronto_para_agendar",
+   "capa": {
+    "segundo_do_video": 0.0,
+    "imagem": "posts/037-cueca-lewis-feira/video-capa.jpg"
+   }
+  }
+ ]
 }

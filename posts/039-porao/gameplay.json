@@ -1,0 +1,20 @@
+{
+ "titulo": "Você ainda NÃO tem o *PORÃO*?",
+ "voz": "Sulafat",
+ "velocidade": 1.5,
+ "estilo": "nativo",
+ "cenas": [
+  {"src": "gravacoes/bruto/use o galpao para suas maquinas.mp4", "ini": 9.5, "cx": 1100, "cy": 500, "zoom": 1.4, "selo": "Stardew Valley",
+   "fala": "[provocando] Tá cheia de ouro e ainda não liberou o PORÃO?"},
+  {"src": "gravacoes/bruto/use o galpao para suas maquinas.mp4", "ini": 11.5, "cx": 1100, "cy": 480, "zoom": 1.4, "selo": "Robin",
+   "fala": "[explicando] É a terceira reforma da casa com a Robin: cem mil ouros."},
+  {"src": "gravacoes/bruto/use o galpao para suas maquinas.mp4", "ini": 16.5, "cx": 900, "cy": 560, "zoom": 1.4, "selo": "33 barris",
+   "fala": "[animada] Fica pronto em três dias e já vem com trinta e três barris.", "cta": "comenta PORÃO"},
+  {"src": "gravacoes/bruto/produtos q valem vwnder.mp4", "ini": 14.0, "cx": 900, "cy": 540, "zoom": 1.4, "selo": "Queijo ×2",
+   "fala": "[revelando] No barril, o queijo vira irídio em catorze dias e vale o dobro."},
+  {"src": "gravacoes/bruto/produtos q valem vwnder.mp4", "ini": 25.0, "cx": 900, "cy": 540, "zoom": 1.4, "selo": "Vinho ×2",
+   "fala": "[chocada] O vinho leva cinquenta e seis dias, mas também dobra de preço."},
+  {"src": "gravacoes/bruto/use o galpao para suas maquinas.mp4", "ini": 27.0, "cx": 900, "cy": 560, "zoom": 1.4, "selo": "Até 189",
+   "fala": "[divertida] E cabem até cento e oitenta e nove barris! Comenta PORÃO e me segue.", "cta": "comenta PORÃO"}
+ ]
+}
