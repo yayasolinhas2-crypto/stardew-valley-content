@@ -41,8 +41,11 @@ Diagnóstico: posts à mão tiveram 130–215 views; pelo Metricool 0–23 (mesm
 ## Carrossel de foto: SÓ no TikTok (decisão da Yasmin, 13/11)
 "Pode voltar a fazer carrossel de foto no TikTok, só no TikTok." Formatos: (1) série "Coisas que eu queria saber quando comecei Stardew" (print da gameplay dela em tela cheia + 1 dica em texto grande por foto, partes 1, 2, 3…); (2) guias de 1 página no nosso visual. No Instagram, o mesmo conteúdo sai como VÍDEO (Reels). Na fila: marcar só tiktok pra versão em foto.
 
+## Sem post à mão (Yasmin, 14/11)
+Ela NÃO posta mais nada à mão: tudo vai pelo Metricool (Claude do Vitor). Não usar `postar_a_mao` em posts novos. A aba "À mão" do painel virou a aba **Gravar** (checklist da coleção `gravar`).
+
 ## Lista de gravações no painel (pedido da Yasmin, 13/11)
-Tudo que eu peço pra ela gravar vai pra coleção `gravar` do painel (aparece em Início › "🎥 Pra gravar"): campos titulo, como (exatamente o take), pra (pra que vídeo), ordem, feito. Ela toca no ✓ quando grava e o item sai da lista. Nunca pedir gravação só no chat. Ao achar a gravação no Drive, conferir se o item está marcado; se ela esqueceu, marcar feito.
+Tudo que eu peço pra ela gravar vai pra coleção `gravar` do painel (aba **Gravar** do painel; no Início aparece só um botão com quantos faltam): campos titulo, como (exatamente o take), pra (pra que vídeo), ordem, feito. Ela toca no ✓ quando grava e o item sai da lista. Nunca pedir gravação só no chat. Ao achar a gravação no Drive, conferir se o item está marcado; se ela esqueceu, marcar feito.
 
 ## Números no painel (pedido da Yasmin, 13/11)
 Toda semana ela manda prints (TikTok e Instagram). Eu coloco na aba **Números** do painel: coleção `metricas` (1 doc por rede e semana, id `AAAA-MM-DD_rede` com a data final do período; campos titulo, periodo, data_fim, ordem, kpis[{nome,valor,obs,alerta}], secoes[{titulo,unid,itens[{nome,valor}]}], fonte) e atualizo o doc `resumo` (leitura, acoes, voce, falta). Semanas antigas aparecem sozinhas no histórico. Também guardo em metricool/metricas.json e os prints em metricool/prints/.
