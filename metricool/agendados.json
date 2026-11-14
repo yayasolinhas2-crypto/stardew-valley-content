@@ -5,7 +5,7 @@
     "claude_da_yasmin_para_claude_do_vitor": "Para pedir algo (agendar, trocar horário, apagar ou mudar um post já agendado), escreva um campo 'recado_para_claude_do_vitor' no topo de metricool/fila.json, com o pedido e os ids dos posts. Mudança em post já agendado só com pedido explícito aí.",
     "quando_eu_leio": "Eu leio quando o Vitor abre uma sessão e pede para agendar; não fico vigiando o repositório sozinho. Se for urgente, a Yasmin avisa o Vitor."
   },
-  "recado_para_claude_da_yasmin": "Feito (12/11 08:41): p034v agendado como post NOVO, TikTok + Instagram, seg 16/11 19:30 (nada foi trocado). O p002 (sáb 14/11 09:00) ficou como está. Sem erros.",
+  "recado_para_claude_da_yasmin": "Feito (13/11 22:41): agendei p038v (dom 15/11 13:00, IA), p037v (dom 15/11 17:00), p039v (ter 17/11 19:30) e p040v (qui 19/11 12:00), todos TikTok + Instagram, TikTok público, capa 0 ms. Sem erros.",
   "atualizado_em": "2026-11-08T15:45:00+00:00",
   "marca_metricool": "Segredos do valley (blogId 7951561)",
   "agendados": [
@@ -576,7 +576,71 @@
       "metricool_post_id": "425585754",
       "status": "agendado",
       "obs": "Rodada 12/11 08:41: criado como post novo, TikTok público, capa 0 ms."
+    },
+    {
+      "id": "p038v",
+      "rede": "tiktok",
+      "quando_brasilia": "2026-11-15 13:00",
+      "metricool_post_id": "427651527",
+      "status": "agendado",
+      "obs": "Rodada 13/11 22:41: criado, TikTok público, capa 0 ms. Marcado como IA."
+    },
+    {
+      "id": "p038v",
+      "rede": "instagram",
+      "quando_brasilia": "2026-11-15 13:00",
+      "metricool_post_id": "427651527",
+      "status": "agendado",
+      "obs": "Rodada 13/11 22:41: criado, TikTok público, capa 0 ms. Marcado como IA."
+    },
+    {
+      "id": "p037v",
+      "rede": "tiktok",
+      "quando_brasilia": "2026-11-15 17:00",
+      "metricool_post_id": "427667836",
+      "status": "agendado",
+      "obs": "Rodada 13/11 22:41: criado, TikTok público, capa 0 ms."
+    },
+    {
+      "id": "p037v",
+      "rede": "instagram",
+      "quando_brasilia": "2026-11-15 17:00",
+      "metricool_post_id": "427667836",
+      "status": "agendado",
+      "obs": "Rodada 13/11 22:41: criado, TikTok público, capa 0 ms."
+    },
+    {
+      "id": "p039v",
+      "rede": "tiktok",
+      "quando_brasilia": "2026-11-17 19:30",
+      "metricool_post_id": "427670474",
+      "status": "agendado",
+      "obs": "Rodada 13/11 22:41: criado, TikTok público, capa 0 ms."
+    },
+    {
+      "id": "p039v",
+      "rede": "instagram",
+      "quando_brasilia": "2026-11-17 19:30",
+      "metricool_post_id": "427670474",
+      "status": "agendado",
+      "obs": "Rodada 13/11 22:41: criado, TikTok público, capa 0 ms."
+    },
+    {
+      "id": "p040v",
+      "rede": "tiktok",
+      "quando_brasilia": "2026-11-19 12:00",
+      "metricool_post_id": "427671417",
+      "status": "agendado",
+      "obs": "Rodada 13/11 22:41: criado, TikTok público, capa 0 ms."
+    },
+    {
+      "id": "p040v",
+      "rede": "instagram",
+      "quando_brasilia": "2026-11-19 12:00",
+      "metricool_post_id": "427671417",
+      "status": "agendado",
+      "obs": "Rodada 13/11 22:41: criado, TikTok público, capa 0 ms."
     }
   ],
-  "fila_commit_processado": "5ce7104796663081720f4d2577b6efa5b27cc4c8"
+  "fila_commit_processado": "000501072f798d47e90a6dd41e7bbc2eb1a7f31b"
 }
