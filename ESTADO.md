@@ -1,6 +1,6 @@
 # Estado atual (passagem de bastão entre chats) — atualizar no fim de cada dia
 
-Atualizado: 13/11/2026 (12:45 Brasília, bom dia).
+Atualizado: 14/11/2026 (11:50 Brasília, bom dia).
 
 ## Quem / o quê
 - Perfil @segredosdovalley (TikTok + Instagram), Stardew Valley em PT-BR. Meta: **10.000 seguidores até 09/12/2026**.
@@ -25,6 +25,7 @@ Erro de 10/11: as rotinas abriam chat novo SEM o repositório e não faziam nada
 - "Stardew · pauta da gringa + anti-repetição (diária)" trig_013AkYWhJMKpEFVbBTQSrhdz, 10:23 PST, no chat do bom dia: confere repetidos, pesquisa o que bomba lá fora (com prova), produz 2 vídeos/dia. Pedido da Yasmin 11/11, foco na meta de 10 mil.
 
 ## Em andamento
+- Auditoria 14/11: nenhum problema. Claude do Vitor agendou 037–040 (13/11 22:41). Agenda cheia até 17/11; quarta 18/11 VAZIA e qui 19/11 só 12:00 → rotina de pauta (10:23 PST) deve produzir o carrossel "Coisas que eu queria saber" parte 1 + vídeos. Nenhuma gravação nova no Drive; checklist "Pra gravar" com 7 itens pendentes.
 - 13/11 noite: Yasmin liberou CARROSSEL DE FOTO SÓ NO TIKTOK (regra em PRIORIDADES.md). Próximo: série "Coisas que eu queria saber quando comecei Stardew" parte 1 (prints das gravações dela + dica conferida na wiki), foto no TikTok e vídeo no Instagram. Painel ganhou o checklist "🎥 Pra gravar" (coleção `gravar`, 7 takes pedidos: pesca Esgoto, pesca píer leste, coleção de peixes, Robin/reforma, Gunther, presente ama/odeia, Krobus).
 - Pauta 13/11: 039v "Você ainda NÃO tem o PORÃO?" (ter 17/11 19:30) e 040v "50 ouros viraram 216 fichas" (qui 19/11 12:00) no painel AGUARDANDO. 037v/038v APROVADOS por ela 13/11 15:28 → pedidos à Claude do Vitor (fila.json). Ideia do aniversário 8x descartada: p002 (sáb 14/11) já fala disso. Painel bateu o limite de 256 MB: tirei do painel os vídeos/fotos antigos (011b, 013v, 014v, 015v, 024v, 025v), continuam no git. Tirar mais quando precisar (posts já postados).
 - 13/11: painel ganhou a aba **Números** (coleção `metricas`, regra em PRIORIDADES.md). Alimentar toda semana com os prints dela.
