@@ -1,0 +1,22 @@
+{
+ "titulo": "Coisas que eu *queria saber* quando comecei",
+ "voz": "Sulafat",
+ "velocidade": 1.5,
+ "estilo": "nativo",
+ "cenas": [
+  {"src": "gravacoes/bruto/use o galpao para suas maquinas.mp4", "ini": 1.5, "cx": 960, "cy": 540, "zoom": 1.4, "selo": "Parte 1",
+   "fala": "[curiosa] Cinco coisas que eu queria saber quando comecei Stardew Valley!"},
+  {"src": "gravacoes/bruto/use o galpao para suas maquinas.mp4", "ini": 4.0, "cx": 700, "cy": 540, "zoom": 1.4, "selo": "Nº 1 · Vagem",
+   "fala": "[contando] Um: planta vagem na primavera. Sem ela, eu fiquei sem estufa."},
+  {"src": "gravacoes/bruto/dica-andar pela fazenda e coletar.mp4", "ini": 9.5, "cx": 1100, "cy": 540, "zoom": 1.4, "selo": "Nº 2 · Galhinhos",
+   "fala": "[animada] Dois: galhinho se mexendo no chão? Cava com a enxada, sempre sai item.", "cta": "comenta DICA"},
+  {"src": "gravacoes/bruto/olhar calendário .mp4", "ini": 3.0, "cx": 960, "cy": 540, "zoom": 1.4, "selo": "Nº 3 · Museu",
+   "fala": "[explicando] Três: doa sessenta itens ao museu e ganha a chave do Esgoto."},
+  {"src": "gravacoes/bruto/olhar calendário .mp4", "ini": 12.5, "cx": 1100, "cy": 540, "zoom": 1.4, "selo": "Nº 4 · Pierre",
+   "fala": "[revelando] Quatro: o Pierre fecha às quartas, até você completar o Centro."},
+  {"src": "gravacoes/bruto/produtos q valem vwnder.mp4", "ini": 1.0, "cx": 800, "cy": 540, "zoom": 1.4, "selo": "Nº 5 · Dormir",
+   "fala": "[assustada] Cinco: dorme antes das duas, ou você desmaia e perde ouro!"},
+  {"src": "gravacoes/bruto/use o galpao para suas maquinas.mp4", "ini": 19.0, "cx": 960, "cy": 560, "zoom": 1.4, "selo": "Parte 2 no perfil",
+   "fala": "[divertida] Qual você não sabia? Comenta DICA e me segue pra parte dois!", "cta": "comenta DICA"}
+ ]
+}

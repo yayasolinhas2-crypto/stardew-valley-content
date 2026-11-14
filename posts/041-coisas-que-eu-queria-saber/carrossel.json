@@ -1,0 +1,57 @@
+{
+ "serie": "COISAS QUE EU QUERIA SABER",
+ "parte": 1,
+ "slides": [
+  {
+   "src": "gravacoes/bruto/use o galpao para suas maquinas.mp4",
+   "t": 2.0,
+   "cx": 960,
+   "capa": true,
+   "texto": "Coisas que eu *queria saber* quando comecei Stardew",
+   "sub": "arrasta pro lado"
+  },
+  {
+   "src": "gravacoes/bruto/use o galpao para suas maquinas.mp4",
+   "t": 4.5,
+   "cx": 700,
+   "texto": "Planta *VAGEM* na primavera do ano 1!",
+   "sub": "Ela é do pacote da Despensa, que libera a estufa. Eu esqueci… e tô sem estufa no ano 3"
+  },
+  {
+   "src": "gravacoes/bruto/dica-andar pela fazenda e coletar.mp4",
+   "t": 10.0,
+   "cx": 1100,
+   "texto": "Viu uns *galhinhos se mexendo* no chão? Cava com a enxada!",
+   "sub": "É um ponto de artefato: sempre sai um item"
+  },
+  {
+   "src": "gravacoes/bruto/olhar calendário .mp4",
+   "t": 4.0,
+   "cx": 960,
+   "texto": "Doa *60 itens* ao museu",
+   "sub": "O Gunther te dá a chave do Esgoto"
+  },
+  {
+   "src": "gravacoes/bruto/olhar calendário .mp4",
+   "t": 14.0,
+   "cx": 1100,
+   "texto": "O Pierre *fecha às quartas*",
+   "sub": "Até você completar o Centro Comunitário"
+  },
+  {
+   "src": "gravacoes/bruto/produtos q valem vwnder.mp4",
+   "t": 2.0,
+   "cx": 800,
+   "texto": "Vai dormir *antes das 2h*",
+   "sub": "Se desmaiar, perde 10% do seu ouro (até 1.000)"
+  },
+  {
+   "src": "gravacoes/bruto/use o galpao para suas maquinas.mp4",
+   "t": 20.0,
+   "cx": 960,
+   "fim": true,
+   "texto": "Qual dessas *você não sabia*?",
+   "sub": "Me segue: a parte 2 vem no perfil!"
+  }
+ ]
+}

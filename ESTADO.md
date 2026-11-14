@@ -25,6 +25,7 @@ Erro de 10/11: as rotinas abriam chat novo SEM o repositório e não faziam nada
 - "Stardew · pauta da gringa + anti-repetição (diária)" trig_013AkYWhJMKpEFVbBTQSrhdz, 10:23 PST, no chat do bom dia: confere repetidos, pesquisa o que bomba lá fora (com prova), produz 2 vídeos/dia. Pedido da Yasmin 11/11, foco na meta de 10 mil.
 
 ## Em andamento
+- Pauta 14/11: p041c (carrossel FOTOS TikTok, qua 18/11 17:00) e p041v (vídeo só Instagram, qua 18/11 12:00) no painel AGUARDANDO. Primeira parte da série "Coisas que eu queria saber quando comecei".
 - 14/11: Yasmin AMOU a série "Esqueci de plantar a vagem e fiquei sem estufa no ano 3" → takes s01–s04 na aba Gravar (prioridade máxima). Montar a parte 1 assim que chegarem. Aba "À mão" virou "Gravar" (ela não posta mais à mão).
 - Auditoria 14/11: nenhum problema. Claude do Vitor agendou 037–040 (13/11 22:41). Agenda cheia até 17/11; quarta 18/11 VAZIA e qui 19/11 só 12:00 → rotina de pauta (10:23 PST) deve produzir o carrossel "Coisas que eu queria saber" parte 1 + vídeos. Nenhuma gravação nova no Drive; checklist "Pra gravar" com 7 itens pendentes.
 - 13/11 noite: Yasmin liberou CARROSSEL DE FOTO SÓ NO TIKTOK (regra em PRIORIDADES.md). Próximo: série "Coisas que eu queria saber quando comecei Stardew" parte 1 (prints das gravações dela + dica conferida na wiki), foto no TikTok e vídeo no Instagram. Painel ganhou o checklist "🎥 Pra gravar" (coleção `gravar`, 7 takes pedidos: pesca Esgoto, pesca píer leste, coleção de peixes, Robin/reforma, Gunther, presente ama/odeia, Krobus).
