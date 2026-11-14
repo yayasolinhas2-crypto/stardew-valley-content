@@ -97,6 +97,9 @@
 ## Nível dela no jogo (14/11)
 - Iniciante: ainda NÃO liberou o Esgoto (precisa de 60 doações ao museu → Chave Enferrujada), nunca pegou peixe lendário, não consegue entrar na Caverna da Caveira sem morrer. Pedir só takes que ela consegue gravar. Ideia: série autêntica "iniciante tentando" (ex.: "Tentei liberar o Esgoto") — a jornada dela vira conteúdo e combina com o formato "coisas que eu queria saber".
 
+- Save dela: ano 3 (outono), tem animais e dinheiro, fazenda "nem bonita". Centro Comunitário travado: falta a VAGEM do pacote de Plantações da Primavera (não plantou na primavera, sem estufa). Saídas: Carrinho Viajante (sexta/domingo, floresta; Vagem aparece às vezes, 120–1.000g, wiki Traveling Cart) ou plantar na primavera do ano 4 (vagem precisa de treliça). Enquanto isso, as outras salas do Centro (Artesanato, Aquário, Caldeira, Mural, Cofre) andam independentes.
+- Ideia de série forte e AUTÊNTICA: "Salvando minha fazenda do ano 3" / "Esqueci a vagem e fiquei sem estufa" (erro de iniciante que muita gente comete → identificação + salvamento + parte 2, 3…).
+
 ## Aprovações recentes (13/11)
 - ✅ 037v "A CUECA do Lewis vale 750 fichas" e 038v "Minério TODO DIA: a Pedreira": aprovados na hora. Padrão: fato surpreendente com número no gancho + gravação dela que ainda não tinha sido usada.
 - 13/11: "isso mesmo! sempre atualize a sua base de dados pra alcançarmos a meta e faça qualquer mudança necessária" → autonomia pra ajustar rotinas, painel e processo sem perguntar (custo continua precisando de OK).
