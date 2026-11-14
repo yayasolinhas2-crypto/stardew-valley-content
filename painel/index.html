@@ -45,7 +45,7 @@ svg.i{width:20px;height:20px;flex:none;stroke:currentColor;fill:none;stroke-widt
 .brand img{width:36px;height:36px;border-radius:10px;display:block;image-rendering:pixelated;box-shadow:0 0 0 1px var(--line)}
 .brand b{display:block;font-size:15px;font-weight:700;letter-spacing:-.01em}
 .brand small{display:block;font-size:12px;color:var(--muted)}
-nav.tabs{position:fixed;left:0;right:0;bottom:0;z-index:8;display:grid;grid-template-columns:repeat(6,1fr);
+nav.tabs{position:fixed;left:0;right:0;bottom:0;z-index:8;display:grid;grid-template-columns:repeat(5,1fr);
   background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);
   border-top:1px solid var(--line);padding:6px max(8px,env(safe-area-inset-right,0px)) calc(6px + env(safe-area-inset-bottom,0px)) max(8px,env(safe-area-inset-left,0px))}
 nav.tabs a{position:relative;display:flex;flex-direction:column;align-items:center;gap:2px;padding:6px 2px;text-decoration:none;color:var(--faint);font-size:11px;font-weight:600;border-radius:10px;-webkit-tap-highlight-color:transparent}
@@ -191,7 +191,6 @@ details summary{cursor:pointer;padding:6px 0;list-style-position:inside}
       <a href="#aprovar" data-v="aprovar"><svg class="i" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="m8 12 3 3 5-6"/></svg>Aprovar<span class="n" id="n-aprovar" hidden></span></a>
       <a href="#gravar" data-v="gravar"><svg class="i" viewBox="0 0 24 24"><path d="M3 7.5A1.5 1.5 0 0 1 4.5 6h11A1.5 1.5 0 0 1 17 7.5v9a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 3 16.5z"/><path d="m17 10 4-2.5v9L17 14"/></svg>Gravar<span class="n" id="n-gravar" hidden></span></a>
       <a href="#semana" data-v="semana"><svg class="i" viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="16.5" rx="3"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg>Agenda</a>
-      <a href="#todos" data-v="todos"><svg class="i" viewBox="0 0 24 24"><rect x="3" y="3" width="7.5" height="7.5" rx="2"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="2"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="2"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="2"/></svg>Todos</a>
       <a href="#numeros" data-v="numeros"><svg class="i" viewBox="0 0 24 24"><path d="M3 21h18M6 17v-5M11 17V7M16 17v-9M21 17V4"/></svg>Números</a>
     </nav>
     <div class="who"><b>@segredosdovalley</b>TikTok + Instagram · agendado pelo Metricool</div>
@@ -414,7 +413,7 @@ async function entregarDrive(p){
 }
 
 /* ---------- telas ---------- */
-const TITULOS={postar:["Início","Resumo do perfil e o próximo post"],aprovar:["Aprovar","Posts esperando a sua decisão"],semana:["Agenda","Os próximos 7 dias, horário de Brasília"],todos:["Todos os posts","Tudo o que já foi feito, em ordem de data"],mao:["Postar à mão","Os posts que você mesma posta no TikTok (não vão pelo Metricool)"],gravar:["Pra gravar","Os takes que eu preciso que você grave. Gravou? Toque no ✓"],numeros:["Números","Views, seguidores e o que eles dizem, atualizado toda semana com os seus prints"],
+const TITULOS={postar:["Início","Resumo do perfil e o próximo post"],aprovar:["Aprovar","Posts esperando a sua decisão"],semana:["Agenda","Os próximos 7 dias, horário de Brasília"],todos:["Todos os posts","Tudo o que já foi feito, em ordem de data"],mao:["Postar à mão","Os posts que você mesma posta no TikTok (não vão pelo Metricool)"],gravar:["Pra gravar","Os takes que eu preciso que você grave. Gravou? Toque no ✓"],numeros:["Números","Seus números da semana"],
   post:["Post",""],fotos:["Fotos",""],vozes:["Teste de voz","Escolha a narração dos vídeos"]};
 function telaPostar(){
   const agora=Date.now();
@@ -427,7 +426,7 @@ function telaPostar(){
     <a class="kpi${pend?" alerta":""}" href="#aprovar"><span>Aguardando você</span><b>${pend}</b></a>
     <a class="kpi" href="#semana"><span>Agendados</span><b>${ag.length}</b></a>
     <a class="kpi" href="#semana"><span>Agenda cheia até</span><b>${fim}</b></a>
-    <a class="kpi" href="#todos"><span>Já postados</span><b>${pub}</b></a></div>`;
+    <div class="kpi"><span>Já postados</span><b>${pub}</b></div></div>`;
   const prox=ag[0];
   const h=hoje();
   const doDia=posts.filter(p=>p.data===h&&p.status!=="negado").sort(byTime);
@@ -534,13 +533,12 @@ function telaNumeros(){
   const ord=[...dados].sort((a,b)=>(b.data_fim||"").localeCompare(a.data_fim||"")||(a.ordem||0)-(b.ordem||0));
   const ult=ord[0].data_fim;const atuais=ord.filter(m=>m.data_fim===ult),antigos=ord.filter(m=>m.data_fim!==ult);
   const card=m=>`<section class="frame"><div class="sect"><h3>${esc(m.titulo||m.rede)}</h3><span class="tag">${esc(m.periodo||"")}</span></div>
-    <div class="kpis">${(m.kpis||[]).map(k=>`<div class="kpi${k.alerta?" alerta":""}"><span>${esc(k.nome)}</span><b>${fmt(k.valor)}</b>${k.obs?`<small class="muted" style="font-size:12px">${esc(k.obs)}</small>`:""}</div>`).join("")}</div>
-    ${(m.secoes||[]).map(s=>`<div style="display:grid;gap:10px"><span class="lbl">${esc(s.titulo)}</span>${barras(s.itens||[],s.unid)}</div>`).join("")}
-    ${m.fonte?`<p class="muted" style="font-size:12px">${esc(m.fonte)}</p>`:""}</section>`;
+    <div class="kpis">${(m.kpis||[]).map(k=>`<div class="kpi${k.alerta?" alerta":""}"><span>${esc(k.nome)}</span><b>${fmt(k.valor)}</b></div>`).join("")}</div>
+    </section>`;
   const lista=(t,xs)=>xs&&xs.length?`<div style="display:grid;gap:6px"><span class="lbl">${esc(t)}</span><ul class="src" style="font-size:14px;display:grid;gap:6px">${xs.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>`:"";
   const resumo=res?`<section class="frame hl"><div class="sect"><h3>O que os números dizem</h3><span class="tag">${esc(res.periodo||"")}</span></div>${lista("Leitura",res.leitura)}${lista("O que eu mudo",res.acoes)}${lista("Você pode fazer",res.voce)}${lista("Próximo print",res.falta)}</section>`:"";
   const hist=antigos.length?`<section class="frame lista"><span class="lbl">Semanas anteriores</span>${antigos.map(m=>`<div class="slot"><span class="num">${esc((m.data_fim||"").slice(8,10)+"/"+(m.data_fim||"").slice(5,7))}</span><span><b>${esc(m.titulo||m.rede)}</b><span class="muted"> · ${(m.kpis||[]).slice(0,3).map(k=>`${esc(k.nome)}: ${fmt(k.valor)}`).join(" · ")}</span></span></div>`).join("")}</section>`:"";
-  return `${resumo}<div class="two">${atuais.map(card).join("")}</div>${hist}`;
+  return `<div class="two">${atuais.map(card).join("")}</div>`;
 }
 function render(){
   const h=(location.hash||"#postar").slice(1);
