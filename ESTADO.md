@@ -25,6 +25,7 @@ Erro de 10/11: as rotinas abriam chat novo SEM o repositório e não faziam nada
 - "Stardew · pauta da gringa + anti-repetição (diária)" trig_013AkYWhJMKpEFVbBTQSrhdz, 10:23 PST, no chat do bom dia: confere repetidos, pesquisa o que bomba lá fora (com prova), produz 2 vídeos/dia. Pedido da Yasmin 11/11, foco na meta de 10 mil.
 
 ## Em andamento
+- Pauta 15/11: p042v "Divórcio custa 50 MIL?!" (ter 17/11 17:00, cena do Harvey) e p043c carrossel parte 2 (sex 20/11 17:00, só TikTok) AGUARDANDO. p041v/p041c AGENDADOS pela Claude do Vitor (15/11 13:56 BRT). gamesradar.com bloqueado na rede desta sessão.
 - 15/11: p041v/p041c aprovados e pedidos à Claude do Vitor (fila.json, 15/11 02:45 BRT); a rodada das 08:41 NÃO respondeu ainda (sem commit). Conferir na rodada das 12:41/17:41; posts são pra qua 18/11. Consertado: tools/auditoria.py quebrava com carrossel de fotos (sem capa) — agora confere os JPEG; tirada a checagem antiga de "comenta" na legenda (ela aprova "Comenta PALAVRA" desde 11/11).
 - Pauta 14/11: p041c (carrossel FOTOS TikTok, qua 18/11 17:00) e p041v (vídeo só Instagram, qua 18/11 12:00) no painel AGUARDANDO. Primeira parte da série "Coisas que eu queria saber quando comecei".
 - 14/11: Yasmin AMOU a série "Esqueci de plantar a vagem e fiquei sem estufa no ano 3" → takes s01–s04 na aba Gravar (prioridade máxima). Montar a parte 1 assim que chegarem. Aba "À mão" virou "Gravar" (ela não posta mais à mão).

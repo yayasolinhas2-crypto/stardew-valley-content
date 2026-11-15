@@ -1,0 +1,22 @@
+{
+ "titulo": "Divórcio custa *50 MIL*?!",
+ "voz": "Sulafat",
+ "velocidade": 1.5,
+ "estilo": "nativo",
+ "cenas": [
+  {"src": "gravacoes/bruto/novas/casa-noite-cena-com-harvey.mp4", "ini": 9.0, "inteiro": true, "selo": "Stardew Valley",
+   "fala": "[chocada] Divórcio em Stardew custa CINQUENTA MIL ouros!"},
+  {"src": "gravacoes/bruto/novas/casa-noite-cena-com-harvey.mp4", "ini": 3.0, "cx": 1080, "cy": 500, "zoom": 1.4, "selo": "Casa do Lewis",
+   "fala": "[explicando] É só abrir o livrinho na casa do Lewis e pedir."},
+  {"src": "gravacoes/bruto/novas/casa-noite-cena-com-harvey.mp4", "ini": 13.0, "cx": 1080, "cy": 500, "zoom": 1.4, "selo": "No outro dia…",
+   "fala": "[triste] No outro dia, o cônjuge e o quarto dele somem da sua casa.", "cta": "comenta EX"},
+  {"src": "gravacoes/bruto/novas/casa-noite-cena-com-harvey.mp4", "ini": 16.0, "cx": 1080, "cy": 500, "zoom": 1.4, "selo": "0 corações",
+   "fala": "[dramática] A amizade cai pra zero, ele vira ex e recusa seus presentes."},
+  {"src": "gravacoes/bruto/novas/casa-noite-cena-com-harvey.mp4", "ini": 19.5, "cx": 1080, "cy": 500, "zoom": 1.4, "selo": "Até as 22h",
+   "fala": "[revelando] Arrependeu? Dá pra cancelar até as dez da noite."},
+  {"src": "gravacoes/bruto/novas/casa-noite-cena-com-harvey.mp4", "ini": 22.5, "cx": 1080, "cy": 500, "zoom": 1.4, "selo": "Cabana da Bruxa",
+   "fala": "[misteriosa] E na cabana da Bruxa, trinta mil ouros apagam a memória do ex."},
+  {"src": "gravacoes/bruto/novas/casa-noite-cena-com-harvey.mp4", "ini": 26.5, "inteiro": true, "selo": "E você?",
+   "fala": "[divertida] Você teria coragem? Comenta EX e me segue!", "cta": "comenta EX"}
+ ]
+}

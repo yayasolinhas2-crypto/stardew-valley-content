@@ -151,7 +151,9 @@
 | Pedreira: minério todo dia | p038v (aprovado, 15/11) | — |
 | Como liberar o porão (barris, queijo/vinho ×2) | p039v (aguardando) | — |
 | Jogo de pesca da Feira: 50 ouros → 216 fichas | p040v (agendado 19/11) | — |
-| Coisas que eu queria saber (parte 1): vagem, galhinhos/artefato, museu 60 = Esgoto, Pierre fecha quarta, dormir antes das 2h | p041c (fotos TikTok) + p041v (vídeo Instagram), aguardando | — |
+| Coisas que eu queria saber (parte 1): vagem, galhinhos/artefato, museu 60 = Esgoto, Pierre fecha quarta, dormir antes das 2h | p041c (fotos TikTok) + p041v (vídeo Instagram), agendados 18/11 | — |
+| Divórcio: 50 mil, ex some, 0 corações, cancelar até 22h, bruxa apaga memória (30 mil) | p042v (aguardando, 17/11) | — |
+| Coisas que eu queria saber (parte 2): Semente Antiga, Ovo de Dinossauro, Fragmento Prismático → Espada Galáctica, Irrigador de Qualidade | p043c (fotos TikTok, aguardando, 20/11) | — |
 
 ## Números por post
 | Data | Post | Views | Ret. 3s | Tempo médio | Envios | Salvos | Coment. | Seguidores |

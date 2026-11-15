@@ -110,3 +110,6 @@ Regra: copiar o FORMATO (enquadramento, ritmo, tipo de legenda), nunca o texto, 
 ## Pauta 14/11
 - Novo: tools/carrossel_dicas.py (carrossel de FOTOS pro TikTok: quadro da gravação dela em tela cheia + dica em texto grande com contorno, selo da série, JPEG 1080x1920; sem emoji na imagem). Primeiro: p041c (fotos, TikTok) + p041v (vídeo narrado, só Instagram). exportar_fila.py agora aceita o campo `redes` no post do painel.
 - Gringa: nada confirmado desta semana. Achado (GamesRadar, data não confirmada): jogadora levou a mãe pro Stardew e a mãe passou 1.000 h se divorciando de todo mundo pra virar INIMIGA da cidade → ideia "Dá pra ser odiada pela cidade inteira?" (conferir regras de divórcio na wiki antes).
+
+## Pauta 15/11
+- Gringa: nada novo confirmado (gamesradar.com bloqueado na rede desta sessão). Divórcio virou vídeo só com fatos da wiki (Marriage), sem usar a história viral não confirmada.
