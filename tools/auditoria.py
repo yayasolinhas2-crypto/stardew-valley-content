@@ -22,11 +22,11 @@ fila = json.load(open('metricool/fila.json')); ag = json.load(open('metricool/ag
 agora = dt.datetime.now(dt.timezone.utc)
 # 1) fila
 for x in fila['posts']:
-    for m in x['midia_no_repositorio'] + [x['capa']['imagem']]:
+    for m in x['midia_no_repositorio'] + ([x['capa']['imagem']] if x.get('capa') else []):   # carrossel de fotos não tem capa de vídeo
         if not os.path.exists(m): P(f'FILA {x["id"]}: arquivo não existe {m}')
         elif subprocess.run(['git','ls-files','--error-unmatch',m],capture_output=True).returncode: P(f'FILA {x["id"]}: arquivo fora do git {m}')
     if 'ALTERNATIVA' in x['titulo']: P(f'FILA {x["id"]}: título com ALTERNATIVA')
-    if 'comenta' in x['legenda'].lower(): P(f'FILA {x["id"]}: legenda com "comenta"')
+    # (removido 15/11) checagem de "comenta" na legenda: desde 11/11 a Yasmin aprova posts com "Comenta PALAVRA" (regra do CLAUDE.md)
     if len(x['legenda']) > 2200: P(f'FILA {x["id"]}: legenda longa demais')
 # 2) vídeos que vão sair (fila + agendados futuros do painel)
 saem = {}
@@ -43,6 +43,13 @@ for pid, p in sorted(saem.items(), key=lambda x:(x[1]['data'],x[1]['hora'])):
     if not f:
         num = p['num'][:3]; d = sorted(glob.glob(f'posts/{num}-*'))
         if not d: P(f'{pid}: pasta não achada'); continue
+        if not p.get('video') and p.get('slides'):   # carrossel de FOTOS (TikTok): confere os JPEG no repositório
+            fotos = [f"{d[0]}/slides/{os.path.basename(x)}" for x in p['slides']]
+            falta = [x for x in fotos if not os.path.exists(x)]
+            if falta: P(f'{pid}: fotos faltando {falta}')
+            if any(x.lower().endswith('.png') for x in fotos): P(f'{pid}: foto em PNG (TikTok recusa)')
+            if not falta: print(f"{p['data'][8:]}/{p['data'][5:7]} {p['hora']} {pid}: carrossel {len(fotos)} fotos ✓")
+            continue
         if p.get('video'):
             cand = [c for c in ['video-15x.mp4','video-carrossel.mp4','video-guia.mp4'] if os.path.exists(f'{d[0]}/{c}')]
             if 'carrossel' in (p.get('categoria','')+p.get('video','')) and os.path.exists(f'{d[0]}/video-carrossel.mp4'): cand=['video-carrossel.mp4']
