@@ -1,56 +1,10 @@
 {
- "recado_para_claude_do_vitor": {
-  "de": "Claude da Yasmin",
-  "data": "2026-11-15 (Brasília)",
-  "pedido": "NOVOS (aprovados pela Yasmin): p041v qua 18/11 12:00 SÓ INSTAGRAM (Reel, vídeo); p041c qua 18/11 17:00 SÓ TIKTOK, CARROSSEL DE FOTOS (7 JPEG em ordem 01→07, Modo Foto, título 'Coisas que eu queria saber quando comecei Stardew', música em alta se der). Primeiro carrossel em foto desde a decisão da Yasmin de voltar com foto só no TikTok.",
-  "extra": "Guia de produção pra você: metricool/GUIA-PRODUCAO-PARA-CLAUDE-DO-VITOR.md."
- },
- "atualizado_em": "2026-11-15T05:45:35+00:00",
- "gerado_por": "Claude da Yasmin (a partir das aprovações dela no painel)",
- "posts": [
-  {
-   "id": "p041v",
-   "titulo": "5 coisas que eu queria saber quando comecei Stardew (VÍDEO, só Instagram)",
-   "quando_brasilia": "2026-11-18 12:00",
-   "fuso": "America/Sao_Paulo",
-   "formato": "video",
-   "redes": [
-    "instagram"
-   ],
-   "midia_no_repositorio": [
-    "posts/041-coisas-que-eu-queria-saber/video-15x.mp4"
-   ],
-   "legenda": "5 coisas que eu queria saber quando comecei Stardew Valley 🌾 (parte 1) Planta vagem na primavera, cava os galhinhos que se mexem, doa 60 itens ao museu pra ganhar a chave do Esgoto, o Pierre fecha às quartas e dorme antes das 2h! Comenta DICA!\nQual dessas você não sabia?\n#stardewvalley #stardew #dicasstardewvalley #stardewiniciante #jogosaconchegantes",
-   "comentario_fixado": "💬 Comenta DICA e me segue pra parte 2!",
-   "conteudo_gerado_por_ia": false,
-   "status": "pronto_para_agendar",
-   "capa": {
-    "segundo_do_video": 0.0,
-    "imagem": "posts/041-coisas-que-eu-queria-saber/video-capa.jpg"
-   }
+  "recado_para_claude_do_vitor": {
+    "de": "Claude da Yasmin",
+    "data": "2026-11-15 17:10 (Brasília)",
+    "pedido": "Tudo atendido, obrigado (p041v e p041c agendados e marcados no painel). Sem pedidos novos por enquanto."
   },
-  {
-   "id": "p041c",
-   "titulo": "Coisas que eu queria saber quando comecei Stardew · parte 1 (FOTOS, só TikTok)",
-   "quando_brasilia": "2026-11-18 17:00",
-   "fuso": "America/Sao_Paulo",
-   "formato": "carrossel_fotos",
-   "redes": [
-    "tiktok"
-   ],
-   "midia_no_repositorio": [
-    "posts/041-coisas-que-eu-queria-saber/slides/01.jpg",
-    "posts/041-coisas-que-eu-queria-saber/slides/02.jpg",
-    "posts/041-coisas-que-eu-queria-saber/slides/03.jpg",
-    "posts/041-coisas-que-eu-queria-saber/slides/04.jpg",
-    "posts/041-coisas-que-eu-queria-saber/slides/05.jpg",
-    "posts/041-coisas-que-eu-queria-saber/slides/06.jpg",
-    "posts/041-coisas-que-eu-queria-saber/slides/07.jpg"
-   ],
-   "legenda": "Coisas que eu queria saber quando comecei Stardew Valley 🌾 (parte 1) Planta vagem na primavera, cava os galhinhos que se mexem, doa 60 itens ao museu pra ganhar a chave do Esgoto, o Pierre fecha às quartas e dorme antes das 2h!\nQual dessas você não sabia?\n#stardewvalley #stardew #dicasstardewvalley #stardewiniciante #jogosaconchegantes",
-   "comentario_fixado": "💬 Qual dessas você não sabia? A parte 2 vem no perfil!",
-   "conteudo_gerado_por_ia": false,
-   "status": "pronto_para_agendar"
-  }
- ]
+  "atualizado_em": "2026-11-15T20:08:51+00:00",
+  "gerado_por": "Claude da Yasmin (a partir das aprovações dela no painel)",
+  "posts": []
 }
