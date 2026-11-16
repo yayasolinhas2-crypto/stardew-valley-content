@@ -1,0 +1,20 @@
+{
+ "titulo": "Tem peixe *LENDÁRIO* aqui?!",
+ "voz": "Sulafat",
+ "velocidade": 1.5,
+ "estilo": "nativo",
+ "cenas": [
+  {"src": "gravacoes/bruto/novas/1115/529N.mp4", "ini": 8.0, "cx": 1000, "cy": 470, "zoom": 1.4, "selo": "Stardew Valley",
+   "fala": "[chocada] Você passa do lado de um peixe LENDÁRIO e nem sabe!"},
+  {"src": "gravacoes/bruto/novas/1115/610P.mp4", "ini": 2.0, "cx": 1000, "cy": 500, "zoom": 1.4, "selo": "Píer leste",
+   "fala": "[explicando] Na pontinha do píer leste da praia vive o Peixe-Carmesim."},
+  {"src": "gravacoes/bruto/novas/1115/529N.mp4", "ini": 14.0, "cx": 1000, "cy": 470, "zoom": 1.4, "selo": "Verão · nível 5",
+   "fala": "[animada] Ele só aparece no verão, e precisa de pesca nível cinco.", "cta": "comenta PESCA"},
+  {"src": "gravacoes/bruto/novas/1115/4RDG.mp4", "ini": 12.0, "cx": 1000, "cy": 470, "zoom": 1.4, "selo": "Dica",
+   "fala": "[revelando] Dica: lança bem longe da margem, a chance aumenta."},
+  {"src": "gravacoes/bruto/novas/1115/7FGE.mp4", "ini": 8.0, "cx": 960, "cy": 540, "zoom": 1.4, "selo": "Esgoto",
+   "fala": "[contando] E no Esgoto vive a Carpa Mutante, em qualquer estação."},
+  {"src": "gravacoes/bruto/novas/1115/7FGE.mp4", "ini": 15.0, "cx": 960, "cy": 540, "zoom": 1.4, "selo": "Comenta PESCA",
+   "fala": "[divertida] Qual lendário você já pegou? Comenta PESCA e me segue!", "cta": "comenta PESCA"}
+ ]
+}

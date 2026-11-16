@@ -28,3 +28,22 @@ Pasta do Drive: https://drive.google.com/drive/folders/1s03hdm7bwQFwLvH_fmWJ8ivi
 | 20261109-01M71PB7W0C1XDK8S1DCHA0ZK9-1DEA9D6E-7A41-437C-B995-47D34ED17ADA.mp4 | **feira-trocando-fichas-por-premios.mp4** |
 | 20261107-01M6WRWB526RH2GHFYEJHR1QJA-3BE591A8-4B28-46DF-B76B-B8817EC45DF8.mp4 | **floresta-noite-carrinho-viajante.mp4** |
 | 20261107-01M6WRNVYCVG382PQVJYC7ZDCY-97BD60C6-19D8-41E6-8A6D-2A20F2D747F1.mp4 | **vila-noite-e-calendario-de-outono.mp4** |
+
+## Lote de 15/11 (pasta do Drive, arquivos 20261115-01M7HC…; locais em gravacoes/bruto/novas/1115/<código>.mp4)
+| Código | O que tem |
+|---|---|
+| 0ZZT | noite na fazenda, mochila (Machado de Ouro), Harvey: "Você parece exausta, querida… massagem" |
+| 1CXC | fazenda de dia: celeiro, galinheiro, animais, coleta de ovo e lã, lago |
+| 1RWA | ferreiro → museu: "Doar ao Museu", prateleiras cheias, doação |
+| 28Y4 | Clint abrindo geodos |
+| 2H45 | caminhando pela cidade até o rio |
+| 2X6D | loja do Carrinho Viajante (SEM vagem: Super-prato, Minério de Ouro, Salada de Frutas, Caranguejo, Couve, Salada, Lagosta, Ovo Frito, Caminho de Madeira, Damasco, Cadeira de Jantar, Espantalho Raro) |
+| 3CGR | floresta indo até o Carrinho Viajante + loja (mesmos itens) |
+| 3QG9 | "Você obteve a Chave Enferrujada!" + carta da Emily (preto em 4,5–5,1 s) · 3QG9-chave-congelada.mp4 = mensagem congelada |
+| 49AV | Gunther na porta: agradece as doações e dá a Chave Enferrujada ("guardada no cofre do museu há 100 anos") |
+| 4KMH | píer à noite, mochila (Minério de Ouro) |
+| 4RDG | mochila (Peixe Antigo?) + pescando no píer à noite |
+| 529N · 5C27 | pescando no píer da praia (minijogo) |
+| 5PZ0 · 610P | andando na praia e no píer leste |
+| 68NH | mochila (Achigã-pequeno, Lixo) + praia perto da casa do Willy |
+| 6GQP · 7FGE · 8P7N · 6VZ5 | pescando no rio da cidade/ponte (minijogo) |

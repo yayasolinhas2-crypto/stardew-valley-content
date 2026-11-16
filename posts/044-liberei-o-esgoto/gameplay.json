@@ -1,0 +1,56 @@
+{
+ "titulo": "3 anos depois… liberei o *ESGOTO*!",
+ "voz": "Sulafat",
+ "velocidade": 1.5,
+ "estilo": "nativo",
+ "cenas": [
+  {
+   "src": "gravacoes/bruto/novas/1115/3QG9-chave-congelada.mp4",
+   "ini": 0.0,
+   "inteiro": true,
+   "selo": "Ano 3",
+   "fala": "[chocada] Três anos jogando, e só agora eu liberei o Esgoto!"
+  },
+  {
+   "src": "gravacoes/bruto/novas/1115/1RWA.mp4",
+   "ini": 12.5,
+   "inteiro": true,
+   "selo": "Museu",
+   "fala": "[explicando] O segredo: doar sessenta itens pro museu do Gunther."
+  },
+  {
+   "src": "gravacoes/bruto/novas/1115/1RWA.mp4",
+   "ini": 17.5,
+   "cx": 900,
+   "cy": 420,
+   "zoom": 1.3,
+   "selo": "60 doações",
+   "fala": "[animada] Artefato, mineral, tudo que eu achava ia pra prateleira.",
+   "cta": "comenta ESGOTO"
+  },
+  {
+   "src": "gravacoes/bruto/novas/1115/49AV.mp4",
+   "ini": 3.0,
+   "inteiro": true,
+   "selo": "Visita surpresa",
+   "fala": "[contando] Aí o Gunther apareceu na minha porta pra me agradecer…"
+  },
+  {
+   "src": "gravacoes/bruto/novas/1115/49AV.mp4",
+   "ini": 24.0,
+   "inteiro": true,
+   "selo": "Chave Enferrujada",
+   "fala": "[revelando] …e me deu uma chave guardada no museu há cem anos!"
+  },
+  {
+   "src": "gravacoes/bruto/novas/1115/1CXC.mp4",
+   "ini": 0.5,
+   "cx": 700,
+   "cy": 500,
+   "zoom": 1.4,
+   "selo": "Próxima parte",
+   "fala": "[divertida] Agora vou pescar a Carpa Mutante lá dentro. Me segue!",
+   "cta": "comenta ESGOTO"
+  }
+ ]
+}

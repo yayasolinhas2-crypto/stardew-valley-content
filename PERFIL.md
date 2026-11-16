@@ -100,6 +100,8 @@
 - Save dela: ano 3 (outono), tem animais e dinheiro, fazenda "nem bonita". Centro Comunitário travado: falta a VAGEM do pacote de Plantações da Primavera (não plantou na primavera, sem estufa). TODAS as outras salas do Centro já estão completas (14/11): a vagem é o ÚLTIMO item do Centro inteiro. Saídas: Carrinho Viajante (sexta/domingo, floresta; Vagem aparece às vezes, 120–1.000g, wiki Traveling Cart) ou plantar na primavera do ano 4 (vagem precisa de treliça). Enquanto isso, as outras salas do Centro (Artesanato, Aquário, Caldeira, Mural, Cofre) andam independentes.
 - ✅ APROVADA (14/11, "amei esse!"): série "Esqueci de plantar a vagem e fiquei sem estufa no ano 3". Gancho: "falta UMA vagem pra completar o Centro Comunitário inteiro". Parte 1 = o problema (pacote vazio, estufa quebrada, semente na mochila); parte 2+ = caça no Carrinho Viajante (sexta/domingo); FINAL = entrega da vagem + cena do Centro completo (take s05, só quando tiver a vagem). Takes pedidos na aba Gravar (s01–s04). Cada parte termina com "parte 2 no perfil".
 
+- 15/11: ela GANHOU a Chave Enferrujada (60 doações) → Esgoto liberado. Carrinho Viajante de 15/11 (sex 19 outono no jogo) SEM vagem.
+
 ## Aprovações recentes (13/11)
 - ✅ 037v "A CUECA do Lewis vale 750 fichas" e 038v "Minério TODO DIA: a Pedreira": aprovados na hora. Padrão: fato surpreendente com número no gancho + gravação dela que ainda não tinha sido usada.
 - 13/11: "isso mesmo! sempre atualize a sua base de dados pra alcançarmos a meta e faça qualquer mudança necessária" → autonomia pra ajustar rotinas, painel e processo sem perguntar (custo continua precisando de OK).
@@ -153,6 +155,8 @@
 | Jogo de pesca da Feira: 50 ouros → 216 fichas | p040v (agendado 19/11) | — |
 | Coisas que eu queria saber (parte 1): vagem, galhinhos/artefato, museu 60 = Esgoto, Pierre fecha quarta, dormir antes das 2h | p041c (fotos TikTok) + p041v (vídeo Instagram), agendados 18/11 | — |
 | Divórcio: 50 mil, ex some, 0 corações, cancelar até 22h, bruxa apaga memória (30 mil) | p042v (aguardando, 17/11) | — |
+| Liberei o Esgoto (60 doações → Gunther → Chave Enferrujada), história real dela | p044v (aguardando, 19/11) | — |
+| Onde pescar lendário: Carmesim (píer leste, verão, nv 5) + Carpa Mutante (Esgoto) | p045v (aguardando, 20/11) | — |
 | Coisas que eu queria saber (parte 2): Semente Antiga, Ovo de Dinossauro, Fragmento Prismático → Espada Galáctica, Irrigador de Qualidade | p043c (fotos TikTok, aguardando, 20/11) | — |
 
 ## Números por post
