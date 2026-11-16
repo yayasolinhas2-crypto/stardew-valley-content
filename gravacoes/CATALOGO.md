@@ -47,3 +47,20 @@ Pasta do Drive: https://drive.google.com/drive/folders/1s03hdm7bwQFwLvH_fmWJ8ivi
 | 5PZ0 · 610P | andando na praia e no píer leste |
 | 68NH | mochila (Achigã-pequeno, Lixo) + praia perto da casa do Willy |
 | 6GQP · 7FGE · 8P7N · 6VZ5 | pescando no rio da cidade/ponte (minijogo) |
+
+## Lote de 16/11 (arquivos 20261115-01M7HF…; locais em gravacoes/bruto/novas/1116/<código>.mp4)
+| Código | O que tem |
+|---|---|
+| 0WJQ · 12ZC | mochila com "Mudas de Vagem" (12ZC também: galpão e fazenda) |
+| 1BH1 · 1FCH · 6S38 | estufa quebrada na fazenda (6S38 também: caverna dos cogumelos) |
+| 55VT | cidade → rio → "Você destrancou a tampa do esgoto com a Chave Enferrujada!" (~27 s) |
+| 4XGB | cidade → andando no Esgoto |
+| 2JRD · 2VQT | pescando no Esgoto (minijogo) |
+| 1T5Y | Carpa Mutante pescada (89 cm) |
+| 2EKG | "Você pescou um dos peixes lendários." |
+| 43BT | Krobus: "Meu nome é Krobus", "tenho medo dos humanos", loja |
+| 3TDS | loja do Krobus: Fruta-estrela 20.000 (~27 s), Piso de Cristal, Estátua Maligna, Catálogo do Feiticeiro, Pó de Borboleta, Cetro de Retorno |
+| 4QVP · 4D4G | Estátua da Incerteza (oferta de 10.000g; menu "Que profissão…") |
+| 5GAH | 2ª ida ao Carrinho Viajante (SEM vagem: Tortilha, Pudim de Ameixa, Barra de Ferro, Madeirão, Semente de Ácer, Lagosta, Sementes de Ruibarbo, Prato de Outono, Ensopado de Peixe, Cogumelo Frito, Estante de Livros Moderna) |
+| 5T34 · 6267 | noite: baús, cidade, dormir; floresta à noite |
+| 6CQQ | Bosque Secreto: estátua "Cannoli do Velho Mestre" |

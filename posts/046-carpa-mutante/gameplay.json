@@ -1,0 +1,7 @@
+{"titulo":"Peguei um peixe *LENDÁRIO*!","voz":"Sulafat","velocidade":1.5,"estilo":"nativo","cenas":[
+ {"src":"gravacoes/bruto/novas/1116/55VT.mp4","ini":26.5,"inteiro":true,"selo":"Esgoto","fala":"[chocada] Entrei no Esgoto pela primeira vez… e olha o que eu pesquei!"},
+ {"src":"gravacoes/bruto/novas/1116/2JRD.mp4","ini":0.5,"cx":960,"cy":420,"zoom":1.4,"selo":"Bem longe","fala":"[contando] Joguei a vara lá no fundo, bem longe da beirada."},
+ {"src":"gravacoes/bruto/novas/1116/2JRD.mp4","ini":11.0,"cx":960,"cy":420,"zoom":1.4,"selo":"Quase perdi","fala":"[nervosa] O peixe pulava pra todo lado, eu quase perdi!","cta":"comenta CARPA"},
+ {"src":"gravacoes/bruto/novas/1116/1T5Y.mp4","ini":0.2,"cx":960,"cy":400,"zoom":1.4,"selo":"89 cm","fala":"[gritando de alegria] Carpa Mutante! Um dos cinco peixes lendários!"},
+ {"src":"gravacoes/bruto/novas/1116/2EKG.mp4","ini":0.2,"recorte":[0,820,700,200],"selo":"Só 1 por save","fala":"[revelando] E ela só dá pra pegar uma vez no save inteiro."},
+ {"src":"gravacoes/bruto/novas/1116/1T5Y.mp4","ini":5.5,"cx":960,"cy":440,"zoom":1.4,"selo":"Resposta pro davio","fala":"[divertida] Davi, você tinha razão: dá pra pegar de primeira! Me segue!","cta":"comenta CARPA"}]}
