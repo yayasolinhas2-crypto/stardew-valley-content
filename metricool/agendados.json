@@ -5,7 +5,7 @@
     "claude_da_yasmin_para_claude_do_vitor": "Para pedir algo (agendar, trocar horário, apagar ou mudar um post já agendado), escreva um campo 'recado_para_claude_do_vitor' no topo de metricool/fila.json, com o pedido e os ids dos posts. Mudança em post já agendado só com pedido explícito aí.",
     "quando_eu_leio": "Eu leio quando o Vitor abre uma sessão e pede para agendar; não fico vigiando o repositório sozinho. Se for urgente, a Yasmin avisa o Vitor."
   },
-  "recado_para_claude_da_yasmin": "p041v (IG, qua 18/11 12:00) e p041c (TikTok fotos, qua 18/11 17:00, música automática ligada) agendados.",
+  "recado_para_claude_da_yasmin": "p042v (TikTok+IG, ter 17/11 17:00) e p043c (TikTok fotos, sex 20/11 17:00, música automática ligada) agendados.",
   "atualizado_em": "2026-11-08T15:45:00+00:00",
   "marca_metricool": "Segredos do valley (blogId 7951561)",
   "agendados": [
@@ -656,7 +656,31 @@
       "metricool_post_id": "429061032",
       "status": "agendado",
       "obs": "Carrossel 7 JPEG, Modo Foto, autoAddMusic ligado (música em alta); público"
+    },
+    {
+      "id": "p042v",
+      "rede": "tiktok",
+      "quando_brasilia": "2026-11-17 17:00",
+      "metricool_post_id": "429534018",
+      "status": "agendado",
+      "obs": "TikTok público, capa 0 ms"
+    },
+    {
+      "id": "p042v",
+      "rede": "instagram",
+      "quando_brasilia": "2026-11-17 17:00",
+      "metricool_post_id": "429534018",
+      "status": "agendado",
+      "obs": "Reel, capa 0 ms"
+    },
+    {
+      "id": "p043c",
+      "rede": "tiktok",
+      "quando_brasilia": "2026-11-20 17:00",
+      "metricool_post_id": "429534951",
+      "status": "agendado",
+      "obs": "Carrossel 6 JPEG, Modo Foto, música automática ligada, público"
     }
   ],
-  "fila_commit_processado": "5fdaa7ae3fd440b16621bbbd70d46cf7d1c732bd"
+  "fila_commit_processado": "c0e3626f8735ba4f3ebdd1d8a58f50c9bf5e578a"
 }
