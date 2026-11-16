@@ -100,6 +100,7 @@
 - Save dela: ano 3 (outono), tem animais e dinheiro, fazenda "nem bonita". Centro Comunitário travado: falta a VAGEM do pacote de Plantações da Primavera (não plantou na primavera, sem estufa). TODAS as outras salas do Centro já estão completas (14/11): a vagem é o ÚLTIMO item do Centro inteiro. Saídas: Carrinho Viajante (sexta/domingo, floresta; Vagem aparece às vezes, 120–1.000g, wiki Traveling Cart) ou plantar na primavera do ano 4 (vagem precisa de treliça). Enquanto isso, as outras salas do Centro (Artesanato, Aquário, Caldeira, Mural, Cofre) andam independentes.
 - ✅ APROVADA (14/11, "amei esse!"): série "Esqueci de plantar a vagem e fiquei sem estufa no ano 3". Gancho: "falta UMA vagem pra completar o Centro Comunitário inteiro". Parte 1 = o problema (pacote vazio, estufa quebrada, semente na mochila); parte 2+ = caça no Carrinho Viajante (sexta/domingo); FINAL = entrega da vagem + cena do Centro completo (take s05, só quando tiver a vagem). Takes pedidos na aba Gravar (s01–s04). Cada parte termina com "parte 2 no perfil".
 
+- 16/11: ela PESCOU a Carpa Mutante (na sorte) e GRAVOU; vai colocar no Lago de Peixes (take s09). → vídeo-resposta pro davio ("peguei de primeira"). Fatos: 1 por save, lago só cabe ela (dá ova), vende 1.000–2.000g, Evelyn/Haley/Pierre odeiam (wiki Mutant_Carp).
 - 15/11: ela GANHOU a Chave Enferrujada (60 doações) → Esgoto liberado. Carrinho Viajante de 15/11 (sex 19 outono no jogo) SEM vagem.
 
 ## Aprovações recentes (13/11)
