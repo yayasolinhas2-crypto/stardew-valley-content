@@ -1,0 +1,7 @@
+{"titulo":"Falta UMA *vagem*…","voz":"Sulafat","velocidade":1.5,"estilo":"nativo","cenas":[
+ {"src":"gravacoes/bruto/novas/1116/1BH1.mp4","ini":0.3,"cx":800,"cy":420,"zoom":1.4,"selo":"Ano 3","fala":"[desesperada] Falta UMA vagem pra eu completar o Centro Comunitário inteiro!"},
+ {"src":"gravacoes/bruto/novas/1116/0WJQ.mp4","ini":5.0,"recorte":[520,60,940,560],"selo":"Muda de Vagem","fala":"[frustrada] Eu tenho a muda… mas a primavera já passou."},
+ {"src":"gravacoes/bruto/novas/1116/6S38.mp4","ini":0.5,"cx":800,"cy":420,"zoom":1.4,"selo":"Estufa","fala":"[explicando] E a estufa, que planta em qualquer estação? Só abre com esse pacote.","cta":"comenta VAGEM"},
+ {"src":"gravacoes/bruto/novas/1116/5GAH.mp4","ini":13.5,"cx":960,"cy":540,"zoom":1.4,"selo":"Carrinho Viajante","fala":"[esperançosa] Minha esperança: o Carrinho Viajante, toda sexta e domingo."},
+ {"src":"gravacoes/bruto/novas/1115/2X6D.mp4","ini":2.0,"inteiro":true,"selo":"Tentativa 1","fala":"[triste] Primeira tentativa… nada de vagem."},
+ {"src":"gravacoes/bruto/novas/1116/5GAH.mp4","ini":19.0,"inteiro":true,"selo":"Tentativa 2","fala":"[divertida] Segunda… também não! Será que um dia vem? Parte dois no meu perfil!","cta":"comenta VAGEM"}]}

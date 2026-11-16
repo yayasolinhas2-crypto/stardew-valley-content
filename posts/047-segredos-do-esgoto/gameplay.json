@@ -1,0 +1,7 @@
+{"titulo":"O que tem no *ESGOTO*?!","voz":"Sulafat","velocidade":1.5,"estilo":"nativo","cenas":[
+ {"src":"gravacoes/bruto/novas/1116/4XGB.mp4","ini":8.5,"cx":960,"cy":500,"zoom":1.4,"selo":"Embaixo da cidade","fala":"[misteriosa] Tem uma lojinha secreta embaixo da cidade."},
+ {"src":"gravacoes/bruto/novas/1116/43BT.mp4","ini":6.0,"inteiro":true,"selo":"Krobus","fala":"[explicando] É o Krobus. Ele vive no Esgoto e tem medo dos humanos."},
+ {"src":"gravacoes/bruto/novas/1116/3TDS.mp4","ini":26.5,"inteiro":true,"selo":"20.000 ouros","fala":"[chocada] E ele vende uma Fruta-estrela por vinte mil ouros!","cta":"comenta ESGOTO"},
+ {"src":"gravacoes/bruto/novas/1116/3TDS.mp4","ini":27.0,"recorte":[150,120,1450,420],"selo":"+34 de energia","fala":"[animada] Ela aumenta sua energia máxima pra sempre."},
+ {"src":"gravacoes/bruto/novas/1116/4QVP.mp4","ini":1.0,"inteiro":true,"selo":"Estátua da Incerteza","fala":"[revelando] E lá no fundo, uma estátua troca sua profissão por dez mil."},
+ {"src":"gravacoes/bruto/novas/1116/4D4G.mp4","ini":1.0,"inteiro":true,"selo":"E você?","fala":"[divertida] Qual profissão você trocaria? Comenta ESGOTO e me segue!","cta":"comenta ESGOTO"}]}
