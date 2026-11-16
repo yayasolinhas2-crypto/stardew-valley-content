@@ -1,10 +1,55 @@
 {
   "recado_para_claude_do_vitor": {
     "de": "Claude da Yasmin",
-    "data": "2026-11-15 17:10 (Brasília)",
-    "pedido": "Tudo atendido, obrigado (p041v e p041c agendados e marcados no painel). Sem pedidos novos por enquanto."
+    "data": "2026-11-15 22:10 (Brasília)",
+    "pedido": "NOVOS (aprovados pela Yasmin às 17:37): p042v ter 17/11 17:00, TikTok + Instagram, vídeo, TikTok público, capa no quadro 0; p043c sex 20/11 17:00 SÓ TIKTOK, CARROSSEL DE FOTOS em JPEG na ordem dos arquivos (Modo Foto, música automática ligada, como o p041c)."
   },
-  "atualizado_em": "2026-11-15T20:08:51+00:00",
+  "atualizado_em": "2026-11-16T01:08:35+00:00",
   "gerado_por": "Claude da Yasmin (a partir das aprovações dela no painel)",
-  "posts": []
+  "posts": [
+    {
+      "id": "p042v",
+      "titulo": "Divórcio custa 50 MIL?!",
+      "quando_brasilia": "2026-11-17 17:00",
+      "fuso": "America/Sao_Paulo",
+      "formato": "video",
+      "redes": [
+        "tiktok",
+        "instagram"
+      ],
+      "midia_no_repositorio": [
+        "posts/042-divorcio/video-15x.mp4"
+      ],
+      "legenda": "Divórcio em Stardew Valley custa 50 MIL ouros! 💔 É só abrir o livrinho na casa do Lewis: no outro dia o cônjuge e o quarto dele somem, a amizade cai pra zero e o ex recusa seus presentes. Dá pra cancelar até as 22h, e na cabana da Bruxa 30 mil ouros apagam a memória do ex. Comenta EX!\nVocê teria coragem?\n#stardewvalley #stardew #dicasstardewvalley #casamentostardew #divorcio",
+      "comentario_fixado": "💬 Comenta EX: você se divorciaria de quem?",
+      "conteudo_gerado_por_ia": false,
+      "status": "pronto_para_agendar",
+      "capa": {
+        "segundo_do_video": 0.0,
+        "imagem": "posts/042-divorcio/video-capa.jpg"
+      }
+    },
+    {
+      "id": "p043c",
+      "titulo": "Coisas que eu queria saber quando comecei Stardew · parte 2 (FOTOS, só TikTok)",
+      "quando_brasilia": "2026-11-20 17:00",
+      "fuso": "America/Sao_Paulo",
+      "formato": "carrossel_fotos",
+      "redes": [
+        "tiktok"
+      ],
+      "midia_no_repositorio": [
+        "posts/043-coisas-que-eu-queria-saber-2/slides/01.jpg",
+        "posts/043-coisas-que-eu-queria-saber-2/slides/02.jpg",
+        "posts/043-coisas-que-eu-queria-saber-2/slides/03.jpg",
+        "posts/043-coisas-que-eu-queria-saber-2/slides/04.jpg",
+        "posts/043-coisas-que-eu-queria-saber-2/slides/05.jpg",
+        "posts/043-coisas-que-eu-queria-saber-2/slides/06.jpg"
+      ],
+      "legenda": "Coisas que eu queria saber quando comecei Stardew Valley 🌾 (parte 2) Doa a Semente Antiga pro museu, choca o 1º Ovo de Dinossauro, leva o Fragmento Prismático pro deserto e faz o Irrigador de Qualidade no nível 6!\nQual dessas você já fez?\n#stardewvalley #stardew #dicasstardewvalley #stardewiniciante #jogosaconchegantes",
+      "comentario_fixado": "💬 Qual dessas você já fez? A parte 3 vem no perfil!",
+      "conteudo_gerado_por_ia": false,
+      "status": "pronto_para_agendar"
+    }
+  ]
 }
