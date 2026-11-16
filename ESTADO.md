@@ -1,6 +1,6 @@
 # Estado atual (passagem de bastão entre chats) — atualizar no fim de cada dia
 
-Atualizado: 15/11/2026 (11:50 Brasília, bom dia).
+Atualizado: 16/11/2026 (11:50 Brasília, bom dia).
 
 ## Quem / o quê
 - Perfil @segredosdovalley (TikTok + Instagram), Stardew Valley em PT-BR. Meta: **10.000 seguidores até 09/12/2026**.
@@ -25,6 +25,7 @@ Erro de 10/11: as rotinas abriam chat novo SEM o repositório e não faziam nada
 - "Stardew · pauta da gringa + anti-repetição (diária)" trig_013AkYWhJMKpEFVbBTQSrhdz, 10:23 PST, no chat do bom dia: confere repetidos, pesquisa o que bomba lá fora (com prova), produz 2 vídeos/dia. Pedido da Yasmin 11/11, foco na meta de 10 mil.
 
 ## Em andamento
+- Auditoria 16/11: nenhum problema. p042v/p043c agendados pela Claude do Vitor; p044–p048 APROVADOS por ela e pedidos (fila.json, 16/11 08:10 BRT). Agenda cheia até dom 22/11. Nenhuma gravação nova desde 16/11 06:05 UTC.
 - 16/11 madrugada: lote 2 de gravações (catálogo 1116). Feitos p046v Carpa Mutante/resposta Davi (sáb 21/11 20:30), p047v segredos do Esgoto (dom 22/11 13:00), p048v Série Vagem parte 1 (sáb 21/11 13:00), AGUARDANDO. Falta ainda: take s01 (pacote do Centro, agora pra parte 2), s09 Carpa no lago, final da vagem.
 - 16/11: lote de 20 gravações dela (catálogo em gravacoes/CATALOGO.md, códigos 1115). Feitos p044v "liberei o ESGOTO" (qui 19/11 19:30) e p045v "Tem peixe LENDÁRIO aqui?!" (sex 20/11 12:00), AGUARDANDO. Takes s01 (pacote do Centro) e s02 (estufa) estão marcados como feitos mas NÃO achei no Drive → perguntar. Novos takes na aba Gravar: s06 Esgoto/pesca, s07 Krobus. Carrinho sem vagem = material da parte 2 da série Vagem.
 - Pauta 15/11: p042v "Divórcio custa 50 MIL?!" (ter 17/11 17:00, cena do Harvey) e p043c carrossel parte 2 (sex 20/11 17:00, só TikTok) AGUARDANDO. p041v/p041c AGENDADOS pela Claude do Vitor (15/11 13:56 BRT). gamesradar.com bloqueado na rede desta sessão.

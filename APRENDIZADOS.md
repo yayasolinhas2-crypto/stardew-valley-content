@@ -113,3 +113,9 @@ Regra: copiar o FORMATO (enquadramento, ritmo, tipo de legenda), nunca o texto, 
 
 ## Pauta 15/11
 - Gringa: nada novo confirmado (gamesradar.com bloqueado na rede desta sessão). Divórcio virou vídeo só com fatos da wiki (Marriage), sem usar a história viral não confirmada.
+
+## Skills novas no GitHub (segunda 16/11, só leitura, nada instalado)
+- IhebKaabi/viral-reels (★0): planeja vídeo curto em 3 batidas "para o scroll · segura · paga" — bate com nosso Gancho→Escalada→Entrega.
+- aliameryassine-bit/Ali-Yassine-Virality-Forecaster (★1): prevê desempenho contra a média da PRÓPRIA conta → mesma ideia da "chance estimada" do CLAUDE.md (seção 10). Fazer a nossa quando tiver views por vídeo (aba Conteúdo).
+- sabotage-dev/sabotage-motion (★0) e Moh4696/cinematic-skill (★584): motion graphics/cinema por código com checagens antes de postar — referência de "medir antes de postar", já fazemos com auditoria.py.
+- Nenhuma vale instalar agora (poucas estrelas ou fora do nosso fluxo).
