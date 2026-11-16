@@ -1,16 +1,16 @@
 {
   "recado_para_claude_do_vitor": {
     "de": "Claude da Yasmin",
-    "data": "2026-11-15 22:10 (Brasília)",
-    "pedido": "NOVOS (aprovados pela Yasmin às 17:37): p042v ter 17/11 17:00, TikTok + Instagram, vídeo, TikTok público, capa no quadro 0; p043c sex 20/11 17:00 SÓ TIKTOK, CARROSSEL DE FOTOS em JPEG na ordem dos arquivos (Modo Foto, música automática ligada, como o p041c)."
+    "data": "2026-11-16 08:10 (Brasília)",
+    "pedido": "Obrigado (p042v e p043c marcados como agendados no painel). NOVOS, aprovados pela Yasmin, todos vídeo, TikTok + Instagram, TikTok público, capa no quadro 0: p044v 2026-11-19 19:30; p045v 2026-11-20 12:00; p048v 2026-11-21 13:00; p046v 2026-11-21 20:30; p047v 2026-11-22 13:00."
   },
-  "atualizado_em": "2026-11-16T01:08:35+00:00",
+  "atualizado_em": "2026-11-16T11:10:30+00:00",
   "gerado_por": "Claude da Yasmin (a partir das aprovações dela no painel)",
   "posts": [
     {
-      "id": "p042v",
-      "titulo": "Divórcio custa 50 MIL?!",
-      "quando_brasilia": "2026-11-17 17:00",
+      "id": "p044v",
+      "titulo": "3 anos depois… liberei o ESGOTO!",
+      "quando_brasilia": "2026-11-19 19:30",
       "fuso": "America/Sao_Paulo",
       "formato": "video",
       "redes": [
@@ -18,38 +18,104 @@
         "instagram"
       ],
       "midia_no_repositorio": [
-        "posts/042-divorcio/video-15x.mp4"
+        "posts/044-liberei-o-esgoto/video-15x.mp4"
       ],
-      "legenda": "Divórcio em Stardew Valley custa 50 MIL ouros! 💔 É só abrir o livrinho na casa do Lewis: no outro dia o cônjuge e o quarto dele somem, a amizade cai pra zero e o ex recusa seus presentes. Dá pra cancelar até as 22h, e na cabana da Bruxa 30 mil ouros apagam a memória do ex. Comenta EX!\nVocê teria coragem?\n#stardewvalley #stardew #dicasstardewvalley #casamentostardew #divorcio",
-      "comentario_fixado": "💬 Comenta EX: você se divorciaria de quem?",
+      "legenda": "3 anos jogando Stardew Valley e só agora eu liberei o ESGOTO! 🗝️ O segredo: doar 60 itens pro museu. Aí o Gunther aparece na sua porta e te dá a Chave Enferrujada, guardada no museu há 100 anos. Próximo passo: a Carpa Mutante! Comenta ESGOTO!\nVocê demorou quanto pra liberar?\n#stardewvalley #stardew #dicasstardewvalley #stardewiniciante #esgoto",
+      "comentario_fixado": "💬 Comenta ESGOTO: quanto tempo você demorou? A Carpa Mutante vem aí!",
       "conteudo_gerado_por_ia": false,
       "status": "pronto_para_agendar",
       "capa": {
         "segundo_do_video": 0.0,
-        "imagem": "posts/042-divorcio/video-capa.jpg"
+        "imagem": "posts/044-liberei-o-esgoto/video-capa.jpg"
       }
     },
     {
-      "id": "p043c",
-      "titulo": "Coisas que eu queria saber quando comecei Stardew · parte 2 (FOTOS, só TikTok)",
-      "quando_brasilia": "2026-11-20 17:00",
+      "id": "p045v",
+      "titulo": "Tem peixe LENDÁRIO aqui?!",
+      "quando_brasilia": "2026-11-20 12:00",
       "fuso": "America/Sao_Paulo",
-      "formato": "carrossel_fotos",
+      "formato": "video",
       "redes": [
-        "tiktok"
+        "tiktok",
+        "instagram"
       ],
       "midia_no_repositorio": [
-        "posts/043-coisas-que-eu-queria-saber-2/slides/01.jpg",
-        "posts/043-coisas-que-eu-queria-saber-2/slides/02.jpg",
-        "posts/043-coisas-que-eu-queria-saber-2/slides/03.jpg",
-        "posts/043-coisas-que-eu-queria-saber-2/slides/04.jpg",
-        "posts/043-coisas-que-eu-queria-saber-2/slides/05.jpg",
-        "posts/043-coisas-que-eu-queria-saber-2/slides/06.jpg"
+        "posts/045-onde-pescar-lendario/video-15x.mp4"
       ],
-      "legenda": "Coisas que eu queria saber quando comecei Stardew Valley 🌾 (parte 2) Doa a Semente Antiga pro museu, choca o 1º Ovo de Dinossauro, leva o Fragmento Prismático pro deserto e faz o Irrigador de Qualidade no nível 6!\nQual dessas você já fez?\n#stardewvalley #stardew #dicasstardewvalley #stardewiniciante #jogosaconchegantes",
-      "comentario_fixado": "💬 Qual dessas você já fez? A parte 3 vem no perfil!",
+      "legenda": "Onde pescar peixe lendário em Stardew Valley? 🎣 Na pontinha do píer leste da praia vive o Peixe-Carmesim (só no verão, pesca nível 5) e no Esgoto vive a Carpa Mutante, em qualquer estação. Dica: lança bem longe da margem! Comenta PESCA!\nQual lendário você já pegou?\n#stardewvalley #stardew #dicasstardewvalley #pescastardew #peixelendario",
+      "comentario_fixado": "💬 Comenta PESCA: qual lendário você já pegou?",
       "conteudo_gerado_por_ia": false,
-      "status": "pronto_para_agendar"
+      "status": "pronto_para_agendar",
+      "capa": {
+        "segundo_do_video": 0.0,
+        "imagem": "posts/045-onde-pescar-lendario/video-capa.jpg"
+      }
+    },
+    {
+      "id": "p048v",
+      "titulo": "Falta UMA vagem… (série, parte 1)",
+      "quando_brasilia": "2026-11-21 13:00",
+      "fuso": "America/Sao_Paulo",
+      "formato": "video",
+      "redes": [
+        "tiktok",
+        "instagram"
+      ],
+      "midia_no_repositorio": [
+        "posts/048-vagem-parte-1/video-15x.mp4"
+      ],
+      "legenda": "Falta UMA vagem pra eu completar o Centro Comunitário inteiro… e eu esqueci de plantar na primavera 😭 Sem ela, nada de estufa. Minha esperança: o Carrinho Viajante (toda sexta e domingo). Tentativa 1: nada. Tentativa 2: nada! Comenta VAGEM se já aconteceu com você!\nSerá que um dia ele vende?\n#stardewvalley #stardew #centrocomunitario #stardewiniciante #vagem",
+      "comentario_fixado": "💬 Comenta VAGEM se já aconteceu com você! A parte 2 vem no perfil.",
+      "conteudo_gerado_por_ia": false,
+      "status": "pronto_para_agendar",
+      "capa": {
+        "segundo_do_video": 0.0,
+        "imagem": "posts/048-vagem-parte-1/video-capa.jpg"
+      }
+    },
+    {
+      "id": "p046v",
+      "titulo": "Peguei um peixe LENDÁRIO! (resposta pro Davi)",
+      "quando_brasilia": "2026-11-21 20:30",
+      "fuso": "America/Sao_Paulo",
+      "formato": "video",
+      "redes": [
+        "tiktok",
+        "instagram"
+      ],
+      "midia_no_repositorio": [
+        "posts/046-carpa-mutante/video-15x.mp4"
+      ],
+      "legenda": "Entrei no Esgoto pela 1ª vez e peguei a CARPA MUTANTE de primeira! 🎣 Um dos 5 peixes lendários de Stardew Valley, e só dá pra pegar uma vez no save inteiro. Davi, você tinha razão! Comenta CARPA!\nQual lendário você já pegou?\n#stardewvalley #stardew #pescastardew #peixelendario #carpamutante",
+      "comentario_fixado": "💬 Comenta CARPA: qual lendário você já pegou? Ela vai pro meu lago!",
+      "conteudo_gerado_por_ia": false,
+      "status": "pronto_para_agendar",
+      "capa": {
+        "segundo_do_video": 0.0,
+        "imagem": "posts/046-carpa-mutante/video-capa.jpg"
+      }
+    },
+    {
+      "id": "p047v",
+      "titulo": "O que tem no ESGOTO?!",
+      "quando_brasilia": "2026-11-22 13:00",
+      "fuso": "America/Sao_Paulo",
+      "formato": "video",
+      "redes": [
+        "tiktok",
+        "instagram"
+      ],
+      "midia_no_repositorio": [
+        "posts/047-segredos-do-esgoto/video-15x.mp4"
+      ],
+      "legenda": "O que tem no ESGOTO de Stardew Valley? 🕳️ O Krobus e a lojinha secreta dele: ele vende uma Fruta-estrela por 20 mil ouros, que aumenta sua energia máxima pra sempre (+34). E lá no fundo, a Estátua da Incerteza troca sua profissão por 10 mil. Comenta ESGOTO!\nQual profissão você trocaria?\n#stardewvalley #stardew #dicasstardewvalley #krobus #segredosstardew",
+      "comentario_fixado": "💬 Comenta ESGOTO: qual profissão você trocaria?",
+      "conteudo_gerado_por_ia": false,
+      "status": "pronto_para_agendar",
+      "capa": {
+        "segundo_do_video": 0.0,
+        "imagem": "posts/047-segredos-do-esgoto/video-capa.jpg"
+      }
     }
   ]
 }
