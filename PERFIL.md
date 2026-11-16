@@ -158,6 +158,9 @@
 | Divórcio: 50 mil, ex some, 0 corações, cancelar até 22h, bruxa apaga memória (30 mil) | p042v (aguardando, 17/11) | — |
 | Liberei o Esgoto (60 doações → Gunther → Chave Enferrujada), história real dela | p044v (aguardando, 19/11) | — |
 | Onde pescar lendário: Carmesim (píer leste, verão, nv 5) + Carpa Mutante (Esgoto) | p045v (aguardando, 20/11) | — |
+| Peguei a Carpa Mutante (resposta Davi) | p046v (aguardando, 21/11 20:30) | — |
+| O que tem no Esgoto: Krobus, Fruta-estrela 20 mil (+34 energia), Estátua da Incerteza 10 mil | p047v (aguardando, 22/11 13:00) | — |
+| Série Vagem parte 1: falta 1 vagem, sem estufa, 2 idas ao Carrinho sem vagem | p048v (aguardando, 21/11 13:00) | — |
 | Coisas que eu queria saber (parte 2): Semente Antiga, Ovo de Dinossauro, Fragmento Prismático → Espada Galáctica, Irrigador de Qualidade | p043c (fotos TikTok, aguardando, 20/11) | — |
 
 ## Números por post
