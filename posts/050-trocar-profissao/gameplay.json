@@ -1,0 +1,77 @@
+{
+ "titulo": "Escolheu a profissão *ERRADA*?",
+ "voz": "Sulafat",
+ "velocidade": 1.5,
+ "estilo": "nativo",
+ "cenas": [
+  {
+   "src": "gravacoes/bruto/novas/1116/4QVP.mp4",
+   "ini": 3.5,
+   "recorte": [
+    300,
+    640,
+    1320,
+    420
+   ],
+   "selo": "Estátua da Incerteza",
+   "fala": "[provocando] Escolheu a profissão errada? Calma, dá pra trocar!"
+  },
+  {
+   "src": "gravacoes/bruto/novas/1116/4QVP.mp4",
+   "ini": 0.0,
+   "selo": "Esgoto",
+   "fala": "[explicando] É a Estátua da Incerteza, lá no Esgoto da Chave Enferrujada.",
+   "inteiro": true
+  },
+  {
+   "src": "gravacoes/bruto/novas/1116/4D4G.mp4",
+   "ini": 0.5,
+   "recorte": [
+    300,
+    640,
+    1320,
+    420
+   ],
+   "selo": "10.000 ouros",
+   "fala": "[revelando] Ela cobra dez mil ouros por troca.",
+   "cta": "comenta TROCA"
+  },
+  {
+   "src": "gravacoes/bruto/novas/1116/4D4G-menu-congelado.mp4",
+   "ini": 0,
+   "recorte": [
+    300,
+    640,
+    1320,
+    420
+   ],
+   "selo": "Escolha a habilidade",
+   "fala": "[animada] Você escolhe a habilidade: cultivo, mineração, coleta, pesca ou combate."
+  },
+  {
+   "src": "gravacoes/bruto/novas/1116/4D4G.mp4",
+   "ini": 14.0,
+   "recorte": [
+    300,
+    640,
+    1320,
+    420
+   ],
+   "selo": "Atenção",
+   "fala": "[séria] Mas os bônus antigos dessa habilidade somem na hora."
+  },
+  {
+   "src": "gravacoes/bruto/novas/1116/4D4G.mp4",
+   "ini": 18.0,
+   "recorte": [
+    300,
+    640,
+    1320,
+    420
+   ],
+   "selo": "À noite",
+   "fala": "[divertida] À noite, você escolhe as profissões de novo. Comenta TROCA e me segue!",
+   "cta": "comenta TROCA"
+  }
+ ]
+}

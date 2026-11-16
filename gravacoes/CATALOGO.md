@@ -60,7 +60,7 @@ Pasta do Drive: https://drive.google.com/drive/folders/1s03hdm7bwQFwLvH_fmWJ8ivi
 | 2EKG | "Você pescou um dos peixes lendários." |
 | 43BT | Krobus: "Meu nome é Krobus", "tenho medo dos humanos", loja |
 | 3TDS | loja do Krobus: Fruta-estrela 20.000 (~27 s), Piso de Cristal, Estátua Maligna, Catálogo do Feiticeiro, Pó de Borboleta, Cetro de Retorno |
-| 4QVP · 4D4G | Estátua da Incerteza (oferta de 10.000g; menu "Que profissão…") |
+| 4QVP · 4D4G | Estátua da Incerteza (oferta de 10.000g; menu "Que profissão…")  → usado no p050v |
 | 5GAH | 2ª ida ao Carrinho Viajante (SEM vagem: Tortilha, Pudim de Ameixa, Barra de Ferro, Madeirão, Semente de Ácer, Lagosta, Sementes de Ruibarbo, Prato de Outono, Ensopado de Peixe, Cogumelo Frito, Estante de Livros Moderna) |
 | 5T34 · 6267 | noite: baús, cidade, dormir; floresta à noite |
-| 6CQQ | Bosque Secreto: estátua "Cannoli do Velho Mestre" |
+| 6CQQ | Bosque Secreto: estátua "Cannoli do Velho Mestre"  → usado no p049v |

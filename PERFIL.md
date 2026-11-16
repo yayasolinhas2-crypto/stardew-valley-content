@@ -161,6 +161,8 @@
 | Peguei a Carpa Mutante (resposta Davi) | p046v (aguardando, 21/11 20:30) | — |
 | O que tem no Esgoto: Krobus, Fruta-estrela 20 mil (+34 energia), Estátua da Incerteza 10 mil | p047v (aguardando, 22/11 13:00) | — |
 | Série Vagem parte 1: falta 1 vagem, sem estufa, 2 idas ao Carrinho sem vagem | p048v (aguardando, 21/11 13:00) | — |
+| Estátua Cannoli do Velho Mestre (Bosque Secreto) dá Fruta-estrela | p049v (aguardando, 23/11 17:00) | — |
+| Trocar profissão: Estátua da Incerteza passo a passo (10 mil) | p050v (aguardando, 23/11 12:00) | — |
 | Coisas que eu queria saber (parte 2): Semente Antiga, Ovo de Dinossauro, Fragmento Prismático → Espada Galáctica, Irrigador de Qualidade | p043c (fotos TikTok, aguardando, 20/11) | — |
 
 ## Números por post

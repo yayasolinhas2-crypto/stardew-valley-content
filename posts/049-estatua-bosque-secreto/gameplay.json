@@ -1,0 +1,7 @@
+{"titulo":"Essa estátua te dá uma *Fruta-estrela*","voz":"Sulafat","velocidade":1.5,"estilo":"nativo","cenas":[
+ {"src":"gravacoes/bruto/novas/1116/6CQQ.mp4","ini":26.0,"inteiro":true,"selo":"Bosque Secreto","fala":"[misteriosa] Essa estátua escondida te dá uma Fruta-estrela!"},
+ {"src":"gravacoes/bruto/novas/1116/6CQQ.mp4","ini":11.5,"cx":1000,"cy":300,"zoom":1.4,"selo":"Bosque Secreto","fala":"[explicando] Ela fica no Bosque Secreto, depois do tronco gigante da floresta."},
+ {"src":"gravacoes/bruto/novas/1116/6CQQ.mp4","ini":0.3,"cx":800,"cy":400,"zoom":1.4,"selo":"Machado de aço","fala":"[revelando] Pra quebrar o tronco, precisa de machado de aço ou melhor.","cta":"comenta BOSQUE"},
+ {"src":"gravacoes/bruto/novas/1116/6CQQ.mp4","ini":27.0,"recorte":[700,1180,1200,160],"selo":"A dica","fala":"[curiosa] A dica tá na frase dela: o saber mais doce."},
+ {"src":"gravacoes/bruto/novas/1116/5GAH.mp4","ini":13.5,"cx":960,"cy":540,"zoom":1.4,"selo":"Semente Rara","fala":"[animada] É uma fruta rara de outono, da Semente Rara do Carrinho Viajante."},
+ {"src":"gravacoes/bruto/novas/1116/6CQQ.mp4","ini":17.0,"cx":800,"cy":700,"zoom":1.4,"selo":"Só uma vez","fala":"[divertida] Entrega pra estátua e a Fruta-estrela é sua! Comenta BOSQUE e me segue.","cta":"comenta BOSQUE"}]}
