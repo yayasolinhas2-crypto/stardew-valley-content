@@ -1,0 +1,69 @@
+{
+ "titulo": "POV: casei com o *MÉDICO*",
+ "voz": "Sulafat",
+ "velocidade": 1.5,
+ "estilo": "nativo",
+ "cenas": [
+  {
+   "src": "gravacoes/bruto/novas/1115/0ZZT.mp4",
+   "ini": 24.0,
+   "recorte": [
+    320,
+    590,
+    1290,
+    460
+   ],
+   "selo": "POV",
+   "fala": "[divertida] POV: você casou com o Harvey, o médico da cidade."
+  },
+  {
+   "src": "gravacoes/bruto/novas/1115/0ZZT.mp4",
+   "ini": 13.0,
+   "cx": 960,
+   "cy": 540,
+   "zoom": 1.4,
+   "selo": "Fim do dia",
+   "fala": "[cansada] Chega em casa morta depois de um dia inteiro na fazenda..."
+  },
+  {
+   "src": "gravacoes/bruto/novas/1115/0ZZT.mp4",
+   "ini": 21.5,
+   "inteiro": true,
+   "selo": "Em casa",
+   "fala": "[rindo] E ele já te recebe com um diagnóstico!",
+   "cta": "comenta HARVEY"
+  },
+  {
+   "src": "gravacoes/bruto/novas/1115/0ZZT.mp4",
+   "ini": 25.0,
+   "recorte": [
+    320,
+    590,
+    1290,
+    460
+   ],
+   "selo": "Harvey",
+   "fala": "[apaixonada] Você parece exausta, querida. Deixa eu fazer uma massagem?"
+  },
+  {
+   "src": "gravacoes/bruto/novas/1115/0ZZT.mp4",
+   "ini": 27.0,
+   "recorte": [
+    320,
+    590,
+    1290,
+    460
+   ],
+   "selo": "Romântico",
+   "fala": "[divertida] Promete reduzir a inflamação do seu tecido muscular. Romântico e técnico!"
+  },
+  {
+   "src": "gravacoes/bruto/novas/1115/0ZZT.mp4",
+   "ini": 22.0,
+   "inteiro": true,
+   "selo": "Marca a amiga",
+   "fala": "[animada] Manda pra amiga que ama o Harvey. Comenta HARVEY e me segue!",
+   "cta": "comenta HARVEY"
+  }
+ ]
+}

@@ -163,6 +163,8 @@
 | Série Vagem parte 1: falta 1 vagem, sem estufa, 2 idas ao Carrinho sem vagem | p048v (aguardando, 21/11 13:00) | — |
 | Estátua Cannoli do Velho Mestre (Bosque Secreto) dá Fruta-estrela | p049v (aguardando, 23/11 17:00) | — |
 | Trocar profissão: Estátua da Incerteza passo a passo (10 mil) | p050v (aguardando, 23/11 12:00) | — |
+| Carinho na galinha → Ovo Grande (95) → maionese de ouro (285) | p051v (aguardando, 24/11 12:00) | — |
+| POV casei com o Harvey: massagem/inflamação muscular | p052v (aguardando, 23/11 19:30) | — |
 | Coisas que eu queria saber (parte 2): Semente Antiga, Ovo de Dinossauro, Fragmento Prismático → Espada Galáctica, Irrigador de Qualidade | p043c (fotos TikTok, aguardando, 20/11) | — |
 
 ## Números por post

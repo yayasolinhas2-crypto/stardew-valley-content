@@ -1,0 +1,70 @@
+{
+ "titulo": "Faz carinho na *GALINHA*?",
+ "voz": "Sulafat",
+ "velocidade": 1.5,
+ "estilo": "nativo",
+ "cenas": [
+  {
+   "src": "gravacoes/bruto/novas/1115/1CXC.mp4",
+   "ini": 2.0,
+   "cx": 1200,
+   "cy": 600,
+   "zoom": 1.4,
+   "selo": "Galinheiro",
+   "fala": "[provocando] Você faz carinho nas suas galinhas todo dia? Devia!"
+  },
+  {
+   "src": "gravacoes/bruto/novas/1115/1CXC.mp4",
+   "ini": 16.0,
+   "cx": 1100,
+   "cy": 600,
+   "zoom": 1.4,
+   "selo": "+15 de amizade",
+   "fala": "[explicando] Cada carinho dá quinze pontos de amizade com o animal."
+  },
+  {
+   "src": "gravacoes/bruto/novas/1115/1CXC-ovogrande.mp4",
+   "ini": 0,
+   "recorte": [
+    560,
+    200,
+    720,
+    620
+   ],
+   "selo": "Ovo Grande",
+   "fala": "[revelando] Com duzentos de amizade, ela já pode botar Ovo Grande.",
+   "cta": "comenta OVO"
+  },
+  {
+   "src": "gravacoes/bruto/novas/1115/1CXC-ovo.mp4",
+   "ini": 0,
+   "recorte": [
+    560,
+    200,
+    720,
+    620
+   ],
+   "selo": "50 × 95",
+   "fala": "[animada] O ovo comum vale cinquenta. O grande vale noventa e cinco!"
+  },
+  {
+   "src": "gravacoes/bruto/novas/1115/1CXC.mp4",
+   "ini": 6.0,
+   "cx": 960,
+   "cy": 450,
+   "zoom": 1.3,
+   "selo": "Maionese de ouro",
+   "fala": "[chocada] E na máquina, o ovo grande vira maionese de ouro: duzentos e oitenta e cinco!"
+  },
+  {
+   "src": "gravacoes/bruto/novas/1115/1CXC.mp4",
+   "ini": 18.0,
+   "cx": 1100,
+   "cy": 600,
+   "zoom": 1.4,
+   "selo": "Todo dia",
+   "fala": "[séria] Mas sem carinho, a amizade cai todo dia. Comenta OVO e me segue!",
+   "cta": "comenta OVO"
+  }
+ ]
+}

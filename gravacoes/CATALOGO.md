@@ -32,8 +32,8 @@ Pasta do Drive: https://drive.google.com/drive/folders/1s03hdm7bwQFwLvH_fmWJ8ivi
 ## Lote de 15/11 (pasta do Drive, arquivos 20261115-01M7HC…; locais em gravacoes/bruto/novas/1115/<código>.mp4)
 | Código | O que tem |
 |---|---|
-| 0ZZT | noite na fazenda, mochila (Machado de Ouro), Harvey: "Você parece exausta, querida… massagem" |
-| 1CXC | fazenda de dia: celeiro, galinheiro, animais, coleta de ovo e lã, lago |
+| 0ZZT | noite na fazenda, mochila (Machado de Ouro), Harvey: "Você parece exausta, querida… massagem" → usado no p052v |
+| 1CXC | fazenda de dia: celeiro, galinheiro, animais, coleta de ovo e lã, lago → usado no p051v |
 | 1RWA | ferreiro → museu: "Doar ao Museu", prateleiras cheias, doação |
 | 28Y4 | Clint abrindo geodos |
 | 2H45 | caminhando pela cidade até o rio |
