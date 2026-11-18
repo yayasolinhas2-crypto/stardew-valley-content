@@ -34,8 +34,8 @@ Pasta do Drive: https://drive.google.com/drive/folders/1s03hdm7bwQFwLvH_fmWJ8ivi
 |---|---|
 | 0ZZT | noite na fazenda, mochila (Machado de Ouro), Harvey: "Você parece exausta, querida… massagem" → usado no p052v |
 | 1CXC | fazenda de dia: celeiro, galinheiro, animais, coleta de ovo e lã, lago → usado no p051v |
-| 1RWA | ferreiro → museu: "Doar ao Museu", prateleiras cheias, doação |
-| 28Y4 | Clint abrindo geodos |
+| 1RWA | ferreiro → museu: "Doar ao Museu", prateleiras cheias, doação → usado no p054v |
+| 28Y4 | Clint abrindo geodos → usado no p053v |
 | 2H45 | caminhando pela cidade até o rio |
 | 2X6D | loja do Carrinho Viajante (SEM vagem: Super-prato, Minério de Ouro, Salada de Frutas, Caranguejo, Couve, Salada, Lagosta, Ovo Frito, Caminho de Madeira, Damasco, Cadeira de Jantar, Espantalho Raro) |
 | 3CGR | floresta indo até o Carrinho Viajante + loja (mesmos itens) |

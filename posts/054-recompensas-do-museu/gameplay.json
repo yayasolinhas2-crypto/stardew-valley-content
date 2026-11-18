@@ -1,0 +1,66 @@
+{
+ "titulo": "O museu te dá *PRÊMIOS*",
+ "voz": "Sulafat",
+ "velocidade": 1.5,
+ "estilo": "nativo",
+ "cenas": [
+  {
+   "src": "gravacoes/bruto/novas/1115/1RWA-coletar.mp4",
+   "ini": 0,
+   "recorte": [
+    340,
+    840,
+    1240,
+    220
+   ],
+   "selo": "Coletar Recompensas",
+   "fala": "[surpresa] O museu te dá prêmios, e muita gente nem vai buscar!"
+  },
+  {
+   "src": "gravacoes/bruto/novas/1115/1RWA.mp4",
+   "ini": 15.0,
+   "cx": 960,
+   "cy": 400,
+   "zoom": 1.3,
+   "selo": "Doações",
+   "fala": "[explicando] Quando sua coleção cresce, o Gunther separa um presente."
+  },
+  {
+   "src": "gravacoes/bruto/novas/1115/1RWA-coletar.mp4",
+   "ini": 0,
+   "inteiro": true,
+   "selo": "Balcão",
+   "fala": "[revelando] É só falar com ele no balcão e escolher Coletar Recompensas.",
+   "cta": "comenta MUSEU"
+  },
+  {
+   "src": "gravacoes/bruto/novas/1115/1RWA-cadeira.mp4",
+   "ini": 0,
+   "recorte": [
+    480,
+    180,
+    1000,
+    600
+   ],
+   "selo": "41 minerais",
+   "fala": "[animada] Com quarenta e um minerais doados, sai a Cadeira de Cristal!"
+  },
+  {
+   "src": "gravacoes/bruto/novas/1115/1RWA.mp4",
+   "ini": 18.0,
+   "cx": 960,
+   "cy": 400,
+   "zoom": 1.3,
+   "selo": "60 e 95 itens",
+   "fala": "[chocada] Com sessenta itens vem a Chave Enferrujada. Com os noventa e cinco, uma Fruta-estrela!"
+  },
+  {
+   "src": "gravacoes/bruto/novas/1115/1RWA.mp4",
+   "ini": 12.0,
+   "inteiro": true,
+   "selo": "Corre lá",
+   "fala": "[divertida] Então corre pro balcão do Gunther. Comenta MUSEU e me segue!",
+   "cta": "comenta MUSEU"
+  }
+ ]
+}

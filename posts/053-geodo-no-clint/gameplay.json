@@ -1,0 +1,7 @@
+{"titulo":"Ainda VENDE *GEODO*?","voz":"Sulafat","velocidade":1.5,"estilo":"nativo","cenas":[
+ {"src":"gravacoes/bruto/novas/1115/28Y4.mp4","ini":16.5,"inteiro":true,"selo":"Geodo","fala":"[provocando] Você ainda vende geodo? Para tudo!"},
+ {"src":"gravacoes/bruto/novas/1115/28Y4.mp4","ini":10.5,"recorte":[320,680,1290,380],"selo":"Clint","fala":"[explicando] Leva no Clint, o ferreiro, e escolhe Processar Geodos."},
+ {"src":"gravacoes/bruto/novas/1115/28Y4.mp4","ini":12.0,"inteiro":true,"selo":"25 ouros","fala":"[revelando] Ele abre cada geodo por vinte e cinco ouros.","cta":"comenta GEODO"},
+ {"src":"gravacoes/bruto/novas/1115/28Y4.mp4","ini":19.5,"inteiro":true,"selo":"Surpresa","fala":"[animada] Pode sair minério, carvão, argila... ou um mineral raro!"},
+ {"src":"gravacoes/bruto/novas/1115/28Y4.mp4","ini":22.5,"inteiro":true,"selo":"Museu","fala":"[explicando] E mineral novo vai direto pro museu, que te dá prêmios."},
+ {"src":"gravacoes/bruto/novas/1115/28Y4.mp4","ini":3.0,"cx":1000,"cy":500,"zoom":1.4,"selo":"Guarda!","fala":"[divertida] Então guarda seus geodos. Comenta GEODO e me segue!","cta":"comenta GEODO"}]}

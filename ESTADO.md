@@ -25,6 +25,7 @@ Erro de 10/11: as rotinas abriam chat novo SEM o repositório e não faziam nada
 - "Stardew · pauta da gringa + anti-repetição (diária)" trig_013AkYWhJMKpEFVbBTQSrhdz, 10:23 PST, no chat do bom dia: confere repetidos, pesquisa o que bomba lá fora (com prova), produz 2 vídeos/dia. Pedido da Yasmin 11/11, foco na meta de 10 mil.
 
 ## Em andamento
+- Pauta 18/11: p053v "Ainda VENDE GEODO?" (ter 24/11 17:00) e p054v "O museu te dá PRÊMIOS" (qua 25/11 12:00) AGUARDANDO. Agora 6 vídeos esperando ela (049–054). Gravações do lote 1115/1116 praticamente esgotadas (sobra 2H45 cidade) → sem take novo, pausar produção até chegar gravação.
 - Bom dia 18/11: auditoria sem problema, agenda cheia até dom 22/11. p049v–p052v (23–24/11) ainda AGUARDANDO ela (versão 1, sem decisão). Nada novo no Drive (gravações/referências). Rotinas ok.
 - Pauta 17/11: p052v "POV: casei com o MÉDICO" (Harvey, seg 23/11 19:30) e p051v "Faz carinho na GALINHA?" (ovo grande/maionese de ouro, ter 24/11 12:00) AGUARDANDO. Gringa: nada novo além do 1.7 (2027). Sem gravação nova. Takes não usados: 28Y4 geodos (ilegível), 1RWA museu, 2H45 cidade.
 - Bom dia 17/11: auditoria sem problema; p044–p048 agendados pela Claude do Vitor (fila vazia). Rotinas ok. Nenhuma gravação nem referência nova no Drive desde 16/11. Pesquisa: só notícia do 1.7 (já anotada, sai em 2027). Agenda cheia até dom 22/11; seg 23/11 = p050v 12:00 + p049v 17:00 AGUARDANDO ela. Próximos buracos: 23/11 06:00/19:30 em diante.
