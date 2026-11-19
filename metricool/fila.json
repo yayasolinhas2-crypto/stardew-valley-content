@@ -1,10 +1,143 @@
 {
-  "recado_para_claude_do_vitor": {
-    "de": "Claude da Yasmin",
-    "data": "2026-11-17 08:10 (Brasília)",
-    "pedido": "Tudo atendido, obrigado (p044v–p048v agendados e marcados no painel). Sem pedidos novos por enquanto."
+ "recado_para_claude_do_vitor": {
+  "de": "Claude da Yasmin",
+  "data": "2026-11-19 (Brasília)",
+  "pedido": "6 posts NOVOS aprovados pela Yasmin, agendar em TikTok+Instagram: p050v (seg 23/11 12:00), p049v (seg 23/11 17:00), p052v (seg 23/11 19:30), p051v (ter 24/11 12:00), p053v (ter 24/11 17:00), p054v (qua 25/11 12:00). Mídia e capa no repositório (video_repo)."
+ },
+ "atualizado_em": "2026-11-19T01:41:05+00:00",
+ "gerado_por": "Claude da Yasmin (a partir das aprovações dela no painel)",
+ "posts": [
+  {
+   "id": "p050v",
+   "titulo": "Escolheu a profissão ERRADA?",
+   "quando_brasilia": "2026-11-23 12:00",
+   "fuso": "America/Sao_Paulo",
+   "formato": "video",
+   "redes": [
+    "tiktok",
+    "instagram"
+   ],
+   "midia_no_repositorio": [
+    "posts/050-trocar-profissao/video-15x.mp4"
+   ],
+   "legenda": "Escolheu a profissão ERRADA em Stardew Valley? Dá pra trocar! 🔄 A Estátua da Incerteza, no Esgoto, cobra 10.000 ouros: você escolhe a habilidade, os bônus antigos somem na hora e à noite você escolhe as profissões de novo. Comenta TROCA!\nQual profissão você trocaria?\n#stardewvalley #stardew #dicasstardewvalley #profissaostardew #stardewiniciante",
+   "comentario_fixado": "💬 Comenta TROCA: qual profissão você trocaria?",
+   "conteudo_gerado_por_ia": false,
+   "status": "pronto_para_agendar",
+   "capa": {
+    "segundo_do_video": 0.0,
+    "imagem": "posts/050-trocar-profissao/video-capa.jpg"
+   }
   },
-  "atualizado_em": "2026-11-17T11:09:14+00:00",
-  "gerado_por": "Claude da Yasmin (a partir das aprovações dela no painel)",
-  "posts": []
+  {
+   "id": "p049v",
+   "titulo": "Essa estátua te dá uma Fruta-estrela",
+   "quando_brasilia": "2026-11-23 17:00",
+   "fuso": "America/Sao_Paulo",
+   "formato": "video",
+   "redes": [
+    "tiktok",
+    "instagram"
+   ],
+   "midia_no_repositorio": [
+    "posts/049-estatua-bosque-secreto/video-15x.mp4"
+   ],
+   "legenda": "Essa estátua escondida te dá uma FRUTA-ESTRELA! ⭐ Fica no Bosque Secreto, depois do tronco gigante (precisa de machado de aço). A dica tá na frase dela: \"o saber mais doce\". Ela quer a fruta rara de outono que nasce da Semente Rara do Carrinho Viajante. Entregou, ganhou! Só uma vez no save. Comenta BOSQUE!\nVocê já achou essa estátua?\n#stardewvalley #stardew #segredosstardew #frutaestrela #dicasstardewvalley",
+   "comentario_fixado": "💬 Comenta BOSQUE: você já achou essa estátua?",
+   "conteudo_gerado_por_ia": false,
+   "status": "pronto_para_agendar",
+   "capa": {
+    "segundo_do_video": 0.0,
+    "imagem": "posts/049-estatua-bosque-secreto/video-capa.jpg"
+   }
+  },
+  {
+   "id": "p052v",
+   "titulo": "POV: casei com o MÉDICO",
+   "quando_brasilia": "2026-11-23 19:30",
+   "fuso": "America/Sao_Paulo",
+   "formato": "video",
+   "redes": [
+    "tiktok",
+    "instagram"
+   ],
+   "midia_no_repositorio": [
+    "posts/052-casei-com-o-harvey/video-15x.mp4"
+   ],
+   "legenda": "POV: você casou com o HARVEY, o médico de Stardew Valley 🩺💚 Chega em casa exausta e ele já te recebe com diagnóstico: massagem pra reduzir a inflamação do tecido muscular. Romântico e técnico ao mesmo tempo! Manda pra amiga que ama o Harvey. Comenta HARVEY!\nCom quem você casou?\n#stardewvalley #stardew #harvey #casamentostardew #stardewvalleybrasil",
+   "comentario_fixado": "💬 Comenta HARVEY: com quem você casou no seu save?",
+   "conteudo_gerado_por_ia": false,
+   "status": "pronto_para_agendar",
+   "capa": {
+    "segundo_do_video": 0.0,
+    "imagem": "posts/052-casei-com-o-harvey/video-capa.jpg"
+   }
+  },
+  {
+   "id": "p051v",
+   "titulo": "Faz carinho na GALINHA?",
+   "quando_brasilia": "2026-11-24 12:00",
+   "fuso": "America/Sao_Paulo",
+   "formato": "video",
+   "redes": [
+    "tiktok",
+    "instagram"
+   ],
+   "midia_no_repositorio": [
+    "posts/051-carinho-na-galinha/video-15x.mp4"
+   ],
+   "legenda": "Você faz carinho nas suas GALINHAS todo dia em Stardew Valley? 🐔 Cada carinho dá +15 de amizade. Com 200 de amizade ela já pode botar OVO GRANDE (95 ouros, contra 50 do comum), e na máquina ele vira maionese de OURO (285). Sem carinho, a amizade cai todo dia. Comenta OVO!\nQuantas galinhas você tem?\n#stardewvalley #stardew #dicasstardewvalley #galinhastardew #stardewiniciante",
+   "comentario_fixado": "💬 Comenta OVO: quantas galinhas você tem?",
+   "conteudo_gerado_por_ia": false,
+   "status": "pronto_para_agendar",
+   "capa": {
+    "segundo_do_video": 0.0,
+    "imagem": "posts/051-carinho-na-galinha/video-capa.jpg"
+   }
+  },
+  {
+   "id": "p053v",
+   "titulo": "Ainda VENDE GEODO?",
+   "quando_brasilia": "2026-11-24 17:00",
+   "fuso": "America/Sao_Paulo",
+   "formato": "video",
+   "redes": [
+    "tiktok",
+    "instagram"
+   ],
+   "midia_no_repositorio": [
+    "posts/053-geodo-no-clint/video-15x.mp4"
+   ],
+   "legenda": "Ainda vende GEODO em Stardew Valley? Para tudo! 🪨 Leva no Clint, o ferreiro, e escolhe Processar Geodos: ele abre cada um por 25 ouros. Pode sair minério, carvão, argila… ou um mineral raro pro museu, que te dá prêmios. Comenta GEODO!\nQual foi o melhor mineral que você já tirou?\n#stardewvalley #stardew #dicasstardewvalley #geodo #stardewiniciante",
+   "comentario_fixado": "💬 Comenta GEODO: qual foi o melhor mineral que você já tirou?",
+   "conteudo_gerado_por_ia": false,
+   "status": "pronto_para_agendar",
+   "capa": {
+    "segundo_do_video": 0.0,
+    "imagem": "posts/053-geodo-no-clint/video-capa.jpg"
+   }
+  },
+  {
+   "id": "p054v",
+   "titulo": "O museu te dá PRÊMIOS",
+   "quando_brasilia": "2026-11-25 12:00",
+   "fuso": "America/Sao_Paulo",
+   "formato": "video",
+   "redes": [
+    "tiktok",
+    "instagram"
+   ],
+   "midia_no_repositorio": [
+    "posts/054-recompensas-do-museu/video-15x.mp4"
+   ],
+   "legenda": "O MUSEU de Stardew Valley te dá prêmios, e muita gente nem vai buscar! 🏛️ Fala com o Gunther no balcão e escolhe Coletar Recompensas. Com 41 minerais doados sai a Cadeira de Cristal, com 60 itens a Chave Enferrujada e com os 95 uma Fruta-estrela. Comenta MUSEU!\nQuantos itens você já doou?\n#stardewvalley #stardew #museustardew #segredosstardew #stardewiniciante",
+   "comentario_fixado": "💬 Comenta MUSEU: quantos itens você já doou?",
+   "conteudo_gerado_por_ia": false,
+   "status": "pronto_para_agendar",
+   "capa": {
+    "segundo_do_video": 0.0,
+    "imagem": "posts/054-recompensas-do-museu/video-capa.jpg"
+   }
+  }
+ ]
 }
