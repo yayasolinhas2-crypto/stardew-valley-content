@@ -167,6 +167,7 @@
 | POV casei com o Harvey: massagem/inflamação muscular | p052v (aguardando, 23/11 19:30) | — |
 | Geodo: não vende, Clint abre por 25 (minério/mineral pro museu) | p053v (aguardando, 24/11 17:00) | — |
 | Prêmios do museu: Coletar Recompensas, Cadeira de Cristal 41 minerais, chave 60, Fruta-estrela 95 | p054v (aguardando, 25/11 12:00) | — |
+| Coisas que eu queria saber (parte 3): receita nova na TV no domingo, conversar +20/dia, elevador a cada 5 andares, árvore 3x3 livre/28 dias, fruta +1 estrela por ano | p055c (fotos TikTok, aguardando, 25/11 17:00) | — |
 | Coisas que eu queria saber (parte 2): Semente Antiga, Ovo de Dinossauro, Fragmento Prismático → Espada Galáctica, Irrigador de Qualidade | p043c (fotos TikTok, aguardando, 20/11) | — |
 
 ## Números por post
