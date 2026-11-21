@@ -25,6 +25,7 @@ Erro de 10/11: as rotinas abriam chat novo SEM o repositório e não faziam nada
 - "Stardew · pauta da gringa + anti-repetição (diária)" trig_013AkYWhJMKpEFVbBTQSrhdz, 10:23 PST, no chat do bom dia: confere repetidos, pesquisa o que bomba lá fora (com prova), produz 2 vídeos/dia. Pedido da Yasmin 11/11, foco na meta de 10 mil.
 
 ## Em andamento
+- Bom dia 21/11 (sáb): nada mudou desde ontem (painel igual, Drive sem gravação, prints não chegaram). Claude do Vitor ainda NÃO agendou 049–054 (1º sai seg 23/11 12:00) → lembrei a Yasmin de novo. p055c sem decisão.
 - Pauta 20/11: sem gravação nova e p055c ainda sem decisão → não produzi (evitar acumular carrossel sem vídeo). Próximo vídeo depende de take novo dela. Agenda: aprovado até qua 25/11 (falta o Vitor agendar 049–054).
 - Bom dia 20/11 (sex): auditoria ok. Claude do Vitor NÃO rodou desde 16/11 → p049v–p054v (aprovados, 23–25/11) ainda não agendados; pedi pra Yasmin avisar o Vitor antes de seg 23/11 12:00. p055c aguardando ela. Pedidos os prints da semana. Sem gravação nova.
 - Pauta 19/11: sem gravação nova → fiz p055c carrossel "Coisas que eu queria saber" parte 3 (só TikTok, qua 25/11 17:00) AGUARDANDO, com prints antigos. Arquivo gravacoes/bruto/casar com harvey e ganhar feuta estrela.mp4 está CORROMPIDO (moov atom not found) — não usar. Gringa: nada novo além do 1.7.
