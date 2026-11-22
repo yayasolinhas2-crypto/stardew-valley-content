@@ -116,6 +116,8 @@
 
 - 22/11: "os vídeos estão muito bons, acho que tá trazendo mais seguidores". MAS: **zoom demais** — não dá pra ver o que a narração fala. Pediu MENOS ZOOM, manter legenda e o resto. → tools/gameplay.py agora usa enquadre "aberto" por padrão (faixa com ~55% da largura do jogo, zoom 1.2, fundo desfocado). 056v/057v refeitos assim.
 
+- 22/11 noite: aprovou a ESTRATÉGIA v2: SÉRIE DIÁRIA dela ('iniciante no ano 3 tentando completar Stardew', episódios Dia 1, Dia 2…) — vai GRAVAR TODO DIA ~10 min. Recusou YouTube Shorts (agora não) e qualquer gasto pago ('não quero gastar').
+
 ## Temas usados (tema pode voltar com ângulo novo; título, capa e conteúdo nunca)
 | Tema | Post que vale | Removidos por repetir |
 |------|---------------|-----------------------|
