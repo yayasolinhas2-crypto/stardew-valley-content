@@ -90,3 +90,14 @@ Todo post de Instagram TERMINADO vai pro Drive, pasta **"Stardew - Para agendar"
 - Só criar a subpasta quando o post estiver COMPLETO (aprovado no painel). Depois de criada, NÃO mexer nela.
 - Conta Google do Vitor (compartilhar como editor): lanceseternos.edits@gmail.com
 - Pasta criada e compartilhada (editor): https://drive.google.com/drive/folders/15NSbgqH7wwM5fTf02_hNEXu0KDm8k5vn (id 15NSbgqH7wwM5fTf02_hNEXu0KDm8k5vn). DECIDIDO 11/11: quem agenda TUDO (TikTok+Instagram) é a Claude do Vitor pela fila.json (roda sozinha 4x/dia). A pasta do Drive é só cópia: o painel cria a subpasta (vídeo, capa, legenda.txt) quando a Yasmin aprova; a rotina da fila é a rede de segurança. Não pedir nada ao Vitor sobre isso.
+
+## Estratégia 22/11 (ela pediu: "mude a estratégia quando necessário! não vamos alcançar a meta")
+- Situação: ~373 IG + ~30–40 TikTok. Ritmo IG ~25/dia e subindo. 10.000 até 09/12 não é alcançável no orgânico; checkpoint realista: 1.000 até 09/12, 10.000 segue como meta longa.
+- O que trouxe seguidor: história real dela (série vagem, Esgoto, Espada), pesca/lendários; no TikTok, guias em FOTOS (barril, lendários, torneirinha = top 3).
+- Mudanças:
+  1. Volume: 2 vídeos/dia + 1 guia em fotos/dia no TikTok (guia não depende de gravação nova).
+  2. Toda série com continuação ("parte 2 no perfil") e CTA de seguir nomeando o motivo ("me segue pra ver se eu consigo a estufa").
+  3. Pauta guiada pelas buscas (sub-lendários, ovas de peixe, pesca nível 10, vida real).
+  4. Fixar no perfil do TikTok os 3 guias campeões; no Instagram, fixar vagem parte 1 e lendário.
+  5. A conferir/OK dela: impulsionar (TikTok Promote / Instagram) só o post campeão, com teto de custo combinado antes.
+  6. Revisar números toda sexta e ajustar.

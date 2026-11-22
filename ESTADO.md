@@ -25,6 +25,7 @@ Erro de 10/11: as rotinas abriam chat novo SEM o repositório e não faziam nada
 - "Stardew · pauta da gringa + anti-repetição (diária)" trig_013AkYWhJMKpEFVbBTQSrhdz, 10:23 PST, no chat do bom dia: confere repetidos, pesquisa o que bomba lá fora (com prova), produz 2 vídeos/dia. Pedido da Yasmin 11/11, foco na meta de 10 mil.
 
 ## Em andamento
+- 22/11: ESTRATÉGIA NOVA (PRIORIDADES.md "Estratégia 22/11"): +1 guia em fotos/dia no TikTok, séries com continuação, pauta pelas buscas, fixar campeões, impulsionamento só com OK. Rotina de pauta atualizada com isso.
 - 22/11 noite: lote 1122 (26 takes). p058v ESPADA DA GALÁXIA no painel (qui 26/11 19:30, aguardando). Ela pediu: tirar 5–6 vídeos deste lote e ir subindo aos poucos. PLANO (produzir 2/dia na pauta, cada um com ângulo diferente):
   1. Labirinto do Dia das Bruxas (2CF2/5001/9F8E/2B31) → Abóbora Dourada no fim (conferir wiki Spirit's_Eve).
   2. Série Vagem parte 2: pacote "Conjunto Plantações de Primavera" com 3/4, falta a Vagem, "Recompensa: Estufa" (121C 4–11 s, 5F6D 27–29 s) = take s01!
