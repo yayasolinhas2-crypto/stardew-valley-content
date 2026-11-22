@@ -125,3 +125,10 @@ Regra: copiar o FORMATO (enquadramento, ritmo, tipo de legenda), nunca o texto, 
 - Instagram 22 → 373 seguidores em 30 dias; Reels 13 mil de 14,6 mil views. Top: série Vagem parte 1 e Onde pescar lendário (1,6 mil cada) → HISTÓRIA REAL e PESCA rendem.
 - TikTok: top 3 de 28 dias são GUIAS EM FOTOS (barril 6,2 mil, lendários 5,3 mil, torneirinha 4,3 mil). Visitas ao perfil +93%, seguidores +113% na semana; views −13%.
 - Buscas: 'peixes sub lendários', 'ovas de peixe', 'pesca nível 10', 'vida real'.
+
+## Referências 22/11 (pasta do Drive)
+- **Dicas Stardew valley (BR) — "Dúvidas da atualização 1.7"**: 7.029 curtidas, 380 salvos, 335 envios. Personagem fixo (avatar do jogo com balão de fala), perguntas que o público tem ("que data vai sair?", "console/mobile depois"), fecha com o vídeo do show (Red Rocks) "obrigado pela paciência". → NOTÍCIA 1.7 em formato perguntas-e-respostas com personagem bomba no BR.
+- **Green Junimo (EN) — "Stardew Valley 1.7 is going to be Huge!"**: 17,3 mil curtidas, 845 salvos, 1.678 envios. Print dos tweets do ConcernedApe + gameplay por trás, texto pixel em cima. → notícia oficial com PROVA na tela.
+- **TetelaJoga (BR) — "Tudo que você precisa saber! parte 5" (fotos)**: 98 curtidas, 33 salvos. Série numerada de guia em fotos, moldura fofa (laço rosa, flores, galinha), título "1º - Silo antes da foice" + caixa com a dica + print. Aviso "Contains AI-generated media".
+- **AFK and Cozy Gaming (EN) — decorar a entrada da mina**: 104 curtidas, 43 salvos. CTA "vote no que você quer ver a seguir no vídeo fixado" (enquete fixada).
+- Lições: (1) 1.7 em perguntas e respostas com prova oficial = pauta quente; (2) guia em fotos com moldura fofa e numeração de série; (3) deixar o público VOTAR no próximo episódio (combina com a série diária).
