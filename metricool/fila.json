@@ -1,10 +1,78 @@
 {
-  "recado_para_claude_do_vitor": {
-    "de": "Claude da Yasmin",
-    "data": "2026-11-22 (Brasília)",
-    "pedido": "Tudo atendido, obrigado (p049v–p054v agendados e marcados no painel). Sem pedidos novos por enquanto."
+ "recado_para_claude_do_vitor": {
+  "de": "Claude da Yasmin",
+  "data": "2026-11-22 (Brasília)",
+  "pedido": "3 posts NOVOS aprovados pela Yasmin: p055c (carrossel de FOTOS, SÓ TikTok, qua 25/11 17:00), p057v (qua 25/11 19:30, TikTok+Instagram) e p056v (qui 26/11 12:00, TikTok+Instagram). Mídia no repositório."
+ },
+ "atualizado_em": "2026-11-22T19:29:55+00:00",
+ "gerado_por": "Claude da Yasmin (a partir das aprovações dela no painel)",
+ "posts": [
+  {
+   "id": "p055c",
+   "titulo": "Coisas que eu queria saber quando comecei Stardew · parte 3 (FOTOS, só TikTok)",
+   "quando_brasilia": "2026-11-25 17:00",
+   "fuso": "America/Sao_Paulo",
+   "formato": "carrossel_fotos",
+   "redes": [
+    "tiktok"
+   ],
+   "midia_no_repositorio": [
+    "posts/055-coisas-que-eu-queria-saber-3/slides/01.jpg",
+    "posts/055-coisas-que-eu-queria-saber-3/slides/02.jpg",
+    "posts/055-coisas-que-eu-queria-saber-3/slides/03.jpg",
+    "posts/055-coisas-que-eu-queria-saber-3/slides/04.jpg",
+    "posts/055-coisas-que-eu-queria-saber-3/slides/05.jpg",
+    "posts/055-coisas-que-eu-queria-saber-3/slides/06.jpg",
+    "posts/055-coisas-que-eu-queria-saber-3/slides/07.jpg"
+   ],
+   "legenda": "Coisas que eu queria saber quando comecei Stardew Valley 🌾 (parte 3) Domingo tem receita nova na TV, conversar todo dia dá +20 de amizade, o elevador da mina salva a cada 5 andares e a árvore frutífera precisa de 3x3 livre!\nQual dessas você não sabia?\n#stardewvalley #stardew #dicasstardewvalley #stardewiniciante #jogosaconchegantes",
+   "comentario_fixado": "💬 Qual dessas você não sabia? A parte 4 vem no perfil!",
+   "conteudo_gerado_por_ia": false,
+   "status": "pronto_para_agendar"
   },
-  "atualizado_em": "2026-11-19T01:41:05+00:00",
-  "gerado_por": "Claude da Yasmin (a partir das aprovações dela no painel)",
-  "posts": []
+  {
+   "id": "p057v",
+   "titulo": "Quando o CARRINHO aparece?",
+   "quando_brasilia": "2026-11-25 19:30",
+   "fuso": "America/Sao_Paulo",
+   "formato": "video",
+   "redes": [
+    "tiktok",
+    "instagram"
+   ],
+   "midia_no_repositorio": [
+    "posts/057-guia-carrinho-viajante/video-15x.mp4"
+   ],
+   "legenda": "Quando o CARRINHO VIAJANTE aparece em Stardew Valley? 🛒 Só sexta e domingo, das 6h às 20h, na floresta ao sul da fazenda. O estoque muda toda vez: costuma ser caro, mas às vezes tem pechincha. Na primavera e no verão sempre tem Semente Rara por 1.000 ouros. Comenta CARRINHO!\nO que você já comprou lá?\n#stardewvalley #stardew #carrinhoviajante #dicasstardewvalley #stardewiniciante",
+   "comentario_fixado": "💬 Comenta CARRINHO: o que você já comprou lá?",
+   "conteudo_gerado_por_ia": false,
+   "status": "pronto_para_agendar",
+   "capa": {
+    "segundo_do_video": 0.0,
+    "imagem": "posts/057-guia-carrinho-viajante/video-capa.jpg"
+   }
+  },
+  {
+   "id": "p056v",
+   "titulo": "Madeira de lei TODO DIA",
+   "quando_brasilia": "2026-11-26 12:00",
+   "fuso": "America/Sao_Paulo",
+   "formato": "video",
+   "redes": [
+    "tiktok",
+    "instagram"
+   ],
+   "midia_no_repositorio": [
+    "posts/056-madeira-de-lei-bosque/video-15x.mp4"
+   ],
+   "legenda": "MADEIRA DE LEI de graça todo dia em Stardew Valley! 🪵 No Bosque Secreto tem 6 tocos grandes que voltam a nascer todo dia: são 12 madeiras de lei por dia. Pra entrar, precisa do machado de aço. Comenta MADEIRA!\nPra que você mais usa madeira de lei?\n#stardewvalley #stardew #dicasstardewvalley #madeiradelei #stardewiniciante",
+   "comentario_fixado": "💬 Comenta MADEIRA: pra que você mais usa madeira de lei?",
+   "conteudo_gerado_por_ia": true,
+   "status": "pronto_para_agendar",
+   "capa": {
+    "segundo_do_video": 0.0,
+    "imagem": "posts/056-madeira-de-lei-bosque/video-capa.jpg"
+   }
+  }
+ ]
 }

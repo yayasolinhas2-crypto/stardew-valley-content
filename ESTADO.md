@@ -25,6 +25,7 @@ Erro de 10/11: as rotinas abriam chat novo SEM o repositório e não faziam nada
 - "Stardew · pauta da gringa + anti-repetição (diária)" trig_013AkYWhJMKpEFVbBTQSrhdz, 10:23 PST, no chat do bom dia: confere repetidos, pesquisa o que bomba lá fora (com prova), produz 2 vídeos/dia. Pedido da Yasmin 11/11, foco na meta de 10 mil.
 
 ## Em andamento
+- 22/11 noite: Yasmin aprovou p055c/p056v/p057v (pedidos ao Vitor) e pediu MENOS ZOOM → gameplay.py enquadre "aberto" padrão (zoom_aberto 1.2; "enquadre":"fechado" volta ao antigo). 056v/057v refeitos e trocados no painel. 049–054 já agendados ficam como estão. Ela está gravando e vai subir no Drive.
 - Pauta 22/11: sem gravação nova → reusei clipes com assunto novo: p057v "Quando o CARRINHO aparece?" (qua 25/11 19:30) e p056v "Madeira de lei TODO DIA" (qui 26/11 12:00) AGUARDANDO. + p055c aguardando. Fatos Traveling_Cart/Secret_Woods conferidos na wiki.
 - Bom dia 22/11: Claude do Vitor AGENDOU p049v–p054v (23–25/11). Agenda coberta até qua 25/11 12:00; depois VAZIA. p055c sem decisão. Sem gravação nova; prints da semana não chegaram.
 - Pauta 21/11: nada novo (sem gravação, p055c sem decisão, Vitor não rodou). Produção pausada.

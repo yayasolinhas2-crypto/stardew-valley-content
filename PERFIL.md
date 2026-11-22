@@ -114,6 +114,8 @@
   - Ideia de vídeo-resposta (Gaby Silva): "Vendeu o Peixe-Carmesim? Ele tem um FILHO!" — pedido especial do Qi "Família Estendida" (Extended Family): 5 parentes dos lendários (Filho do Carmesim, Senhora Pescadora, Lenda II, Carpa Radioativa, Peixe-Glacial Jr.), 3 dias pra pegar, prêmio 20 Gemas Qi; precisa da sala do Qi (100 Nozes Douradas, Ilha Gengibre) e pesca nível 10. Fonte: wiki Quests. Nomes PT a conferir na wiki PT. Precisa gravação de pesca.
   - Robin não é casável (casada com o Demetrius, wiki Robin) → só resposta escrita, não vídeo.
 
+- 22/11: "os vídeos estão muito bons, acho que tá trazendo mais seguidores". MAS: **zoom demais** — não dá pra ver o que a narração fala. Pediu MENOS ZOOM, manter legenda e o resto. → tools/gameplay.py agora usa enquadre "aberto" por padrão (faixa com ~55% da largura do jogo, zoom 1.2, fundo desfocado). 056v/057v refeitos assim.
+
 ## Temas usados (tema pode voltar com ângulo novo; título, capa e conteúdo nunca)
 | Tema | Post que vale | Removidos por repetir |
 |------|---------------|-----------------------|

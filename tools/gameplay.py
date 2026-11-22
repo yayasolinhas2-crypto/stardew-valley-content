@@ -29,6 +29,7 @@ def main(post):
     durs = [N.dur(f'{post}/narracao/{i+1:02d}.wav') for i in range(len(cenas))]
     # 2) cada cena: recorte da gameplay + fundo desfocado
     NATIVO = cfg.get('estilo') == 'nativo'   # estilo das referências que bombam (09/11): gameplay em TELA CHEIA, zoom no personagem, sem moldura
+    ABERTO = cfg.get('enquadre', 'aberto') == 'aberto'   # padrão desde 22/11; "enquadre":"fechado" volta ao zoom antigo
     def clipe(c, L, out, rotulo):
         if NATIVO:
             z = c.get('zoom', 1.5); ch = int(1080 / z) // 2 * 2; cw = int(ch * 9 / 16) // 2 * 2
@@ -39,6 +40,12 @@ def main(post):
             if c.get('inteiro') or r:   # cena com diálogo/menu: mostra o quadro inteiro (a prova) em cima da própria cena ampliada e escurecida
                 fc = (f'[0:v]tpad=stop_mode=clone:stop_duration=60,split[a][b];[a]crop={cw}:{ch}:{cx}:{cy},scale=1080:1920:flags=neighbor,boxblur=18:2,eq=brightness=-0.25[bg];'
                       f'[b]{rec}[g];[bg][g]overlay=0:{oy},setsar=1,fps={FPS},format=yuv420p[v];')
+            elif ABERTO:   # pedido da Yasmin (22/11): menos zoom — mostra ~60% da largura do jogo numa faixa grande, fundo = a própria cena desfocada
+                za = c.get('zoom_aberto', cfg.get('zoom_aberto', 1.2)); ah = int(1080 / za) // 2 * 2; aw = min(int(ah * 10 / 9) // 2 * 2, 1920)
+                ax = min(max(c.get('cx', 960) - aw // 2, 0), 1920 - aw); ay = min(max(c.get('cy', 540) - ah // 2, 0), 1080 - ah)
+                fh = int(1080 * ah / aw) // 2 * 2; fy = 960 - fh // 2
+                fc = (f'[0:v]tpad=stop_mode=clone:stop_duration=60,split[a][b];[a]crop={cw}:{ch}:{cx}:{cy},scale=1080:1920:flags=neighbor,boxblur=18:2,eq=brightness=-0.25[bg];'
+                      f'[b]crop={aw}:{ah}:{ax}:{ay},scale=1080:{fh}:flags=neighbor[g];[bg][g]overlay=0:{fy},setsar=1,fps={FPS},format=yuv420p[v];')
             else: fc = (f'[0:v]tpad=stop_mode=clone:stop_duration=60,crop={cw}:{ch}:{cx}:{cy},scale=1080:1920:flags=neighbor,setsar=1,fps={FPS},format=yuv420p[v];')
             fc += '[0:a]volume=0.12,aresample=48000,apad[ga]'
             run('ffmpeg', '-y', '-loglevel', 'error', '-ss', str(c['ini']), '-i', os.path.join(RAIZ, c['src']),
