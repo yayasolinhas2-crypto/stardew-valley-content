@@ -25,6 +25,15 @@ Erro de 10/11: as rotinas abriam chat novo SEM o repositório e não faziam nada
 - "Stardew · pauta da gringa + anti-repetição (diária)" trig_013AkYWhJMKpEFVbBTQSrhdz, 10:23 PST, no chat do bom dia: confere repetidos, pesquisa o que bomba lá fora (com prova), produz 2 vídeos/dia. Pedido da Yasmin 11/11, foco na meta de 10 mil.
 
 ## Em andamento
+- 22/11 noite: lote 1122 (26 takes). p058v ESPADA DA GALÁXIA no painel (qui 26/11 19:30, aguardando). Ela pediu: tirar 5–6 vídeos deste lote e ir subindo aos poucos. PLANO (produzir 2/dia na pauta, cada um com ângulo diferente):
+  1. Labirinto do Dia das Bruxas (2CF2/5001/9F8E/2B31) → Abóbora Dourada no fim (conferir wiki Spirit's_Eve).
+  2. Série Vagem parte 2: pacote "Conjunto Plantações de Primavera" com 3/4, falta a Vagem, "Recompensa: Estufa" (121C 4–11 s, 5F6D 27–29 s) = take s01!
+  3. Linus e a isca especial (5885/E032: "Queria pedir desculpas…", "isca especial que faço") → Isca Selvagem (conferir wiki Linus/Wild_Bait).
+  4. Krobus: Ovo Nulo 5.000 → galinha do vazio (1A50) (ângulo novo do 047).
+  5. Robin: Piso Passarela de Pedra (Rec.) 200 — o piso que ela procurou (BA35) + Galpão 15.000 (D4F7).
+  6. Carrinho Viajante: itens absurdos (Retrato do Harvey 30.000, Catálogo Retrô 110.000) (0500/56B8/D050/253A/4FBF/F4C6) — humor.
+  7. Caverna da Caveira: bombas (3AF2/1026) — pouco material; usar como cena extra.
+  Também ED38: festa à noite com Lewis (Dia das Bruxas?).
 - 22/11 noite: Yasmin aprovou p055c/p056v/p057v (pedidos ao Vitor) e pediu MENOS ZOOM → gameplay.py enquadre "aberto" padrão (zoom_aberto 1.2; "enquadre":"fechado" volta ao antigo). 056v/057v refeitos e trocados no painel. 049–054 já agendados ficam como estão. Ela está gravando e vai subir no Drive.
 - Pauta 22/11: sem gravação nova → reusei clipes com assunto novo: p057v "Quando o CARRINHO aparece?" (qua 25/11 19:30) e p056v "Madeira de lei TODO DIA" (qui 26/11 12:00) AGUARDANDO. + p055c aguardando. Fatos Traveling_Cart/Secret_Woods conferidos na wiki.
 - Bom dia 22/11: Claude do Vitor AGENDOU p049v–p054v (23–25/11). Agenda coberta até qua 25/11 12:00; depois VAZIA. p055c sem decisão. Sem gravação nova; prints da semana não chegaram.
