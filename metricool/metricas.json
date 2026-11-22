@@ -59,5 +59,42 @@
    "toques_link_bio": 1,
    "pico_diario_aprox": "~650–680 views/dia (gráfico)"
   }
+ ],
+ "semanas": [
+  {
+   "ate": "2026-11-21",
+   "tiktok_7d": {
+    "views": 11100,
+    "seguidores_novos": 17,
+    "visitas_perfil": 158,
+    "curtidas": 563,
+    "compart": 44,
+    "coment": 12
+   },
+   "tiktok_28d": {
+    "views": 24000,
+    "pessoas": 12800,
+    "curtidas": 1300,
+    "compart": 167,
+    "visitas_perfil": 240,
+    "coment": 25,
+    "top": {
+     "barril (fotos)": 6255,
+     "5 lendarios (fotos)": 5335,
+     "torneirinha (fotos)": 4283
+    }
+   },
+   "instagram_30d": {
+    "seguidores": 373,
+    "novos": 354,
+    "views": 14629,
+    "pessoas": 6423,
+    "reels": 13000,
+    "top": {
+     "vagem parte 1": 1600,
+     "onde pescar lendario": 1600
+    }
+   }
+  }
  ]
 }

@@ -119,3 +119,9 @@ Regra: copiar o FORMATO (enquadramento, ritmo, tipo de legenda), nunca o texto, 
 - aliameryassine-bit/Ali-Yassine-Virality-Forecaster (★1): prevê desempenho contra a média da PRÓPRIA conta → mesma ideia da "chance estimada" do CLAUDE.md (seção 10). Fazer a nossa quando tiver views por vídeo (aba Conteúdo).
 - sabotage-dev/sabotage-motion (★0) e Moh4696/cinematic-skill (★584): motion graphics/cinema por código com checagens antes de postar — referência de "medir antes de postar", já fazemos com auditoria.py.
 - Nenhuma vale instalar agora (poucas estrelas ou fora do nosso fluxo).
+
+
+## Números até 21/11 (prints 22/11)
+- Instagram 22 → 373 seguidores em 30 dias; Reels 13 mil de 14,6 mil views. Top: série Vagem parte 1 e Onde pescar lendário (1,6 mil cada) → HISTÓRIA REAL e PESCA rendem.
+- TikTok: top 3 de 28 dias são GUIAS EM FOTOS (barril 6,2 mil, lendários 5,3 mil, torneirinha 4,3 mil). Visitas ao perfil +93%, seguidores +113% na semana; views −13%.
+- Buscas: 'peixes sub lendários', 'ovas de peixe', 'pesca nível 10', 'vida real'.
