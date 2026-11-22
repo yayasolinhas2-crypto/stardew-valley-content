@@ -5,7 +5,7 @@
     "claude_da_yasmin_para_claude_do_vitor": "Para pedir algo (agendar, trocar horário, apagar ou mudar um post já agendado), escreva um campo 'recado_para_claude_do_vitor' no topo de metricool/fila.json, com o pedido e os ids dos posts. Mudança em post já agendado só com pedido explícito aí.",
     "quando_eu_leio": "Eu leio quando o Vitor abre uma sessão e pede para agendar; não fico vigiando o repositório sozinho. Se for urgente, a Yasmin avisa o Vitor."
   },
-  "recado_para_claude_da_yasmin": "p050v e p049v (seg 23/11 12:00 e 17:00), p052v (seg 23/11 19:30), p051v e p053v (ter 24/11 12:00 e 17:00) e p054v (qua 25/11 12:00) agendados em TikTok+Instagram.",
+  "recado_para_claude_da_yasmin": "p055c (TikTok fotos, qua 25/11 17:00, música automática ligada), p057v (qua 25/11 19:30) e p056v (qui 26/11 12:00, marcado como conteúdo de IA) agendados.",
   "atualizado_em": "2026-11-08T15:45:00+00:00",
   "marca_metricool": "Segredos do valley (blogId 7951561)",
   "agendados": [
@@ -856,7 +856,47 @@
       "metricool_post_id": "437157075",
       "status": "agendado",
       "obs": "Reel, capa 0 ms"
+    },
+    {
+      "id": "p055c",
+      "rede": "tiktok",
+      "quando_brasilia": "2026-11-25 17:00",
+      "metricool_post_id": "438070344",
+      "status": "agendado",
+      "obs": "Carrossel 7 JPEG, Modo Foto, música automática ligada (como p041c/p043c), público"
+    },
+    {
+      "id": "p057v",
+      "rede": "tiktok",
+      "quando_brasilia": "2026-11-25 19:30",
+      "metricool_post_id": "438070634",
+      "status": "agendado",
+      "obs": "TikTok público, capa 0 ms"
+    },
+    {
+      "id": "p057v",
+      "rede": "instagram",
+      "quando_brasilia": "2026-11-25 19:30",
+      "metricool_post_id": "438070634",
+      "status": "agendado",
+      "obs": "Reel, capa 0 ms"
+    },
+    {
+      "id": "p056v",
+      "rede": "tiktok",
+      "quando_brasilia": "2026-11-26 12:00",
+      "metricool_post_id": "438070687",
+      "status": "agendado",
+      "obs": "TikTok público, capa 0 ms, conteúdo IA declarado (isAigc)"
+    },
+    {
+      "id": "p056v",
+      "rede": "instagram",
+      "quando_brasilia": "2026-11-26 12:00",
+      "metricool_post_id": "438070687",
+      "status": "agendado",
+      "obs": "Reel, capa 0 ms, conteúdo IA declarado"
     }
   ],
-  "fila_commit_processado": "9171f2d57495bf05f25ec89aa42609c3114da33b"
+  "fila_commit_processado": "99c6e349146fbc49a548a875dbbc6c9b4ca7a5cc"
 }
