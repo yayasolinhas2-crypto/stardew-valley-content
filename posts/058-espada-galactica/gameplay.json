@@ -1,0 +1,81 @@
+{
+ "titulo": "Consegui a *ESPADA DA GALÁXIA*!",
+ "voz": "Sulafat",
+ "velocidade": 1.5,
+ "estilo": "nativo",
+ "cenas": [
+  {
+   "src": "gravacoes/bruto/novas/1122/3B5A-espada.mp4",
+   "ini": 0,
+   "recorte": [
+    320,
+    700,
+    1290,
+    360
+   ],
+   "selo": "Ano 3",
+   "fala": "[gritando de alegria] Ano três... e eu consegui a Espada da Galáxia!"
+  },
+  {
+   "src": "gravacoes/bruto/novas/1122/3AF2.mp4",
+   "ini": 13.0,
+   "cx": 1000,
+   "cy": 450,
+   "selo": "Caverna da Caveira",
+   "fala": "[contando] Tudo começou na Caverna da Caveira, cheia de bomba e monstro."
+  },
+  {
+   "src": "gravacoes/bruto/novas/1122/3AF2.mp4",
+   "ini": 16.0,
+   "cx": 1000,
+   "cy": 500,
+   "selo": "Fragmento Prismático",
+   "fala": "[animada] Lá embaixo, eu achei o meu primeiro fragmento prismático!",
+   "cta": "comenta ESPADA"
+  },
+  {
+   "src": "gravacoes/bruto/novas/1122/129B.mp4",
+   "ini": 5.5,
+   "cx": 900,
+   "cy": 450,
+   "selo": "Deserto",
+   "fala": "[misteriosa] Aí eu levei ele pro deserto, até as três colunas."
+  },
+  {
+   "src": "gravacoes/bruto/novas/1122/129B.mp4",
+   "ini": 10.0,
+   "cx": 1020,
+   "cy": 450,
+   "selo": "No meio",
+   "fala": "[tensa] Fiquei no meio, segurando o fragmento... e o céu mudou!"
+  },
+  {
+   "src": "gravacoes/bruto/novas/1122/3B5A-poder.mp4",
+   "ini": 0,
+   "recorte": [
+    320,
+    700,
+    1290,
+    360
+   ],
+   "selo": "Poder inacreditável",
+   "fala": "[chocada] O fragmento mudou de forma. Um poder inacreditável!"
+  },
+  {
+   "src": "gravacoes/bruto/novas/1122/129B.mp4",
+   "ini": 20.0,
+   "cx": 1020,
+   "cy": 450,
+   "selo": "60 a 80 de dano",
+   "fala": "[orgulhosa] Agora ela é minha: de sessenta a oitenta de dano!"
+  },
+  {
+   "src": "gravacoes/bruto/novas/1122/3B5A-espada.mp4",
+   "ini": 0,
+   "inteiro": true,
+   "selo": "Espada da Galáxia",
+   "fala": "[divertida] Comenta ESPADA se você já tem a sua, e me segue!",
+   "cta": "comenta ESPADA"
+  }
+ ]
+}

@@ -64,3 +64,20 @@ Pasta do Drive: https://drive.google.com/drive/folders/1s03hdm7bwQFwLvH_fmWJ8ivi
 | 5GAH | 2ª ida ao Carrinho Viajante (SEM vagem: Tortilha, Pudim de Ameixa, Barra de Ferro, Madeirão, Semente de Ácer, Lagosta, Sementes de Ruibarbo, Prato de Outono, Ensopado de Peixe, Cogumelo Frito, Estante de Livros Moderna) |
 | 5T34 · 6267 | noite: baús, cidade, dormir; floresta à noite |
 | 6CQQ | Bosque Secreto: estátua "Cannoli do Velho Mestre"  → usado no p049v |
+
+## Lote de 22/11 (arquivos 20261122-01M82P…; locais em gravacoes/bruto/novas/1122/<código>.mp4 — código = 4 primeiros do UUID final)
+| Código | O que tem |
+|---|---|
+| 3B5A | 3 colunas do deserto: "O fragmento prismático muda de forma… Você achou a Espada da Galáxia" → usado no p058v |
+| 129B | caverna da caveira → deserto à noite → 3 colunas → céu azul estrelado (12–18 s) → espada na mão (19–21) → p058v |
+| 3AF2 | Caverna da Caveira: bombas, minério, "Sair da mina" → p058v |
+| 1026 | Caverna da Caveira (sala do elevador), "Está ficando tarde" |
+| 0500 · 56B8 · D050 · 253A · 4FBF · F4C6 | lojas (Carrinho Viajante em vários dias; Krobus?) — conferir |
+| 121C · 5F6D | casa/fazenda, livro "Recompensas" (coleções?) |
+| 1A50 | Esgoto/Krobus + cidade |
+| 2B31 · 2CF2 · 5001 · 9F8E | Floresta/labirinto à noite (Fazenda Assombrada? Bosque?) — 2CF2 abre com diálogo da Penny? |
+| 5885 · E032 | deserto: velho (Mestre? "Lenor"?) com diálogos — conferir |
+| 5CF2 · BA35 | Carpintaria da Robin: loja de receitas de pisos, menu "Construir" |
+| 6541 · A4D9 · F4C0 | fazenda + inventário/baú |
+| D4F7 | Robin: Galpão/Lago de peixes, construção na fazenda |
+| ED38 | loja noturna (Cabeça de Abóbora…) + diálogo |
