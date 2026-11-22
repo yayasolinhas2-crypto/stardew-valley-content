@@ -25,6 +25,7 @@ Erro de 10/11: as rotinas abriam chat novo SEM o repositório e não faziam nada
 - "Stardew · pauta da gringa + anti-repetição (diária)" trig_013AkYWhJMKpEFVbBTQSrhdz, 10:23 PST, no chat do bom dia: confere repetidos, pesquisa o que bomba lá fora (com prova), produz 2 vídeos/dia. Pedido da Yasmin 11/11, foco na meta de 10 mil.
 
 ## Em andamento
+- Bom dia 22/11: Claude do Vitor AGENDOU p049v–p054v (23–25/11). Agenda coberta até qua 25/11 12:00; depois VAZIA. p055c sem decisão. Sem gravação nova; prints da semana não chegaram.
 - Pauta 21/11: nada novo (sem gravação, p055c sem decisão, Vitor não rodou). Produção pausada.
 - Bom dia 21/11 (sáb): nada mudou desde ontem (painel igual, Drive sem gravação, prints não chegaram). Claude do Vitor ainda NÃO agendou 049–054 (1º sai seg 23/11 12:00) → lembrei a Yasmin de novo. p055c sem decisão.
 - Pauta 20/11: sem gravação nova e p055c ainda sem decisão → não produzi (evitar acumular carrossel sem vídeo). Próximo vídeo depende de take novo dela. Agenda: aprovado até qua 25/11 (falta o Vitor agendar 049–054).
