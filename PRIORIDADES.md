@@ -101,3 +101,15 @@ Todo post de Instagram TERMINADO vai pro Drive, pasta **"Stardew - Para agendar"
   4. Fixar no perfil do TikTok os 3 guias campeões; no Instagram, fixar vagem parte 1 e lendário.
   5. A conferir/OK dela: impulsionar (TikTok Promote / Instagram) só o post campeão, com teto de custo combinado antes.
   6. Revisar números toda sexta e ajustar.
+
+## Estratégia v2 (22/11 noite — ela: "a gente precisa mudar, não tá vindo volume de seguidor")
+Diagnóstico (números até 21/11): TikTok 24 mil views/28 dias mas só 240 visitas ao perfil (1%) → as pessoas veem a dica e vão embora; nada faz seguir. Instagram converte 2,4% (373 seguidores) e o que converte é HISTÓRIA DELA (vagem, lendário). Guias em fotos dão view, não dão seguidor.
+Pesquisa (fontes no chat 22/11): visitas ao perfil e conversão perfil→seguir são o que separa viral de crescimento (marketingagent.blog, Trollishly); fixar 3 vídeos como "trailer" do perfil; trend traz alcance, formato repetível converte; no Instagram, envio por DM e tempo assistido são os sinais principais (socialpilot 2026); Trial Reels só com 1.000+ seguidores.
+Mudanças propostas:
+1. PERSONAGEM + SÉRIE DIÁRIA: o perfil vira "iniciante no ano 3 tentando completar Stardew" — episódios numerados ("Dia X: ...") todo dia, sempre com o próximo objetivo ("segue pra ver se eu consigo"). Depende de gravação curta diária dela.
+2. Perfil como trailer: bio com a promessa + 3 fixados (vagem 1, espada, lendário).
+3. YouTube Shorts: mesmos vídeos, mais um canal grátis (Metricool publica).
+4. Responder comentário com vídeo (vídeo-resposta) toda semana; ela comenta 15 min/dia em perfis grandes de Stardew BR.
+5. Pedir ENVIO ("manda pra amiga que…") em todo vídeo (sinal nº 1 do Instagram pra não seguidor).
+6. Teste pago pequeno (Promote/impulsionar) no post campeão — só com OK e teto.
+7. Guias em fotos continuam no TikTok (alcance), mas sempre com "a história completa no perfil".
