@@ -72,8 +72,8 @@ Pasta do Drive: https://drive.google.com/drive/folders/1s03hdm7bwQFwLvH_fmWJ8ivi
 | 129B | caverna da caveira → deserto à noite → 3 colunas → céu azul estrelado (12–18 s) → espada na mão (19–21) → p058v |
 | 3AF2 | Caverna da Caveira: bombas, minério, "Sair da mina" → p058v |
 | 1026 | Caverna da Caveira (sala do elevador), "Está ficando tarde" |
-| 0500 · 56B8 · D050 · 253A · 4FBF · F4C6 | lojas (Carrinho Viajante em vários dias; Krobus?) — conferir |
-| 121C · 5F6D | casa/fazenda, livro "Recompensas" (coleções?) |
+| 0500 · 56B8 · D050 · 253A · 4FBF · F4C6 | Carrinho Viajante (56B8, D050 outono; 4FBF, F4C6 inverno) SEM vagem → p060v; 0500/253A lojas com Retrato do Harvey 30.000 etc. |
+| 121C · 5F6D | casa → Centro Comunitário: "Conjunto Plantações de Primavera" 3/4, falta Vagem, "Recompensa: Estufa" (121C 22–29 s) → p060v |
 | 1A50 | Esgoto/Krobus + cidade |
 | 2B31 · 2CF2 · 5001 · 9F8E | Floresta/labirinto à noite (Fazenda Assombrada? Bosque?) — 2CF2 abre com diálogo da Penny? |
 | 5885 · E032 | deserto: velho (Mestre? "Lenor"?) com diálogos — conferir |

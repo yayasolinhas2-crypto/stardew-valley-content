@@ -1,0 +1,66 @@
+{
+ "titulo": "Ainda falta UMA *VAGEM*… (parte 2)",
+ "voz": "Sulafat",
+ "velocidade": 1.5,
+ "estilo": "nativo",
+ "cenas": [
+  {
+   "src": "gravacoes/bruto/novas/1122/121C-vagem.mp4",
+   "ini": 0,
+   "inteiro": true,
+   "selo": "Parte 2",
+   "fala": "[desesperada] Parte dois: ainda falta UMA vagem pro Centro Comunitário!"
+  },
+  {
+   "src": "gravacoes/bruto/novas/1122/121C-vagem.mp4",
+   "ini": 0,
+   "selo": "Recompensa: Estufa",
+   "fala": "[triste] E a recompensa desse pacote é justamente a estufa.",
+   "recorte": [
+    620,
+    860,
+    680,
+    160
+   ]
+  },
+  {
+   "src": "gravacoes/bruto/novas/1122/56B8.mp4",
+   "ini": 8.5,
+   "cx": 1000,
+   "cy": 450,
+   "selo": "Tentativa 3",
+   "fala": "[determinada] Então voltei no Carrinho Viajante. Terceira tentativa...",
+   "cta": "comenta VAGEM"
+  },
+  {
+   "src": "gravacoes/bruto/novas/1122/56B8.mp4",
+   "ini": 15.5,
+   "inteiro": true,
+   "selo": "Nada",
+   "fala": "[decepcionada] Chirívia, damasco, camarão... e nada de vagem!"
+  },
+  {
+   "src": "gravacoes/bruto/novas/1122/D050.mp4",
+   "ini": 21.0,
+   "inteiro": true,
+   "selo": "Tentativa 4",
+   "fala": "[irônica] Na quarta, tinha até Semente Rara. Vagem, não."
+  },
+  {
+   "src": "gravacoes/bruto/novas/1122/4FBF.mp4",
+   "ini": 14.5,
+   "cx": 800,
+   "cy": 500,
+   "selo": "Inverno",
+   "fala": "[chocada] Aí chegou o inverno. Quinta e sexta tentativa..."
+  },
+  {
+   "src": "gravacoes/bruto/novas/1122/F4C6.mp4",
+   "ini": 21.0,
+   "inteiro": true,
+   "selo": "Parte 3 no perfil",
+   "fala": "[divertida] Nada! Comenta VAGEM e me segue pra ver se eu consigo!",
+   "cta": "comenta VAGEM"
+  }
+ ]
+}
