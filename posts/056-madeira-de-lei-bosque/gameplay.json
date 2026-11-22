@@ -1,0 +1,67 @@
+{
+ "titulo": "Madeira de lei *TODO DIA*",
+ "voz": "Sulafat",
+ "velocidade": 1.5,
+ "estilo": "nativo",
+ "cenas": [
+  {
+   "src": "gravacoes/bruto/novas/1116/6CQQ.mp4",
+   "ini": 0.0,
+   "cx": 900,
+   "cy": 450,
+   "zoom": 1.4,
+   "selo": "Madeira de Lei",
+   "fala": "[chocada] Madeira de lei de graça, todo santo dia!"
+  },
+  {
+   "src": "gravacoes/bruto/novas/1116/6CQQ.mp4",
+   "ini": 3.0,
+   "cx": 900,
+   "cy": 500,
+   "zoom": 1.4,
+   "selo": "Bosque Secreto",
+   "fala": "[explicando] O segredo tá no Bosque Secreto, lá na floresta."
+  },
+  {
+   "src": "gravacoes/bruto/novas/1116/6CQQ.mp4",
+   "ini": 6.0,
+   "cx": 900,
+   "cy": 400,
+   "zoom": 1.4,
+   "selo": "6 tocos",
+   "fala": "[revelando] Lá tem seis tocos grandes que voltam a nascer todo dia."
+  },
+  {
+   "src": "gravacoes/bruto/novas/1116/6CQQ-madeira.mp4",
+   "ini": 0,
+   "recorte": [
+    0,
+    760,
+    640,
+    300
+   ],
+   "selo": "12 por dia",
+   "fala": "[animada] Somando tudo, são doze madeiras de lei por dia!",
+   "cta": "comenta MADEIRA"
+  },
+  {
+   "src": "gravacoes/bruto/novas/1116/6CQQ.mp4",
+   "ini": 9.0,
+   "cx": 900,
+   "cy": 700,
+   "zoom": 1.4,
+   "selo": "Machado de aço",
+   "fala": "[explicando] Mas pra entrar, você precisa do machado de aço."
+  },
+  {
+   "src": "gravacoes/bruto/novas/1116/6CQQ.mp4",
+   "ini": 13.0,
+   "cx": 900,
+   "cy": 500,
+   "zoom": 1.4,
+   "selo": "Todo dia",
+   "fala": "[divertida] Volta lá todo dia e nunca mais falta madeira. Comenta MADEIRA e me segue!",
+   "cta": "comenta MADEIRA"
+  }
+ ]
+}

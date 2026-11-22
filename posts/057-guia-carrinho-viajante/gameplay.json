@@ -1,0 +1,60 @@
+{
+ "titulo": "Quando o *CARRINHO* aparece?",
+ "voz": "Sulafat",
+ "velocidade": 1.5,
+ "estilo": "nativo",
+ "cenas": [
+  {
+   "src": "gravacoes/bruto/novas/1115/3CGR.mp4",
+   "ini": 6.0,
+   "cx": 1100,
+   "cy": 300,
+   "zoom": 1.4,
+   "selo": "Carrinho Viajante",
+   "fala": "[provocando] Você sabe quando o Carrinho Viajante aparece?"
+  },
+  {
+   "src": "gravacoes/bruto/novas/1115/3CGR.mp4",
+   "ini": 0.5,
+   "cx": 800,
+   "cy": 500,
+   "zoom": 1.4,
+   "selo": "Sexta e domingo",
+   "fala": "[explicando] Só na sexta e no domingo, das seis da manhã às oito da noite."
+  },
+  {
+   "src": "gravacoes/bruto/novas/1115/3CGR.mp4",
+   "ini": 3.5,
+   "cx": 900,
+   "cy": 450,
+   "zoom": 1.4,
+   "selo": "Floresta",
+   "fala": "[revelando] Ele fica na floresta, logo ao sul da sua fazenda.",
+   "cta": "comenta CARRINHO"
+  },
+  {
+   "src": "gravacoes/bruto/novas/1115/2X6D.mp4",
+   "ini": 4.0,
+   "inteiro": true,
+   "selo": "Estoque muda",
+   "fala": "[animada] O estoque muda toda vez. Costuma ser caro, mas às vezes tem pechincha!"
+  },
+  {
+   "src": "gravacoes/bruto/novas/1115/2X6D.mp4",
+   "ini": 16.0,
+   "inteiro": true,
+   "selo": "Primavera e verão",
+   "fala": "[explicando] Na primavera e no verão, sempre tem Semente Rara por mil ouros."
+  },
+  {
+   "src": "gravacoes/bruto/novas/1115/3CGR.mp4",
+   "ini": 4.5,
+   "cx": 1100,
+   "cy": 350,
+   "zoom": 1.4,
+   "selo": "Não perde",
+   "fala": "[divertida] Passa lá toda sexta e domingo. Comenta CARRINHO e me segue!",
+   "cta": "comenta CARRINHO"
+  }
+ ]
+}
