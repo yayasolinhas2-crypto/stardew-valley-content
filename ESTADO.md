@@ -25,6 +25,7 @@ Erro de 10/11: as rotinas abriam chat novo SEM o repositório e não faziam nada
 - "Stardew · pauta da gringa + anti-repetição (diária)" trig_013AkYWhJMKpEFVbBTQSrhdz, 10:23 PST, no chat do bom dia: confere repetidos, pesquisa o que bomba lá fora (com prova), produz 2 vídeos/dia. Pedido da Yasmin 11/11, foco na meta de 10 mil.
 
 ## Em andamento
+- Bom dia 23/11: auditoria ok. Agendado até qui 26/11 12:00 (055c/056v/057v pelo Vitor 22/11). p058v/p059c/p060v aprovados e na fila (aguardando Vitor). Sem gravação nova; série diária: Dia 1 ainda não gravado. Próximos: 'Dúvidas da 1.7' (perguntas+prova), guia fotos visual fofo, voto no próximo episódio.
 - 22/11 noite: ESTRATÉGIA v2 aprovada (PRIORIDADES.md): série diária 'Dia N' com gravação diária dela (item 'Episódio do dia' na aba Gravar). Próximo episódio = Dia 1. Sem YouTube, sem pago. Rotina de pauta atualizada. 3 posts aguardando (p059c, p060v, p058v).
 - 22/11: ESTRATÉGIA NOVA (PRIORIDADES.md "Estratégia 22/11"): +1 guia em fotos/dia no TikTok, séries com continuação, pauta pelas buscas, fixar campeões, impulsionamento só com OK. Rotina de pauta atualizada com isso.
 - 22/11 noite: lote 1122 (26 takes). p058v ESPADA DA GALÁXIA no painel (qui 26/11 19:30, aguardando). Ela pediu: tirar 5–6 vídeos deste lote e ir subindo aos poucos. PLANO (produzir 2/dia na pauta, cada um com ângulo diferente):
