@@ -75,7 +75,7 @@ Pasta do Drive: https://drive.google.com/drive/folders/1s03hdm7bwQFwLvH_fmWJ8ivi
 | 0500 · 56B8 · D050 · 253A · 4FBF · F4C6 | Carrinho Viajante (56B8, D050 outono; 4FBF, F4C6 inverno) SEM vagem → p060v; 0500/253A lojas com Retrato do Harvey 30.000 etc. |
 | 121C · 5F6D | casa → Centro Comunitário: "Conjunto Plantações de Primavera" 3/4, falta Vagem, "Recompensa: Estufa" (121C 22–29 s) → p060v |
 | 1A50 | Esgoto/Krobus + cidade |
-| 2B31 · 2CF2 · 5001 · 9F8E | Floresta/labirinto à noite (Fazenda Assombrada? Bosque?) — 2CF2 abre com diálogo da Penny? |
+| 2B31 · 2CF2 · 5001 · 9F8E | labirinto do Dia das Bruxas (ano 3), sem o baú → p061v |
 | 5885 · E032 | deserto: velho (Mestre? "Lenor"?) com diálogos — conferir |
 | 5CF2 · BA35 | Carpintaria da Robin: loja de receitas de pisos, menu "Construir" |
 | 6541 · A4D9 · F4C0 | fazenda + inventário/baú |

@@ -25,6 +25,7 @@ Erro de 10/11: as rotinas abriam chat novo SEM o repositório e não faziam nada
 - "Stardew · pauta da gringa + anti-repetição (diária)" trig_013AkYWhJMKpEFVbBTQSrhdz, 10:23 PST, no chat do bom dia: confere repetidos, pesquisa o que bomba lá fora (com prova), produz 2 vídeos/dia. Pedido da Yasmin 11/11, foco na meta de 10 mil.
 
 ## Em andamento
+- Pauta 23/11: sem gravação do Dia 1 → fiz (b) p061v labirinto do Dia das Bruxas (sex 27/11 12:00) e (c) p062c guia Mercador do Deserto (só TikTok, sex 27/11 17:00) com VISUAL FOFO NOVO (tools/carrossel_fofo.py). AGUARDANDO. Série diária: Dia 1 ainda não chegou.
 - Bom dia 23/11: auditoria ok. Agendado até qui 26/11 12:00 (055c/056v/057v pelo Vitor 22/11). p058v/p059c/p060v aprovados e na fila (aguardando Vitor). Sem gravação nova; série diária: Dia 1 ainda não gravado. Próximos: 'Dúvidas da 1.7' (perguntas+prova), guia fotos visual fofo, voto no próximo episódio.
 - 22/11 noite: ESTRATÉGIA v2 aprovada (PRIORIDADES.md): série diária 'Dia N' com gravação diária dela (item 'Episódio do dia' na aba Gravar). Próximo episódio = Dia 1. Sem YouTube, sem pago. Rotina de pauta atualizada. 3 posts aguardando (p059c, p060v, p058v).
 - 22/11: ESTRATÉGIA NOVA (PRIORIDADES.md "Estratégia 22/11"): +1 guia em fotos/dia no TikTok, séries com continuação, pauta pelas buscas, fixar campeões, impulsionamento só com OK. Rotina de pauta atualizada com isso.

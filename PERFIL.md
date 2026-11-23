@@ -174,6 +174,9 @@
 | Coisas que eu queria saber (parte 3): receita nova na TV no domingo, conversar +20/dia, elevador a cada 5 andares, árvore 3x3 livre/28 dias, fruta +1 estrela por ano | p055c (fotos TikTok, aguardando, 25/11 17:00) | — |
 | Bosque Secreto: 6 tocos = 12 madeira de lei/dia, machado de aço | p056v (aguardando, 26/11 12:00) | — |
 | Guia do Carrinho Viajante: sex/dom 6–20h, floresta, Semente Rara 1.000 | p057v (aguardando, 25/11 19:30) | — |
+| Labirinto do Dia das Bruxas: passagem secreta, Abóbora Dourada (ano ímpar) | p061v (aguardando, 27/11 12:00) | — |
+| Mercador do Deserto: trocas por dia da semana | p062c (fotos TikTok, aguardando, 27/11 17:00) | — |
+| Espada da Galáxia (história) / Vagem parte 2 / Ovas de peixe (guia) | p058v / p060v / p059c | — |
 | Coisas que eu queria saber (parte 2): Semente Antiga, Ovo de Dinossauro, Fragmento Prismático → Espada Galáctica, Irrigador de Qualidade | p043c (fotos TikTok, aguardando, 20/11) | — |
 
 ## Números por post
