@@ -1,0 +1,74 @@
+{
+ "titulo": "O Linus me pediu *DESCULPAS*",
+ "voz": "Sulafat",
+ "velocidade": 1.5,
+ "estilo": "nativo",
+ "cenas": [
+  {
+   "src": "gravacoes/bruto/novas/1122/E032-desculpas.mp4",
+   "ini": 0,
+   "recorte": [
+    320,
+    600,
+    1270,
+    450
+   ],
+   "selo": "4 corações",
+   "fala": "[surpresa] O Linus me chamou na barraca dele... e pediu desculpas!"
+  },
+  {
+   "src": "gravacoes/bruto/novas/1122/E032.mp4",
+   "ini": 12.0,
+   "cx": 900,
+   "cy": 400,
+   "selo": "À noite, sem chuva",
+   "fala": "[explicando] É o evento de quatro corações: à noite, perto da barraca, sem chuva."
+  },
+  {
+   "src": "gravacoes/bruto/novas/1122/5885-isca.mp4",
+   "ini": 0,
+   "recorte": [
+    320,
+    600,
+    1270,
+    450
+   ],
+   "selo": "Isca especial",
+   "fala": "[revelando] E de presente, ele me ensinou a receita da isca especial dele!",
+   "cta": "comenta ISCA"
+  },
+  {
+   "src": "gravacoes/bruto/novas/1122/5885.mp4",
+   "ini": 2.0,
+   "cx": 900,
+   "cy": 400,
+   "selo": "Receita",
+   "fala": "[explicando] Leva fibra, gosma e carne de inseto, e sai cinco de uma vez."
+  },
+  {
+   "src": "gravacoes/bruto/novas/1122/5885.mp4",
+   "ini": 4.0,
+   "cx": 900,
+   "cy": 400,
+   "selo": "2 peixes",
+   "fala": "[animada] E ela tem chance de pegar DOIS peixes numa fisgada só!"
+  },
+  {
+   "src": "gravacoes/bruto/novas/1122/E032.mp4",
+   "ini": 18.0,
+   "cx": 900,
+   "cy": 400,
+   "selo": "Atenção",
+   "fala": "[séria] Só não funciona com a vara de bambu nem com a de treino."
+  },
+  {
+   "src": "gravacoes/bruto/novas/1122/E032.mp4",
+   "ini": 5.0,
+   "cx": 900,
+   "cy": 400,
+   "selo": "Série no perfil",
+   "fala": "[divertida] Comenta ISCA e me segue: a série completa tá no perfil!",
+   "cta": "comenta ISCA"
+  }
+ ]
+}

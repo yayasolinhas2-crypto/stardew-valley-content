@@ -76,7 +76,7 @@ Pasta do Drive: https://drive.google.com/drive/folders/1s03hdm7bwQFwLvH_fmWJ8ivi
 | 121C · 5F6D | casa → Centro Comunitário: "Conjunto Plantações de Primavera" 3/4, falta Vagem, "Recompensa: Estufa" (121C 22–29 s) → p060v |
 | 1A50 | Esgoto/Krobus + cidade |
 | 2B31 · 2CF2 · 5001 · 9F8E | labirinto do Dia das Bruxas (ano 3), sem o baú → p061v |
-| 5885 · E032 | deserto: velho (Mestre? "Lenor"?) com diálogos — conferir |
+| 5885 · E032 | Linus (4 corações): desculpas + isca especial → p063v |
 | 5CF2 · BA35 | Carpintaria da Robin: loja de receitas de pisos, menu "Construir" |
 | 6541 · A4D9 · F4C0 | fazenda + inventário/baú |
 | D4F7 | Robin: Galpão/Lago de peixes, construção na fazenda |

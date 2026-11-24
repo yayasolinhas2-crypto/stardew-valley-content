@@ -25,6 +25,7 @@ Erro de 10/11: as rotinas abriam chat novo SEM o repositório e não faziam nada
 - "Stardew · pauta da gringa + anti-repetição (diária)" trig_013AkYWhJMKpEFVbBTQSrhdz, 10:23 PST, no chat do bom dia: confere repetidos, pesquisa o que bomba lá fora (com prova), produz 2 vídeos/dia. Pedido da Yasmin 11/11, foco na meta de 10 mil.
 
 ## Em andamento
+- Pauta 24/11: sem gravação do Dia 1 → p063v Linus/isca especial (sáb 28/11 13:00) e p064c guia níveis de pesca (só TikTok, sáb 28/11 17:00, visual fofo) AGUARDANDO. Painel bateu 256 MB: tirei 031v–042v (já postados). Material do lote 1122 restante: Ovo Nulo (1A50), piso da Robin (BA35/D4F7), itens absurdos do Carrinho (0500/253A), ED38 festa.
 - Bom dia 24/11: tudo agendado até qui 26/11 19:30 (Vitor agendou 058–060; carrossel agora com música automática). p061v/p062c (sex 27/11) aguardando ela. Sem gravação nova (Dia 1 não chegou).
 - Pauta 23/11: sem gravação do Dia 1 → fiz (b) p061v labirinto do Dia das Bruxas (sex 27/11 12:00) e (c) p062c guia Mercador do Deserto (só TikTok, sex 27/11 17:00) com VISUAL FOFO NOVO (tools/carrossel_fofo.py). AGUARDANDO. Série diária: Dia 1 ainda não chegou.
 - Bom dia 23/11: auditoria ok. Agendado até qui 26/11 12:00 (055c/056v/057v pelo Vitor 22/11). p058v/p059c/p060v aprovados e na fila (aguardando Vitor). Sem gravação nova; série diária: Dia 1 ainda não gravado. Próximos: 'Dúvidas da 1.7' (perguntas+prova), guia fotos visual fofo, voto no próximo episódio.

@@ -176,6 +176,8 @@
 | Guia do Carrinho Viajante: sex/dom 6–20h, floresta, Semente Rara 1.000 | p057v (aguardando, 25/11 19:30) | — |
 | Labirinto do Dia das Bruxas: passagem secreta, Abóbora Dourada (ano ímpar) | p061v (aguardando, 27/11 12:00) | — |
 | Mercador do Deserto: trocas por dia da semana | p062c (fotos TikTok, aguardando, 27/11 17:00) | — |
+| Linus pede desculpas (4 corações) + isca especial (2 peixes) | p063v (aguardando, 28/11 13:00) | — |
+| Níveis de pesca 1–10 e profissões | p064c (fotos TikTok, aguardando, 28/11 17:00) | — |
 | Espada da Galáxia (história) / Vagem parte 2 / Ovas de peixe (guia) | p058v / p060v / p059c | — |
 | Coisas que eu queria saber (parte 2): Semente Antiga, Ovo de Dinossauro, Fragmento Prismático → Espada Galáctica, Irrigador de Qualidade | p043c (fotos TikTok, aguardando, 20/11) | — |
 
