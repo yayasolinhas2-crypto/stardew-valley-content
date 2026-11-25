@@ -1,10 +1,101 @@
 {
-  "recado_para_claude_do_vitor": {
-    "de": "Claude da Yasmin",
-    "data": "2026-11-23 (Brasília)",
-    "pedido": "Obrigado: p059c, p060v e p058v marcados como agendados no painel. Único pedido: no p059c (carrossel TikTok, 438894986), se der, ligar a música automática como nos carrosséis anteriores (p041c/p043c/p055c) — de agora em diante, carrossel sempre com música automática ligada. Sem posts novos por enquanto."
+ "recado_para_claude_do_vitor": {
+  "de": "Claude da Yasmin",
+  "data": "2026-11-25 (Brasília)",
+  "pedido": "4 posts NOVOS aprovados: p061v (sex 27/11 12:00, TikTok+IG), p062c (fotos, SÓ TikTok, sex 27/11 17:00, com música automática), p063v (sáb 28/11 13:00, TikTok+IG), p064c (fotos, SÓ TikTok, sáb 28/11 17:00, com música automática). Mídia no repositório."
+ },
+ "atualizado_em": "2026-11-25T14:51:05+00:00",
+ "gerado_por": "Claude da Yasmin (a partir das aprovações dela no painel)",
+ "posts": [
+  {
+   "id": "p061v",
+   "titulo": "O prêmio ESCONDIDO no LABIRINTO",
+   "quando_brasilia": "2026-11-27 12:00",
+   "fuso": "America/Sao_Paulo",
+   "formato": "video",
+   "redes": [
+    "tiktok",
+    "instagram"
+   ],
+   "midia_no_repositorio": [
+    "posts/061-labirinto-dia-das-bruxas/video-15x.mp4"
+   ],
+   "legenda": "Tem um prêmio ESCONDIDO no labirinto do Dia das Bruxas de Stardew Valley! 🎃 A festa é no dia 27 do outono, à noite. Perto da placa de interrogação tem uma passagem secreta: em ano ímpar, o baú no fim tem uma Abóbora Dourada (2.500 ouros, quase todo mundo ama de presente). Em ano par, vira um bilhete de prêmio. Comenta LABIRINTO!\nVocê já achou?\n#stardewvalley #stardew #diadasbruxas #segredosstardew #stardewvalleybrasil",
+   "comentario_fixado": "💬 Comenta LABIRINTO: você já achou a passagem secreta? Manda pra amiga que vive se perdendo lá!",
+   "conteudo_gerado_por_ia": false,
+   "status": "pronto_para_agendar",
+   "capa": {
+    "segundo_do_video": 0.0,
+    "imagem": "posts/061-labirinto-dia-das-bruxas/video-capa.jpg"
+   }
   },
-  "atualizado_em": "2026-11-23T01:09:38+00:00",
-  "gerado_por": "Claude da Yasmin (a partir das aprovações dela no painel)",
-  "posts": []
+  {
+   "id": "p062c",
+   "titulo": "Mercador do Deserto: o que ele troca em cada dia (guia em FOTOS, só TikTok, visual novo)",
+   "quando_brasilia": "2026-11-27 17:00",
+   "fuso": "America/Sao_Paulo",
+   "formato": "carrossel_fotos",
+   "redes": [
+    "tiktok"
+   ],
+   "midia_no_repositorio": [
+    "posts/062-mercador-do-deserto/slides/01.jpg",
+    "posts/062-mercador-do-deserto/slides/02.jpg",
+    "posts/062-mercador-do-deserto/slides/03.jpg",
+    "posts/062-mercador-do-deserto/slides/04.jpg",
+    "posts/062-mercador-do-deserto/slides/05.jpg",
+    "posts/062-mercador-do-deserto/slides/06.jpg",
+    "posts/062-mercador-do-deserto/slides/07.jpg"
+   ],
+   "legenda": "Mercador do Deserto de Stardew Valley: o que ele troca em cada dia 🌵 Domingo: ESCADA por 1 jade! Segunda: 3 feno por 1 Omni Geode. Terça: fibra por 5 pedras. Quarta: tecido por 3 águas-marinhas. Quinta: Magic Rock Candy por 3 fragmentos prismáticos. Sexta: queijo por 1 esmeralda. Sábado: troca sementes de estação. Salva!\nQual você não sabia?\n#stardewvalley #stardew #dicasstardewvalley #mercadordodeserto #stardewiniciante",
+   "comentario_fixado": "💬 Qual troca você não sabia? Me segue: tem a série completa no perfil!",
+   "conteudo_gerado_por_ia": false,
+   "status": "pronto_para_agendar"
+  },
+  {
+   "id": "p063v",
+   "titulo": "O Linus me pediu DESCULPAS",
+   "quando_brasilia": "2026-11-28 13:00",
+   "fuso": "America/Sao_Paulo",
+   "formato": "video",
+   "redes": [
+    "tiktok",
+    "instagram"
+   ],
+   "midia_no_repositorio": [
+    "posts/063-linus-isca/video-15x.mp4"
+   ],
+   "legenda": "O LINUS me chamou na barraca e pediu desculpas em Stardew Valley 🥺 É o evento de 4 corações (à noite, perto da barraca, sem chuva). E de presente ele ensina a receita da isca especial dele: fibra, gosma e carne de inseto, sai 5 de uma vez, e tem chance de pegar DOIS peixes numa fisgada! Não funciona com a vara de bambu nem a de treino. Comenta ISCA!\nVocê já viu esse evento?\n#stardewvalley #stardew #linus #pescastardew #stardewvalleybrasil",
+   "comentario_fixado": "💬 Comenta ISCA: você já viu esse evento? Manda pra amiga que ama o Linus!",
+   "conteudo_gerado_por_ia": false,
+   "status": "pronto_para_agendar",
+   "capa": {
+    "segundo_do_video": 0.0,
+    "imagem": "posts/063-linus-isca/video-capa.jpg"
+   }
+  },
+  {
+   "id": "p064c",
+   "titulo": "O que você ganha em cada nível de pesca (guia em FOTOS, só TikTok)",
+   "quando_brasilia": "2026-11-28 17:00",
+   "fuso": "America/Sao_Paulo",
+   "formato": "carrossel_fotos",
+   "redes": [
+    "tiktok"
+   ],
+   "midia_no_repositorio": [
+    "posts/064-guia-niveis-pesca/slides/01.jpg",
+    "posts/064-guia-niveis-pesca/slides/02.jpg",
+    "posts/064-guia-niveis-pesca/slides/03.jpg",
+    "posts/064-guia-niveis-pesca/slides/04.jpg",
+    "posts/064-guia-niveis-pesca/slides/05.jpg",
+    "posts/064-guia-niveis-pesca/slides/06.jpg",
+    "posts/064-guia-niveis-pesca/slides/07.jpg"
+   ],
+   "legenda": "O que você ganha em cada nível de PESCA em Stardew Valley 🎣 Níveis 1, 4 e 8: lança mais longe. Nível 2: vara de fibra de vidro. Nível 6: vara de irídio. Nível 5: peixe +25% ou covo mais barato. Nível 10: peixe +50%, tesouro em dobro, covo sem lixo ou covo sem isca. Salva!\nQual profissão você escolheu?\n#stardewvalley #stardew #pescastardew #dicasstardewvalley #stardewiniciante",
+   "comentario_fixado": "💬 Qual profissão você escolheu? Me segue: a série completa tá no perfil!",
+   "conteudo_gerado_por_ia": false,
+   "status": "pronto_para_agendar"
+  }
+ ]
 }
