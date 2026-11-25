@@ -1,0 +1,68 @@
+{
+ "titulo": "O ovo MAIS ESTRANHO do *KROBUS*",
+ "voz": "Sulafat",
+ "velocidade": 1.5,
+ "estilo": "nativo",
+ "cenas": [
+  {
+   "src": "gravacoes/bruto/novas/1122/1A50-ovonulo.mp4",
+   "ini": 0,
+   "recorte": [
+    480,
+    180,
+    1150,
+    560
+   ],
+   "selo": "Ovo Nulo",
+   "fala": "[misteriosa] O Krobus vende um ovo que vira uma galinha preta misteriosa!"
+  },
+  {
+   "src": "gravacoes/bruto/novas/1122/1A50-ovonulo.mp4",
+   "ini": 0,
+   "inteiro": true,
+   "selo": "5.000 ouros",
+   "fala": "[explicando] É o Ovo Nulo, na lojinha dele no Esgoto, por cinco mil ouros."
+  },
+  {
+   "src": "gravacoes/bruto/novas/1115/1CXC-galinheiro.mp4",
+   "ini": 0,
+   "cx": 700,
+   "cy": 500,
+   "selo": "Chocadeira",
+   "fala": "[revelando] Você choca ele na chocadeira do galinheiro grande ou de luxo.",
+   "cta": "comenta OVO"
+  },
+  {
+   "src": "gravacoes/bruto/novas/1115/1CXC-galinheiro.mp4",
+   "ini": 0,
+   "cx": 1100,
+   "cy": 450,
+   "selo": "~5 dias",
+   "fala": "[explicando] Leva uns cinco dias pra nascer."
+  },
+  {
+   "src": "gravacoes/bruto/novas/1115/1CXC.mp4",
+   "ini": 16.0,
+   "cx": 1100,
+   "cy": 600,
+   "selo": "Todo dia",
+   "fala": "[animada] E depois ela bota um Ovo Nulo todo santo dia!"
+  },
+  {
+   "src": "gravacoes/bruto/novas/1115/1CXC-galinheiro.mp4",
+   "ini": 0,
+   "cx": 900,
+   "cy": 600,
+   "selo": "Maionese",
+   "fala": "[chocada] Na máquina de maionese, cada ovo vira duzentos e setenta e cinco ouros."
+  },
+  {
+   "src": "gravacoes/bruto/novas/1122/1A50-ovonulo.mp4",
+   "ini": 0,
+   "inteiro": true,
+   "selo": "Série no perfil",
+   "fala": "[divertida] Comenta OVO e me segue: a série completa tá no perfil!",
+   "cta": "comenta OVO"
+  }
+ ]
+}

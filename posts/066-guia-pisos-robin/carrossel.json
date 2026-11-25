@@ -1,0 +1,57 @@
+{
+ "serie": "Fazenda Bonita",
+ "parte": 1,
+ "slides": [
+  {
+   "src": "gravacoes/bruto/novas/1122/BA35.mp4",
+   "t": 9.0,
+   "cx": 1100,
+   "capa": true,
+   "titulo": "Pisos pra deixar a fazenda *LINDA*",
+   "texto": "quanto custa cada receita · salva!"
+  },
+  {
+   "src": "gravacoes/bruto/novas/1122/BA35.mp4",
+   "t": 9.0,
+   "cx": 1100,
+   "titulo": "Já vem com você",
+   "texto": "*3 caminhos básicos*: 1 de madeira e 2 de pedra. Custa só 1 material cada!"
+  },
+  {
+   "src": "gravacoes/bruto/novas/1122/BA35.mp4",
+   "t": 12.0,
+   "cx": 1100,
+   "titulo": "100 ouros na Robin",
+   "texto": "*Piso de Pedra* (1 pedra)|*Piso de madeira* (1 madeira)|*1 caminho de pedras* (1 pedra)"
+  },
+  {
+   "src": "gravacoes/bruto/novas/1122/BA35.mp4",
+   "t": 15.0,
+   "cx": 1100,
+   "titulo": "200 ouros na Robin",
+   "texto": "*Piso Passarela de Pedra* (1 pedra)|*Piso de tábua rústica* (1 madeira)|*Piso de palha* (madeira + fibra)"
+  },
+  {
+   "src": "gravacoes/bruto/novas/1122/BA35.mp4",
+   "t": 18.0,
+   "cx": 1100,
+   "titulo": "Os especiais",
+   "texto": "*Piso de tijolo*: 500 ouros (argila + pedra)|*Caminho de cristal*: 200 ouros (quartzo refinado)"
+  },
+  {
+   "src": "gravacoes/bruto/novas/1122/BA35.mp4",
+   "t": 21.0,
+   "cx": 1100,
+   "titulo": "Bônus escondido",
+   "texto": "Todo piso fora de casa, na fazenda, deixa você *um pouquinho mais rápida*!"
+  },
+  {
+   "src": "gravacoes/bruto/novas/1122/BA35.mp4",
+   "t": 24.0,
+   "cx": 1100,
+   "fim": true,
+   "titulo": "Qual piso *é o seu favorito*?",
+   "texto": "Me segue: a série completa tá no perfil!"
+  }
+ ]
+}
