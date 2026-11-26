@@ -180,6 +180,7 @@
 | Níveis de pesca 1–10 e profissões | p064c (fotos TikTok, aguardando, 28/11 17:00) | — |
 | Ovo Nulo do Krobus → galinha que bota Ovo Nulo, maionese 275 | p065v (aguardando, 29/11 13:00) | — |
 | Pisos da Robin: preço de cada receita | p066c (fotos TikTok, aguardando, 29/11 17:00) | — |
+| Preços absurdos do Carrinho (catálogo 110 mil, retrato Harvey 30 mil) | p067v (aguardando, 30/11 12:00) | — |
 | Espada da Galáxia (história) / Vagem parte 2 / Ovas de peixe (guia) | p058v / p060v / p059c | — |
 | Coisas que eu queria saber (parte 2): Semente Antiga, Ovo de Dinossauro, Fragmento Prismático → Espada Galáctica, Irrigador de Qualidade | p043c (fotos TikTok, aguardando, 20/11) | — |
 

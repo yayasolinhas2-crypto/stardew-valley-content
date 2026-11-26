@@ -1,0 +1,86 @@
+{
+ "titulo": "110 MIL ouros num *CATÁLOGO*?!",
+ "voz": "Sulafat",
+ "velocidade": 1.5,
+ "estilo": "nativo",
+ "cenas": [
+  {
+   "src": "gravacoes/bruto/novas/1122/0500-catalogo.mp4",
+   "ini": 0,
+   "recorte": [
+    480,
+    150,
+    1150,
+    600
+   ],
+   "selo": "110.000",
+   "fala": "[chocada] Cento e dez MIL ouros num catálogo?! Esse carrinho tá de brincadeira!"
+  },
+  {
+   "src": "gravacoes/bruto/novas/1122/0500-harvey.mp4",
+   "ini": 0,
+   "recorte": [
+    480,
+    150,
+    1150,
+    600
+   ],
+   "selo": "30.000",
+   "fala": "[rindo] E o retrato do Harvey? Trinta mil ouros!"
+  },
+  {
+   "src": "gravacoes/bruto/novas/1122/0500-tomate.mp4",
+   "ini": 0,
+   "recorte": [
+    480,
+    150,
+    1150,
+    600
+   ],
+   "selo": "1.000",
+   "fala": "[indignada] Semente de tomate por mil ouros. No Pierre, custa cinquenta!",
+   "cta": "comenta CARRINHO"
+  },
+  {
+   "src": "gravacoes/bruto/novas/1122/0500-damasco.mp4",
+   "ini": 0,
+   "recorte": [
+    480,
+    150,
+    1150,
+    600
+   ],
+   "selo": "600",
+   "fala": "[irônica] Um damasco por seiscentos ouros!"
+  },
+  {
+   "src": "gravacoes/bruto/novas/1122/56B8.mp4",
+   "ini": 8.0,
+   "cx": 1000,
+   "cy": 450,
+   "selo": "Carrinho Viajante",
+   "fala": "[explicando] O Carrinho Viajante costuma cobrar bem mais caro que o normal."
+  },
+  {
+   "src": "gravacoes/bruto/novas/1122/0500-mesa.mp4",
+   "ini": 0,
+   "recorte": [
+    480,
+    150,
+    1150,
+    600
+   ],
+   "selo": "Pechincha",
+   "fala": "[animada] Mas às vezes aparece pechincha. Por isso vale olhar sempre!"
+  },
+  {
+   "src": "gravacoes/bruto/novas/1122/56B8.mp4",
+   "ini": 9.0,
+   "cx": 1000,
+   "cy": 450,
+   "selo": "Série no perfil",
+   "fala": "[divertida] Comenta CARRINHO: qual o item mais caro que você já viu lá?",
+   "cta": "comenta CARRINHO"
+  }
+ ]
+}

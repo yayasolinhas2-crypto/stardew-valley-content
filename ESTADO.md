@@ -25,6 +25,7 @@ Erro de 10/11: as rotinas abriam chat novo SEM o repositório e não faziam nada
 - "Stardew · pauta da gringa + anti-repetição (diária)" trig_013AkYWhJMKpEFVbBTQSrhdz, 10:23 PST, no chat do bom dia: confere repetidos, pesquisa o que bomba lá fora (com prova), produz 2 vídeos/dia. Pedido da Yasmin 11/11, foco na meta de 10 mil.
 
 ## Em andamento
+- Pauta 26/11: sem gravação → p067v '110 MIL ouros num CATÁLOGO?!' (seg 30/11 12:00) AGUARDANDO. Guia em fotos do dia NÃO feito de propósito: 065v/066c ainda sem aprovação, evitar acumular. Consertado tools/gameplay.py: legenda convertia 'cento e dez mil' em '10.000' (TROCA). Material do lote 1122 praticamente esgotado (sobra ED38 festa noturna e Caverna 3AF2).
 - Bom dia 26/11: 061–064 agendados pelo Vitor (até sáb 28/11). p065v/p066c (dom 29/11) aguardando ela. Sem gravação nova (Dia 1 não chegou). Amanhã (sex) pedir prints.
 - Pauta 25/11: 061–064 aprovados e pedidos ao Vitor. Sem gravação do Dia 1 → p065v Ovo Nulo do Krobus (dom 29/11 13:00) e p066c guia pisos da Robin (só TikTok, dom 29/11 17:00) AGUARDANDO. Material restante do lote 1122: itens absurdos do Carrinho (0500/253A), ED38 festa noturna, Caverna (3AF2/1026).
 - Bom dia 25/11: agendado até qui 26/11 19:30. 061v–064c (sex/sáb) AGUARDANDO ela há 1–2 dias → lembrei. Sem gravação nova (Dia 1 não chegou), sem referência nova.
