@@ -25,6 +25,7 @@ Erro de 10/11: as rotinas abriam chat novo SEM o repositório e não faziam nada
 - "Stardew · pauta da gringa + anti-repetição (diária)" trig_013AkYWhJMKpEFVbBTQSrhdz, 10:23 PST, no chat do bom dia: confere repetidos, pesquisa o que bomba lá fora (com prova), produz 2 vídeos/dia. Pedido da Yasmin 11/11, foco na meta de 10 mil.
 
 ## Em andamento
+- Pauta 28/11: nada novo (sem gravação, 065–067 sem aprovação). Não produzi.
 - Bom dia 28/11 (sáb): último post agendado = hoje 17:00 (p064c). 065v/066c/067v ainda sem aprovação → domingo em risco. Sem gravação nem prints.
 - Pauta 27/11: sem gravação e 3 posts ainda sem aprovação (065v/066c/067v) → não produzi pra não acumular. Material do lote 1122 esgotado.
 - Bom dia 27/11 (sex): agendado até sáb 28/11 17:00. 065v/066c/067v aguardando ela (dom/seg). Sem gravação nova. Pedidos os prints da semana.
